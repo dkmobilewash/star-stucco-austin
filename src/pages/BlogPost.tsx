@@ -1,0 +1,232 @@
+import { Link, useParams } from 'react-router-dom'
+import { ChevronLeft, Phone } from 'lucide-react'
+import type { JSX } from 'react'
+import SEO from '../components/SEO'
+import { siteConfig } from '../lib/siteConfig'
+import { blogPosts } from '../data/blogPosts'
+
+function formatDate(dateString: string): string {
+  const date = new Date(dateString + 'T00:00:00')
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
+}
+
+function renderInline(text: string) {
+  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g
+  const parts: (string | JSX.Element)[] = []
+  let last = 0
+  let match: RegExpExecArray | null
+  while ((match = linkPattern.exec(text)) !== null) {
+    if (match.index > last) parts.push(text.slice(last, match.index))
+    parts.push(
+      <Link key={match.index} to={match[2]!} className="text-primary-700 underline hover:text-primary-900 transition-colors">
+        {match[1]}
+      </Link>
+    )
+    last = match.index + match[0].length
+  }
+  if (last < text.length) parts.push(text.slice(last))
+  return parts.length > 0 ? parts : text
+}
+
+function renderContent(content: string) {
+  const blocks = content.split('\n\n')
+
+  return blocks.map((block, index) => {
+    const trimmed = block.trim()
+
+    if (trimmed.startsWith('### ')) {
+      return (
+        <h3
+          key={index}
+          className="font-display text-xl font-semibold text-secondary-900 mt-8 mb-3"
+        >
+          {trimmed.replace('### ', '')}
+        </h3>
+      )
+    }
+
+    if (trimmed.startsWith('## ')) {
+      return (
+        <h2
+          key={index}
+          className="font-display text-2xl font-bold text-secondary-900 mt-10 mb-4"
+        >
+          {trimmed.replace('## ', '')}
+        </h2>
+      )
+    }
+
+    if (trimmed.startsWith('**') && trimmed.endsWith('**')) {
+      return (
+        <p
+          key={index}
+          className="font-semibold text-secondary-900 mt-4 mb-2"
+        >
+          {trimmed.replace(/\*\*/g, '')}
+        </p>
+      )
+    }
+
+    if (trimmed.startsWith('- ')) {
+      const items = trimmed.split('\n').map((line) => line.replace(/^- /, ''))
+      return (
+        <ul key={index} className="my-4 space-y-2 pl-6">
+          {items.map((item, i) => (
+            <li
+              key={i}
+              className="text-secondary-600 leading-relaxed list-disc"
+            >
+              {renderInline(item)}
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    return (
+      <p key={index} className="text-secondary-600 leading-relaxed mb-4">
+        {renderInline(trimmed)}
+      </p>
+    )
+  })
+}
+
+export default function BlogPost() {
+  const { slug } = useParams<{ slug: string }>()
+  const post = blogPosts.find((p) => p.slug === slug)
+
+  if (!post) {
+    return (
+      <>
+        <SEO
+          title="Post Not Found | Star Stucco of Austin Blog"
+          description="The blog post you are looking for could not be found."
+          path={`/blog/${slug || ''}`}
+        />
+        <section className="py-32">
+          <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="font-display text-4xl font-bold text-secondary-900 mb-4">
+              Post Not Found
+            </h1>
+            <p className="text-secondary-600 mb-8">
+              Sorry, the blog post you're looking for doesn't exist or may have
+              been moved.
+            </p>
+            <Link
+              to="/blog"
+              className="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700"
+            >
+              <ChevronLeft className="mr-2 h-4 w-4" />
+              Back to Blog
+            </Link>
+          </div>
+        </section>
+      </>
+    )
+  }
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    image: post.image,
+    url: `${siteConfig.url}/blog/${post.slug}`,
+    author: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteConfig.url}/blog/${post.slug}`,
+    },
+  }
+
+  return (
+    <>
+      <SEO
+        title={post.seoTitle ?? `${post.title} | ${siteConfig.name} Blog`}
+        description={post.seoDescription ?? post.excerpt}
+        path={`/blog/${post.slug}`}
+        schema={schema}
+      />
+
+      {/* Hero */}
+      <section className="bg-secondary-900 py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <Link
+            to="/blog"
+            className="inline-flex items-center text-sm text-secondary-400 hover:text-white transition-colors mb-8"
+          >
+            <ChevronLeft className="mr-1 h-4 w-4" />
+            Back to Blog
+          </Link>
+          <p className="text-sm font-medium text-primary-400 mb-3">
+            {formatDate(post.date)}
+          </p>
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+            {post.h1 ?? post.title}
+          </h1>
+        </div>
+      </section>
+
+      {/* Featured Image */}
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 -mt-8">
+        <div className="overflow-hidden rounded-2xl shadow-xl">
+          <img
+            src={post.image}
+            alt={post.title}
+            className="w-full h-64 sm:h-96 object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      {/* Content */}
+      <article className="py-12 lg:py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          {renderContent(post.content)}
+        </div>
+      </article>
+
+      {/* CTA */}
+      <section className="bg-secondary-50 py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-2xl font-bold text-secondary-900 mb-4">
+            Have Questions About Your Stucco?
+          </h2>
+          <p className="text-secondary-600 mb-6">
+            Our team of Austin stucco experts is ready to help. Get a free estimate today.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:+15127069699"
+              aria-label="Call Star Stucco of Austin for a free estimate"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+            >
+              <Phone className="mr-2 h-4 w-4" />
+              Call (512) 706-9699 for a Free Estimate
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center rounded-lg border border-secondary-300 px-6 py-3 text-sm font-semibold text-secondary-700 transition-all hover:border-secondary-400 hover:bg-white"
+            >
+              Contact Us Online
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}

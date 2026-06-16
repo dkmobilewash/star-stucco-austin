@@ -1,0 +1,29 @@
+http://stuccoaustin.com/*
+  Location: https://stuccoaustin.com/:splat
+  Status: 301
+
+http://www.stuccoaustin.com/*
+  Location: https://stuccoaustin.com/:splat
+  Status: 301
+
+https://www.stuccoaustin.com/*
+  Location: https://stuccoaustin.com/:splat
+  Status: 301
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=604800
+
+/
+  Cache-Control: no-cache, no-store, must-revalidate
