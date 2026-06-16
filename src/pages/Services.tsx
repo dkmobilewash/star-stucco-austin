@@ -47,6 +47,20 @@ const services = [
     ],
   },
   {
+    title: 'EIFS Contractor — San Antonio',
+    path: '/eifs-contractor-san-antonio',
+    image:
+      'https://placehold.co/1024x683?text=EIFS+Contractor+San+Antonio',
+    description:
+      'Licensed EIFS (Exterior Insulation and Finish System) installation, repair, and replacement for San Antonio and the surrounding Hill Country. We work with Dryvit, Parex, Sto, and Master Wall systems on residential and commercial properties.',
+    features: [
+      'EIFS installation and full replacement',
+      'EIFS crack, impact, and moisture repair',
+      'Dryvit repair, restoration, and color matching',
+      'Commercial EIFS for retail, office, and multifamily',
+    ],
+  },
+  {
     title: 'Commercial Stucco',
     path: '/austin-commercial-stucco',
     image:
