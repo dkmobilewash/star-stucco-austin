@@ -319,9 +319,8 @@ export default function EifsContractor() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
-          {/* TODO: Replace with local asset /eifs-contractor-san-antonio-tx.jpg when available */}
           <img
-            src="https://placehold.co/1600x900?text=EIFS+Contractor+San+Antonio"
+            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1i9jAG3XB6C9PbVCOXqpjT4I1aKypL3IcwM7dX8sygD6D5Ma45nL_ifBvJ8JeBpJaiThipCbC96nZI5yQIKVQyf6qEO7eges0BHuono-yKdqaynwrhvpUULfXs0tQhspuaRd5zCGptLg=s1360-w1360-h1020-rw"
             alt="EIFS contractor working on exterior wall in San Antonio TX"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
@@ -409,9 +408,8 @@ export default function EifsContractor() {
               </p>
             </div>
             <div>
-              {/* TODO: Replace with local asset /eifs-wall-system-diagram.jpg when available */}
               <img
-                src="https://placehold.co/800x1000?text=EIFS+Wall+System+Diagram"
+                src="/images/eifs-wall-system-diagram.svg"
                 alt="Diagram showing the five layers of an EIFS wall system"
                 className="rounded-2xl shadow-lg w-full"
                 loading="lazy"
@@ -445,6 +443,17 @@ export default function EifsContractor() {
               </div>
             ))}
           </div>
+          <figure className="mt-12">
+            <img
+              src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEoOx-LSVXE0flAWzD9g7q_iyesV-OrkwybImQNyGwZnH2dofmUJ3H3v_Yf8BYXny4PnrZRAnEBHZ0ihAKQ9QzeKscIUQZ2kdfBceTcbgpre4eFlkGSxpeS6WuK4jJOkZ6AUFtfcKInLSvc=s1360-w1360-h1020-rw"
+              alt="Commercial multifamily building clad in EIFS in San Antonio, TX"
+              className="w-full max-h-[28rem] object-cover rounded-2xl shadow-lg"
+              loading="lazy"
+            />
+            <figcaption className="mt-3 text-center text-sm text-secondary-500">
+              Commercial and multifamily EIFS installation in the San Antonio metro.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -531,10 +540,9 @@ export default function EifsContractor() {
           <p className="text-secondary-600 text-center mb-12">
             A proven, step-by-step process that fixes the root cause — not just the visible damage.
           </p>
-          {/* TODO: Replace with local asset /eifs-repair-before-after-san-antonio.jpg when available */}
           <img
-            src="https://placehold.co/1200x600?text=EIFS+Repair+Before+%26+After"
-            alt="Before and after EIFS repair on San Antonio home"
+            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGEUl399ZEasljBiFN-u-pz_gxJFgs5mXImvKmG8Czf6ugWXKQKnb0dK1JU6aeTu35hOYqOLrV8bRLF8imSoHehIr4JL6zkumH9-DmoMDIzflwyk9AQjaBKfCk4XAmWPmXLucgFoDjH3ngK=s1360-w1360-h1020-rw"
+            alt="EIFS installation in progress on a San Antonio home with scaffolding"
             className="rounded-2xl shadow-lg w-full mb-12"
             loading="lazy"
           />
