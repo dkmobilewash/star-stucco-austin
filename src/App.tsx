@@ -9,6 +9,7 @@ import StuccoInstallation from './pages/services/StuccoInstallation'
 import StuccoRepair from './pages/services/StuccoRepair'
 import StuccoFinishing from './pages/services/StuccoFinishing'
 import CommercialStucco from './pages/services/CommercialStucco'
+import EifsContractor from './pages/services/EifsContractor'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import AustinArea from './pages/areas/Austin'
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="/austin-stucco-repair" element={<StuccoRepair />} />
         <Route path="/austin-stucco-finishing" element={<StuccoFinishing />} />
         <Route path="/austin-commercial-stucco" element={<CommercialStucco />} />
+        <Route path="/eifs-contractor-san-antonio" element={<EifsContractor />} />
         <Route path="/service-area/austin" element={<AustinArea />} />
         <Route path="/service-area/round-rock" element={<RoundRockArea />} />
         <Route path="/service-area/cedar-park" element={<CedarParkArea />} />

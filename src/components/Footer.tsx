@@ -46,8 +46,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/austin-stucco-finishing" className="text-sm hover:text-white transition-colors">
-                  EIFS
+                <Link to="/eifs-contractor-san-antonio" className="text-sm hover:text-white transition-colors">
+                  EIFS Contractor — San Antonio
                 </Link>
               </li>
               <li>

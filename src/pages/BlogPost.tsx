@@ -87,6 +87,67 @@ function renderContent(content: string) {
       )
     }
 
+    if (/^\d+\.\s/.test(trimmed)) {
+      const items = trimmed.split('\n').map((line) => line.replace(/^\d+\.\s/, ''))
+      return (
+        <ol key={index} className="my-4 space-y-2 pl-6">
+          {items.map((item, i) => (
+            <li
+              key={i}
+              className="text-secondary-600 leading-relaxed list-decimal"
+            >
+              {renderInline(item)}
+            </li>
+          ))}
+        </ol>
+      )
+    }
+
+    if (trimmed.startsWith('|')) {
+      const rows = trimmed
+        .split('\n')
+        .map((line) => line.trim())
+        .filter((line) => line.startsWith('|'))
+      const parseCells = (line: string) =>
+        line
+          .replace(/^\|/, '')
+          .replace(/\|$/, '')
+          .split('|')
+          .map((cell) => cell.trim())
+      const isSeparator = (line: string) => /^\|?[\s:|-]+\|?$/.test(line) && line.includes('-')
+      const header = parseCells(rows[0]!)
+      const bodyRows = rows.slice(1).filter((line) => !isSeparator(line)).map(parseCells)
+      return (
+        <div key={index} className="my-6 overflow-x-auto rounded-2xl border border-secondary-200">
+          <table className="w-full text-left text-sm">
+            <thead>
+              <tr className="bg-secondary-900 text-white">
+                {header.map((cell, i) => (
+                  <th key={i} className="px-5 py-4 font-semibold">
+                    {renderInline(cell)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {bodyRows.map((row, r) => (
+                <tr key={r} className={r % 2 === 0 ? 'bg-white' : 'bg-secondary-50'}>
+                  {row.map((cell, c) => (
+                    <td
+                      key={c}
+                      className={`px-5 py-4 ${c === 0 ? 'font-medium text-secondary-900' : 'text-secondary-600'}`}
+                    >
+                      {renderInline(cell)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )
+    }
+
     return (
       <p key={index} className="text-secondary-600 leading-relaxed mb-4">
         {renderInline(trimmed)}
@@ -129,9 +190,9 @@ export default function BlogPost() {
     )
   }
 
-  const schema = {
+  const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
@@ -152,6 +213,23 @@ export default function BlogPost() {
       '@id': `${siteConfig.url}/blog/${post.slug}`,
     },
   }
+
+  const faqSchema = post.faqs && post.faqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      }
+    : null
+
+  const schema = faqSchema ? [articleSchema, faqSchema] : articleSchema
 
   return (
     <>
@@ -197,6 +275,22 @@ export default function BlogPost() {
       <article className="py-12 lg:py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           {renderContent(post.content)}
+
+          {post.faqs && post.faqs.length > 0 && (
+            <div className="mt-12">
+              <h2 className="font-display text-2xl font-bold text-secondary-900 mt-10 mb-4">
+                Frequently Asked Questions
+              </h2>
+              <div className="rounded-2xl bg-secondary-50 border border-secondary-200 px-6 sm:px-8 divide-y divide-secondary-200">
+                {post.faqs.map((faq) => (
+                  <div key={faq.question} className="py-5">
+                    <h3 className="font-semibold text-secondary-900 mb-2">{faq.question}</h3>
+                    <p className="text-secondary-600 leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </article>
 
