@@ -1,5 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/eifs-contractor-san-antonio", "destination": "/eifs-contractor-austin", "permanent": true },
+    { "source": "/blog/eifs-repair-san-antonio", "destination": "/blog/eifs-repair-austin", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],

@@ -30,15 +30,15 @@ const localBusinessSchema = {
     addressCountry: 'US',
   },
   areaServed: [
-    { '@type': 'City', name: 'San Antonio' },
     { '@type': 'City', name: 'Austin' },
-    { '@type': 'City', name: 'New Braunfels' },
-    { '@type': 'City', name: 'Boerne' },
-    { '@type': 'City', name: 'Stone Oak' },
-    { '@type': 'City', name: 'Alamo Heights' },
+    { '@type': 'City', name: 'Round Rock' },
+    { '@type': 'City', name: 'Cedar Park' },
+    { '@type': 'City', name: 'Georgetown' },
+    { '@type': 'City', name: 'Pflugerville' },
+    { '@type': 'City', name: 'Westlake' },
   ],
   description:
-    'Licensed EIFS contractor serving San Antonio and Austin TX. Specializing in EIFS installation, repair, replacement, and synthetic stucco systems.',
+    'Licensed EIFS contractor serving Austin and Central Texas. Specializing in EIFS installation, repair, replacement, and synthetic stucco systems.',
   priceRange: '$$',
 }
 
@@ -52,14 +52,14 @@ const serviceSchema = {
   },
   areaServed: {
     '@type': 'City',
-    name: 'San Antonio',
+    name: 'Austin',
     containedInPlace: {
       '@type': 'State',
       name: 'Texas',
     },
   },
   description:
-    'Professional EIFS (Exterior Insulation and Finish Systems) installation, repair, inspection, and replacement for residential and commercial properties in San Antonio, TX.',
+    'Professional EIFS (Exterior Insulation and Finish Systems) installation, repair, inspection, and replacement for residential and commercial properties in Austin, TX.',
 }
 
 const faqs = [
@@ -74,9 +74,9 @@ const faqs = [
       'Traditional stucco is a hard cement-based finish applied directly over a wire lath or masonry substrate. EIFS is a layered system that includes a foam insulation board, which provides significantly better energy efficiency. EIFS is lighter, more flexible, and offers better insulation values (R-values) than traditional stucco. However, EIFS requires specialized installation and repair — not every stucco contractor is qualified to work on it.',
   },
   {
-    question: 'How much does EIFS repair cost in San Antonio?',
+    question: 'How much does EIFS repair cost in Austin?',
     answer:
-      'EIFS repair costs in San Antonio typically range from $8 to $30 per square foot depending on the extent of the damage, accessibility, and whether moisture intrusion has affected the substrate behind the EIFS. Minor crack repairs are on the lower end; full remediation involving water damage and substrate replacement are on the higher end. We offer free on-site estimates for all EIFS repair projects.',
+      'EIFS repair costs in Austin typically range from $8 to $30 per square foot depending on the extent of the damage, accessibility, and whether moisture intrusion has affected the substrate behind the EIFS. Minor crack repairs are on the lower end; full remediation involving water damage and substrate replacement are on the higher end. We offer free on-site estimates for all EIFS repair projects.',
   },
   {
     question: 'Can EIFS be repaired or does it need to be replaced?',
@@ -89,9 +89,9 @@ const faqs = [
       'Yes. Star Stucco of Austin works with Dryvit, Parex, Sto, and other major EIFS manufacturer systems. We can repair existing systems from any manufacturer and install new EIFS systems using the manufacturer’s specifications.',
   },
   {
-    question: 'Is EIFS good for the San Antonio climate?',
+    question: 'Is EIFS good for the Austin climate?',
     answer:
-      'Yes. EIFS performs well in the San Antonio climate. Its continuous insulation layer helps reduce heat transfer, which lowers cooling costs during hot Texas summers. Its flexibility also helps it handle the temperature cycling and UV exposure common in Central Texas better than some rigid cladding systems.',
+      'Yes. EIFS performs well in the Austin climate. Its continuous insulation layer helps reduce heat transfer, which lowers cooling costs during hot Texas summers. Its flexibility also helps it handle the temperature cycling and UV exposure common in Central Texas better than some rigid cladding systems.',
   },
   {
     question: 'How long does EIFS last?',
@@ -99,9 +99,9 @@ const faqs = [
       'Properly installed and maintained EIFS can last 30 to 50 years or more. The finish coat may need repainting every 10 to 15 years depending on sun exposure and environmental conditions. Regular inspection every 2 to 3 years is recommended to catch small cracks before they allow moisture infiltration.',
   },
   {
-    question: 'Do you offer free EIFS estimates in San Antonio?',
+    question: 'Do you offer free EIFS estimates in Austin?',
     answer:
-      'Yes. Star Stucco of Austin offers free on-site EIFS estimates throughout San Antonio and the surrounding areas including Alamo Heights, Stone Oak, New Braunfels, Boerne, and Helotes. Call us or fill out our contact form to schedule your free estimate.',
+      'Yes. Star Stucco of Austin offers free on-site EIFS estimates throughout Austin and the surrounding areas including Round Rock, Cedar Park, Georgetown, Pflugerville, Westlake, and Lakeway. Call us or fill out our contact form to schedule your free estimate.',
   },
 ]
 
@@ -170,12 +170,12 @@ const services = [
   {
     icon: PaintBucket,
     title: 'Dryvit Repair & Restoration',
-    desc: 'Dryvit is one of the most common EIFS brands on San Antonio homes. We are experienced in Dryvit system repair, color matching, and restoration.',
+    desc: 'Dryvit is one of the most common EIFS brands on Austin homes. We are experienced in Dryvit system repair, color matching, and restoration.',
   },
   {
     icon: Building2,
     title: 'Commercial EIFS',
-    desc: 'Large-scale EIFS installation and repair for commercial buildings, retail centers, office buildings, and multifamily properties throughout San Antonio.',
+    desc: 'Large-scale EIFS installation and repair for commercial buildings, retail centers, office buildings, and multifamily properties throughout Austin.',
   },
   {
     icon: Shield,
@@ -266,25 +266,25 @@ const whyChoose = [
   'Licensed and insured in Texas',
   'Experience with all major EIFS manufacturers: Dryvit, Parex, Sto, Master Wall, Senergy',
   'Residential and commercial EIFS projects',
-  'Free on-site estimates throughout San Antonio',
+  'Free on-site estimates throughout Austin',
   'Color matching and texture matching for seamless repairs',
   'Warranty on all EIFS work',
-  'Serving San Antonio, Alamo Heights, Stone Oak, New Braunfels, Boerne, and surrounding areas',
+  'Serving Austin, Round Rock, Cedar Park, Georgetown, Westlake, and surrounding Central Texas areas',
 ]
 
 const serviceAreas = [
-  'San Antonio, TX',
-  'Alamo Heights, TX',
-  'Stone Oak, TX',
-  'Helotes, TX',
-  'New Braunfels, TX',
-  'Boerne, TX',
-  'Leon Valley, TX',
-  'Castle Hills, TX',
-  'Converse, TX',
-  'Schertz, TX',
-  'Timberwood Park, TX',
-  'Bulverde, TX',
+  'Austin, TX',
+  'Round Rock, TX',
+  'Cedar Park, TX',
+  'Georgetown, TX',
+  'Pflugerville, TX',
+  'Westlake, TX',
+  'Lakeway, TX',
+  'Bee Cave, TX',
+  'Dripping Springs, TX',
+  'Kyle, TX',
+  'Leander, TX',
+  'Buda, TX',
 ]
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
@@ -310,9 +310,9 @@ export default function EifsContractor() {
   return (
     <>
       <SEO
-        title="EIFS Contractor San Antonio TX | Synthetic Stucco Installation & Repair | Star Stucco"
-        description="San Antonio's trusted EIFS contractor. Star Stucco installs, repairs & replaces synthetic stucco (EIFS) for homes & businesses. Free estimates."
-        path="/eifs-contractor-san-antonio"
+        title="EIFS Contractor Austin TX | Synthetic Stucco Installation & Repair | Star Stucco"
+        description="Austin's trusted EIFS contractor. Star Stucco installs, repairs & replaces synthetic stucco (EIFS) for homes & businesses. Free estimates."
+        path="/eifs-contractor-austin"
         schema={[localBusinessSchema, serviceSchema, faqSchema]}
       />
 
@@ -321,7 +321,7 @@ export default function EifsContractor() {
         <div className="absolute inset-0">
           <img
             src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1i9jAG3XB6C9PbVCOXqpjT4I1aKypL3IcwM7dX8sygD6D5Ma45nL_ifBvJ8JeBpJaiThipCbC96nZI5yQIKVQyf6qEO7eges0BHuono-yKdqaynwrhvpUULfXs0tQhspuaRd5zCGptLg=s1360-w1360-h1020-rw"
-            alt="EIFS contractor working on exterior wall in San Antonio TX"
+            alt="EIFS contractor working on exterior wall in Austin TX"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
           />
@@ -333,16 +333,16 @@ export default function EifsContractor() {
               Home
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-primary-400">EIFS Contractor San Antonio</span>
+            <span className="text-primary-400">EIFS Contractor Austin</span>
           </p>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-            EIFS Contractor in San Antonio, TX
+            EIFS Contractor in Austin, TX
           </h1>
           <p className="text-lg text-secondary-300 mb-8 max-w-2xl leading-relaxed">
-            Star Stucco of Austin is a licensed EIFS contractor serving San Antonio and the
+            Star Stucco of Austin is a licensed EIFS contractor serving Austin and the
             surrounding Texas Hill Country. We install, repair, inspect, and replace Exterior
             Insulation and Finish Systems (EIFS) — also called synthetic stucco — for residential and
-            commercial properties throughout the San Antonio metro area. If your EIFS is cracking,
+            commercial properties throughout the Austin metro area. If your EIFS is cracking,
             separating, showing moisture damage, or needs a full installation, we provide free on-site
             estimates and guaranteed workmanship.
           </p>
@@ -423,11 +423,11 @@ export default function EifsContractor() {
       <section className="py-20 bg-secondary-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold text-secondary-900 mb-4 text-center">
-            EIFS Services We Provide in San Antonio
+            EIFS Services We Provide in Austin
           </h2>
           <p className="text-secondary-600 text-center max-w-2xl mx-auto mb-12">
             From new installation to moisture remediation, our team handles every aspect of EIFS for
-            San Antonio homes and commercial properties.
+            Austin homes and commercial properties.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((item) => (
@@ -446,12 +446,12 @@ export default function EifsContractor() {
           <figure className="mt-12">
             <img
               src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEoOx-LSVXE0flAWzD9g7q_iyesV-OrkwybImQNyGwZnH2dofmUJ3H3v_Yf8BYXny4PnrZRAnEBHZ0ihAKQ9QzeKscIUQZ2kdfBceTcbgpre4eFlkGSxpeS6WuK4jJOkZ6AUFtfcKInLSvc=s1360-w1360-h1020-rw"
-              alt="Commercial multifamily building clad in EIFS in San Antonio, TX"
+              alt="Commercial multifamily building clad in EIFS in Austin, TX"
               className="w-full max-h-[28rem] object-cover rounded-2xl shadow-lg"
               loading="lazy"
             />
             <figcaption className="mt-3 text-center text-sm text-secondary-500">
-              Commercial and multifamily EIFS installation in the San Antonio metro.
+              Commercial and multifamily EIFS installation in the Austin metro.
             </figcaption>
           </figure>
         </div>
@@ -464,7 +464,7 @@ export default function EifsContractor() {
             EIFS vs. Traditional Stucco — Which Is Right for Your Project?
           </h2>
           <p className="text-secondary-600 leading-relaxed mb-8 max-w-3xl">
-            Many San Antonio homeowners and property managers aren't sure whether they have EIFS or
+            Many Austin homeowners and property managers aren't sure whether they have EIFS or
             traditional stucco, or which system makes more sense for their project. Here's a clear
             comparison:
           </p>
@@ -510,10 +510,10 @@ export default function EifsContractor() {
       <section className="py-20 bg-secondary-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold text-secondary-900 mb-4">
-            Common EIFS Problems in San Antonio
+            Common EIFS Problems in Austin
           </h2>
           <p className="text-secondary-600 leading-relaxed mb-10 max-w-3xl">
-            San Antonio's climate — hot summers, occasional freeze events, and seasonal humidity
+            Austin's climate — hot summers, occasional freeze events, and seasonal humidity
             cycles — creates specific stress patterns on EIFS. The most common EIFS problems we repair
             include:
           </p>
@@ -542,7 +542,7 @@ export default function EifsContractor() {
           </p>
           <img
             src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGEUl399ZEasljBiFN-u-pz_gxJFgs5mXImvKmG8Czf6ugWXKQKnb0dK1JU6aeTu35hOYqOLrV8bRLF8imSoHehIr4JL6zkumH9-DmoMDIzflwyk9AQjaBKfCk4XAmWPmXLucgFoDjH3ngK=s1360-w1360-h1020-rw"
-            alt="EIFS installation in progress on a San Antonio home with scaffolding"
+            alt="EIFS installation in progress on a Austin home with scaffolding"
             className="rounded-2xl shadow-lg w-full mb-12"
             loading="lazy"
           />
@@ -566,7 +566,7 @@ export default function EifsContractor() {
       <section className="py-20 bg-secondary-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold text-secondary-900 mb-10 text-center">
-            Why Choose Star Stucco for EIFS in San Antonio?
+            Why Choose Star Stucco for EIFS in Austin?
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {whyChoose.map((item) => (
@@ -589,7 +589,7 @@ export default function EifsContractor() {
             EIFS Frequently Asked Questions
           </h2>
           <p className="text-secondary-600 text-center mb-12">
-            Common questions about EIFS in San Antonio, answered by our team.
+            Common questions about EIFS in Austin, answered by our team.
           </p>
           <div className="rounded-2xl bg-white border border-secondary-200 px-6 sm:px-8">
             {faqs.map((faq) => (
@@ -603,11 +603,11 @@ export default function EifsContractor() {
       <section className="py-20 bg-secondary-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold text-secondary-900 mb-4 text-center">
-            EIFS Service Area — San Antonio and Surrounding Communities
+            EIFS Service Area — Austin and Surrounding Communities
           </h2>
           <p className="text-secondary-600 text-center max-w-2xl mx-auto mb-10">
             Star Stucco of Austin provides EIFS installation and repair services throughout the greater
-            San Antonio area, including:
+            Austin area, including:
           </p>
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-8">
             {serviceAreas.map((area) => (
@@ -618,7 +618,7 @@ export default function EifsContractor() {
             ))}
           </ul>
           <p className="text-secondary-600 text-center max-w-2xl mx-auto">
-            Not sure if we serve your area? Call us — we travel throughout Central and South Texas for
+            Not sure if we serve your area? Call us — we travel throughout Central Texas and the Hill Country for
             EIFS projects.
           </p>
         </div>
@@ -631,7 +631,7 @@ export default function EifsContractor() {
             EIFS Resources & Related Services
           </h2>
           <p className="text-secondary-600 text-center max-w-2xl mx-auto mb-12">
-            Learn more about EIFS and our other exterior services for San Antonio and Central Texas
+            Learn more about EIFS and our other exterior services for Austin and Central Texas
             properties.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -643,7 +643,7 @@ export default function EifsContractor() {
                 What Is EIFS?
               </h3>
               <p className="text-sm text-secondary-600 leading-relaxed">
-                A complete guide for San Antonio homeowners on what EIFS is, how it works, and how to
+                A complete guide for Austin homeowners on what EIFS is, how it works, and how to
                 tell it apart from traditional stucco.
               </p>
             </Link>
@@ -656,15 +656,15 @@ export default function EifsContractor() {
               </h3>
               <p className="text-sm text-secondary-600 leading-relaxed">
                 Cost, durability, energy efficiency, and repair — which exterior system is right for
-                your San Antonio home?
+                your Austin home?
               </p>
             </Link>
             <Link
-              to="/blog/eifs-repair-san-antonio"
+              to="/blog/eifs-repair-austin"
               className="group rounded-2xl bg-white p-6 shadow-sm border border-secondary-100 transition-all hover:shadow-lg hover:-translate-y-1"
             >
               <h3 className="font-display text-lg font-semibold text-secondary-900 mb-2 group-hover:text-primary-700 transition-colors">
-                EIFS Repair in San Antonio
+                EIFS Repair in Austin
               </h3>
               <p className="text-sm text-secondary-600 leading-relaxed">
                 Repair costs, common EIFS problems in Texas, and what a qualified EIFS contractor does
@@ -692,7 +692,7 @@ export default function EifsContractor() {
               to="/"
               className="text-primary-700 underline hover:text-primary-900 transition-colors"
             >
-              San Antonio stucco contractor
+              Austin stucco contractor
             </Link>
             , we're ready to help —{' '}
             <Link
@@ -710,11 +710,11 @@ export default function EifsContractor() {
       <section className="bg-secondary-900 py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
-            Get a Free EIFS Estimate in San Antonio
+            Get a Free EIFS Estimate in Austin
           </h2>
           <p className="text-secondary-300 text-lg mb-8">
             Ready to fix your EIFS or start a new installation? Star Stucco of Austin provides free,
-            no-obligation on-site estimates for all EIFS projects in San Antonio and the surrounding
+            no-obligation on-site estimates for all EIFS projects in Austin and the surrounding
             area. We'll assess your system, explain your options, and give you a clear written estimate
             — no pressure.
           </p>

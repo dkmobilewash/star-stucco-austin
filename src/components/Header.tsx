@@ -7,13 +7,13 @@ const stuccoDropdown = [
   { label: 'Residential Stucco', path: '/austin-stucco-installation' },
   { label: 'Commercial Stucco', path: '/austin-commercial-stucco' },
   { label: 'Stucco Repair', path: '/austin-stucco-repair' },
-  { label: 'EIFS Contractor — San Antonio', path: '/eifs-contractor-san-antonio' },
+  { label: 'EIFS Contractor', path: '/eifs-contractor-austin' },
 ]
 
 const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'Stucco', path: '/austin-stucco-services', dropdown: stuccoDropdown },
-  { label: 'EIFS', path: '/eifs-contractor-san-antonio' },
+  { label: 'EIFS', path: '/eifs-contractor-austin' },
   { label: 'Interior Plaster', path: '/austin-stucco-finishing' },
   { label: 'Stone Veneer', path: '/austin-stucco-installation' },
   { label: 'About', path: '/about' },

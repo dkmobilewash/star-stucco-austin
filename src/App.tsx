@@ -49,7 +49,7 @@ export default function App() {
         <Route path="/austin-stucco-repair" element={<StuccoRepair />} />
         <Route path="/austin-stucco-finishing" element={<StuccoFinishing />} />
         <Route path="/austin-commercial-stucco" element={<CommercialStucco />} />
-        <Route path="/eifs-contractor-san-antonio" element={<EifsContractor />} />
+        <Route path="/eifs-contractor-austin" element={<EifsContractor />} />
         <Route path="/service-area/austin" element={<AustinArea />} />
         <Route path="/service-area/round-rock" element={<RoundRockArea />} />
         <Route path="/service-area/cedar-park" element={<CedarParkArea />} />
