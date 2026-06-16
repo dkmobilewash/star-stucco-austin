@@ -151,7 +151,7 @@ If you're leaning toward stucco, [visit our homepage to learn more about Star St
     excerpt:
       'EIFS, or synthetic stucco, is one of the most misunderstood exterior systems in Texas. Here is exactly what it is, how it works, and how to tell if your San Antonio home has it.',
     date: '2026-06-10',
-    image: 'https://placehold.co/1200x600?text=What+Is+EIFS',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_T-3MV1OtBih-u0oeF_Vyvfd_XaGkx3cNZuehwhx162kOtcqjgF_51yy0YZK0ipqMxThkPhCygGUBK7cDw8tMr9is4pnZuQhMMYYcDYgN6md9qioStMSJcoWM6L53AwcpipPcWADoUZ03=s1360-w1360-h1020-rw',
     content: `If you own a home or commercial building in San Antonio, there is a good chance you have walked past EIFS hundreds of times without knowing it. Many San Antonio homeowners do not know whether their exterior is EIFS or traditional stucco — and the difference matters a great deal when it comes to maintenance, repair, and resale.
 
 Knowing which system you have changes everything about how you care for it. EIFS and traditional stucco look almost identical from the curb, but they are built from completely different materials, fail in different ways, and require different repair methods. Hiring the wrong contractor for an EIFS repair can trap moisture inside your walls and turn a small problem into a major one.
@@ -255,7 +255,7 @@ EIFS is a proven, energy-efficient cladding system that performs beautifully in 
     excerpt:
       'EIFS and traditional stucco look nearly identical, but they perform very differently. Here is an honest, side-by-side comparison for San Antonio homeowners.',
     date: '2026-06-12',
-    image: 'https://placehold.co/1200x600?text=EIFS+vs+Traditional+Stucco',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2oN53IGNOy9hnwdS5e6L2kZerK7tVPo10ZaP3BdaGGSeuJznmlNC4_oHgmjHdsoJiu8XfFTPg2y-YufO37U942U4SFFmLk0_0knf0ruJZ44dTv2UIP10U0P1uOHT5rXTyO9n97m756S8v=s1360-w1360-h1020-rw',
     content: `Drive through almost any San Antonio neighborhood and you will see stucco-look exteriors everywhere — a nod to the city's deep Spanish colonial architectural tradition. What is not obvious from the street is that some of those homes are clad in traditional cement stucco and others in EIFS, the synthetic alternative. The two look nearly identical, yet they behave very differently when it comes to insulation, durability, repair, and cost.
 
 If you are building, renovating, or simply trying to maintain your home, understanding the difference helps you make better decisions and hire the right contractor. Here is an honest comparison.
@@ -318,7 +318,7 @@ There is no single "best" answer — the right system depends on your priorities
     excerpt:
       'Most EIFS damage is repairable when caught early and handled by the right contractor. Here is what to look for, what repairs cost in San Antonio, and what to expect.',
     date: '2026-06-14',
-    image: 'https://placehold.co/1200x600?text=EIFS+Repair+San+Antonio',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAF2hTkWVGrD3vcTQtjx7Ou7wTXIfPRknLXCXY_rqMyPV4aJh9sVZedYOkSstzsxZIarzonm1DkRlYYU9coexooVMchAwLeXthNHsGRxys3CWQhjTui-d1U1lwJItvFsBUQR3wono7pDW2Rk=s1360-w1360-h1020-rw',
     content: `If your EIFS is cracking, staining, or feeling soft in spots, the good news is that EIFS is repairable in the vast majority of cases. The key is catching problems early and using a contractor who understands the system. EIFS is a layered, manufacturer-specific assembly, and a repair done with the wrong materials or method can trap moisture and make things worse. This guide explains how to recognize when your EIFS needs attention, what repairs typically cost in San Antonio, and exactly what a qualified contractor does.
 
 ## How to Know If Your EIFS Needs Repair
