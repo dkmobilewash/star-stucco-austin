@@ -60,6 +60,11 @@ export default function Footer() {
                   Thin Stone Veneer
                 </Link>
               </li>
+              <li>
+                <Link to="/blog" className="text-sm hover:text-white transition-colors">
+                  Blog & Resources
+                </Link>
+              </li>
             </ul>
           </div>
 
