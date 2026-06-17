@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, Hop as Home, Shield, Thermometer, MapPin } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
+import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 
 const faqs: FAQ[] = [
@@ -244,6 +245,15 @@ export default function StuccoInstallation() {
 
       {/* FAQ Section */}
       <FAQSection faqs={faqs} subtitle="Common questions about stucco installation in Austin, answered by our team." />
+
+      {/* Related Links */}
+      <RelatedLinks
+        links={[
+          { label: 'Cost to Stucco a House', path: '/blog/cost-to-stucco-a-house-austin', desc: 'What it costs to stucco a house in Austin by system type and home size.' },
+          { label: 'Stucco Finishes Guide', path: '/blog/stucco-finishes-guide', desc: 'Smooth, Santa Barbara, dash, and lace finishes explained — and which suits your home.' },
+          { label: 'EIFS / Synthetic Stucco', path: '/eifs-contractor-austin', desc: 'Energy-efficient EIFS as an insulated alternative to traditional stucco.' },
+        ]}
+      />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

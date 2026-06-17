@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, Palette, Sun, Layers, Eye } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
+import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 
 const faqs: FAQ[] = [
@@ -227,6 +228,16 @@ export default function StuccoFinishing() {
 
       {/* FAQ Section */}
       <FAQSection faqs={faqs} subtitle="Common questions about stucco finishes and textures in Austin, answered by our team." />
+
+      {/* Related Links */}
+      <RelatedLinks
+        links={[
+          { label: 'Stucco Finishes Guide', path: '/blog/stucco-finishes-guide', desc: 'A deeper look at each finish type — smooth, Santa Barbara, dash, and lace.' },
+          { label: 'Stucco Installation', path: '/austin-stucco-installation', desc: 'New construction and re-stucco for Austin homes, finished to your chosen texture.' },
+          { label: 'Stucco Repair', path: '/austin-stucco-repair', desc: 'Crack, water-damage, and texture-matched repairs that blend with your finish.' },
+        ]}
+        title="Related Services & Resources"
+      />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">
