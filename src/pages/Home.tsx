@@ -2,6 +2,19 @@ import { Link } from 'react-router-dom'
 import { CircleCheck as CheckCircle, Shield, Clock, Award, Users, Heart, ChevronRight, Phone, Quote } from 'lucide-react'
 import SEO from '../components/SEO'
 import { siteConfig } from '../lib/siteConfig'
+import { blogPosts } from '../data/blogPosts'
+
+const latestPosts = [...blogPosts]
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 3)
+
+function formatDate(dateString: string): string {
+  return new Date(dateString + 'T00:00:00').toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
+}
 
 const services = [
   {
@@ -25,7 +38,7 @@ const services = [
   {
     title: 'EIFS',
     description: 'We install Exterior Insulation and Finish Systems — lightweight, energy-efficient cladding for any building.',
-    path: '/austin-stucco-finishing',
+    path: '/eifs-contractor-austin',
     image: 'https://npicommercial.com/wp-content/uploads/sites/188/2024/07/Blog-Photo-03.jpg',
   },
   {
@@ -307,6 +320,56 @@ export default function Home() {
                 <p className="text-sm font-semibold text-secondary-900">— {t.author}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest from Blog */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
+              Latest Stucco Tips &amp; Guides
+            </h2>
+            <p className="text-secondary-600 text-lg">
+              Expert advice for Austin homeowners — from repair costs to EIFS, Dryvit, and moisture remediation.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {latestPosts.map((post) => (
+              <Link
+                key={post.slug}
+                to={`/blog/${post.slug}`}
+                className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm border border-secondary-100 transition-all hover:shadow-xl hover:-translate-y-1"
+              >
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <p className="text-xs font-medium text-primary-700 mb-2">{formatDate(post.date)}</p>
+                  <h3 className="font-display text-lg font-semibold text-secondary-900 mb-3 group-hover:text-primary-700 transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-secondary-600 leading-relaxed flex-1">{post.excerpt}</p>
+                  <span className="mt-4 inline-flex items-center text-sm font-medium text-primary-700">
+                    Read More <ChevronRight className="ml-1 h-4 w-4" />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              to="/blog"
+              className="inline-flex items-center rounded-lg border border-secondary-300 px-6 py-3 text-sm font-semibold text-secondary-700 transition-all hover:border-secondary-400 hover:bg-secondary-50"
+            >
+              View All Articles <ChevronRight className="ml-2 h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
