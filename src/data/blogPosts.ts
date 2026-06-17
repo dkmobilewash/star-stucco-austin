@@ -576,4 +576,229 @@ Star Stucco of Austin provides free, no-obligation stucco repair estimates throu
       },
     ],
   },
+  {
+    slug: 'stucco-crack-repair-austin',
+    title: 'Stucco Crack Repair in Austin, TX: Causes, Fixes & Cost',
+    seoTitle: 'Stucco Crack Repair in Austin, TX: Causes, Fixes & Cost | Star Stucco',
+    seoDescription:
+      'Why stucco cracks in Austin, the different crack types, when they are serious, DIY vs. pro, and what crack repair costs. Free estimates from Star Stucco of Austin.',
+    h1: 'Stucco Crack Repair in Austin, TX: Why Cracks Happen & How to Fix Them',
+    excerpt:
+      'Stucco cracks are common on Austin homes — but some are harmless and some let water in. Here is how to tell the difference, what repair involves, and what it costs.',
+    date: '2026-06-17',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1i9jAG3XB6C9PbVCOXqpjT4I1aKypL3IcwM7dX8sygD6D5Ma45nL_ifBvJ8JeBpJaiThipCbC96nZI5yQIKVQyf6qEO7eges0BHuono-yKdqaynwrhvpUULfXs0tQhspuaRd5zCGptLg=s1360-w1360-h1020-rw',
+    content: `Cracks are the most common stucco problem we see on Austin homes — and one of the most misunderstood. Some cracks are purely cosmetic; others are an open door for water that leads to thousands of dollars in hidden damage. This guide explains why stucco cracks in Austin, how to read the different types, when to worry, and what repair actually involves.
+
+## Why Stucco Cracks in Austin
+
+Austin sits on some of the most expansive clay soil in Texas. When heavy rain saturates the ground the clay swells; during long dry spells it shrinks. That constant movement flexes foundations and walls, and stucco — a rigid material — cracks under the stress. Add brutal summer heat (south- and west-facing walls regularly exceed 140°F surface temperature) and the daily expansion-and-contraction cycle, and hairline cracks are almost inevitable over time. Other common triggers include missing or poorly placed control joints, original installation defects, and normal building settlement.
+
+## Types of Stucco Cracks
+
+Not all cracks mean the same thing:
+
+- **Hairline cracks** — Very thin, shallow cracks from thermal movement and curing. Usually cosmetic, but worth sealing before water gets in.
+- **Spider / map cracking** — A web of fine cracks across an area, often from a too-rich finish coat or fast curing. Mostly cosmetic.
+- **Cracks around windows and doors** — Diagonal cracks radiating from corners of openings. Very common and often tied to movement or weak flashing detail — these need attention because openings are prime water-entry points.
+- **Stair-step / vertical cracks** — Larger cracks that follow a path or run vertically can indicate foundation movement and should be evaluated promptly.
+- **Cracks at control joints** — Where the system was designed to move; failed sealant here lets water behind the wall.
+
+## When a Stucco Crack Is Serious
+
+A crack moves from cosmetic to urgent when it can admit water. Watch for cracks wider than a credit-card edge, cracks with staining or efflorescence (white deposits) nearby, cracks that keep returning after patching, soft spots beside the crack, or any interior water stains on the other side of the wall. Any of these means moisture may already be reaching the substrate — at which point you need more than a surface fill. See our guide to [stucco remediation](/austin-stucco-remediation) for what that involves.
+
+## Should You DIY Stucco Crack Repair?
+
+Sealing a single hairline crack with the right flexible, paintable sealant is within reach of a careful homeowner. But most crack repair benefits from a pro, for three reasons: matching the surrounding texture and color is genuinely difficult, the wrong filler cracks again within a season, and a crack that looks minor can be hiding moisture damage that only an experienced eye (and a moisture meter) will catch. A bad patch often costs more to redo than doing it right the first time.
+
+## Our Stucco Crack Repair Process
+
+1. **Inspection** — We assess the crack type, check for moisture, and determine the underlying cause.
+2. **Preparation** — The crack is cleaned out and widened slightly so the repair material can key in and bond.
+3. **Repair** — We fill and reinforce as needed, addressing any compromised base coat or mesh, not just the surface.
+4. **Texture & color match** — The patch is textured and colored to blend with the surrounding wall.
+5. **Sealing** — Joints and penetrations near the repair are sealed to keep water out.
+
+## How Much Does Stucco Crack Repair Cost in Austin?
+
+Minor crack repair in Austin typically runs **$300–$600**, with larger or multiple cracks and any associated moisture work costing more. Because hidden water damage is the biggest cost driver, every repair starts with an assessment. For full pricing across repair types, see our [Austin stucco repair cost guide](/blog/stucco-repair-cost-austin).
+
+## Don't Let Small Cracks Become Big Repairs
+
+The cheapest stucco repair is the crack you seal before water finds it. If you're seeing cracks — especially around windows, at corners, or with any staining — get them looked at early. Star Stucco of Austin is a licensed [stucco contractor in Austin TX](/) offering free, no-pressure inspections. Explore our [stucco repair services](/austin-stucco-repair) or [request a free estimate](/contact) today.`,
+    faqs: [
+      {
+        question: 'Are stucco cracks normal?',
+        answer:
+          'Some are. Fine hairline cracks from thermal movement and curing are common and usually cosmetic. What matters is whether a crack can let water in — cracks around windows and doors, cracks wider than a credit-card edge, or cracks with staining nearby should be repaired promptly to prevent moisture damage behind the wall.',
+      },
+      {
+        question: 'How much does it cost to repair stucco cracks in Austin?',
+        answer:
+          'Minor crack repair in Austin typically costs $300–$600. Larger cracks, multiple areas, or repairs that uncover hidden moisture damage cost more. We provide free on-site estimates so you know the price before any work begins.',
+      },
+      {
+        question: 'Can I just paint over stucco cracks?',
+        answer:
+          'No — paint hides a crack temporarily but does not stop water from entering, and the crack will telegraph back through. Cracks should be properly cleaned, filled with a compatible flexible material, and texture-matched, then sealed. Painting over an active crack often makes the eventual repair harder.',
+      },
+      {
+        question: 'Why do my stucco cracks keep coming back?',
+        answer:
+          'Recurring cracks usually mean the underlying cause was never addressed — ongoing foundation movement, a missing control joint, or a patch that was too rigid for the wall’s movement. A proper repair diagnoses why the crack formed and uses materials that flex with the wall, so it lasts.',
+      },
+    ],
+  },
+  {
+    slug: 'cost-to-stucco-a-house-austin',
+    title: 'How Much Does It Cost to Stucco a House in Austin, TX?',
+    seoTitle: 'How Much Does It Cost to Stucco a House in Austin? (2026) | Star Stucco',
+    seoDescription:
+      'What it costs to stucco a house in Austin in 2026 — price per square foot, totals by home size, three-coat vs. one-coat vs. EIFS, and what drives the cost.',
+    h1: 'How Much Does It Cost to Stucco a House in Austin, TX?',
+    excerpt:
+      'A clear 2026 breakdown of what it costs to stucco a house in Austin — by square foot and by home size — plus the factors that move the price up or down.',
+    date: '2026-06-17',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2oN53IGNOy9hnwdS5e6L2kZerK7tVPo10ZaP3BdaGGSeuJznmlNC4_oHgmjHdsoJiu8XfFTPg2y-YufO37U942U4SFFmLk0_0knf0ruJZ44dTv2UIP10U0P1uOHT5rXTyO9n97m756S8v=s1360-w1360-h1020-rw',
+    content: `Stucco is one of the most popular exteriors in Central Texas — durable, energy-smart, and a natural fit for Hill Country and Spanish-style architecture. If you're planning a new build or re-siding an existing home, the first question is usually cost. Here's a clear 2026 breakdown of what it costs to stucco a house in Austin.
+
+## Average Cost to Stucco a House in Austin
+
+For installed stucco (materials and labor), Austin pricing in 2026 generally falls in these ranges:
+
+| System | Typical Cost (per sq ft) |
+|---|---|
+| One-coat stucco system | $7–$10 |
+| Traditional three-coat stucco | $9–$15 |
+| EIFS / synthetic stucco | $10–$16 |
+| Re-stucco over existing surface | $8–$13 |
+| Stucco removal & full replacement | $12–$18+ |
+
+Most quotes are based on wall (exterior) square footage, not floor area.
+
+## Total Cost by Home Size
+
+Translating that to whole-home projects, here are rough total ranges for typical Austin homes (exterior wall area scales with home size and number of stories):
+
+| Home Size | Estimated Stucco Cost |
+|---|---|
+| ~1,500 sq ft (1 story) | $8,000–$18,000 |
+| ~2,000 sq ft | $12,000–$25,000 |
+| ~2,500–3,000 sq ft | $18,000–$35,000+ |
+| Large / custom (2-story) | $35,000–$60,000+ |
+
+These are planning estimates — the only accurate number comes from an on-site measurement and assessment.
+
+## What Affects the Cost
+
+- **System type** — Three-coat and EIFS cost more than one-coat but offer different performance benefits.
+- **New construction vs. re-stucco** — Re-stucco over a sound surface is cheaper than tearing off old material; full removal and replacement is the most expensive.
+- **Number of stories & access** — Two-story walls and hard-to-reach areas add scaffolding and labor.
+- **Finish & texture** — Smooth finishes require more skilled labor than heavier textures; custom colors add cost. See our [stucco finishes guide](/blog/stucco-finishes-guide).
+- **Prep & repairs** — Substrate repair, new weather barrier, flashing, and control joints all factor in.
+- **Architectural detail** — Arches, trim, and decorative elements increase labor.
+
+## Is Stucco Worth It in Austin?
+
+For most Austin homes, yes. Properly installed stucco lasts 50+ years, offers excellent thermal mass that helps tame summer cooling bills, and resists fire and pests. It also tends to add resale value in Austin's stucco-friendly neighborhoods. The key is installation quality — a cheap, poorly applied job cracks early and costs more over its life than a well-built one.
+
+## New Stucco vs. EIFS
+
+If energy efficiency is a priority, EIFS (synthetic stucco) adds a continuous foam-insulation layer that traditional cement stucco doesn't have. It costs a bit more up front but can lower cooling costs over time. Read our comparison of [EIFS vs. traditional stucco](/blog/eifs-vs-traditional-stucco), or learn about our [EIFS contractor services](/eifs-contractor-austin).
+
+## Get an Accurate Quote
+
+Square-foot ranges are a starting point, but your real cost depends on your home's size, condition, system, and finish. Star Stucco of Austin provides free, detailed written estimates. As your local [stucco contractor in Austin TX](/), we'll measure, recommend the right system, and give you a clear number. See our [stucco installation services](/austin-stucco-installation) or [request a free estimate](/contact) today.`,
+    faqs: [
+      {
+        question: 'How much does it cost to stucco a 2,000 sq ft house in Austin?',
+        answer:
+          'A typical 2,000 sq ft Austin home generally runs about $12,000–$25,000 for installed stucco, depending on the system (one-coat, three-coat, or EIFS), number of stories, finish, and any prep or repairs needed. An on-site measurement gives the accurate figure.',
+      },
+      {
+        question: 'Is stucco cheaper than other siding in Austin?',
+        answer:
+          'Stucco is competitive with mid-to-upper siding options. It can cost more up front than basic lap siding but typically lasts far longer with less maintenance, and it delivers thermal and fire-resistance benefits that many sidings don’t. Over a 30-year horizon the total cost of ownership is often favorable.',
+      },
+      {
+        question: 'Does it cost more to re-stucco or to stucco new construction?',
+        answer:
+          'Re-stucco over a sound existing surface is usually the most economical. New construction is mid-range. The most expensive scenario is removing failed stucco and rebuilding the full system, because it adds demolition, disposal, and substrate repair.',
+      },
+      {
+        question: 'Why is EIFS more expensive than traditional stucco?',
+        answer:
+          'EIFS includes a continuous foam insulation board and specialized, manufacturer-specific materials and labor, which add to the upfront cost. In return it provides better energy efficiency than cement stucco, which can offset some of the difference through lower cooling bills in Austin’s climate.',
+      },
+    ],
+  },
+  {
+    slug: 'stucco-finishes-guide',
+    title: 'Stucco Finish Types Explained: Smooth, Santa Barbara, Dash & Lace',
+    seoTitle: 'Stucco Finishes Explained: Smooth, Santa Barbara, Dash & Lace | Austin',
+    seoDescription:
+      'A guide to stucco finish types — smooth, sand/float, Santa Barbara, dash, and lace — with the pros, looks, and which finishes work best for Austin homes.',
+    h1: 'Stucco Finish Types Explained: Smooth, Santa Barbara, Dash & Lace',
+    excerpt:
+      'The finish coat defines your home’s entire look. Here are the main stucco finish types, how each one looks and performs, and which suit Austin homes best.',
+    date: '2026-06-17',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_T-3MV1OtBih-u0oeF_Vyvfd_XaGkx3cNZuehwhx162kOtcqjgF_51yy0YZK0ipqMxThkPhCygGUBK7cDw8tMr9is4pnZuQhMMYYcDYgN6md9qioStMSJcoWM6L53AwcpipPcWADoUZ03=s1360-w1360-h1020-rw',
+    content: `The finish coat is the layer everyone actually sees — it sets the entire character of a stucco home, from sleek and modern to rustic and Mediterranean. Choosing the right finish is part aesthetics and part performance, especially in Austin's demanding climate. Here's a plain-English guide to the main stucco finishes.
+
+## Smooth Finish
+
+A smooth finish is the cleanest, most contemporary look — flat and refined, popular on modern Austin builds in areas like South Congress, East Austin, and the Domain. It's beautiful but the least forgiving: it shows every imperfection and requires master-level trowel work. Because it has little texture to mask movement, smooth finishes demand expert application to resist hairline cracking.
+
+## Sand / Float Finish
+
+A sand (or float) finish has a fine, uniform grain created with a sponge or foam float. It offers a warm, understated look that pairs well with Hill Country stone accents and earth-toned palettes. The light texture hides minor imperfections better than smooth, making it a practical, popular middle ground.
+
+## Santa Barbara Finish
+
+Named for the California coastal style, the Santa Barbara finish is hand-troweled with subtle undulation and variation that evokes traditional Spanish Colonial and Mediterranean architecture. It's a favorite on Westlake Hills and Barton Creek estates. The hand-applied character hides imperfections and gives each wall a custom, artisanal feel.
+
+## Dash Finish
+
+A dash finish is created by spraying or "dashing" aggregate onto the wall for a coarse, uniform, bumpy texture. It's extremely durable and excellent at hiding both imperfections and future repairs — which makes it well suited to Austin's weather extremes and to homes where low-maintenance durability matters most.
+
+## Lace & Skip-Trowel Finish
+
+Lace (and the related skip-trowel) finish combines a textured base with smoother troweled-on areas, creating a varied, dappled pattern. It's one of the best at concealing imperfections and patch repairs, which is why it's so common on production and mid-century homes. It offers a lot of visual interest and forgives a lot.
+
+## Which Stucco Finish Is Best for Austin?
+
+There's no single "best" — it depends on your architecture and priorities:
+
+- **Modern / minimalist home:** smooth or fine sand finish
+- **Spanish / Mediterranean / Hill Country:** Santa Barbara or lace
+- **Maximum durability / low maintenance:** dash or lace
+- **Hiding an aging or previously repaired wall:** dash or lace
+
+In Austin's intense UV and thermal cycling, heavier textures (dash, lace, Santa Barbara) tend to age more gracefully because they disguise the hairline movement that smooth finishes reveal. Whatever the finish, application quality and proper control joints matter more than the texture itself.
+
+## Color & Matching
+
+Stucco color can be integrated directly into the finish coat (so it won't peel like paint) or applied as an elastomeric coating that adds a waterproofing layer. Matching an existing finish — especially a weathered one — is a craft in itself; our team color- and texture-matches so repairs and additions blend seamlessly.
+
+## See Finishes in Person
+
+The best way to choose is to see and feel samples on your own home. Star Stucco of Austin offers on-site finish consultations across the metro. Learn more about our [stucco finishing services](/austin-stucco-finishing), explore [new stucco installation](/austin-stucco-installation), or — as your local [stucco contractor in Austin TX](/) — [request a free estimate](/contact) and we'll help you pick the perfect finish.`,
+    faqs: [
+      {
+        question: 'What is the most popular stucco finish in Austin?',
+        answer:
+          'Smooth and Santa Barbara finishes are the most requested in Austin. Smooth suits modern builds, while the hand-troweled Santa Barbara texture fits the Spanish Colonial and Hill Country styles common in neighborhoods like Westlake Hills and Barton Creek. Dash and lace remain popular for their durability and ability to hide imperfections.',
+      },
+      {
+        question: 'Which stucco finish is most durable?',
+        answer:
+          'Heavier textures like dash and lace are the most forgiving and durable in practice, because they hide hairline movement and future patch repairs and weather Austin’s UV and temperature swings well. Smooth finishes look stunning but require expert application to resist visible cracking.',
+      },
+      {
+        question: 'Can I change my stucco finish without redoing the whole wall?',
+        answer:
+          'Often yes. Depending on the existing surface, a new finish coat can be applied over sound stucco to change the texture or color, and elastomeric finishes can refresh appearance while adding waterproofing. An on-site assessment determines whether a re-coat or a more involved refinish is the right approach.',
+      },
+    ],
+  },
 ]
