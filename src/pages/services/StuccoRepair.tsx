@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { CircleCheck as CheckCircle, ChevronRight, Phone, TriangleAlert as AlertTriangle, Droplets, Wrench, Search, Shield, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import SEO from '../../components/SEO'
+import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 
 const schema = {
@@ -372,6 +373,15 @@ export default function StuccoRepair() {
           </div>
         </div>
       </section>
+
+      {/* Related Links */}
+      <RelatedLinks
+        links={[
+          { label: 'Stucco Remediation', path: '/austin-stucco-remediation', desc: 'When moisture has gotten behind the stucco, remediation fixes the root cause — not just the surface.' },
+          { label: 'Stucco Crack Repair Guide', path: '/blog/stucco-crack-repair-austin', desc: 'Why stucco cracks in Austin, which cracks are serious, and how they are properly repaired.' },
+          { label: 'Stucco Repair Cost Guide', path: '/blog/stucco-repair-cost-austin', desc: 'What stucco repair costs in Austin by repair type — and what drives the price.' },
+        ]}
+      />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

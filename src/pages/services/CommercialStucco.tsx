@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronRight, ChevronDown, Phone, Building2, HardHat, Clock, FileCheck, Shield, Wrench } from 'lucide-react'
 import SEO from '../../components/SEO'
+import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 
 const schema = {
@@ -369,6 +370,15 @@ export default function CommercialStucco() {
           </div>
         </div>
       </section>
+
+      {/* Related Links */}
+      <RelatedLinks
+        links={[
+          { label: 'EIFS / Synthetic Stucco', path: '/eifs-contractor-austin', desc: 'Commercial EIFS installation and repair for offices, retail, and multifamily buildings.' },
+          { label: 'Stucco Remediation', path: '/austin-stucco-remediation', desc: 'Moisture and water-damage remediation for commercial properties and HOAs.' },
+          { label: 'Stucco Installation', path: '/austin-stucco-installation', desc: 'Large-scale new stucco installation across the Austin metro.' },
+        ]}
+      />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

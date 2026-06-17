@@ -37,7 +37,7 @@ Austin's climate presents unique challenges for stucco. With average summer temp
 
 ## Get Expert Advice
 
-At Star Stucco of Austin, we help homeowners across Travis County select the perfect finish for their home's style and location. Contact us for a free consultation and see samples of each finish type in person.`,
+At Star Stucco of Austin, we help homeowners across Travis County select the perfect finish for their home's style and location. Learn more about our [stucco finishing services](/austin-stucco-finishing), dive deeper in our [stucco finishes guide](/blog/stucco-finishes-guide), or — as your local [Austin stucco contractor](/) — [request a free consultation](/contact) and see samples of each finish type in person.`,
   },
   {
     slug: 'stucco-repair-signs-austin',
@@ -69,7 +69,7 @@ If chunks of stucco are falling off your home, you have an urgent repair need. A
 
 ## Act Early, Save Money
 
-At Star Stucco of Austin, we offer free inspections for homeowners throughout the Austin metro area. Catching damage early can save thousands in repair costs. Call us at (512) 555-0142 for a same-day assessment.`,
+At Star Stucco of Austin, we offer free inspections for homeowners throughout the Austin metro area. Catching damage early can save thousands in repair costs. Explore our [stucco repair services](/austin-stucco-repair), read our [stucco crack repair guide](/blog/stucco-crack-repair-austin), or — as your trusted [Austin stucco contractor](/) — [request a free inspection](/contact) today.`,
   },
   {
     slug: 'stucco-vs-hardie-board-austin',

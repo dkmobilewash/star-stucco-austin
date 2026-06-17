@@ -120,7 +120,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Star Stucco of Austin | Free Estimate Austin, TX"
-        description="Contact Star Stucco of Austin for a free stucco estimate. Call (512) 555-0142 or fill out our form. Serving Austin, TX and Travis County with expert stucco services."
+        description="Contact Star Stucco of Austin for a free stucco estimate. Call (512) 706-9699 or fill out our form. Serving Austin, TX and Travis County with expert stucco services."
         path="/contact"
         schema={schema}
       />
