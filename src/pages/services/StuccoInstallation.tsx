@@ -1,7 +1,31 @@
 import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, Hop as Home, Shield, Thermometer, MapPin } from 'lucide-react'
 import SEO from '../../components/SEO'
+import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
 import { siteConfig } from '../../lib/siteConfig'
+
+const faqs: FAQ[] = [
+  {
+    question: 'How much does stucco installation cost in Austin?',
+    answer:
+      'New stucco installation in Austin typically runs about $8 to $15 per square foot depending on the system (traditional three-coat vs. one-coat or EIFS), the finish texture, wall height and accessibility, and prep work required. New construction and full re-stucco projects are quoted per project after an on-site assessment. We provide free, detailed written estimates.',
+  },
+  {
+    question: 'How long does a stucco installation take?',
+    answer:
+      'A typical residential stucco installation takes one to two weeks. Three-coat systems require curing time between the scratch, brown, and finish coats, so weather and humidity affect the schedule. We confirm a timeline up front and account for Austin’s dry summers and occasional wet spells in our curing plan.',
+  },
+  {
+    question: 'Is stucco a good choice for the Austin climate?',
+    answer:
+      'Yes. Properly installed stucco performs very well in Central Texas. It offers excellent thermal mass that helps regulate indoor temperatures during hot Austin summers, resists fire and pests, and lasts 50+ years when installed correctly with proper control joints and a quality weather-resistant barrier to handle our expansive clay soils and temperature swings.',
+  },
+  {
+    question: 'Do you handle both new construction and re-stucco projects?',
+    answer:
+      'Yes. We provide ground-up stucco installation for new construction as well as complete re-stucco of existing exteriors, including removing old siding or failed stucco. Every project meets or exceeds Travis County and City of Austin building code requirements.',
+  },
+]
 
 const schema = {
   '@context': 'https://schema.org',
@@ -43,7 +67,7 @@ export default function StuccoInstallation() {
         title="Stucco Installation Austin, TX | Star Stucco of Austin"
         description="Expert stucco installation in Austin, TX for new construction and re-stucco projects. Travis County code compliant. Serving Westlake, Barton Creek, Mueller, and all Austin neighborhoods. Free estimates."
         path="/austin-stucco-installation"
-        schema={schema}
+        schema={[schema, faqPageSchema(faqs)]}
       />
 
       {/* Hero Section */}
@@ -217,6 +241,9 @@ export default function StuccoInstallation() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection faqs={faqs} subtitle="Common questions about stucco installation in Austin, answered by our team." />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

@@ -409,4 +409,171 @@ Most EIFS problems are very fixable when you act early and hire the right team. 
       },
     ],
   },
+  {
+    slug: 'dryvit-repair-austin',
+    title: 'Dryvit Repair in Austin, TX: Costs, Process & Common Problems',
+    seoTitle: 'Dryvit Repair Austin TX | Synthetic Stucco (EIFS) Specialists | Star Stucco',
+    seoDescription:
+      'Dryvit repair in Austin, TX. Learn what Dryvit is, common Dryvit problems, repair costs, and why it needs an EIFS specialist. Free estimates from Star Stucco.',
+    h1: 'Dryvit Repair in Austin, TX: What Homeowners Need to Know',
+    excerpt:
+      'Dryvit is the most common EIFS brand on Austin homes and buildings. Here is what Dryvit is, how it fails, what repairs cost, and why it needs a qualified specialist.',
+    date: '2026-06-15',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_T-3MV1OtBih-u0oeF_Vyvfd_XaGkx3cNZuehwhx162kOtcqjgF_51yy0YZK0ipqMxThkPhCygGUBK7cDw8tMr9is4pnZuQhMMYYcDYgN6md9qioStMSJcoWM6L53AwcpipPcWADoUZ03=s1360-w1360-h1020-rw',
+    content: `If you own a home or commercial building in Austin with a synthetic stucco exterior, there is a strong chance the system is Dryvit. Dryvit is the brand that introduced EIFS (Exterior Insulation and Finish Systems) to the United States, and it remains one of the most widely installed synthetic stucco systems across Central Texas. When that finish cracks, stains, or starts letting water in, you need Dryvit repair done by someone who understands the system — not a general handyman.
+
+This guide explains what Dryvit is, the problems we see most often on Austin properties, what repairs typically cost, and why Dryvit repair is a job for a qualified EIFS specialist.
+
+## What Is Dryvit?
+
+Dryvit is a manufacturer of EIFS — a multi-layer exterior cladding built around a foam insulation board, a polymer base coat with embedded fiberglass mesh, and a textured acrylic finish coat. Because the finish looks like traditional cement stucco, most homeowners simply call it "stucco" and never realize they have a Dryvit synthetic system until something goes wrong. Dryvit is not the only EIFS brand — Parex, Sto, Master Wall, and Senergy are also common — but it is the one we encounter most often in Austin. To understand the full system, see our guide to [what EIFS is](/blog/what-is-eifs).
+
+## Common Dryvit Problems in Austin
+
+Austin's expansive clay soils, intense UV, and seasonal swings from hard freezes to 100°F-plus summers put real stress on Dryvit. The issues we repair most often include:
+
+- **Cracking at windows, doors, and corners** — the most common failure point, usually where flashing or sealant has aged or was installed incorrectly.
+- **Failed caulk joints** — sealant has a shorter lifespan than the Dryvit itself and is the number-one entry point for water.
+- **Moisture intrusion behind the system** — once water gets past a crack or joint, it can reach and rot the sheathing, turning a small fix into a major one.
+- **Impact damage** — hail and lawn equipment dent or puncture the finish coat.
+- **Delamination and bubbling** — layers separating from the substrate, typically from trapped moisture.
+- **Fading and chalking** — years of Austin sun weather the acrylic finish; recoating restores both appearance and waterproofing.
+
+## How Dryvit Repair Works
+
+A proper Dryvit repair restores the whole layered system, not just the surface:
+
+1. **Inspection and moisture assessment** — we check whether water has reached the substrate before touching the finish.
+2. **Removal of damaged material** — finish coat, base coat, mesh, and foam are cut back to sound material.
+3. **Substrate repair** — any moisture-damaged sheathing is replaced.
+4. **Rebuild** — new foam, base coat, and fiberglass mesh are installed to Dryvit specification.
+5. **Finish and color match** — a matching textured finish coat is applied so the repair blends in.
+6. **Sealant and flashing** — all joints and penetrations are re-sealed to keep water out.
+
+## Dryvit Repair Cost in Austin
+
+Pricing depends on the size of the damage and whether moisture has reached the substrate. As a general guide for the Austin market:
+
+| Repair Type | Typical Cost Range |
+|---|---|
+| Minor crack & sealant repair | $200–$500 |
+| Impact / patch repair (up to 4 sq ft) | $300–$800 |
+| Moisture remediation (per section) | $1,200–$4,000+ |
+| Section replacement (per 100 sq ft) | $2,000–$6,000+ |
+
+These are estimates — every wall is different, and hidden moisture is the biggest variable. We provide free on-site quotes before any work begins.
+
+## Why Dryvit Repair Needs a Specialist
+
+Dryvit looks patchable, but it is an engineered, manufacturer-specific system. A generic caulk or mismatched patch can trap moisture inside the wall, void the manufacturer warranty, and fail within a season. Because the finish, base coat, mesh, and foam all have to be matched and reintegrated, Dryvit repair is one of the few exterior jobs where DIY usually costs more in the long run. As your local [EIFS contractor in Austin](/eifs-contractor-austin), we work with Dryvit and every other major EIFS brand, color-match the finish, and back our work with a warranty.
+
+## Get a Free Dryvit Repair Estimate
+
+If your synthetic stucco is cracking, staining, or feeling soft, don't wait for the next storm to make it worse. Star Stucco of Austin is a licensed [stucco contractor in Austin TX](/) and EIFS specialist serving the whole metro. Request a [free estimate](/contact) today, or read our overview of the [EIFS repair process in Austin](/blog/eifs-repair-austin) to know what to expect.`,
+    faqs: [
+      {
+        question: 'Is Dryvit the same as stucco?',
+        answer:
+          'Not exactly. Dryvit is a brand of EIFS (synthetic stucco) — a layered system built around a foam insulation board with an acrylic finish coat. It looks like traditional cement stucco but is a different system that requires specialized repair. Many Austin homeowners do not realize they have Dryvit until a repair is needed.',
+      },
+      {
+        question: 'How do I know if I have Dryvit or another EIFS brand?',
+        answer:
+          'From the outside, EIFS brands look nearly identical. The system is often identified during inspection from the original construction documents, manufacturer markings, or the materials found when a repair is opened up. The good news is that the repair approach is similar across Dryvit, Parex, Sto, and Master Wall — what matters is hiring a contractor experienced with EIFS.',
+      },
+      {
+        question: 'How much does Dryvit repair cost in Austin?',
+        answer:
+          'Minor crack and sealant repairs typically run $200–$500, patch repairs $300–$800, and larger moisture remediation or section replacement $1,200–$6,000+ depending on how far the damage extends behind the finish. The biggest cost factor is whether water has reached the substrate. We provide free on-site estimates.',
+      },
+      {
+        question: 'Can Dryvit be repaired or does it need full replacement?',
+        answer:
+          'In most cases Dryvit can be repaired rather than fully replaced. Cracks, impact damage, and localized failures are repairable. Full or partial replacement is only needed when moisture has damaged the sheathing behind the system. A proper inspection with a moisture assessment determines the right approach.',
+      },
+    ],
+  },
+  {
+    slug: 'stucco-repair-cost-austin',
+    title: 'How Much Does Stucco Repair Cost in Austin? (2026 Price Guide)',
+    seoTitle: 'Stucco Repair Cost in Austin, TX (2026 Guide) | Star Stucco of Austin',
+    seoDescription:
+      'How much does stucco repair cost in Austin? See 2026 price ranges by repair type — cracks, water damage, full replacement — and what drives the cost. Free estimates.',
+    h1: 'How Much Does Stucco Repair Cost in Austin, TX?',
+    excerpt:
+      'A clear 2026 breakdown of stucco repair costs in Austin by repair type, what drives the price, and how to get an accurate quote — from crack repair to full replacement.',
+    date: '2026-06-16',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2oN53IGNOy9hnwdS5e6L2kZerK7tVPo10ZaP3BdaGGSeuJznmlNC4_oHgmjHdsoJiu8XfFTPg2y-YufO37U942U4SFFmLk0_0knf0ruJZ44dTv2UIP10U0P1uOHT5rXTyO9n97m756S8v=s1360-w1360-h1020-rw',
+    content: `"How much does stucco repair cost?" is the first question most Austin homeowners ask — and the honest answer is that it depends on what's actually wrong. A hairline crack and a wall with hidden water damage are very different jobs. This guide breaks down real 2026 stucco repair cost ranges for the Austin area, explains what drives the price, and shows you how to get an accurate quote.
+
+## Average Stucco Repair Cost in Austin
+
+Most stucco repairs in Austin fall into these ranges:
+
+| Repair Type | Typical Cost (Austin, 2026) |
+|---|---|
+| Minor crack repair | $300–$600 |
+| Hairline crack sealing (per visit) | $250–$500 |
+| Medium patch / impact damage (up to ~10 sq ft) | $500–$1,200 |
+| Water damage repair (per section) | $1,500–$5,000+ |
+| Stucco moisture remediation | $2,000–$8,000+ |
+| Full wall or large-area replacement | $8–$15+ per sq ft |
+| Repaint / refinish (elastomeric coating) | $1.50–$4 per sq ft |
+
+These are estimates — the only way to get a real number is an on-site inspection, because so much depends on what's behind the surface. We offer those for free.
+
+## What Affects Stucco Repair Cost
+
+Several factors move the price up or down:
+
+- **Extent of the damage** — a single crack is cheap; widespread cracking or delamination is not.
+- **Hidden moisture** — the single biggest cost driver. If water has reached the sheathing, the repair extends well beyond the visible stucco.
+- **Accessibility** — second-story walls or areas needing scaffolding cost more in labor.
+- **Texture and color matching** — matching an aged finish takes skill; a perfect blend sometimes means refinishing a larger area.
+- **System type** — traditional cement stucco and EIFS (synthetic stucco) repair differently. If you have a synthetic system, see our guide to [EIFS repair in Austin](/blog/eifs-repair-austin).
+
+## Stucco Crack Repair Cost
+
+Cracks are the most common — and most affordable — repair. Hairline cracks from Austin's thermal cycling and minor soil movement typically run **$300–$600** to clean out, fill, and texture-match. The important thing is to address cracks early: every crack is a potential entry point for water, and water is what turns a $400 repair into a $4,000 one.
+
+## Water Damage & Moisture Remediation Cost
+
+When cracks or failed sealant let water reach the substrate, costs climb because the repair now includes removing wet material, drying or replacing the sheathing, and rebuilding the stucco system. Expect **$1,500–$5,000+** per affected section, and more for whole-wall remediation. This is why we always perform a moisture assessment before quoting — covering up wet stucco just hides an expensive problem.
+
+## Full Stucco Replacement Cost
+
+When damage is too widespread to patch, full or large-area replacement runs roughly **$8–$15+ per square foot** installed, depending on the system, number of coats, and finish. While that's a larger investment, properly installed stucco lasts decades, so it's often more cost-effective than repeated patch repairs on a failing wall.
+
+## DIY vs. Hiring a Pro
+
+Small cosmetic crack filling is within reach of a handy homeowner, but most stucco repair benefits from a professional — especially anything involving moisture, color matching, or EIFS. A poor DIY patch that traps water or doesn't match the texture often costs more to fix than it would have to do right the first time.
+
+## How to Get an Accurate Stucco Repair Quote
+
+The best estimate comes from an on-site inspection where a contractor can probe for moisture and assess the real condition behind the finish. When you compare quotes, make sure each one includes a moisture assessment, texture and color matching, and a written warranty.
+
+Star Stucco of Austin provides free, no-obligation stucco repair estimates throughout the Austin metro. As your local [stucco contractor in Austin TX](/) — and a full-service [EIFS contractor](/eifs-contractor-austin) for synthetic systems — we'll tell you exactly what your repair needs and what it will cost. Explore our [stucco repair services](/austin-stucco-repair) or [request a free estimate](/contact) today.`,
+    faqs: [
+      {
+        question: 'How much does stucco repair cost in Austin?',
+        answer:
+          'Most stucco repairs in Austin range from $300–$600 for minor crack repair to $1,500–$5,000+ for water damage, with full or large-area replacement running about $8–$15+ per square foot. The biggest cost factor is whether moisture has reached the substrate behind the stucco. We provide free on-site estimates.',
+      },
+      {
+        question: 'Why is my stucco repair quote so much higher than expected?',
+        answer:
+          'Usually because of hidden moisture damage. A crack on the surface can indicate water has reached the sheathing behind the stucco, which turns a simple patch into a remediation job involving removal, drying, and rebuilding. A proper moisture assessment up front prevents surprises.',
+      },
+      {
+        question: 'Is stucco repair cheaper than replacement?',
+        answer:
+          'In most cases, yes. Cracks, small holes, and localized damage are far cheaper to repair than replacing a wall. Full replacement is only warranted when damage is widespread or moisture has compromised large sections of the substrate. An inspection will tell you which option makes sense.',
+      },
+      {
+        question: 'Does EIFS (synthetic stucco) cost more to repair than traditional stucco?',
+        answer:
+          'EIFS repair requires an EIFS-qualified contractor and manufacturer-matched materials, so it can cost slightly more than basic cement stucco patching, but the ranges overlap. The key is hiring someone experienced with your specific system so the repair lasts and the warranty stays intact.',
+      },
+    ],
+  },
 ]

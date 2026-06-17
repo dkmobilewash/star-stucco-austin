@@ -1,7 +1,31 @@
 import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, Palette, Sun, Layers, Eye } from 'lucide-react'
 import SEO from '../../components/SEO'
+import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
 import { siteConfig } from '../../lib/siteConfig'
+
+const faqs: FAQ[] = [
+  {
+    question: 'What stucco finishes are most popular in Austin?',
+    answer:
+      'Smooth and Santa Barbara finishes are the most requested in Austin. Smooth finishes suit modern builds in areas like South Congress and East Austin, while the hand-troweled Santa Barbara texture is popular on Hill Country and Spanish Colonial style homes in Westlake Hills and Barton Creek. Dash, sand, and lace finishes are also common for their durability and ability to hide imperfections.',
+  },
+  {
+    question: 'Can you match my existing stucco texture and color?',
+    answer:
+      'Yes. Texture and color matching is one of our specialties. We replicate existing finishes — including aged and weathered surfaces — so repairs and additions blend seamlessly. For full refinishes, we provide on-site samples so you can see the exact texture and color before we begin.',
+  },
+  {
+    question: 'Which stucco finish holds up best in the Austin climate?',
+    answer:
+      'Heavier textures like dash and Santa Barbara tend to handle Austin’s intense UV and thermal cycling especially well because they hide hairline movement and minor imperfections. Smooth finishes look stunning but require expert application to resist cracking. We help you choose a finish that fits both your architectural style and long-term durability.',
+  },
+  {
+    question: 'Can an existing stucco finish be changed or refreshed?',
+    answer:
+      'Yes. We can re-coat or refinish existing stucco to update the texture or color, and apply elastomeric finishes that refresh appearance while adding a waterproofing layer. An on-site assessment determines whether a re-coat or a more involved refinish is the right approach.',
+  },
+]
 
 const schema = {
   '@context': 'https://schema.org',
@@ -66,7 +90,7 @@ export default function StuccoFinishing() {
         title="Stucco Finishing & Textures Austin, TX | Star Stucco of Austin"
         description="Custom stucco finishes and textures in Austin, TX. Smooth, Santa Barbara, dash, sand, and lace finishes with expert color matching. Complementing Hill Country, Spanish, and Modern architecture."
         path="/austin-stucco-finishing"
-        schema={schema}
+        schema={[schema, faqPageSchema(faqs)]}
       />
 
       {/* Hero Section */}
@@ -200,6 +224,9 @@ export default function StuccoFinishing() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection faqs={faqs} subtitle="Common questions about stucco finishes and textures in Austin, answered by our team." />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">
