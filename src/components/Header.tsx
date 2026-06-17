@@ -7,6 +7,7 @@ const stuccoDropdown = [
   { label: 'Residential Stucco', path: '/austin-stucco-installation' },
   { label: 'Commercial Stucco', path: '/austin-commercial-stucco' },
   { label: 'Stucco Repair', path: '/austin-stucco-repair' },
+  { label: 'Stucco Remediation', path: '/austin-stucco-remediation' },
   { label: 'EIFS Contractor', path: '/eifs-contractor-austin' },
 ]
 
