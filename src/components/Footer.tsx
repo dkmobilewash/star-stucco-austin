@@ -97,12 +97,20 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <div className="flex items-start gap-3 text-sm">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Star+Stucco+of+Austin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Star Stucco of Austin on Google Maps"
+                  className="flex items-start gap-3 text-sm hover:text-white transition-colors"
+                >
                   <MapPin className="h-4 w-4 text-primary-500 shrink-0 mt-0.5" />
                   <span>
-                    {siteConfig.address.city}, {siteConfig.address.state}
+                    {siteConfig.address.street}
+                    <br />
+                    {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}
                   </span>
-                </div>
+                </a>
               </li>
               <li>
                 <div className="flex items-start gap-3 text-sm">
