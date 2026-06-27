@@ -1,0 +1,223 @@
+===============================================================================
+STAR STUCCO OF AUSTIN — IMAGE REPLACEMENT GUIDE
+===============================================================================
+
+There are 28 unique placeholder/stock images on the website that should be
+replaced with real original Star Stucco photos. Below is each image with its
+recommended filename and what type of photo to use as a replacement.
+
+Save all replacement photos to:  /public/images/
+Format:  WebP preferred (or JPG)
+Recommended size:  listed per image below
+
+
+===============================================================================
+HERO / BANNER IMAGES  (full-width backgrounds, need 1600px+ wide)
+===============================================================================
+
+ 1. stucco-austin-skyline-hero.webp              (1600 x 900)
+    Currently: pexels-photo-2138126 (generic Austin skyline)
+    Used on: About page hero
+    Replace with: Photo of Star Stucco team or finished project with Austin skyline
+
+ 2. stucco-home-exterior-hero.webp                (1600 x 900)
+    Currently: pexels-photo-2102587 (generic stucco home)
+    Used on: CedarPark, Pflugerville, area page heroes
+    Replace with: Star Stucco completed residential exterior — wide shot
+
+ 3. texas-neighborhood-hero.webp                  (1600 x 900)
+    Currently: pexels-photo-1396122 (generic neighborhood)
+    Used on: BellCounty, WilliamsonCounty, BrazosCounty, LeeCounty,
+             MilamCounty, CaldwellCounty, BastropCounty, McLennanCounty heroes
+    Replace with: Aerial or wide shot of a Texas neighborhood with stucco homes
+
+ 4. hill-country-hero.webp                        (1600 x 900)
+    Currently: pexels-photo-534164 (generic Hill Country)
+    Used on: BurnetCounty, ComalCounty, GillespieCounty, HaysCounty,
+             BlancoCounty, LlanoCounty heroes
+    Replace with: Hill Country landscape with stucco home visible
+
+ 5. austin-downtown-hero.webp                     (1600 x 900)
+    Currently: pexels-photo-1563256 (Austin skyline/downtown)
+    Used on: Austin area page hero, TravisCounty hero
+    Replace with: Austin skyline or downtown area with stucco buildings
+
+ 6. stucco-home-roundrock-hero.webp               (1600 x 900)
+    Currently: pexels-photo-323780 (generic home exterior)
+    Used on: RoundRock hero, blog post "Best Stucco Finishes"
+    Replace with: Completed stucco home in Round Rock or similar neighborhood
+
+ 7. luxury-home-westlake-hero.webp                (1600 x 900)
+    Currently: pexels-photo-2404046 (luxury estate)
+    Used on: Westlake page hero
+    Replace with: Luxury stucco home in Westlake Hills area
+
+ 8. stucco-texture-hero.webp                      (1600 x 900)
+    Currently: pexels-photo-2219024 (plaster texture close-up)
+    Used on: StuccoFinishing hero, Georgetown hero, CedarPark content
+    Replace with: Close-up of a beautiful stucco finish applied by Star Stucco
+
+ 9. stucco-repair-hero.webp                       (1600 x 900)
+    Currently: pexels-photo-1474993 (construction/repair)
+    Used on: StuccoRepair page hero
+    Replace with: Star Stucco crew doing repair work on a home
+
+10. commercial-building-hero.webp                 (1600 x 900)
+    Currently: pexels-photo-323705 (generic commercial building)
+    Used on: CommercialStucco page hero
+    Replace with: Commercial building with stucco by Star Stucco
+
+11. stucco-installation-hero.webp                 (1600 x 900)
+    Currently: photos.zillowstatic.com (home exterior)
+    Used on: StuccoInstallation page hero
+    Replace with: Star Stucco crew installing stucco on new construction
+
+12. eifs-stucco-hero.webp                         (1600 x 900)
+    Currently: lh3.googleusercontent.com (EIFS wall — APNQkAG1...)
+    Used on: EifsContractor page hero, Services page, blog posts
+    Replace with: EIFS installation or completed EIFS project by Star Stucco
+
+
+===============================================================================
+CONTENT / SECTION IMAGES  (in-page photos, 800px wide)
+===============================================================================
+
+13. stucco-project-completed.webp                 (800 x 600)
+    Currently: pexels-photo-2102587 (same as #2 but used at smaller size)
+    Used on: ALL area page content sections (Austin, RoundRock, TravisCounty,
+             WilliamsonCounty, BellCounty, HaysCounty, BurnetCounty, LlanoCounty,
+             ComalCounty, BastropCounty, BlancoCounty, GillespieCounty,
+             CaldwellCounty, LeeCounty, MilamCounty, BrazosCounty, McLennanCounty),
+             blog post "Stucco vs. Hardie Board"
+    Replace with: Beautiful completed stucco exterior — Star Stucco project
+
+14. star-stucco-team-working.webp                 (800 x 600)
+    Currently: pexels-photo-3935333 (generic workers)
+    Used on: About page, CedarPark page
+    Replace with: Real Star Stucco team members working on a project
+
+15. star-stucco-team-group.webp                   (800 x 600)
+    Currently: pexels-photo-2760243 (generic workers on site)
+    Used on: About page
+    Replace with: Star Stucco team group photo or crew on job site
+
+16. stucco-repair-closeup.webp                    (800 x 600)
+    Currently: pexels-photo-5691622 (repair close-up)
+    Used on: StuccoRepair page content
+    Replace with: Close-up of Star Stucco doing crack/damage repair
+
+17. stucco-damage-signs.webp                      (800 x 600)
+    Currently: pexels-photo-1457842 (home with stucco issues)
+    Used on: RoundRock page content, blog post "5 Signs Your Home Needs Repair"
+    Replace with: Example of stucco damage Star Stucco has repaired (before shot)
+
+18. luxury-stucco-westlake.webp                   (800 x 600)
+    Currently: pexels-photo-2816323 (luxury home)
+    Used on: Westlake page content
+    Replace with: Completed luxury stucco project in Westlake/Barton Creek
+
+19. new-development-stucco.webp                   (800 x 600)
+    Currently: pexels-photo-2724749 (new homes development)
+    Used on: Westlake page, Pflugerville page
+    Replace with: New development where Star Stucco did the exteriors
+
+20. stucco-detail-work.webp                       (800 x 600)
+    Currently: pexels-photo-3990359 (detail application)
+    Used on: Pflugerville page content
+    Replace with: Close-up of Star Stucco doing detail/finish work
+
+21. cedar-park-stucco-home.webp                   (800 x 600)
+    Currently: pexels-photo-1539581 (suburban home)
+    Used on: CedarPark page content
+    Replace with: Completed stucco home in Cedar Park area
+
+22. commercial-stucco-building.webp               (800 x 600)
+    Currently: assets.allurausa.com (commercial stucco design)
+    Used on: CommercialStucco page content
+    Replace with: Commercial building finished by Star Stucco
+
+23. stucco-textures-samples.webp                  (800 x 600)
+    Currently: ultrakoteproducts.com (EIFS texture samples)
+    Used on: StuccoFinishing page content
+    Replace with: Photo of Star Stucco's finish samples or texture wall
+
+24. stucco-installation-process.webp              (800 x 600)
+    Currently: sardarrestoration.com (stucco installation best practices)
+    Used on: Services page
+    Replace with: Star Stucco crew applying scratch/brown coat
+
+
+===============================================================================
+HOME PAGE SERVICE CARD IMAGES  (card thumbnails, 640 x 400)
+===============================================================================
+
+25. service-stucco-repair-card.webp               (640 x 400)
+    Currently: istockphoto 1083608688 (hand with spatula)
+    Used on: Home page — Stucco Repair service card
+    Replace with: Star Stucco repair work in progress
+
+26. service-eifs-card.webp                        (640 x 400)
+    Currently: npicommercial.com (EIFS blog photo)
+    Used on: Home page — EIFS service card
+    Replace with: EIFS project by Star Stucco
+
+27. service-interior-plaster-card.webp            (640 x 400)
+    Currently: istockphoto 521709428 (plaster master)
+    Used on: Home page — Interior Plaster service card
+    Replace with: Interior plaster finish by Star Stucco
+
+28. service-stone-veneer-card.webp                (640 x 400)
+    Currently: naturalstoneveneer.com (stone veneer)
+    Used on: Home page — Thin Stone Veneer service card
+    Replace with: Stone veneer project by Star Stucco
+
+
+===============================================================================
+BLOG POST IMAGES  (reuse from above where possible)
+===============================================================================
+
+Blog posts currently use a mix of the Google Photos and Pexels images listed
+above. Once you have real photos, the blog images can reuse these same files:
+
+  "Best Stucco Finishes"       → use #6  (stucco-home-roundrock-hero.webp)
+  "5 Signs Needs Repair"       → use #17 (stucco-damage-signs.webp)
+  "Stucco vs. Hardie Board"    → use #13 (stucco-project-completed.webp)
+  "What Is EIFS?"              → use #12 (eifs-stucco-hero.webp)
+  "EIFS vs. Traditional"       → use a second EIFS photo
+  "EIFS Repair Austin"         → use #16 (stucco-repair-closeup.webp)
+  "Dryvit Repair Austin"       → use #12 (eifs-stucco-hero.webp)
+  "Stucco Repair Cost"         → use a second repair photo
+  "Stucco Crack Repair"        → use #16 (stucco-repair-closeup.webp)
+  "Cost to Stucco a House"     → use a second completed project photo
+  "Stucco Finishes Guide"      → use #23 (stucco-textures-samples.webp)
+
+
+===============================================================================
+WESTLAKE FINISH TYPE IMAGES  (3 small cards)
+===============================================================================
+
+These are used in the Westlake page finish-type cards:
+
+  westlake-smooth-finish.webp     (800 x 500) — pexels-photo-2724749
+  westlake-santa-barbara.webp     (800 x 500) — pexels-photo-3935350
+  westlake-dash-finish.webp       (800 x 500) — pexels-photo-2581922
+
+Replace with close-ups of each actual finish type from Star Stucco projects.
+
+
+===============================================================================
+SUMMARY
+===============================================================================
+
+Total unique images to replace:   28 (plus 3 Westlake finish cards = 31)
+Already self-hosted (this PR):     5 (hero, residential, commercial, project, logo)
+Grand total image slots:          36
+
+Most impactful to replace first:
+  1. #12 — EIFS hero (used 5+ times across site)
+  2. #13 — Completed project (used 17+ times on area pages)
+  3. #3  — Neighborhood hero (used 8 times on county pages)
+  4. #4  — Hill Country hero (used 6 times on county pages)
+  5. #14 — Team working (used on About + CedarPark)
+
+===============================================================================
