@@ -21,13 +21,13 @@ const services = [
     title: 'Residential Stucco',
     description: 'We enhance the beauty and durability of your home using high-quality materials and proven techniques.',
     path: '/austin-stucco-installation',
-    image: 'https://s.wsj.net/public/resources/images/BN-TT668_0608au_12S_20170607152622.jpg?width=1280&height=1280',
+    image: '/images/residential-stucco-austin.webp',
   },
   {
     title: 'Commercial Stucco',
     description: 'We deliver professional exterior results that meet the unique demands of commercial projects.',
     path: '/austin-commercial-stucco',
-    image: 'https://media.istockphoto.com/id/1091082550/photo/new-row-homes.jpg?s=612x612&w=0&k=20&c=vmjiDszpujDRXyDhXu4Acnu4gCYCWnXG_zZZc0xxLwg=',
+    image: '/images/commercial-stucco-austin.webp',
   },
   {
     title: 'Stucco Repair',
@@ -117,9 +117,11 @@ export default function Home() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://www.grandendeavorhomes.com/wp-content/uploads/2025/01/1-1-1500x630.jpg"
+            src="/images/hero-stucco-austin.webp"
             alt="Professional stucco exterior on a Central Texas home"
             className="h-full w-full object-cover opacity-30"
+            width={1200}
+            height={504}
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/90 to-secondary-900/50" />
@@ -188,9 +190,11 @@ export default function Home() {
             </div>
             <div className="relative">
               <img
-                src="https://verdebuildersaustin.com/wp-content/uploads/large-home-back-yard.jpg"
+                src="/images/stucco-project-austin.webp"
                 alt="Star Stucco of Austin team on a project site"
                 loading="lazy"
+                width={665}
+                height={665}
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 rounded-xl bg-white p-4 shadow-lg">

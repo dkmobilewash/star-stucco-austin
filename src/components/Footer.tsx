@@ -10,8 +10,11 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <img
-                src="/image-removebg-preview.png"
+                src="/images/star-stucco-logo.webp"
+                srcSet="/images/star-stucco-logo.webp 1x, /images/star-stucco-logo@2x.webp 2x"
                 alt={siteConfig.name}
+                width={98}
+                height={98}
                 className="h-16 w-auto invert"
               />
             </div>
