@@ -75,7 +75,7 @@ export default function StuccoInstallation() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://photos.zillowstatic.com/fp/fc2d85c7fa86f8d49ca85a1d5052936f-p_e.webp"
+            src="/images/stucco-installation-hero.webp"
             alt="New stucco installation on an Austin home"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"

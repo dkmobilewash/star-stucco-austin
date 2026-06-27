@@ -320,7 +320,7 @@ export default function EifsContractor() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1i9jAG3XB6C9PbVCOXqpjT4I1aKypL3IcwM7dX8sygD6D5Ma45nL_ifBvJ8JeBpJaiThipCbC96nZI5yQIKVQyf6qEO7eges0BHuono-yKdqaynwrhvpUULfXs0tQhspuaRd5zCGptLg=s1360-w1360-h1020-rw"
+            src="/images/eifs-stucco-hero.webp"
             alt="EIFS contractor working on exterior wall in Austin TX"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
@@ -449,7 +449,7 @@ export default function EifsContractor() {
           </div>
           <figure className="mt-12">
             <img
-              src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEoOx-LSVXE0flAWzD9g7q_iyesV-OrkwybImQNyGwZnH2dofmUJ3H3v_Yf8BYXny4PnrZRAnEBHZ0ihAKQ9QzeKscIUQZ2kdfBceTcbgpre4eFlkGSxpeS6WuK4jJOkZ6AUFtfcKInLSvc=s1360-w1360-h1020-rw"
+              src="/images/stucco-project-completed.webp"
               alt="Commercial multifamily building clad in EIFS in Austin, TX"
               className="w-full max-h-[28rem] object-cover rounded-2xl shadow-lg"
               loading="lazy"
@@ -547,7 +547,7 @@ export default function EifsContractor() {
             A proven, step-by-step process that fixes the root cause — not just the visible damage.
           </p>
           <img
-            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGEUl399ZEasljBiFN-u-pz_gxJFgs5mXImvKmG8Czf6ugWXKQKnb0dK1JU6aeTu35hOYqOLrV8bRLF8imSoHehIr4JL6zkumH9-DmoMDIzflwyk9AQjaBKfCk4XAmWPmXLucgFoDjH3ngK=s1360-w1360-h1020-rw"
+            src="/images/stucco-repair-hero.webp"
             alt="EIFS installation in progress on a Austin home with scaffolding"
             className="rounded-2xl shadow-lg w-full mb-12"
             loading="lazy"

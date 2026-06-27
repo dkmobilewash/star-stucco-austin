@@ -8,7 +8,7 @@ const services = [
     title: 'Stucco Installation',
     path: '/austin-stucco-installation',
     image:
-      'https://sardarrestoration.com/wp-content/uploads/2025/12/Best-Practices-For-Proper-Stucco-Installation-1024x683.png',
+      '/images/stucco-installation-process.webp',
     description:
       'Complete new stucco installation for residential and commercial properties. We work with traditional three-coat stucco, one-coat systems, and EIFS to deliver a flawless exterior that protects your Austin home from the Texas elements.',
     features: [
@@ -22,7 +22,7 @@ const services = [
     title: 'Stucco Repair',
     path: '/austin-stucco-repair',
     image:
-      'https://www.imperialpaintinginc.com/wp-content/uploads/2024/02/stucco-repair.webp',
+      '/images/stucco-repair-closeup.webp',
     description:
       'Expert diagnosis and repair of cracks, water damage, delamination, and structural stucco issues. We address the root cause, not just the symptoms, so repairs last for years even in Austin\'s demanding climate.',
     features: [
@@ -36,7 +36,7 @@ const services = [
     title: 'Stucco Finishing',
     path: '/austin-stucco-finishing',
     image:
-      'https://stuccoboy.com/wp-content/uploads/2023/11/MDP09625-scaled.jpg',
+      '/images/stucco-project-completed.webp',
     description:
       'Custom textures, colors, and finishes to match any architectural style -- from the smooth contemporary look popular in Mueller to the rustic Santa Barbara finish beloved in Westlake Hills and Barton Creek.',
     features: [
@@ -50,7 +50,7 @@ const services = [
     title: 'EIFS / Synthetic Stucco',
     path: '/eifs-contractor-austin',
     image:
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1i9jAG3XB6C9PbVCOXqpjT4I1aKypL3IcwM7dX8sygD6D5Ma45nL_ifBvJ8JeBpJaiThipCbC96nZI5yQIKVQyf6qEO7eges0BHuono-yKdqaynwrhvpUULfXs0tQhspuaRd5zCGptLg=s1360-w1360-h1020-rw',
+      '/images/eifs-stucco-hero.webp',
     description:
       'Licensed EIFS (Exterior Insulation and Finish System) installation, repair, and replacement for Austin and the surrounding Hill Country. We work with Dryvit, Parex, Sto, and Master Wall systems on residential and commercial properties.',
     features: [
@@ -64,7 +64,7 @@ const services = [
     title: 'Commercial Stucco',
     path: '/austin-commercial-stucco',
     image:
-      'https://lugopainting.com/wp-content/uploads/2022/09/shutterstock_54282826h-1024x731.jpg',
+      '/images/stucco-installation-process.webp',
     description:
       'Large-scale stucco solutions for offices, retail, restaurants, multi-family developments, and mixed-use projects throughout the Austin metro area. We handle projects from 1,000 to 100,000+ square feet.',
     features: [

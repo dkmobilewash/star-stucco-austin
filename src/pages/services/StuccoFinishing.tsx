@@ -98,7 +98,7 @@ export default function StuccoFinishing() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/stucco-installation-process.webp"
             alt="Beautifully finished stucco wall with warm texture"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
@@ -198,7 +198,7 @@ export default function StuccoFinishing() {
             </div>
             <div>
               <img
-                src="https://www.ultrakoteproducts.com/wp-content/uploads/2022/07/wm-eifs.png"
+                src="/images/stucco-project-completed.webp"
                 alt="Variety of stucco textures and colors on display"
                 className="rounded-2xl shadow-lg"
                 loading="lazy"

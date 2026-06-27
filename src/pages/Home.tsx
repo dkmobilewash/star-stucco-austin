@@ -33,25 +33,25 @@ const services = [
     title: 'Stucco Repair',
     description: 'We restore damaged or deteriorating stucco to its original condition using expert techniques.',
     path: '/austin-stucco-repair',
-    image: 'https://media.istockphoto.com/id/1083608688/photo/hand-with-a-spatula-in-the-process-of-leveling-the-raw-plaster.jpg?s=612x612&w=0&k=20&c=hVFckEylAyO8yaUcAQVUtSWbQDZJ3RbW4c68gARdTr8=',
+    image: '/images/stucco-repair-closeup.webp',
   },
   {
     title: 'EIFS',
     description: 'We install Exterior Insulation and Finish Systems — lightweight, energy-efficient cladding for any building.',
     path: '/eifs-contractor-austin',
-    image: 'https://npicommercial.com/wp-content/uploads/sites/188/2024/07/Blog-Photo-03.jpg',
+    image: '/images/eifs-stucco-hero.webp',
   },
   {
     title: 'Interior Plaster',
     description: 'We transform living spaces with a range of custom plaster finishes and styles.',
     path: '/austin-stucco-finishing',
-    image: 'https://media.istockphoto.com/id/521709428/photo/plaster-master.jpg?s=612x612&w=0&k=20&c=9eXrEU_8JeasICgWdMp856idvv3tQv8XskUOLwNRtQQ=',
+    image: '/images/stucco-installation-process.webp',
   },
   {
     title: 'Thin Stone Veneer',
     description: 'We apply natural stone veneer for a durable, elegant finish on any surface.',
     path: '/austin-stucco-installation',
-    image: 'https://www.naturalstoneveneer.com/wp-content/uploads/2026/02/NSV-BG-6.jpg',
+    image: '/images/stucco-project-completed.webp',
   },
 ]
 

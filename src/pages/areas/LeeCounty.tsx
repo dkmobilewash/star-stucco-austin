@@ -42,7 +42,7 @@ export default function LeeCountyArea() {
 
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
-          <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp" alt="Lee County Texas" className="h-full w-full object-cover opacity-20" fetchPriority="high" width={1600} height={900} />
+          <img src="/images/stucco-home-exterior-hero.webp" alt="Lee County Texas" className="h-full w-full object-cover opacity-20" fetchPriority="high" width={1600} height={900} />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary-900/80 to-secondary-900/95" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
@@ -98,7 +98,7 @@ export default function LeeCountyArea() {
               </div>
             </div>
             <div>
-              <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Stucco exterior in Lee County" loading="lazy" className="rounded-2xl shadow-xl" width={800} height={600} />
+              <img src="/images/stucco-project-completed.webp" alt="Stucco exterior in Lee County" loading="lazy" className="rounded-2xl shadow-xl" width={800} height={600} />
             </div>
           </div>
         </div>

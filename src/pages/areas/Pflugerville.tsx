@@ -41,7 +41,7 @@ export default function PflugervilleArea() {
       <section className="relative bg-slate-900 py-24">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1920&fm=webp"
+            src="/images/stucco-project-completed.webp"
             alt="Modern stucco home exterior in Pflugerville Texas"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
@@ -75,7 +75,7 @@ export default function PflugervilleArea() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="overflow-hidden rounded-xl">
             <img
-              src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1400&fm=webp"
+              src="/images/new-development-stucco.webp"
               alt="New residential development with stucco exteriors"
               className="h-72 w-full object-cover"
               loading="lazy"
@@ -139,7 +139,7 @@ export default function PflugervilleArea() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="overflow-hidden rounded-xl">
               <img
-                src="https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/stucco-repair-closeup.webp"
                 alt="Stucco application detail work"
                 className="h-full w-full object-cover"
                 loading="lazy"

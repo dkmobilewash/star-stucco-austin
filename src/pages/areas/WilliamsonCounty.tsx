@@ -49,7 +49,7 @@ export default function WilliamsonCountyArea() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/stucco-home-exterior-hero.webp"
             alt="Williamson County Texas neighborhood"
             className="h-full w-full object-cover opacity-20"
             fetchPriority="high"
@@ -127,7 +127,7 @@ export default function WilliamsonCountyArea() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/stucco-project-completed.webp"
                 alt="Residential stucco exterior in Williamson County"
                 loading="lazy"
                 width={800}

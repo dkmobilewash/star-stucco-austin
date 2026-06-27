@@ -68,7 +68,7 @@ export default function About() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/stucco-home-exterior-hero.webp"
             alt="Austin, Texas skyline near Lady Bird Lake"
             className="h-full w-full object-cover opacity-25"
             width={1600}
@@ -138,7 +138,7 @@ export default function About() {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3935333/pexels-photo-3935333.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/star-stucco-team-working.webp"
                 alt="Star Stucco of Austin team working on a residential project"
                 className="rounded-2xl shadow-2xl"
                 width={800}
@@ -194,7 +194,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/star-stucco-team-group.webp"
                 alt="Star Stucco of Austin team members on a job site"
                 className="rounded-2xl shadow-xl"
                 width={800}

@@ -170,7 +170,7 @@ export default function CommercialStucco() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/commercial-building-hero.webp"
             alt="Commercial stucco building in Austin, Texas"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
@@ -256,7 +256,7 @@ export default function CommercialStucco() {
             </div>
             <div>
               <img
-                src="https://assets.allurausa.com/web/general-images/_749xAUTO_crop_center-center_none/Stucco-Commercial-Building-Design-Ideas6.jpg"
+                src="/images/commercial-building-hero.webp"
                 alt="Commercial building with professional stucco exterior in Austin"
                 className="rounded-2xl shadow-lg mb-8"
                 loading="lazy"

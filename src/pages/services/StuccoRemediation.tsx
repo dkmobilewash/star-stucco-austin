@@ -145,7 +145,7 @@ export default function StuccoRemediation() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGEUl399ZEasljBiFN-u-pz_gxJFgs5mXImvKmG8Czf6ugWXKQKnb0dK1JU6aeTu35hOYqOLrV8bRLF8imSoHehIr4JL6zkumH9-DmoMDIzflwyk9AQjaBKfCk4XAmWPmXLucgFoDjH3ngK=s1360-w1360-h1020-rw"
+            src="/images/stucco-repair-hero.webp"
             alt="Stucco remediation in progress on an Austin home exterior"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"

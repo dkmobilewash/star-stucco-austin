@@ -43,7 +43,7 @@ export default function BurnetCountyArea() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/stucco-home-exterior-hero.webp"
             alt="Highland Lakes Hill Country in Burnet County Texas"
             className="h-full w-full object-cover opacity-20"
             fetchPriority="high"
@@ -110,7 +110,7 @@ export default function BurnetCountyArea() {
               </div>
             </div>
             <div>
-              <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Stucco exterior in Burnet County" loading="lazy" className="rounded-2xl shadow-xl" width={800} height={600} />
+              <img src="/images/stucco-project-completed.webp" alt="Stucco exterior in Burnet County" loading="lazy" className="rounded-2xl shadow-xl" width={800} height={600} />
             </div>
           </div>
         </div>

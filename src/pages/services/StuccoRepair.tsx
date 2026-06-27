@@ -183,7 +183,7 @@ export default function StuccoRepair() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/stucco-repair-hero.webp"
             alt="Stucco repair work on an Austin home exterior"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
@@ -266,7 +266,7 @@ export default function StuccoRepair() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/stucco-repair-closeup.webp"
                 alt="Stucco crack repair on an Austin home"
                 className="rounded-2xl shadow-lg mb-8"
                 loading="lazy"
