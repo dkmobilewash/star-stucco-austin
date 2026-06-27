@@ -149,6 +149,8 @@ export default function StuccoRemediation() {
             alt="Stucco remediation in progress on an Austin home exterior"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/95 to-secondary-900/60" />
         </div>
@@ -170,7 +172,7 @@ export default function StuccoRemediation() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
             >
               Get a Free Assessment <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
@@ -253,7 +255,7 @@ export default function StuccoRemediation() {
           <ol className="space-y-6">
             {process.map((step, i) => (
               <li key={step.title} className="flex gap-5">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-600 text-sm font-bold text-white">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-700 text-sm font-bold text-white">
                   {i + 1}
                 </span>
                 <div>
@@ -341,7 +343,7 @@ export default function StuccoRemediation() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               Request a Free Assessment
             </Link>

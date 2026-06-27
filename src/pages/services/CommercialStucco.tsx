@@ -174,6 +174,8 @@ export default function CommercialStucco() {
             alt="Commercial stucco building in Austin, Texas"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/95 to-secondary-900/60" />
         </div>
@@ -195,7 +197,7 @@ export default function CommercialStucco() {
             <a
               href="tel:+15127069699"
               aria-label="Call Star Stucco of Austin for a commercial stucco estimate"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
             >
               <Phone className="mr-2 h-4 w-4" />
               Call (512) 706-9699
@@ -258,6 +260,8 @@ export default function CommercialStucco() {
                 alt="Commercial building with professional stucco exterior in Austin"
                 className="rounded-2xl shadow-lg mb-8"
                 loading="lazy"
+                width={800}
+                height={600}
               />
               <div className="rounded-xl bg-white border border-secondary-200 p-6">
                 <h3 className="font-display text-lg font-bold text-secondary-900 mb-4">
@@ -395,7 +399,7 @@ export default function CommercialStucco() {
             <a
               href="tel:+15127069699"
               aria-label="Call Star Stucco of Austin for a commercial stucco estimate"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               <Phone className="mr-2 h-4 w-4" />
               Call (512) 706-9699

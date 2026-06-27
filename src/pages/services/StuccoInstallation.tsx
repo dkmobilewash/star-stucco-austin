@@ -79,6 +79,8 @@ export default function StuccoInstallation() {
             alt="New stucco installation on an Austin home"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/95 to-secondary-900/60" />
         </div>
@@ -98,7 +100,7 @@ export default function StuccoInstallation() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
             >
               Get a Free Estimate <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
@@ -177,7 +179,7 @@ export default function StuccoInstallation() {
                     'Final inspection and cleanup',
                   ].map((step, i) => (
                     <li key={i} className="flex gap-3 text-sm text-secondary-700">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-600 text-xs font-bold text-white">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-700 text-xs font-bold text-white">
                         {i + 1}
                       </span>
                       {step}
@@ -188,7 +190,7 @@ export default function StuccoInstallation() {
                   <p className="text-sm font-semibold text-secondary-900 mb-2">Ready to start?</p>
                   <Link
                     to="/contact"
-                    className="block w-full rounded-lg bg-primary-600 px-4 py-3 text-center text-sm font-semibold text-white transition-all hover:bg-primary-700"
+                    className="block w-full rounded-lg bg-primary-700 px-4 py-3 text-center text-sm font-semibold text-white transition-all hover:bg-primary-800"
                   >
                     Request a Free Quote
                   </Link>
@@ -268,7 +270,7 @@ export default function StuccoInstallation() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               Schedule Your Free Estimate
             </Link>

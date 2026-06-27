@@ -45,6 +45,8 @@ export default function PflugervilleArea() {
             alt="Modern stucco home exterior in Pflugerville Texas"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
         </div>
         <div className="relative mx-auto max-w-7xl px-4">
@@ -77,6 +79,8 @@ export default function PflugervilleArea() {
               alt="New residential development with stucco exteriors"
               className="h-72 w-full object-cover"
               loading="lazy"
+                width={800}
+                height={600}
             />
           </div>
           <h2 className="font-display mt-10 text-3xl font-bold text-slate-900">A Community Transformed</h2>
@@ -139,6 +143,8 @@ export default function PflugervilleArea() {
                 alt="Stucco application detail work"
                 className="h-full w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
             <div>

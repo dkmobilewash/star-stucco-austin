@@ -45,6 +45,8 @@ export default function RoundRockArea() {
             alt="Stucco home in Round Rock, Texas"
             className="h-full w-full object-cover opacity-30"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -93,6 +95,8 @@ export default function RoundRockArea() {
                 alt="Modern stucco homes in Round Rock neighborhood"
                 className="h-full w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
             <div>

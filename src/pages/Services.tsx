@@ -153,6 +153,8 @@ export default function Services() {
                         src={service.image}
                         alt={`${service.title} in Austin, TX`}
                         className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
+                        width={800}
+                        height={500}
                         loading="lazy"
                       />
                     </div>
@@ -182,7 +184,7 @@ export default function Services() {
                   </ul>
                   <Link
                     to={service.path}
-                    className="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+                    className="inline-flex items-center rounded-lg bg-primary-700 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
                   >
                     Learn More
                     <ChevronRight className="ml-2 h-4 w-4" />
@@ -215,7 +217,7 @@ export default function Services() {
             <a
               href={`tel:${siteConfig.phone}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
-              className="inline-flex items-center justify-center rounded-lg border border-primary-400 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-white hover:bg-primary-600"
+              className="inline-flex items-center justify-center rounded-lg border border-primary-400 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-white hover:bg-primary-800"
             >
               <Phone className="mr-2 h-4 w-4" />
               Call {siteConfig.phone}

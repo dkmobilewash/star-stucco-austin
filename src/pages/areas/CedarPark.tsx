@@ -45,6 +45,8 @@ export default function CedarParkArea() {
             alt="Beautiful stucco exterior in Cedar Park, Texas"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -115,6 +117,8 @@ export default function CedarParkArea() {
                 alt="Cedar Park Texas residential neighborhood with stucco homes"
                 className="rounded-2xl shadow-lg w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -175,6 +179,8 @@ export default function CedarParkArea() {
                 alt="Residential stucco home in Cedar Park"
                 className="h-48 w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
               <div className="p-8">
                 <div className="flex items-center gap-3">
@@ -199,6 +205,8 @@ export default function CedarParkArea() {
                 alt="Commercial stucco building in Cedar Park"
                 className="h-48 w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
               <div className="p-8">
                 <div className="flex items-center gap-3">

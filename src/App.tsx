@@ -1,45 +1,48 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import Layout from './components/Layout'
 import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Services from './pages/Services'
-import StuccoInstallation from './pages/services/StuccoInstallation'
-import StuccoRepair from './pages/services/StuccoRepair'
-import StuccoFinishing from './pages/services/StuccoFinishing'
-import CommercialStucco from './pages/services/CommercialStucco'
-import EifsContractor from './pages/services/EifsContractor'
-import StuccoRemediation from './pages/services/StuccoRemediation'
-import Blog from './pages/Blog'
-import BlogPost from './pages/BlogPost'
-import AustinArea from './pages/areas/Austin'
-import RoundRockArea from './pages/areas/RoundRock'
-import CedarParkArea from './pages/areas/CedarPark'
-import GeorgetownArea from './pages/areas/Georgetown'
-import PflugervilleArea from './pages/areas/Pflugerville'
-import WestlakeArea from './pages/areas/Westlake'
-import TravisCountyArea from './pages/areas/TravisCounty'
-import WilliamsonCountyArea from './pages/areas/WilliamsonCounty'
-import BellCountyArea from './pages/areas/BellCounty'
-import HaysCountyArea from './pages/areas/HaysCounty'
-import BurnetCountyArea from './pages/areas/BurnetCounty'
-import LlanoCountyArea from './pages/areas/LlanoCounty'
-import ComalCountyArea from './pages/areas/ComalCounty'
-import BastropCountyArea from './pages/areas/BastropCounty'
-import BlancoCountyArea from './pages/areas/BlancoCounty'
-import GillespieCountyArea from './pages/areas/GillespieCounty'
-import CaldwellCountyArea from './pages/areas/CaldwellCounty'
-import LeeCountyArea from './pages/areas/LeeCounty'
-import MilamCountyArea from './pages/areas/MilamCounty'
-import BrazosCountyArea from './pages/areas/BrazosCounty'
-import McLennanCountyArea from './pages/areas/McLennanCounty'
-import NotFound from './pages/NotFound'
+
+const About = lazy(() => import('./pages/About'))
+const Contact = lazy(() => import('./pages/Contact'))
+const Services = lazy(() => import('./pages/Services'))
+const StuccoInstallation = lazy(() => import('./pages/services/StuccoInstallation'))
+const StuccoRepair = lazy(() => import('./pages/services/StuccoRepair'))
+const StuccoFinishing = lazy(() => import('./pages/services/StuccoFinishing'))
+const CommercialStucco = lazy(() => import('./pages/services/CommercialStucco'))
+const EifsContractor = lazy(() => import('./pages/services/EifsContractor'))
+const StuccoRemediation = lazy(() => import('./pages/services/StuccoRemediation'))
+const Blog = lazy(() => import('./pages/Blog'))
+const BlogPost = lazy(() => import('./pages/BlogPost'))
+const AustinArea = lazy(() => import('./pages/areas/Austin'))
+const RoundRockArea = lazy(() => import('./pages/areas/RoundRock'))
+const CedarParkArea = lazy(() => import('./pages/areas/CedarPark'))
+const GeorgetownArea = lazy(() => import('./pages/areas/Georgetown'))
+const PflugervilleArea = lazy(() => import('./pages/areas/Pflugerville'))
+const WestlakeArea = lazy(() => import('./pages/areas/Westlake'))
+const TravisCountyArea = lazy(() => import('./pages/areas/TravisCounty'))
+const WilliamsonCountyArea = lazy(() => import('./pages/areas/WilliamsonCounty'))
+const BellCountyArea = lazy(() => import('./pages/areas/BellCounty'))
+const HaysCountyArea = lazy(() => import('./pages/areas/HaysCounty'))
+const BurnetCountyArea = lazy(() => import('./pages/areas/BurnetCounty'))
+const LlanoCountyArea = lazy(() => import('./pages/areas/LlanoCounty'))
+const ComalCountyArea = lazy(() => import('./pages/areas/ComalCounty'))
+const BastropCountyArea = lazy(() => import('./pages/areas/BastropCounty'))
+const BlancoCountyArea = lazy(() => import('./pages/areas/BlancoCounty'))
+const GillespieCountyArea = lazy(() => import('./pages/areas/GillespieCounty'))
+const CaldwellCountyArea = lazy(() => import('./pages/areas/CaldwellCounty'))
+const LeeCountyArea = lazy(() => import('./pages/areas/LeeCounty'))
+const MilamCountyArea = lazy(() => import('./pages/areas/MilamCounty'))
+const BrazosCountyArea = lazy(() => import('./pages/areas/BrazosCounty'))
+const McLennanCountyArea = lazy(() => import('./pages/areas/McLennanCounty'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 export default function App() {
   return (
     <>
     <ScrollToTop />
+    <Suspense fallback={<div className="flex min-h-screen items-center justify-center">Loading...</div>}>
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
@@ -78,6 +81,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
+    </Suspense>
     </>
   )
 }

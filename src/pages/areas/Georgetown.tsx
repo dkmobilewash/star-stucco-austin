@@ -45,6 +45,8 @@ export default function GeorgetownArea() {
             alt="Stucco home in Georgetown Texas"
             className="h-full w-full object-cover opacity-30"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
         </div>
         <div className="relative mx-auto max-w-7xl px-4">

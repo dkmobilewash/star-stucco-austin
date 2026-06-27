@@ -47,6 +47,8 @@ export default function BellCountyArea() {
             alt="Bell County Texas neighborhood"
             className="h-full w-full object-cover opacity-20"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary-900/80 to-secondary-900/95" />
         </div>
@@ -69,7 +71,7 @@ export default function BellCountyArea() {
               Central Texas expertise to Bell County homes and commercial properties.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg">
+              <Link to="/contact" className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg">
                 Get a Free Estimate <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
               <a href={`tel:${siteConfig.phone}`} aria-label={`Call Star Stucco at ${siteConfig.phone}`} className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-secondary-400">
@@ -109,7 +111,7 @@ export default function BellCountyArea() {
               </div>
             </div>
             <div>
-              <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Stucco exterior in Bell County" loading="lazy" className="rounded-2xl shadow-xl" />
+              <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Stucco exterior in Bell County" loading="lazy" className="rounded-2xl shadow-xl" width={800} height={600} />
             </div>
           </div>
         </div>

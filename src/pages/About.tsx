@@ -71,6 +71,8 @@ export default function About() {
             src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
             alt="Austin, Texas skyline near Lady Bird Lake"
             className="h-full w-full object-cover opacity-25"
+            width={1600}
+            height={900}
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/90 to-secondary-900/60" />
@@ -139,6 +141,8 @@ export default function About() {
                 src="https://images.pexels.com/photos/3935333/pexels-photo-3935333.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
                 alt="Star Stucco of Austin team working on a residential project"
                 className="rounded-2xl shadow-2xl"
+                width={800}
+                height={600}
                 loading="lazy"
               />
               <div className="absolute -bottom-6 -right-6 rounded-xl bg-primary-700 p-6 shadow-lg">
@@ -193,6 +197,8 @@ export default function About() {
                 src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
                 alt="Star Stucco of Austin team members on a job site"
                 className="rounded-2xl shadow-xl"
+                width={800}
+                height={600}
                 loading="lazy"
               />
             </div>
@@ -271,7 +277,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               Get a Free Estimate
               <ChevronRight className="ml-2 h-4 w-4" />
