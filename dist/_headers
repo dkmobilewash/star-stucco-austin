@@ -10,6 +10,9 @@ https://www.stuccoaustin.com/*
   Location: https://stuccoaustin.com/:splat
   Status: 301
 
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
