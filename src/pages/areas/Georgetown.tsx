@@ -41,7 +41,7 @@ export default function GeorgetownArea() {
       <section className="relative bg-slate-900 py-24">
         <div className="absolute inset-0">
           <img
-            src="/images/stucco-installation-process.webp"
+            src="/images/stucco-texture-hero.webp"
             alt="Stucco home in Georgetown Texas"
             className="h-full w-full object-cover opacity-30"
             fetchPriority="high"

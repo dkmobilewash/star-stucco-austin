@@ -98,7 +98,7 @@ export default function StuccoFinishing() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="/images/stucco-installation-process.webp"
+            src="/images/stucco-texture-hero.webp"
             alt="Beautifully finished stucco wall with warm texture"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"

@@ -91,7 +91,7 @@ export default function RoundRockArea() {
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="/images/stucco-repair-closeup.webp"
+                src="/images/stucco-damage-signs.webp"
                 alt="Modern stucco homes in Round Rock neighborhood"
                 className="h-full w-full object-cover"
                 loading="lazy"
