@@ -28,5 +28,17 @@ https://www.stuccoaustin.com/*
 /*.svg
   Cache-Control: public, max-age=604800
 
+/*
+  X-Robots-Tag: index, follow
+
 /
   Cache-Control: no-cache, no-store, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+
+/llms.txt
+  Cache-Control: public, max-age=86400
