@@ -59,10 +59,12 @@ export default function AustinArea() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/1563256/pexels-photo-1563256.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/stucco-home-roundrock-hero.webp"
             alt="Austin, Texas skyline with modern architecture"
             className="h-full w-full object-cover opacity-20"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary-900/80 to-secondary-900/95" />
         </div>
@@ -88,7 +90,7 @@ export default function AustinArea() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
               >
                 Get a Free Estimate <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
@@ -137,9 +139,11 @@ export default function AustinArea() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/stucco-project-completed.webp"
                 alt="Residential stucco exterior in Austin neighborhood"
                 loading="lazy"
+                width={800}
+                height={600}
                 className="rounded-2xl shadow-xl"
               />
             </div>

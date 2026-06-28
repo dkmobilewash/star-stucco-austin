@@ -21,37 +21,37 @@ const services = [
     title: 'Residential Stucco',
     description: 'We enhance the beauty and durability of your home using high-quality materials and proven techniques.',
     path: '/austin-stucco-installation',
-    image: 'https://s.wsj.net/public/resources/images/BN-TT668_0608au_12S_20170607152622.jpg?width=1280&height=1280',
+    image: '/images/residential-stucco-austin.webp',
   },
   {
     title: 'Commercial Stucco',
     description: 'We deliver professional exterior results that meet the unique demands of commercial projects.',
     path: '/austin-commercial-stucco',
-    image: 'https://media.istockphoto.com/id/1091082550/photo/new-row-homes.jpg?s=612x612&w=0&k=20&c=vmjiDszpujDRXyDhXu4Acnu4gCYCWnXG_zZZc0xxLwg=',
+    image: '/images/commercial-stucco-austin.webp',
   },
   {
     title: 'Stucco Repair',
     description: 'We restore damaged or deteriorating stucco to its original condition using expert techniques.',
     path: '/austin-stucco-repair',
-    image: 'https://media.istockphoto.com/id/1083608688/photo/hand-with-a-spatula-in-the-process-of-leveling-the-raw-plaster.jpg?s=612x612&w=0&k=20&c=hVFckEylAyO8yaUcAQVUtSWbQDZJ3RbW4c68gARdTr8=',
+    image: '/images/stucco-repair-closeup.webp',
   },
   {
     title: 'EIFS',
     description: 'We install Exterior Insulation and Finish Systems — lightweight, energy-efficient cladding for any building.',
     path: '/eifs-contractor-austin',
-    image: 'https://npicommercial.com/wp-content/uploads/sites/188/2024/07/Blog-Photo-03.jpg',
+    image: '/images/eifs-stucco-hero.webp',
   },
   {
     title: 'Interior Plaster',
     description: 'We transform living spaces with a range of custom plaster finishes and styles.',
     path: '/austin-stucco-finishing',
-    image: 'https://media.istockphoto.com/id/521709428/photo/plaster-master.jpg?s=612x612&w=0&k=20&c=9eXrEU_8JeasICgWdMp856idvv3tQv8XskUOLwNRtQQ=',
+    image: '/images/stucco-installation-process.webp',
   },
   {
     title: 'Thin Stone Veneer',
     description: 'We apply natural stone veneer for a durable, elegant finish on any surface.',
     path: '/austin-stucco-installation',
-    image: 'https://www.naturalstoneveneer.com/wp-content/uploads/2026/02/NSV-BG-6.jpg',
+    image: '/images/stucco-project-completed.webp',
   },
 ]
 
@@ -117,10 +117,12 @@ export default function Home() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://www.grandendeavorhomes.com/wp-content/uploads/2025/01/1-1-1500x630.jpg"
-            alt="Professional stucco exterior on a Central Texas home"
+            src="/images/hero-stucco-austin.webp"
+            alt="Professional stucco contractor Austin TX"
             className="h-full w-full object-cover opacity-30"
             fetchPriority="high"
+            width={1200}
+            height={504}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/90 to-secondary-900/50" />
         </div>
@@ -139,7 +141,7 @@ export default function Home() {
               <a
                 href="tel:+15127069699"
                 aria-label="Call Star Stucco of Austin for a free estimate"
-                className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+                className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
               >
                 <Phone className="mr-2 h-4 w-4" />
                 Call for a Free Estimate
@@ -180,7 +182,7 @@ export default function Home() {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+                className="inline-flex items-center rounded-lg bg-primary-700 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
               >
                 Contact Us Today
                 <ChevronRight className="ml-2 h-4 w-4" />
@@ -188,9 +190,11 @@ export default function Home() {
             </div>
             <div className="relative">
               <img
-                src="https://verdebuildersaustin.com/wp-content/uploads/large-home-back-yard.jpg"
+                src="/images/stucco-project-austin.webp"
                 alt="Star Stucco of Austin team on a project site"
                 loading="lazy"
+                width={665}
+                height={665}
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 rounded-xl bg-white p-4 shadow-lg">
@@ -254,6 +258,8 @@ export default function Home() {
                     src={service.image}
                     alt={`${service.title} in Austin, TX`}
                     loading="lazy"
+                    width={640}
+                    height={400}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -347,6 +353,8 @@ export default function Home() {
                     src={post.image}
                     alt={post.title}
                     loading="lazy"
+                    width={800}
+                    height={500}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -387,7 +395,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               Get a Free Estimate
             </Link>

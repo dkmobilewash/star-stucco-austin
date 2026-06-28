@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     title: 'The Best Stucco Finishes for Austin Homes in 2026',
     excerpt: 'Discover which stucco finishes perform best in Austin\'s hot Texas climate, from smooth to textured options that withstand intense sun and occasional storms.',
     date: '2026-04-15',
-    image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
+    image: '/images/stucco-home-roundrock-hero.webp',
     content: `Austin homeowners know that choosing the right stucco finish is about more than just aesthetics. With our intense Texas heat, occasional storms, and the unique architectural character of neighborhoods like Westlake Hills and Barton Hills, your stucco finish needs to perform as well as it looks.
 
 ## Popular Stucco Finishes for Austin Properties
@@ -44,7 +44,7 @@ At Star Stucco of Austin, we help homeowners across Travis County select the per
     title: '5 Signs Your Austin Home Needs Stucco Repair',
     excerpt: 'Learn to identify common stucco problems before they become costly. Austin\'s climate can accelerate damage if left unaddressed.',
     date: '2026-03-28',
-    image: 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
+    image: '/images/stucco-repair-closeup.webp',
     content: `Living in Austin means your home's stucco faces some unique challenges. From the scorching summer heat near Lady Bird Lake to the occasional severe weather that rolls through Travis County, stucco damage can develop quickly if you don't know what to look for.
 
 ## 1. Cracking Along Window and Door Frames
@@ -79,7 +79,7 @@ At Star Stucco of Austin, we offer free inspections for homeowners throughout th
     h1: 'Stucco vs Hardie Board: Which is Right for Your Austin Home?',
     excerpt: 'Comparing two popular exterior options for Austin properties. Learn the pros, cons, and cost differences for the Central Texas climate.',
     date: '2026-03-10',
-    image: 'https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
+    image: '/images/stucco-project-completed.webp',
     content: `When Austin homeowners are choosing an exterior cladding material, the debate often comes down to traditional stucco versus fiber cement (Hardie Board). Both are popular choices throughout Travis County, but they offer very different advantages depending on your home's style, location, budget, and how long you plan to stay in the property.
 
 Austin's climate adds another layer to this decision that homeowners in milder parts of the country simply don't face. With sustained summer heat, significant humidity swings between seasons, occasional hail, and the notorious expansive clay soils that cause foundation movement across much of the metro, your exterior material needs to perform across a demanding range of conditions. Let's break down both options honestly.
@@ -151,7 +151,7 @@ If you're leaning toward stucco, [visit our homepage to learn more about Star St
     excerpt:
       'EIFS, or synthetic stucco, is one of the most misunderstood exterior systems in Texas. Here is exactly what it is, how it works, and how to tell if your Austin home has it.',
     date: '2026-06-10',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_T-3MV1OtBih-u0oeF_Vyvfd_XaGkx3cNZuehwhx162kOtcqjgF_51yy0YZK0ipqMxThkPhCygGUBK7cDw8tMr9is4pnZuQhMMYYcDYgN6md9qioStMSJcoWM6L53AwcpipPcWADoUZ03=s1360-w1360-h1020-rw',
+    image: '/images/eifs-stucco-hero.webp',
     content: `If you own a home or commercial building in Austin, there is a good chance you have walked past EIFS hundreds of times without knowing it. Many Austin homeowners do not know whether their exterior is EIFS or traditional stucco — and the difference matters a great deal when it comes to maintenance, repair, and resale.
 
 Knowing which system you have changes everything about how you care for it. EIFS and traditional stucco look almost identical from the curb, but they are built from completely different materials, fail in different ways, and require different repair methods. Hiring the wrong contractor for an EIFS repair can trap moisture inside your walls and turn a small problem into a major one.
@@ -255,7 +255,7 @@ EIFS is a proven, energy-efficient cladding system that performs beautifully in 
     excerpt:
       'EIFS and traditional stucco look nearly identical, but they perform very differently. Here is an honest, side-by-side comparison for Austin homeowners.',
     date: '2026-06-12',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2oN53IGNOy9hnwdS5e6L2kZerK7tVPo10ZaP3BdaGGSeuJznmlNC4_oHgmjHdsoJiu8XfFTPg2y-YufO37U942U4SFFmLk0_0knf0ruJZ44dTv2UIP10U0P1uOHT5rXTyO9n97m756S8v=s1360-w1360-h1020-rw',
+    image: '/images/stucco-project-completed.webp',
     content: `Drive through almost any Austin neighborhood and you will see stucco-look exteriors everywhere — a nod to the city's deep Spanish colonial architectural tradition. What is not obvious from the street is that some of those homes are clad in traditional cement stucco and others in EIFS, the synthetic alternative. The two look nearly identical, yet they behave very differently when it comes to insulation, durability, repair, and cost.
 
 If you are building, renovating, or simply trying to maintain your home, understanding the difference helps you make better decisions and hire the right contractor. Here is an honest comparison.
@@ -318,7 +318,7 @@ There is no single "best" answer — the right system depends on your priorities
     excerpt:
       'Most EIFS damage is repairable when caught early and handled by the right contractor. Here is what to look for, what repairs cost in Austin, and what to expect.',
     date: '2026-06-14',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAF2hTkWVGrD3vcTQtjx7Ou7wTXIfPRknLXCXY_rqMyPV4aJh9sVZedYOkSstzsxZIarzonm1DkRlYYU9coexooVMchAwLeXthNHsGRxys3CWQhjTui-d1U1lwJItvFsBUQR3wono7pDW2Rk=s1360-w1360-h1020-rw',
+    image: '/images/stucco-repair-closeup.webp',
     content: `If your EIFS is cracking, staining, or feeling soft in spots, the good news is that EIFS is repairable in the vast majority of cases. The key is catching problems early and using a contractor who understands the system. EIFS is a layered, manufacturer-specific assembly, and a repair done with the wrong materials or method can trap moisture and make things worse. This guide explains how to recognize when your EIFS needs attention, what repairs typically cost in Austin, and exactly what a qualified contractor does.
 
 ## How to Know If Your EIFS Needs Repair
@@ -419,7 +419,7 @@ Most EIFS problems are very fixable when you act early and hire the right team. 
     excerpt:
       'Dryvit is the most common EIFS brand on Austin homes and buildings. Here is what Dryvit is, how it fails, what repairs cost, and why it needs a qualified specialist.',
     date: '2026-06-15',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_T-3MV1OtBih-u0oeF_Vyvfd_XaGkx3cNZuehwhx162kOtcqjgF_51yy0YZK0ipqMxThkPhCygGUBK7cDw8tMr9is4pnZuQhMMYYcDYgN6md9qioStMSJcoWM6L53AwcpipPcWADoUZ03=s1360-w1360-h1020-rw',
+    image: '/images/eifs-stucco-hero.webp',
     content: `If you own a home or commercial building in Austin with a synthetic stucco exterior, there is a strong chance the system is Dryvit. Dryvit is the brand that introduced EIFS (Exterior Insulation and Finish Systems) to the United States, and it remains one of the most widely installed synthetic stucco systems across Central Texas. When that finish cracks, stains, or starts letting water in, you need Dryvit repair done by someone who understands the system — not a general handyman.
 
 This guide explains what Dryvit is, the problems we see most often on Austin properties, what repairs typically cost, and why Dryvit repair is a job for a qualified EIFS specialist.
@@ -503,7 +503,7 @@ If your synthetic stucco is cracking, staining, or feeling soft, don't wait for 
     excerpt:
       'A clear 2026 breakdown of stucco repair costs in Austin by repair type, what drives the price, and how to get an accurate quote — from crack repair to full replacement.',
     date: '2026-06-16',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2oN53IGNOy9hnwdS5e6L2kZerK7tVPo10ZaP3BdaGGSeuJznmlNC4_oHgmjHdsoJiu8XfFTPg2y-YufO37U942U4SFFmLk0_0knf0ruJZ44dTv2UIP10U0P1uOHT5rXTyO9n97m756S8v=s1360-w1360-h1020-rw',
+    image: '/images/stucco-project-completed.webp',
     content: `"How much does stucco repair cost?" is the first question most Austin homeowners ask — and the honest answer is that it depends on what's actually wrong. A hairline crack and a wall with hidden water damage are very different jobs. This guide breaks down real 2026 stucco repair cost ranges for the Austin area, explains what drives the price, and shows you how to get an accurate quote.
 
 ## Average Stucco Repair Cost in Austin
@@ -586,7 +586,7 @@ Star Stucco of Austin provides free, no-obligation stucco repair estimates throu
     excerpt:
       'Stucco cracks are common on Austin homes — but some are harmless and some let water in. Here is how to tell the difference, what repair involves, and what it costs.',
     date: '2026-06-17',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1i9jAG3XB6C9PbVCOXqpjT4I1aKypL3IcwM7dX8sygD6D5Ma45nL_ifBvJ8JeBpJaiThipCbC96nZI5yQIKVQyf6qEO7eges0BHuono-yKdqaynwrhvpUULfXs0tQhspuaRd5zCGptLg=s1360-w1360-h1020-rw',
+    image: '/images/eifs-stucco-hero.webp',
     content: `Cracks are the most common stucco problem we see on Austin homes — and one of the most misunderstood. Some cracks are purely cosmetic; others are an open door for water that leads to thousands of dollars in hidden damage. This guide explains why stucco cracks in Austin, how to read the different types, when to worry, and what repair actually involves.
 
 ## Why Stucco Cracks in Austin
@@ -659,7 +659,7 @@ The cheapest stucco repair is the crack you seal before water finds it. If you'r
     excerpt:
       'A clear 2026 breakdown of what it costs to stucco a house in Austin — by square foot and by home size — plus the factors that move the price up or down.',
     date: '2026-06-17',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2oN53IGNOy9hnwdS5e6L2kZerK7tVPo10ZaP3BdaGGSeuJznmlNC4_oHgmjHdsoJiu8XfFTPg2y-YufO37U942U4SFFmLk0_0knf0ruJZ44dTv2UIP10U0P1uOHT5rXTyO9n97m756S8v=s1360-w1360-h1020-rw',
+    image: '/images/stucco-project-completed.webp',
     content: `Stucco is one of the most popular exteriors in Central Texas — durable, energy-smart, and a natural fit for Hill Country and Spanish-style architecture. If you're planning a new build or re-siding an existing home, the first question is usually cost. Here's a clear 2026 breakdown of what it costs to stucco a house in Austin.
 
 ## Average Cost to Stucco a House in Austin
@@ -742,7 +742,7 @@ Square-foot ranges are a starting point, but your real cost depends on your home
     excerpt:
       'The finish coat defines your home’s entire look. Here are the main stucco finish types, how each one looks and performs, and which suit Austin homes best.',
     date: '2026-06-17',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_T-3MV1OtBih-u0oeF_Vyvfd_XaGkx3cNZuehwhx162kOtcqjgF_51yy0YZK0ipqMxThkPhCygGUBK7cDw8tMr9is4pnZuQhMMYYcDYgN6md9qioStMSJcoWM6L53AwcpipPcWADoUZ03=s1360-w1360-h1020-rw',
+    image: '/images/eifs-stucco-hero.webp',
     content: `The finish coat is the layer everyone actually sees — it sets the entire character of a stucco home, from sleek and modern to rustic and Mediterranean. Choosing the right finish is part aesthetics and part performance, especially in Austin's demanding climate. Here's a plain-English guide to the main stucco finishes.
 
 ## Smooth Finish

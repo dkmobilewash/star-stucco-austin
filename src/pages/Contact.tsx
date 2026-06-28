@@ -162,7 +162,7 @@ export default function Contact() {
                     onClick={() => handleTypeChange('residential')}
                     className={`px-6 py-2.5 rounded-lg text-sm font-semibold transition-all ${
                       quoteType === 'residential'
-                        ? 'bg-primary-600 text-white shadow-sm'
+                        ? 'bg-primary-700 text-white shadow-sm'
                         : 'text-secondary-600 hover:text-secondary-900'
                     }`}
                   >
@@ -173,7 +173,7 @@ export default function Contact() {
                     onClick={() => handleTypeChange('commercial')}
                     className={`px-6 py-2.5 rounded-lg text-sm font-semibold transition-all ${
                       quoteType === 'commercial'
-                        ? 'bg-primary-600 text-white shadow-sm'
+                        ? 'bg-primary-700 text-white shadow-sm'
                         : 'text-secondary-600 hover:text-secondary-900'
                     }`}
                   >
@@ -313,7 +313,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="w-full sm:w-auto rounded-lg bg-primary-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20 disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full sm:w-auto rounded-lg bg-primary-700 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {submitting ? 'Submitting…' : 'Submit Request'}
                   </button>

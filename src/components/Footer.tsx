@@ -4,15 +4,17 @@ import { siteConfig } from '../lib/siteConfig'
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary-900 text-secondary-300">
+    <footer className="bg-secondary-900 text-secondary-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="mb-4">
               <img
-                src="/image-removebg-preview.png"
+                src="/images/star-stucco-logo.webp"
                 alt={siteConfig.name}
                 className="h-16 w-auto invert"
+                width={98}
+                height={98}
               />
             </div>
             <p className="text-sm leading-relaxed text-secondary-400 mb-4">
@@ -125,10 +127,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-secondary-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-secondary-500">
+          <p className="text-xs text-secondary-200">
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
-          <p className="text-xs text-secondary-500">
+          <p className="text-xs text-secondary-200">
             Serving Central Texas — {siteConfig.tagline}
           </p>
         </div>

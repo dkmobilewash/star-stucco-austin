@@ -41,10 +41,12 @@ export default function RoundRockArea() {
       <section className="relative bg-slate-900 py-24">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920&fm=webp"
+            src="/images/stucco-home-roundrock-hero.webp"
             alt="Stucco home in Round Rock, Texas"
             className="h-full w-full object-cover opacity-30"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -89,10 +91,12 @@ export default function RoundRockArea() {
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="overflow-hidden rounded-2xl">
               <img
-                src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/stucco-repair-closeup.webp"
                 alt="Modern stucco homes in Round Rock neighborhood"
                 className="h-full w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
             <div>

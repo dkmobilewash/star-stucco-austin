@@ -33,9 +33,11 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between lg:h-20">
           <Link to="/" className="flex items-center">
             <img
-              src="/image-removebg-preview.png"
+              src="/images/star-stucco-logo.webp"
               alt={siteConfig.name}
               className="h-14 w-auto"
+              width={98}
+              height={98}
             />
           </Link>
 

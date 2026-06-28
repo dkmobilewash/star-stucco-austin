@@ -183,10 +183,12 @@ export default function StuccoRepair() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/stucco-repair-hero.webp"
             alt="Stucco repair work on an Austin home exterior"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/95 to-secondary-900/60" />
         </div>
@@ -206,7 +208,7 @@ export default function StuccoRepair() {
             <a
               href="tel:+15127069699"
               aria-label="Call Star Stucco of Austin for a free stucco repair estimate"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
             >
               <Phone className="mr-2 h-4 w-4" />
               Call (512) 706-9699
@@ -264,10 +266,12 @@ export default function StuccoRepair() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/stucco-repair-closeup.webp"
                 alt="Stucco crack repair on an Austin home"
                 className="rounded-2xl shadow-lg mb-8"
                 loading="lazy"
+                width={800}
+                height={600}
               />
               <div className="rounded-xl bg-white border border-secondary-200 p-6">
                 <h3 className="font-display text-lg font-bold text-secondary-900 mb-4">
@@ -396,7 +400,7 @@ export default function StuccoRepair() {
             <a
               href="tel:+15127069699"
               aria-label="Call Star Stucco of Austin for a free stucco repair estimate"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               <Phone className="mr-2 h-4 w-4" />
               Call (512) 706-9699
