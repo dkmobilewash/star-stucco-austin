@@ -44,7 +44,7 @@ At Star Stucco of Austin, we help homeowners across Travis County select the per
     title: '5 Signs Your Austin Home Needs Stucco Repair',
     excerpt: 'Learn to identify common stucco problems before they become costly. Austin\'s climate can accelerate damage if left unaddressed.',
     date: '2026-03-28',
-    image: '/images/stucco-repair-closeup.webp',
+    image: '/images/stucco-damage-signs.webp',
     content: `Living in Austin means your home's stucco faces some unique challenges. From the scorching summer heat near Lady Bird Lake to the occasional severe weather that rolls through Travis County, stucco damage can develop quickly if you don't know what to look for.
 
 ## 1. Cracking Along Window and Door Frames

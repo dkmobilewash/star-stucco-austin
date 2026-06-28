@@ -175,7 +175,7 @@ export default function CedarParkArea() {
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
             <div className="rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
               <img
-                src="/images/stucco-installation-process.webp"
+                src="/images/stucco-texture-hero.webp"
                 alt="Residential stucco home in Cedar Park"
                 className="h-48 w-full object-cover"
                 loading="lazy"
