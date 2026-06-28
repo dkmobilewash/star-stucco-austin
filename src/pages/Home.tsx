@@ -73,12 +73,15 @@ const testimonials = [
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'HomeAndConstructionBusiness',
+  '@id': 'https://stuccoaustin.com/#localbusiness',
   name: siteConfig.name,
   description: siteConfig.description,
   url: siteConfig.url,
   telephone: siteConfig.phone,
   email: siteConfig.email,
+  image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
+  priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
     streetAddress: siteConfig.address.street,
@@ -92,10 +95,21 @@ const schema = {
     latitude: siteConfig.coordinates.lat,
     longitude: siteConfig.coordinates.lng,
   },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
   areaServed: siteConfig.serviceAreas.map((area) => ({
     '@type': 'City',
     name: area,
   })),
+  sameAs: [
+    siteConfig.socialMedia.facebook,
+    siteConfig.socialMedia.instagram,
+    siteConfig.socialMedia.google,
+  ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
@@ -298,6 +312,68 @@ export default function Home() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Star Stucco of Austin location"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-20 lg:py-28 bg-secondary-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
+              Stucco Services Across Central Texas
+            </h2>
+            <p className="text-secondary-600 text-lg">
+              From Austin to the surrounding Hill Country, we provide expert stucco services to homeowners and businesses throughout Central Texas.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h3 className="font-display text-xl font-bold text-secondary-900 mb-4">Cities We Serve</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { name: 'Austin', path: '/service-area/austin' },
+                  { name: 'Round Rock', path: '/service-area/round-rock' },
+                  { name: 'Cedar Park', path: '/service-area/cedar-park' },
+                  { name: 'Georgetown', path: '/service-area/georgetown' },
+                  { name: 'Pflugerville', path: '/service-area/pflugerville' },
+                  { name: 'Westlake', path: '/service-area/westlake' },
+                ].map((area) => (
+                  <Link
+                    key={area.name}
+                    to={area.path}
+                    className="flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm font-medium text-secondary-700 shadow-sm border border-secondary-100 transition-all hover:shadow-md hover:text-primary-700"
+                  >
+                    <ChevronRight className="h-4 w-4 text-primary-600" />
+                    {area.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-display text-xl font-bold text-secondary-900 mb-4">Counties We Cover</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { name: 'Travis County', path: '/travis-county' },
+                  { name: 'Williamson County', path: '/williamson-county' },
+                  { name: 'Hays County', path: '/hays-county' },
+                  { name: 'Bell County', path: '/bell-county' },
+                  { name: 'Bastrop County', path: '/bastrop-county' },
+                  { name: 'Burnet County', path: '/burnet-county' },
+                  { name: 'Comal County', path: '/comal-county' },
+                  { name: 'Blanco County', path: '/blanco-county' },
+                ].map((area) => (
+                  <Link
+                    key={area.name}
+                    to={area.path}
+                    className="flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm font-medium text-secondary-700 shadow-sm border border-secondary-100 transition-all hover:shadow-md hover:text-primary-700"
+                  >
+                    <ChevronRight className="h-4 w-4 text-primary-600" />
+                    {area.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

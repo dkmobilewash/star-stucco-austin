@@ -4,7 +4,28 @@ import { siteConfig } from '../lib/siteConfig'
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary-900 text-secondary-100">
+    <footer className="bg-secondary-900 text-secondary-100" itemScope itemType="https://schema.org/LocalBusiness">
+      <meta itemProp="name" content="Star Stucco of Austin" />
+      <meta itemProp="telephone" content="(512) 706-9699" />
+      <meta itemProp="email" content="info@starstuccoaustin.com" />
+      <meta itemProp="url" content="https://stuccoaustin.com" />
+      <meta itemProp="priceRange" content="$$" />
+      <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+        <meta itemProp="streetAddress" content="5316 W US Hwy 290 Service Rd" />
+        <meta itemProp="addressLocality" content="Austin" />
+        <meta itemProp="addressRegion" content="TX" />
+        <meta itemProp="postalCode" content="78735" />
+        <meta itemProp="addressCountry" content="US" />
+      </div>
+      <div className="bg-primary-700 py-4">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-white">
+          <span className="text-sm font-semibold">Ready to start your stucco project?</span>
+          <a href="tel:+15127069699" className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2 text-sm font-bold text-primary-700 transition-all hover:bg-primary-50">
+            <Phone className="h-4 w-4" />
+            Call (512) 706-9699
+          </a>
+        </div>
+      </div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
