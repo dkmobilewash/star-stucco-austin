@@ -1,9 +1,9 @@
 ===============================================================================
-STAR STUCCO OF AUSTIN — ADDITIONAL PHOTOS NEEDED
+STAR STUCCO OF AUSTIN — ADDITIONAL PHOTOS NEEDED (6)
 ===============================================================================
 
-There are 4 remaining placeholder images on the Home page that need real
-photos. Save replacements to:  /public/images/
+There are 6 photos needed to complete the website. Save replacements to:
+/public/images/
 Format:  WebP preferred (or JPG)
 
 
@@ -27,6 +27,16 @@ PHOTOS TO PROVIDE
  4. stucco-project-austin.webp                 (800 x 600)
     Used on: Home page — featured project showcase section
     Replace with: A standout completed project photo from Star Stucco.
+
+ 5. stucco-texture-hero.webp                   (1600 x 900)
+    Used on: Stucco Finishing page, Georgetown page, Cedar Park page
+    Replace with: Close-up of a beautiful stucco texture or finish applied
+    by Star Stucco — showing detail and craftsmanship.
+
+ 6. stucco-damage-signs.webp                   (800 x 600)
+    Used on: Round Rock page, blog post "5 Signs Your Home Needs Repair"
+    Replace with: Example of stucco damage Star Stucco has repaired
+    (a before shot showing cracks, water damage, or deterioration).
 
 
 ===============================================================================
