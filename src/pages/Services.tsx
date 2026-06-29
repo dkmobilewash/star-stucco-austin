@@ -74,6 +74,45 @@ const services = [
       'Mixed-use developments',
     ],
   },
+  {
+    title: 'Exterior Stucco',
+    path: '/exterior-stucco-austin-tx',
+    image: '/images/stucco-home-exterior-hero.webp',
+    description:
+      'Full-service exterior stucco contractor for Austin homes and businesses. From initial consultation through final finish, we deliver durable, beautiful stucco exteriors designed for the Texas climate.',
+    features: [
+      'New exterior stucco installation',
+      'Exterior re-stucco and renovation',
+      'Energy-efficient stucco systems',
+      'All architectural styles',
+    ],
+  },
+  {
+    title: 'Stucco Re-Coat & Color Coat',
+    path: '/stucco-recoat-austin-tx',
+    image: '/images/stucco-project-completed.webp',
+    description:
+      'Refresh your faded or aging stucco with a professional re-coat or color coat. Update your home\'s appearance and add waterproofing without the cost of full replacement.',
+    features: [
+      'Stucco color coat application',
+      'Elastomeric re-coating',
+      'Fog coat and limewash finishes',
+      'UV and waterproof coatings',
+    ],
+  },
+  {
+    title: 'Stucco Inspection',
+    path: '/stucco-inspection-austin-tx',
+    image: '/images/stucco-damage-signs.webp',
+    description:
+      'Comprehensive stucco inspections for Austin homeowners. We identify moisture intrusion, hidden damage, and structural issues before they become costly repairs.',
+    features: [
+      'Visual and probe testing',
+      'Moisture mapping',
+      'Pre-purchase inspections',
+      'Detailed written reports',
+    ],
+  },
 ]
 
 const schema = {

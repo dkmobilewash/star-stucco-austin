@@ -65,8 +65,8 @@ export default function StuccoInstallation() {
   return (
     <>
       <SEO
-        title="Stucco Installation Austin, TX | Star Stucco of Austin"
-        description="Expert stucco installation in Austin, TX for new construction and re-stucco projects. Travis County code compliant. Serving Westlake, Barton Creek, Mueller, and all Austin neighborhoods. Free estimates."
+        title="Residential Stucco Contractor in Austin, TX | Star Stucco of Austin"
+        description="Expert residential stucco installation in Austin, TX. New construction & re-stucco for homes across Central Texas. Licensed & insured. Call (512) 706-9699 for a free estimate."
         path="/austin-stucco-installation"
         schema={[schema, faqPageSchema(faqs)]}
       />
@@ -91,7 +91,7 @@ export default function StuccoInstallation() {
             <span className="text-primary-400">Stucco Installation</span>
           </p>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-            Professional Stucco Installation in Austin, TX
+            Residential Stucco Contractor in Austin, TX
           </h1>
           <p className="text-lg text-secondary-300 mb-8 max-w-2xl leading-relaxed">
             From new construction in Mueller to full re-stucco projects in Westlake Hills,

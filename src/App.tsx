@@ -13,6 +13,11 @@ const StuccoFinishing = lazy(() => import('./pages/services/StuccoFinishing'))
 const CommercialStucco = lazy(() => import('./pages/services/CommercialStucco'))
 const EifsContractor = lazy(() => import('./pages/services/EifsContractor'))
 const StuccoRemediation = lazy(() => import('./pages/services/StuccoRemediation'))
+const StuccoInstallationNew = lazy(() => import('./pages/services/StuccoInstallationNew'))
+const StuccoFinishingNew = lazy(() => import('./pages/services/StuccoFinishingNew'))
+const StuccoRecoat = lazy(() => import('./pages/services/StuccoRecoat'))
+const ExteriorStucco = lazy(() => import('./pages/services/ExteriorStucco'))
+const StuccoInspection = lazy(() => import('./pages/services/StuccoInspection'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const AustinArea = lazy(() => import('./pages/areas/Austin'))
@@ -55,6 +60,11 @@ export default function App() {
         <Route path="/austin-commercial-stucco" element={<CommercialStucco />} />
         <Route path="/eifs-contractor-austin" element={<EifsContractor />} />
         <Route path="/austin-stucco-remediation" element={<StuccoRemediation />} />
+        <Route path="/stucco-installation-austin-tx" element={<StuccoInstallationNew />} />
+        <Route path="/stucco-finishing-austin-tx" element={<StuccoFinishingNew />} />
+        <Route path="/stucco-recoat-austin-tx" element={<StuccoRecoat />} />
+        <Route path="/exterior-stucco-austin-tx" element={<ExteriorStucco />} />
+        <Route path="/stucco-inspection-austin-tx" element={<StuccoInspection />} />
         <Route path="/service-area/austin" element={<AustinArea />} />
         <Route path="/service-area/round-rock" element={<RoundRockArea />} />
         <Route path="/service-area/cedar-park" element={<CedarParkArea />} />

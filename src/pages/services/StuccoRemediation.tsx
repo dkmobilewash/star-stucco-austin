@@ -135,8 +135,8 @@ export default function StuccoRemediation() {
   return (
     <>
       <SEO
-        title="Stucco Remediation Austin TX | Moisture & Water Damage Repair | Star Stucco"
-        description="Expert stucco remediation in Austin, TX. We find and fix moisture intrusion and water damage down to the substrate — not just the surface. Free estimates."
+        title="Stucco Remediation in Austin, TX | Star Stucco of Austin"
+        description="Expert stucco remediation in Austin, TX. We find and fix moisture intrusion & water damage down to the substrate. Call (512) 706-9699 for a free estimate."
         path="/austin-stucco-remediation"
         schema={[schema, faqPageSchema(faqs)]}
       />

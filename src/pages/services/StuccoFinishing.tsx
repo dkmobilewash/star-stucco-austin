@@ -88,8 +88,8 @@ export default function StuccoFinishing() {
   return (
     <>
       <SEO
-        title="Stucco Finishing & Textures Austin, TX | Star Stucco of Austin"
-        description="Custom stucco finishes and textures in Austin, TX. Smooth, Santa Barbara, dash, sand, and lace finishes with expert color matching. Complementing Hill Country, Spanish, and Modern architecture."
+        title="Interior Plaster Contractor Austin, TX | Star Stucco of Austin"
+        description="Custom interior plaster finishes in Austin, TX. Smooth, Venetian, Santa Barbara & decorative textures. Expert color matching. Call (512) 706-9699 for a free estimate."
         path="/austin-stucco-finishing"
         schema={[schema, faqPageSchema(faqs)]}
       />
@@ -114,7 +114,7 @@ export default function StuccoFinishing() {
             <span className="text-primary-400">Stucco Finishing & Textures</span>
           </p>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-            Stucco Finishing & Textures in Austin, TX
+            Interior Plaster Contractor in Austin, TX
           </h1>
           <p className="text-lg text-secondary-300 mb-8 max-w-2xl leading-relaxed">
             The finish is what the world sees. Star Stucco offers smooth, Santa Barbara, dash,

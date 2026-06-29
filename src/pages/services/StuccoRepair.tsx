@@ -173,8 +173,8 @@ export default function StuccoRepair() {
   return (
     <>
       <SEO
-        title="Austin Stucco Repair | Crack, Water Damage & Patch Experts | Star Stucco"
-        description="Professional stucco repair in Austin, TX. We fix cracks, water damage, holes & texture mismatches. Fast turnaround, free estimates. Call (512) 706-9699."
+        title="Stucco Repair in Austin, TX | Star Stucco of Austin"
+        description="Expert stucco crack repair, patching & restoration across Austin, TX. Licensed & insured. Call Star Stucco of Austin at (512) 706-9699 for a free estimate today."
         path="/austin-stucco-repair"
         schema={[schema, faqSchema]}
       />
@@ -199,7 +199,7 @@ export default function StuccoRepair() {
             <span className="text-primary-400">Stucco Repair</span>
           </p>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-            Stucco Repair in Austin, TX
+            Professional Stucco Repair in Austin, TX
           </h1>
           <p className="text-lg text-secondary-300 mb-8 max-w-2xl leading-relaxed">
             Cracks, water damage, and structural failures fixed right the first time. Star Stucco's Austin repair team addresses the root cause so your stucco stays solid for years — not just weeks.

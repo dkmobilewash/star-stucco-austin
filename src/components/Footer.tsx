@@ -84,6 +84,21 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/exterior-stucco-austin-tx" className="text-sm hover:text-white transition-colors">
+                  Exterior Stucco
+                </Link>
+              </li>
+              <li>
+                <Link to="/stucco-recoat-austin-tx" className="text-sm hover:text-white transition-colors">
+                  Stucco Re-Coat
+                </Link>
+              </li>
+              <li>
+                <Link to="/stucco-inspection-austin-tx" className="text-sm hover:text-white transition-colors">
+                  Stucco Inspection
+                </Link>
+              </li>
+              <li>
                 <Link to="/blog" className="text-sm hover:text-white transition-colors">
                   Blog & Resources
                 </Link>
