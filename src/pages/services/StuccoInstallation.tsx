@@ -1,30 +1,31 @@
 import { Link } from 'react-router-dom'
-import { ChevronRight, Phone, Hop as Home, Shield, Thermometer, MapPin } from 'lucide-react'
+import { ChevronRight, Phone, ChevronDown } from 'lucide-react'
+import { useState } from 'react'
 import SEO from '../../components/SEO'
-import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
 import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
+import { faqPageSchema, type FAQ } from '../../components/FAQ'
 
 const faqs: FAQ[] = [
   {
-    question: 'How much does stucco installation cost in Austin?',
+    question: 'How long does stucco installation take?',
     answer:
-      'New stucco installation in Austin typically runs about $8 to $15 per square foot depending on the system (traditional three-coat vs. one-coat or EIFS), the finish texture, wall height and accessibility, and prep work required. New construction and full re-stucco projects are quoted per project after an on-site assessment. We provide free, detailed written estimates.',
+      'A typical residential stucco installation in Austin takes two to four weeks depending on the size of the home, the stucco system used, and weather conditions. Three-coat systems require 24 to 48 hours of curing time between each coat, which extends the timeline compared to one-coat systems. We provide a detailed project schedule before work begins and keep you updated throughout the process.',
   },
   {
-    question: 'How long does a stucco installation take?',
+    question: "What type of stucco is best for Austin's climate?",
     answer:
-      'A typical residential stucco installation takes one to two weeks. Three-coat systems require curing time between the scratch, brown, and finish coats, so weather and humidity affect the schedule. We confirm a timeline up front and account for Austin’s dry summers and occasional wet spells in our curing plan.',
+      "For most Austin homes, a traditional three-coat stucco system provides the best long-term performance. The thick, multi-layer construction handles thermal cycling, UV exposure, and moisture better than thinner systems. For wood-framed walls where weight and cost are considerations, one-coat fiber-reinforced systems also perform well when installed with proper moisture management. EIFS is the best choice when energy efficiency is a top priority, as the built-in insulation significantly reduces cooling costs during Austin's long, hot summers.",
   },
   {
-    question: 'Is stucco a good choice for the Austin climate?',
+    question: 'Does new stucco add value to a home in Austin, TX?',
     answer:
-      'Yes. Properly installed stucco performs very well in Central Texas. It offers excellent thermal mass that helps regulate indoor temperatures during hot Austin summers, resists fire and pests, and lasts 50+ years when installed correctly with proper control joints and a quality weather-resistant barrier to handle our expansive clay soils and temperature swings.',
+      "Yes. Stucco is considered a premium exterior cladding in the Austin market, and a professionally installed stucco exterior can increase your home's value by 5-10% depending on the quality of work and the neighborhood. Stucco also has strong curb appeal in Austin's competitive real estate market, and its durability and low maintenance requirements are attractive to buyers. Homes with stucco exteriors in areas like Westlake, Barton Creek, and Tarrytown consistently command higher prices per square foot than comparable homes with other siding types.",
   },
   {
-    question: 'Do you handle both new construction and re-stucco projects?',
+    question: 'What is the difference between 3-coat and one-coat stucco?',
     answer:
-      'Yes. We provide ground-up stucco installation for new construction as well as complete re-stucco of existing exteriors, including removing old siding or failed stucco. Every project meets or exceeds Travis County and City of Austin building code requirements.',
+      'Three-coat stucco is the traditional system consisting of a scratch coat, brown coat, and finish coat applied over metal lath. It produces a thick, extremely durable shell and is ideal for masonry and concrete substrates. One-coat stucco uses a single base layer of fiber-reinforced Portland cement over lath, followed by a finish coat. It installs faster and costs less, and performs well on wood-framed walls with proper moisture management. Both systems are widely used in Austin — the right choice depends on your substrate, budget, and performance goals.',
   },
 ]
 
@@ -33,7 +34,8 @@ const schema = {
   '@type': 'Service',
   name: 'Stucco Installation Austin, TX',
   provider: {
-    '@type': 'LocalBusiness',
+    '@type': 'HomeAndConstructionBusiness',
+    '@id': 'https://stuccoaustin.com/#localbusiness',
     name: siteConfig.name,
     telephone: siteConfig.phone,
     address: {
@@ -50,16 +52,32 @@ const schema = {
     containedInPlace: { '@type': 'AdministrativeArea', name: 'Travis County, TX' },
   },
   description:
-    'Professional stucco installation for new construction and re-stucco projects in Austin, TX. Compliant with Travis County building codes.',
+    'Professional stucco installation for new construction and re-stucco projects in Austin, TX. Call (512) 706-9699 for a free estimate.',
   serviceType: 'Stucco Installation',
 }
 
-const benefits = [
-  { icon: Shield, title: '5-Year Installation Warranty', desc: 'Every new installation backed by our comprehensive warranty covering materials and workmanship.' },
-  { icon: Thermometer, title: 'Climate-Optimized Systems', desc: 'Three-coat systems engineered for Austin summers exceeding 100 degrees and seasonal freeze-thaw cycles.' },
-  { icon: Home, title: 'New Build & Re-Stucco', desc: 'Full-service installation for ground-up construction and complete re-stucco of existing exteriors.' },
-  { icon: MapPin, title: 'Travis County Code Compliant', desc: 'All work meets or exceeds Travis County and City of Austin building code requirements.' },
-]
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="border-b border-secondary-200 last:border-0">
+      <h3>
+        <button
+          onClick={() => setOpen(!open)}
+          className="flex w-full items-center justify-between py-5 text-left"
+          aria-expanded={open}
+        >
+          <span className="font-semibold text-secondary-900 pr-4">{question}</span>
+          <ChevronDown
+            className={`h-5 w-5 shrink-0 text-primary-600 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          />
+        </button>
+      </h3>
+      {open && (
+        <p className="pb-5 text-secondary-600 leading-relaxed">{answer}</p>
+      )}
+    </div>
+  )
+}
 
 export default function StuccoInstallation() {
   return (
@@ -85,17 +103,18 @@ export default function StuccoInstallation() {
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/95 to-secondary-900/60" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
-          <p className="text-sm text-secondary-400 mb-4">
+          <div className="flex items-center gap-2 text-sm text-secondary-400 mb-6">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <span className="mx-2">/</span>
+            <ChevronRight className="h-3 w-3" />
+            <Link to="/austin-stucco-services" className="hover:text-white transition-colors">Services</Link>
+            <ChevronRight className="h-3 w-3" />
             <span className="text-primary-400">Stucco Installation</span>
-          </p>
+          </div>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-            Residential Stucco Contractor in Austin, TX
+            Professional Stucco Installation in Austin, TX
           </h1>
           <p className="text-lg text-secondary-300 mb-8 max-w-2xl leading-relaxed">
-            From new construction in Mueller to full re-stucco projects in Westlake Hills,
-            Star Stucco delivers flawless installations engineered for the Central Texas climate.
+            From new construction in Mueller to full re-stucco projects in Westlake Hills, Star Stucco delivers flawless installations engineered for the Central Texas climate — built right the first time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -105,148 +124,256 @@ export default function StuccoInstallation() {
               Get a Free Estimate <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              href="tel:+15127069699"
+              aria-label="Call Star Stucco at (512) 706-9699"
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-secondary-400 hover:bg-secondary-800"
             >
               <Phone className="mr-2 h-4 w-4" />
-              {siteConfig.phone}
+              (512) 706-9699
             </a>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Stucco Installation Services */}
       <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
+            Stucco Installation Services We Offer in Austin
+          </h2>
+          <p className="text-secondary-600 leading-relaxed mb-10">
+            Star Stucco of Austin handles every type of stucco installation project — from ground-up new construction to complete re-stucco of existing exteriors. Each project is engineered for Austin's specific climate conditions and meets or exceeds all Travis County building code requirements.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            New Construction Stucco Installation
+          </h3>
+          <p className="text-secondary-600 leading-relaxed mb-4">
+            We work with Austin homebuilders, general contractors, and homeowners on new construction stucco installations throughout the metro area. Our team coordinates with framing and weatherproofing trades to ensure the wall system is properly prepared for stucco from the start — avoiding the costly rework and delays that happen when stucco contractors inherit poorly prepared substrates.
+          </p>
+          <p className="text-secondary-600 leading-relaxed mb-8">
+            From custom homes in Barton Creek and Spanish Oaks to production builds in Easton Park and Whisper Valley, we deliver consistent, high-quality stucco installations on every project regardless of size.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            Stucco Installation Over Existing Siding
+          </h3>
+          <p className="text-secondary-600 leading-relaxed mb-4">
+            Many Austin homeowners choose to replace aging vinyl, wood, or fiber cement siding with stucco for its superior durability, energy efficiency, and curb appeal. This process involves removing the existing siding, inspecting and repairing the underlying sheathing and framing, installing a proper weather-resistive barrier, and building a complete stucco system from scratch.
+          </p>
+          <p className="text-secondary-600 leading-relaxed mb-8">
+            Re-stucco projects also include homes where the existing stucco has failed beyond <Link to="/austin-stucco-repair" className="text-primary-700 hover:text-primary-800 font-medium">repair</Link> — widespread delamination, persistent moisture intrusion, or deteriorated lath systems that require full replacement rather than spot fixes.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            Commercial Stucco Installation Austin, TX
+          </h3>
+          <p className="text-secondary-600 leading-relaxed mb-4">
+            Star Stucco provides <Link to="/austin-commercial-stucco" className="text-primary-700 hover:text-primary-800 font-medium">commercial stucco installation</Link> for offices, retail centers, restaurants, multi-family developments, and mixed-use projects across the Austin metro area. We handle projects from 1,000 to 100,000+ square feet and coordinate with commercial general contractors on scheduling, phasing, and code compliance.
+          </p>
+          <p className="text-secondary-600 leading-relaxed">
+            Commercial installations often use EIFS systems for their energy efficiency advantages and design flexibility, though traditional stucco remains popular for projects where maximum durability and fire resistance are priorities.
+          </p>
+        </div>
+      </section>
+
+      {/* Types of Stucco */}
+      <section className="py-20 bg-secondary-50">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
+            Types of Stucco We Install in Austin
+          </h2>
+          <p className="text-secondary-600 leading-relaxed mb-10">
+            We work with every major stucco system on the market. The right choice depends on your substrate, budget, climate performance requirements, and the aesthetic you want to achieve. Here is what we install most frequently in the Austin area.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            Traditional 3-Coat Stucco System
+          </h3>
+          <p className="text-secondary-600 leading-relaxed mb-8">
+            The traditional three-coat system consists of a scratch coat, brown coat, and finish coat applied over metal lath. It produces the thickest, most durable stucco shell available and is ideal for masonry and concrete substrates. Three-coat stucco handles Austin's thermal cycling and soil movement exceptionally well due to its mass and rigidity. This is our most-requested system for custom homes and high-end residential projects in neighborhoods like Westlake Hills, Barton Creek, and Tarrytown.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            One-Coat Stucco Systems
+          </h3>
+          <p className="text-secondary-600 leading-relaxed mb-8">
+            One-coat stucco uses a single base layer of fiber-reinforced Portland cement applied over lath, followed by a finish coat. It installs faster and costs less than three-coat systems while still providing excellent performance on wood-framed walls. The fiber reinforcement adds tensile strength that helps resist cracking from the minor building movement common in Austin homes built on expansive clay soils.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            Synthetic & Acrylic Stucco
+          </h3>
+          <p className="text-secondary-600 leading-relaxed mb-8">
+            Synthetic stucco finishes use acrylic polymers instead of traditional Portland cement for the finish coat. These products offer greater flexibility, superior color retention under Austin's intense UV exposure, and improved resistance to hairline cracking. They are available in a wider range of colors and <Link to="/austin-stucco-finishing" className="text-primary-700 hover:text-primary-800 font-medium">textures</Link> than traditional cementitious finishes and are an excellent choice for both new installations and <Link to="/stucco-recoat-austin-tx" className="text-primary-700 hover:text-primary-800 font-medium">re-coating</Link> existing stucco.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            EIFS (Exterior Insulation and Finish System)
+          </h3>
+          <p className="text-secondary-600 leading-relaxed">
+            <Link to="/eifs-contractor-austin" className="text-primary-700 hover:text-primary-800 font-medium">EIFS</Link> is a lightweight system that combines rigid foam insulation with a durable synthetic stucco finish. It delivers the highest energy efficiency of any stucco system — a critical advantage in Austin where cooling costs dominate energy bills from May through October. We are certified installers for Dryvit, Sto, Parex, and Master Wall EIFS systems and handle both residential and commercial EIFS projects.
+          </p>
+        </div>
+      </section>
+
+      {/* Our Installation Process */}
+      <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-            <div className="lg:col-span-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
               <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
-                New Construction & Re-Stucco Services for Austin Homes
+                Our Stucco Installation Process
               </h2>
-              <p className="text-secondary-600 leading-relaxed mb-6">
-                Austin's building boom stretches from the master-planned communities of Mueller
-                to luxury custom builds in Barton Creek Estates. Whether you are breaking ground
-                on a new home or replacing aging siding with durable stucco, Star Stucco provides
-                full-service installation that meets every Travis County building code requirement.
-              </p>
-              <p className="text-secondary-600 leading-relaxed mb-6">
-                Our three-coat stucco systems are specifically formulated for the Central Texas
-                climate. Austin routinely sees summer temperatures above 105 degrees paired with
-                occasional winter freezes and heavy spring rains. We use high-quality Portland
-                cement mixtures with flexible polymers that resist thermal expansion cracking and
-                moisture intrusion throughout these seasonal extremes.
-              </p>
               <p className="text-secondary-600 leading-relaxed mb-8">
-                We serve neighborhoods across the metro including Westlake Hills, Barton Creek,
-                Mueller, Tarrytown, and Travis Heights. Every project begins with a detailed
-                on-site assessment where we evaluate substrate conditions, drainage patterns, and
-                any site-specific factors that influence long-term stucco performance in the
-                Austin area.
+                A stucco installation is only as good as the preparation behind it. Every project follows our proven four-step process to ensure your stucco system performs for decades in Austin's demanding climate.
               </p>
 
-              <h2 className="font-display text-2xl font-bold text-secondary-900 mb-4">
-                Austin Climate Considerations for Stucco Installation
-              </h2>
+              <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+                Step 1 — Free Consultation & Design Review
+              </h3>
               <p className="text-secondary-600 leading-relaxed mb-6">
-                Stucco installed in Austin must withstand a unique combination of intense UV
-                exposure, expansive clay soils, and dramatic temperature swings that can span 50
-                degrees in a single day. Our installation process addresses each of these factors
-                with proper control joints, high-performance weather-resistant barriers, and curing
-                schedules that account for Austin's low-humidity summers.
+                We start with a thorough on-site assessment of your property. Our team evaluates the substrate — whether concrete masonry, wood framing with sheathing, or existing cladding that needs removal — and discusses your finish preferences, timeline, and budget. You receive a detailed written proposal with no hidden costs.
               </p>
+
+              <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+                Step 2 — Surface Preparation & Lath Installation
+              </h3>
               <p className="text-secondary-600 leading-relaxed mb-6">
-                Travis County code requires specific lath attachment methods, weep screed
-                installation at the foundation line, and minimum coating thicknesses. Star Stucco
-                exceeds these minimums on every project, ensuring your investment is protected for
-                decades.
+                Proper preparation is the foundation of a long-lasting stucco exterior. For wood-framed walls, we install two layers of weather-resistive barrier followed by self-furred metal lath fastened with corrosion-resistant fasteners. We install weep screeds at the base of every wall, casing beads at all terminations, and control joints at intervals specified by the Stucco Manufacturers Association to account for Austin's soil movement and thermal cycling.
+              </p>
+
+              <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+                Step 3 — Base Coat & Scratch Coat Application
+              </h3>
+              <p className="text-secondary-600 leading-relaxed mb-6">
+                For three-coat systems, the scratch coat is applied first and scored to create a bonding surface, then the brown coat levels the wall to a true plane. Each coat must cure properly between applications — and in Austin's summer heat, that means careful timing, moist curing, and sometimes shading the work area to prevent rapid moisture loss that weakens the bond.
+              </p>
+
+              <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+                Step 4 — Finish Coat, Texture & Color
+              </h3>
+              <p className="text-secondary-600 leading-relaxed">
+                The finish coat delivers your chosen <Link to="/austin-stucco-finishing" className="text-primary-700 hover:text-primary-800 font-medium">texture and color</Link>. We use integral pigments mixed into the finish material rather than surface-applied paint, producing color that runs through the full depth of the coat. Whether you choose smooth, Santa Barbara, dash, sand, or lace, our finishing team applies each texture with the precision and consistency that defines a professional installation.
               </p>
             </div>
-
-            {/* Sidebar */}
-            <aside>
-              <div className="rounded-2xl bg-secondary-50 border border-secondary-200 p-6 sticky top-8">
-                <h3 className="font-display text-lg font-bold text-secondary-900 mb-4">
-                  Our Installation Process
-                </h3>
-                <ol className="space-y-4">
-                  {[
-                    'On-site assessment and substrate inspection',
-                    'Weather-resistant barrier and lath application',
-                    'Scratch coat with proper scoring',
-                    'Brown coat leveled to true plane',
-                    'Finish coat with your chosen texture',
-                    'Final inspection and cleanup',
-                  ].map((step, i) => (
-                    <li key={i} className="flex gap-3 text-sm text-secondary-700">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-700 text-xs font-bold text-white">
-                        {i + 1}
-                      </span>
-                      {step}
-                    </li>
-                  ))}
-                </ol>
-                <div className="mt-6 pt-6 border-t border-secondary-200">
-                  <p className="text-sm font-semibold text-secondary-900 mb-2">Ready to start?</p>
-                  <Link
-                    to="/contact"
-                    className="block w-full rounded-lg bg-primary-700 px-4 py-3 text-center text-sm font-semibold text-white transition-all hover:bg-primary-800"
-                  >
-                    Request a Free Quote
-                  </Link>
-                </div>
-              </div>
-            </aside>
+            <div>
+              <img
+                src="/images/stucco-installation-process.webp"
+                alt="Stucco installation process on an Austin home"
+                className="rounded-2xl shadow-lg sticky top-8"
+                loading="lazy"
+                width={800}
+                height={600}
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits Grid */}
+      {/* Why Stucco Is Right for Austin */}
       <section className="py-20 bg-secondary-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-12 text-center">
-            Why Choose Star Stucco for Your Austin Installation
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
+            Why Stucco Is the Right Choice for Austin, TX Homes
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((item) => (
-              <div key={item.title} className="rounded-xl bg-white p-6 shadow-sm border border-secondary-100">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-100 mb-4">
-                  <item.icon className="h-6 w-6 text-primary-700" />
-                </div>
-                <h3 className="font-semibold text-secondary-900 mb-2">{item.title}</h3>
-                <p className="text-sm text-secondary-600 leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-secondary-600 leading-relaxed mb-10">
+            Stucco has been a preferred exterior cladding in the Southwest for centuries, and its performance advantages are particularly well suited to Central Texas conditions.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            Energy Efficiency in Texas Heat
+          </h3>
+          <p className="text-secondary-600 leading-relaxed mb-8">
+            Stucco's thermal mass absorbs heat during the day and releases it slowly as temperatures drop, reducing peak cooling loads and smoothing out temperature swings inside your home. In Austin, where air conditioning runs six months of the year or more, this translates to meaningful energy savings. EIFS systems take this further with built-in foam insulation that can improve a wall's R-value by R-4 to R-8, reducing cooling costs by 10-25% compared to conventional siding.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            Durability Against Texas Weather & UV
+          </h3>
+          <p className="text-secondary-600 leading-relaxed mb-8">
+            A properly installed stucco system lasts 50 to 80 years — far longer than vinyl siding, fiber cement, or wood cladding in the Austin climate. Stucco resists wind, fire, termites, and rot. Its cementitious composition stands up to Austin's extreme UV radiation better than most synthetic materials, and unlike paint, integral stucco color does not peel or flake. When the finish eventually needs refreshing after 10 to 20 years, a <Link to="/stucco-recoat-austin-tx" className="text-primary-700 hover:text-primary-800 font-medium">re-coat</Link> extends the system's life without the cost of full replacement.
+          </p>
+
+          <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
+            Low Maintenance Exterior for Austin Homeowners
+          </h3>
+          <p className="text-secondary-600 leading-relaxed">
+            Unlike wood siding that requires regular painting and repair, or vinyl that can warp and crack in Texas heat, stucco requires only periodic inspection and minor maintenance to stay in excellent condition. An annual visual check, prompt repair of any hairline cracks, and occasional cleaning are all it takes. For busy Austin homeowners, stucco delivers one of the lowest total cost of ownership of any exterior cladding option.
+          </p>
         </div>
       </section>
 
-      {/* Neighborhoods Section */}
+      {/* Cost Section */}
       <section className="py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-4">
-            Stucco Installation Across Austin Neighborhoods
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
+            Stucco Installation Cost in Austin, TX
           </h2>
-          <p className="text-secondary-600 max-w-2xl mx-auto mb-10">
-            We install stucco on homes throughout Austin and the surrounding Hill Country
-            communities. Our crews are familiar with local HOA requirements, soil conditions,
-            and architectural preferences in every part of town.
+          <p className="text-secondary-600 leading-relaxed mb-5">
+            Stucco installation in Austin typically costs between $8 and $15 per square foot depending on the system type, finish texture, wall height and accessibility, and the amount of prep work required. Three-coat systems are at the higher end of the range due to their additional material and labor. One-coat systems are more economical, and EIFS installations generally fall in the $10 to $16 range because of the added insulation layer.
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {['Westlake Hills', 'Barton Creek', 'Mueller', 'Tarrytown', 'Travis Heights', 'Barton Hills', 'Hyde Park', 'Circle C Ranch', 'South Congress', 'East Austin'].map((area) => (
-              <span
-                key={area}
-                className="rounded-full border border-secondary-200 bg-white px-4 py-2 text-sm font-medium text-secondary-700"
-              >
-                {area}
-              </span>
-            ))}
-          </div>
+          <p className="text-secondary-600 leading-relaxed mb-5">
+            For an average 2,000-square-foot Austin home exterior, total installation costs typically range from $16,000 to $30,000. This includes substrate preparation, lath, weather-resistive barrier, all stucco coats, and the finish texture and color of your choice. We provide free, detailed estimates after an on-site assessment — no guesswork, no hidden fees.
+          </p>
+          <p className="text-secondary-600 leading-relaxed">
+            For a comprehensive breakdown of stucco installation costs by system type and home size, see our <Link to="/blog/cost-to-stucco-a-house-austin" className="text-primary-700 hover:text-primary-800 font-medium">cost to stucco a house in Austin</Link> guide.
+          </p>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-20 bg-secondary-50">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
+            Stucco Installation Service Areas in Austin
+          </h2>
+          <p className="text-secondary-600 leading-relaxed mb-5">
+            Star Stucco of Austin installs stucco on homes and commercial buildings throughout the Austin metropolitan area. We work regularly in Westlake Hills, Barton Creek, Mueller, Tarrytown, Travis Heights, Barton Hills, Hyde Park, Circle C Ranch, South Congress, East Austin, Rollingwood, Steiner Ranch, Avery Ranch, and the Domain area.
+          </p>
+          <p className="text-secondary-600 leading-relaxed mb-5">
+            We also serve surrounding cities including Round Rock, Cedar Park, Georgetown, Pflugerville, Lakeway, Bee Cave, Dripping Springs, Kyle, Buda, Manor, Leander, and Liberty Hill. Our service area covers Travis County, Williamson County, Hays County, Bastrop County, Bell County, Burnet County, and surrounding Central Texas counties.
+          </p>
+          <p className="text-secondary-600 leading-relaxed">
+            Our crews are familiar with local HOA requirements, soil conditions, and architectural preferences in every part of the metro. Whether you are building in a new master-planned community or re-stuccoing a mid-century home in an established neighborhood, we understand the site-specific factors that influence long-term stucco performance in your area.
+          </p>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
+            Why Choose Star Stucco of Austin for Your Installation?
+          </h2>
+          <p className="text-secondary-600 leading-relaxed mb-5">
+            Star Stucco has completed over 9,000 stucco projects across Central Texas since 2013. We are a family-owned company that employs our own OSHA-trained, scaffold-certified crews — no subcontractors. Every installation carries our comprehensive warranty covering both materials and workmanship, and we are certified applicators for Sto Corp, Senergy/BASF, Master Wall, Dryvit, and Parex LaHabra.
+          </p>
+          <p className="text-secondary-600 leading-relaxed mb-5">
+            Our installation process is specifically designed for Austin's climate. We account for expansive clay soils, extreme UV exposure, and wide temperature swings in every detail — from control joint placement to curing schedules to weather-resistive barrier selection. When we build your stucco system, it is engineered to perform here, not just anywhere.
+          </p>
+          <p className="text-secondary-600 leading-relaxed">
+            Call us at <a href="tel:+15127069699" className="text-primary-700 hover:text-primary-800 font-medium">(512) 706-9699</a> or <Link to="/contact" className="text-primary-700 hover:text-primary-800 font-medium">request a free estimate online</Link> to start your stucco installation project.
+          </p>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <FAQSection faqs={faqs} subtitle="Common questions about stucco installation in Austin, answered by our team." />
+      <section className="py-20 bg-secondary-50">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-4 text-center">
+            Stucco Installation FAQs
+          </h2>
+          <p className="text-secondary-600 text-center mb-12">
+            Common questions about stucco installation in Austin answered by our team.
+          </p>
+          <div className="rounded-2xl bg-white border border-secondary-200 px-6 sm:px-8">
+            {faqs.map((faq) => (
+              <FAQItem key={faq.question} question={faq.question} answer={faq.answer} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Related Links */}
       <RelatedLinks
@@ -254,6 +381,7 @@ export default function StuccoInstallation() {
           { label: 'Cost to Stucco a House', path: '/blog/cost-to-stucco-a-house-austin', desc: 'What it costs to stucco a house in Austin by system type and home size.' },
           { label: 'Stucco Finishes Guide', path: '/blog/stucco-finishes-guide', desc: 'Smooth, Santa Barbara, dash, and lace finishes explained — and which suits your home.' },
           { label: 'EIFS / Synthetic Stucco', path: '/eifs-contractor-austin', desc: 'Energy-efficient EIFS as an insulated alternative to traditional stucco.' },
+          { label: 'Stucco Repair', path: '/austin-stucco-repair', desc: 'Expert crack repair, water damage restoration, and texture matching in Austin.' },
         ]}
       />
 
@@ -264,8 +392,7 @@ export default function StuccoInstallation() {
             Start Your Stucco Installation Project Today
           </h2>
           <p className="text-secondary-300 text-lg mb-8">
-            Contact Star Stucco for a free on-site estimate. We will assess your property, discuss
-            finish options, and provide a detailed quote with no obligation.
+            Contact Star Stucco for a free on-site estimate. We will assess your property, discuss finish options, and provide a detailed quote with no obligation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -275,12 +402,12 @@ export default function StuccoInstallation() {
               Schedule Your Free Estimate
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              href="tel:+15127069699"
+              aria-label="Call Star Stucco at (512) 706-9699"
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-secondary-400"
             >
               <Phone className="mr-2 h-4 w-4" />
-              Call {siteConfig.phone}
+              Call (512) 706-9699
             </a>
           </div>
         </div>
