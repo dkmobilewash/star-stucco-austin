@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import SEO from '../../components/SEO'
-import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 import { faqPageSchema, type FAQ } from '../../components/FAQ'
 
@@ -94,7 +93,7 @@ export default function StuccoFinishing() {
         <div className="absolute inset-0">
           <img
             src="/images/stucco-texture-hero.webp"
-            alt="Beautifully finished stucco wall with warm texture"
+            alt="expert stucco finishing and texture on Austin TX home"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
             width={1600}
@@ -249,7 +248,7 @@ export default function StuccoFinishing() {
             <div>
               <img
                 src="/images/stucco-project-completed.webp"
-                alt="Variety of stucco colors and finishes on an Austin home"
+                alt="smooth stucco finish on Austin TX residential exterior"
                 className="rounded-2xl shadow-lg"
                 loading="lazy"
                 width={800}
@@ -333,7 +332,7 @@ export default function StuccoFinishing() {
             Stucco finishing is where craftsmanship shows. Our finishing team has applied hundreds of unique textures across the Austin metro — from precision smooth finishes on modern builds to hand-troweled Santa Barbara textures on custom Hill Country estates. We understand how Austin's intense UV, temperature swings, and humidity levels affect every finish type, and we adjust our materials and application techniques accordingly.
           </p>
           <p className="text-secondary-600 leading-relaxed mb-5">
-            We use UV-stable pigments rated for extreme sun exposure, elastomeric-compatible products where waterproofing is a priority, and integral color systems that age naturally without peeling or flaking. Every finish we apply is backed by our warranty covering materials and workmanship.
+            We use UV-stable pigments rated for extreme sun exposure, elastomeric-compatible products where waterproofing is a priority, and integral color systems that age naturally without peeling or flaking. We also apply finishes to <Link to="/eifs-contractor-austin" className="text-primary-700 hover:text-primary-800 font-medium">EIFS and synthetic stucco</Link> systems. Every finish we apply is backed by our warranty covering materials and workmanship.
           </p>
           <p className="text-secondary-600 leading-relaxed">
             Book a free consultation and we will bring sample boards to your property so you can compare textures and colors in person. Call <a href="tel:+15127069699" className="text-primary-700 hover:text-primary-800 font-medium">(512) 706-9699</a> or <Link to="/contact" className="text-primary-700 hover:text-primary-800 font-medium">schedule online</Link>.
@@ -358,16 +357,36 @@ export default function StuccoFinishing() {
         </div>
       </section>
 
-      {/* Related Links */}
-      <RelatedLinks
-        links={[
-          { label: 'Stucco Finishes Guide', path: '/blog/stucco-finishes-guide', desc: 'A deeper look at each finish type — smooth, Santa Barbara, dash, and lace.' },
-          { label: 'Stucco Re-Coat', path: '/stucco-recoat-austin-tx', desc: 'Refresh faded or aging stucco with a professional re-coat or color coat.' },
-          { label: 'Stucco Installation', path: '/austin-stucco-installation', desc: 'New construction and re-stucco for Austin homes, finished to your chosen texture.' },
-          { label: 'Stucco Repair', path: '/austin-stucco-repair', desc: 'Crack, water-damage, and texture-matched repairs that blend with your finish.' },
-        ]}
-        title="Related Services & Resources"
-      />
+      {/* Related Stucco Services */}
+      <section className="py-20 bg-secondary-50">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-8 text-center">
+            Related Stucco Services in Austin, TX
+          </h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <li>
+              <Link to="/austin-stucco-repair" className="block rounded-xl border border-secondary-200 bg-white p-6 text-primary-700 font-semibold hover:bg-primary-50 transition-colors">
+                Stucco Repair Austin, TX
+              </Link>
+            </li>
+            <li>
+              <Link to="/austin-stucco-installation" className="block rounded-xl border border-secondary-200 bg-white p-6 text-primary-700 font-semibold hover:bg-primary-50 transition-colors">
+                Stucco Installation Austin, TX
+              </Link>
+            </li>
+            <li>
+              <Link to="/stucco-recoat-austin-tx" className="block rounded-xl border border-secondary-200 bg-white p-6 text-primary-700 font-semibold hover:bg-primary-50 transition-colors">
+                Stucco Re-Coat Austin, TX
+              </Link>
+            </li>
+            <li>
+              <Link to="/eifs-contractor-austin" className="block rounded-xl border border-secondary-200 bg-white p-6 text-primary-700 font-semibold hover:bg-primary-50 transition-colors">
+                EIFS Contractor Austin, TX
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import SEO from '../../components/SEO'
-import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 import { faqPageSchema, type FAQ } from '../../components/FAQ'
 
@@ -94,7 +93,7 @@ export default function StuccoRepair() {
         <div className="absolute inset-0">
           <img
             src="/images/stucco-repair-hero.webp"
-            alt="Stucco repair work on an Austin home exterior"
+            alt="professional stucco repair on Austin TX home exterior"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
             width={1600}
@@ -179,7 +178,7 @@ export default function StuccoRepair() {
             Delamination occurs when the stucco separates from the underlying lath or substrate. You can often detect it by tapping the wall — delaminated areas produce a hollow, drum-like sound instead of a solid thud. Bubbling is a visible symptom of the same problem, where trapped moisture or poor bonding causes the stucco to lift away from the wall.
           </p>
           <p className="text-secondary-600 leading-relaxed">
-            Both conditions require removing the failed section completely, inspecting the substrate and lath for damage, making any necessary structural repairs, and rebuilding the stucco system from scratch. Surface patching over delaminated stucco will not hold — the new material has nothing solid to bond to.
+            Both conditions require removing the failed section completely, inspecting the substrate and lath for damage, making any necessary structural repairs, and rebuilding the stucco system from scratch. Surface patching over delaminated stucco will not hold — the new material has nothing solid to bond to. When delamination is widespread, a full <Link to="/austin-stucco-installation" className="text-primary-700 hover:text-primary-800 font-medium">stucco installation</Link> may be the most cost-effective long-term solution.
           </p>
         </div>
       </section>
@@ -256,7 +255,7 @@ export default function StuccoRepair() {
                 Step 3 — Stucco Repair & Seamless Color Match
               </h3>
               <p className="text-secondary-600 leading-relaxed mb-6">
-                We remove all compromised material down to solid substrate, address any underlying issues (rot, corrosion, failed lath), and rebuild the stucco system coat by coat. The finish coat is texture- and color-matched to your existing wall using integral pigments and field-verified samples so the repair blends invisibly with the surrounding surface.
+                We remove all compromised material down to solid substrate, address any underlying issues (rot, corrosion, failed lath), and rebuild the stucco system coat by coat. The <Link to="/austin-stucco-finishing" className="text-primary-700 hover:text-primary-800 font-medium">finishing coat</Link> is texture- and color-matched to your existing wall using integral pigments and field-verified samples so the repair blends invisibly with the surrounding surface.
               </p>
 
               <h3 className="font-display text-xl font-bold text-secondary-900 mb-3">
@@ -269,7 +268,7 @@ export default function StuccoRepair() {
             <div>
               <img
                 src="/images/stucco-repair-closeup.webp"
-                alt="Close-up of professional stucco crack repair in Austin"
+                alt="stucco crack and water damage on Austin home"
                 className="rounded-2xl shadow-lg sticky top-8"
                 loading="lazy"
                 width={800}
@@ -326,7 +325,7 @@ export default function StuccoRepair() {
             Star Stucco of Austin has completed over 9,000 stucco projects across Central Texas since 2013. We are a family-owned company that employs our own crews — no subcontractors, no day labor. Every technician on your project is OSHA-trained, scaffold-certified, and experienced with the specific stucco systems and climate conditions found in Austin.
           </p>
           <p className="text-secondary-600 leading-relaxed mb-5">
-            We are certified applicators for Sto Corp, Senergy/BASF, Master Wall, Dryvit, and Parex LaHabra. These manufacturer certifications mean we have been trained and evaluated on proper installation and repair techniques for every major stucco system on the market. When we repair your stucco, we use the correct materials and methods specified by the system manufacturer.
+            We are certified applicators for Sto Corp, Senergy/BASF, Master Wall, Dryvit, and Parex LaHabra — including <Link to="/eifs-contractor-austin" className="text-primary-700 hover:text-primary-800 font-medium">EIFS and synthetic stucco</Link> systems. These manufacturer certifications mean we have been trained and evaluated on proper installation and repair techniques for every major stucco system on the market. When we repair your stucco, we use the correct materials and methods specified by the system manufacturer.
           </p>
           <p className="text-secondary-600 leading-relaxed">
             Every repair comes with a warranty covering both materials and workmanship. We stand behind our work because we do it right the first time — diagnosing the root cause, not just patching the visible symptoms. Call us at <a href="tel:+15127069699" className="text-primary-700 hover:text-primary-800 font-medium">(512) 706-9699</a> or <Link to="/contact" className="text-primary-700 hover:text-primary-800 font-medium">request a free estimate online</Link>.
@@ -351,15 +350,35 @@ export default function StuccoRepair() {
         </div>
       </section>
 
-      {/* Related Links */}
-      <RelatedLinks
-        links={[
-          { label: 'Stucco Remediation', path: '/austin-stucco-remediation', desc: 'When moisture has gotten behind the stucco, remediation fixes the root cause — not just the surface.' },
-          { label: 'Stucco Crack Repair Guide', path: '/blog/stucco-crack-repair-austin', desc: 'Why stucco cracks in Austin, which cracks are serious, and how they are properly repaired.' },
-          { label: 'Stucco Repair Cost Guide', path: '/blog/stucco-repair-cost-austin', desc: 'What stucco repair costs in Austin by repair type — and what drives the price.' },
-          { label: 'Stucco Inspection', path: '/stucco-inspection-austin-tx', desc: 'Comprehensive stucco assessments and moisture testing for Austin homes.' },
-        ]}
-      />
+      {/* Related Stucco Services */}
+      <section className="py-20 bg-secondary-50">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
+            Related Stucco Services in Austin, TX
+          </h2>
+          <p className="text-secondary-600 leading-relaxed mb-6">
+            In addition to stucco repair, Star Stucco of Austin offers a full range of stucco services for residential and commercial properties across the Austin metro area.
+          </p>
+          <ul className="space-y-4">
+            <li>
+              <Link to="/austin-stucco-installation" className="text-primary-700 hover:text-primary-800 font-medium">Stucco Installation Austin, TX</Link>
+              <span className="text-secondary-600"> — New construction stucco and complete re-stucco for Austin homes and businesses.</span>
+            </li>
+            <li>
+              <Link to="/austin-stucco-finishing" className="text-primary-700 hover:text-primary-800 font-medium">Stucco Finishing & Textures Austin, TX</Link>
+              <span className="text-secondary-600"> — Custom textures including smooth, Santa Barbara, dash, sand, and lace finishes.</span>
+            </li>
+            <li>
+              <Link to="/austin-stucco-installation" className="text-primary-700 hover:text-primary-800 font-medium">Residential Stucco Austin, TX</Link>
+              <span className="text-secondary-600"> — Full-service residential stucco for new builds and re-stucco projects.</span>
+            </li>
+            <li>
+              <Link to="/eifs-contractor-austin" className="text-primary-700 hover:text-primary-800 font-medium">EIFS Contractor Austin, TX</Link>
+              <span className="text-secondary-600"> — Exterior Insulation and Finish Systems installation, repair, and remediation.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import SEO from '../../components/SEO'
-import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 import { faqPageSchema, type FAQ } from '../../components/FAQ'
 
@@ -94,7 +93,7 @@ export default function StuccoInstallation() {
         <div className="absolute inset-0">
           <img
             src="/images/stucco-installation-hero.webp"
-            alt="New stucco installation on an Austin home"
+            alt="new stucco installation on Austin TX home by Star Stucco of Austin"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
             width={1600}
@@ -260,7 +259,7 @@ export default function StuccoInstallation() {
             <div>
               <img
                 src="/images/stucco-installation-process.webp"
-                alt="Stucco installation process on an Austin home"
+                alt="stucco lath and scratch coat installation Austin TX"
                 className="rounded-2xl shadow-lg sticky top-8"
                 loading="lazy"
                 width={800}
@@ -375,15 +374,35 @@ export default function StuccoInstallation() {
         </div>
       </section>
 
-      {/* Related Links */}
-      <RelatedLinks
-        links={[
-          { label: 'Cost to Stucco a House', path: '/blog/cost-to-stucco-a-house-austin', desc: 'What it costs to stucco a house in Austin by system type and home size.' },
-          { label: 'Stucco Finishes Guide', path: '/blog/stucco-finishes-guide', desc: 'Smooth, Santa Barbara, dash, and lace finishes explained — and which suits your home.' },
-          { label: 'EIFS / Synthetic Stucco', path: '/eifs-contractor-austin', desc: 'Energy-efficient EIFS as an insulated alternative to traditional stucco.' },
-          { label: 'Stucco Repair', path: '/austin-stucco-repair', desc: 'Expert crack repair, water damage restoration, and texture matching in Austin.' },
-        ]}
-      />
+      {/* Related Stucco Services */}
+      <section className="py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-6">
+            Related Stucco Services in Austin, TX
+          </h2>
+          <p className="text-secondary-600 leading-relaxed mb-6">
+            Star Stucco of Austin is your full-service stucco contractor. Beyond installation, we offer repair, finishing, and specialty services across the Austin metro area.
+          </p>
+          <ul className="space-y-4">
+            <li>
+              <Link to="/austin-stucco-repair" className="text-primary-700 hover:text-primary-800 font-medium">Stucco Repair Austin, TX</Link>
+              <span className="text-secondary-600"> — Expert crack repair, water damage restoration, and seamless texture matching.</span>
+            </li>
+            <li>
+              <Link to="/austin-stucco-finishing" className="text-primary-700 hover:text-primary-800 font-medium">Stucco Finishing & Textures Austin, TX</Link>
+              <span className="text-secondary-600"> — Custom textures including smooth, Santa Barbara, dash, sand, and lace finishes.</span>
+            </li>
+            <li>
+              <Link to="/austin-stucco-installation" className="text-primary-700 hover:text-primary-800 font-medium">Residential Stucco Austin, TX</Link>
+              <span className="text-secondary-600"> — New construction and re-stucco for Austin-area homes.</span>
+            </li>
+            <li>
+              <Link to="/austin-commercial-stucco" className="text-primary-700 hover:text-primary-800 font-medium">Commercial Stucco Austin, TX</Link>
+              <span className="text-secondary-600"> — Large-scale stucco for offices, retail, multi-family, and mixed-use projects.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">
