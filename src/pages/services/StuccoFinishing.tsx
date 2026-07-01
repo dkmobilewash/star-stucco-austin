@@ -4,6 +4,7 @@ import SEO from '../../components/SEO'
 import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
 import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
+import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
 const faqs: FAQ[] = [
   {
@@ -242,6 +243,8 @@ export default function StuccoFinishing() {
         ]}
         title="Related Services & Resources"
       />
+
+      <ServiceLocationLinks serviceSlug="interior-plaster" serviceName="Interior Plaster" />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

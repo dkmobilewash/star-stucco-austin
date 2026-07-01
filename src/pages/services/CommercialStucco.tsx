@@ -4,6 +4,7 @@ import { ChevronRight, ChevronDown, Phone, Building2, HardHat, Clock, FileCheck,
 import SEO from '../../components/SEO'
 import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
+import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
 const schema = {
   '@context': 'https://schema.org',
@@ -383,6 +384,8 @@ export default function CommercialStucco() {
           { label: 'Stucco Installation', path: '/austin-stucco-installation', desc: 'Large-scale new stucco installation across the Austin metro.' },
         ]}
       />
+
+      <ServiceLocationLinks serviceSlug="commercial-stucco" serviceName="Commercial Stucco" />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

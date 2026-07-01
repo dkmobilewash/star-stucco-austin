@@ -23,6 +23,7 @@ const CedarParkArea = lazy(() => import('./pages/areas/CedarPark'))
 const GeorgetownArea = lazy(() => import('./pages/areas/Georgetown'))
 const PflugervilleArea = lazy(() => import('./pages/areas/Pflugerville'))
 const WestlakeArea = lazy(() => import('./pages/areas/Westlake'))
+const ServiceLocationPage = lazy(() => import('./pages/ServiceLocationPage'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 export default function App() {
@@ -65,6 +66,12 @@ export default function App() {
         <Route path="/milam-county" element={<Navigate to="/service-areas/milam-county-stucco" replace />} />
         <Route path="/brazos-county" element={<Navigate to="/service-areas/brazos-county-stucco" replace />} />
         <Route path="/mclennan-county" element={<Navigate to="/service-areas/mclennan-county-stucco" replace />} />
+        <Route path="/residential-stucco/:countySlug" element={<ServiceLocationPage />} />
+        <Route path="/commercial-stucco/:countySlug" element={<ServiceLocationPage />} />
+        <Route path="/stucco-repair/:countySlug" element={<ServiceLocationPage />} />
+        <Route path="/eifs-contractor/:countySlug" element={<ServiceLocationPage />} />
+        <Route path="/interior-plaster/:countySlug" element={<ServiceLocationPage />} />
+        <Route path="/thin-stone-veneer/:countySlug" element={<ServiceLocationPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />

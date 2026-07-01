@@ -4,6 +4,7 @@ import SEO from '../components/SEO'
 import { FAQSection, faqPageSchema } from '../components/FAQ'
 import { siteConfig } from '../lib/siteConfig'
 import { allCounties } from '../data/countyPages'
+import { serviceDefinitions } from '../data/serviceLocationTypes'
 
 export default function CountyPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -280,30 +281,25 @@ export default function CountyPage() {
         subtitle={`Answers to common stucco questions from ${data.county} homeowners and property managers.`}
       />
 
-      {/* Internal Links */}
+      {/* Services We Offer in This Area */}
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-10 text-center">
-            Explore Our Stucco Services
+          <h2 className="font-display text-3xl font-bold text-secondary-900 mb-4 text-center">
+            Services We Offer in {data.county}
           </h2>
+          <p className="text-secondary-600 text-center mb-10">
+            Explore our full range of stucco and plaster services available throughout {data.county}.
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { label: 'Stucco Repair', path: '/austin-stucco-repair', desc: 'Expert crack repair, patching, and water damage restoration for residential and commercial properties.' },
-              { label: 'Stucco Installation', path: '/austin-stucco-installation', desc: 'Complete stucco systems for new construction, remodels, and re-stucco projects.' },
-              { label: 'EIFS Contractor', path: '/eifs-contractor-austin', desc: 'Exterior Insulation and Finish Systems — lightweight, energy-efficient cladding.' },
-              { label: 'Commercial Stucco', path: '/austin-commercial-stucco', desc: 'Large-scale stucco for retail, office, multi-family, and institutional buildings.' },
-              { label: 'Interior Plaster', path: '/austin-stucco-finishing', desc: 'Custom plaster finishes, Venetian plaster, and decorative interior wall treatments.' },
-              { label: 'Get a Free Estimate', path: '/contact', desc: 'Contact us for a no-obligation inspection and written estimate for your project.' },
-            ].map((l) => (
+            {serviceDefinitions.map((s) => (
               <Link
-                key={l.path}
-                to={l.path}
+                key={s.slug}
+                to={`/${s.slug}/${slug?.replace('-stucco', '')}`}
                 className="group rounded-2xl bg-secondary-50 p-6 border border-secondary-100 transition-all hover:shadow-lg hover:-translate-y-1"
               >
                 <h3 className="font-display text-lg font-semibold text-secondary-900 mb-2 group-hover:text-primary-700 transition-colors">
-                  {l.label}
+                  {s.name} in {data.county}
                 </h3>
-                <p className="text-sm text-secondary-600 leading-relaxed mb-3">{l.desc}</p>
                 <span className="inline-flex items-center text-sm font-medium text-primary-700">
                   Learn more <ChevronRight className="ml-1 h-4 w-4" />
                 </span>

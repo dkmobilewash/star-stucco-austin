@@ -354,14 +354,14 @@ export default function Home() {
               <h3 className="font-display text-xl font-bold text-secondary-900 mb-4">Counties We Cover</h3>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { name: 'Travis County', path: '/travis-county' },
-                  { name: 'Williamson County', path: '/williamson-county' },
-                  { name: 'Hays County', path: '/hays-county' },
-                  { name: 'Bell County', path: '/bell-county' },
-                  { name: 'Bastrop County', path: '/bastrop-county' },
-                  { name: 'Burnet County', path: '/burnet-county' },
-                  { name: 'Comal County', path: '/comal-county' },
-                  { name: 'Blanco County', path: '/blanco-county' },
+                  { name: 'Travis County', path: '/service-areas/travis-county-stucco' },
+                  { name: 'Williamson County', path: '/service-areas/williamson-county-stucco' },
+                  { name: 'Hays County', path: '/service-areas/hays-county-stucco' },
+                  { name: 'Bell County', path: '/service-areas/bell-county-stucco' },
+                  { name: 'Bastrop County', path: '/service-areas/bastrop-county-stucco' },
+                  { name: 'Burnet County', path: '/service-areas/burnet-county-stucco' },
+                  { name: 'Comal County', path: '/service-areas/comal-county-stucco' },
+                  { name: 'Blanco County', path: '/service-areas/blanco-county-stucco' },
                 ].map((area) => (
                   <Link
                     key={area.name}
