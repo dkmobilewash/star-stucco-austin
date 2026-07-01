@@ -73,11 +73,32 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-              Service Area
+              <Link to="/service-areas" className="hover:text-primary-400 transition-colors">Service Areas</Link>
             </h3>
             <ul className="space-y-2">
-              {siteConfig.serviceCounties.map((county) => (
-                <li key={county} className="text-sm text-secondary-400">{county}</li>
+              {[
+                { name: 'Travis County', slug: 'travis-county-stucco' },
+                { name: 'Williamson County', slug: 'williamson-county-stucco' },
+                { name: 'Bell County', slug: 'bell-county-stucco' },
+                { name: 'Hays County', slug: 'hays-county-stucco' },
+                { name: 'Burnet County', slug: 'burnet-county-stucco' },
+                { name: 'Comal County', slug: 'comal-county-stucco' },
+                { name: 'Bastrop County', slug: 'bastrop-county-stucco' },
+                { name: 'Llano County', slug: 'llano-county-stucco' },
+                { name: 'Blanco County', slug: 'blanco-county-stucco' },
+                { name: 'Gillespie County', slug: 'gillespie-county-stucco' },
+                { name: 'Caldwell County', slug: 'caldwell-county-stucco' },
+                { name: 'Lee County', slug: 'lee-county-stucco' },
+                { name: 'Milam County', slug: 'milam-county-stucco' },
+                { name: 'Brazos County', slug: 'brazos-county-stucco' },
+                { name: 'McLennan County', slug: 'mclennan-county-stucco' },
+                { name: 'Guadalupe County', slug: 'guadalupe-county-stucco' },
+              ].map((county) => (
+                <li key={county.slug}>
+                  <Link to={`/service-areas/${county.slug}`} className="text-sm hover:text-white transition-colors">
+                    {county.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>

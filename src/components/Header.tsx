@@ -16,7 +16,7 @@ const navLinks = [
   { label: 'Stucco', path: '/austin-stucco-services', dropdown: stuccoDropdown },
   { label: 'EIFS', path: '/eifs-contractor-austin' },
   { label: 'Interior Plaster', path: '/austin-stucco-finishing' },
-  { label: 'Stone Veneer', path: '/austin-stucco-installation' },
+  { label: 'Service Areas', path: '/service-areas' },
   { label: 'Blog', path: '/blog' },
   { label: 'About', path: '/about' },
   { label: 'Contact', path: '/contact' },

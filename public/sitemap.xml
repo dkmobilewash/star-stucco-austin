@@ -103,92 +103,104 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/travis-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stuccoaustin.com/service-areas/travis-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/williamson-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/williamson-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/bell-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/bell-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/hays-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/hays-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/burnet-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/burnet-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/llano-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/llano-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/comal-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/comal-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/bastrop-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/bastrop-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/blanco-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/blanco-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/gillespie-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/gillespie-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/caldwell-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/caldwell-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/lee-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/lee-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/milam-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/milam-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/brazos-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/brazos-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stuccoaustin.com/mclennan-county</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://stuccoaustin.com/service-areas/mclennan-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stuccoaustin.com/service-areas/guadalupe-county-stucco</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -2,7 +2,22 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     { "source": "/eifs-contractor-san-antonio", "destination": "/eifs-contractor-austin", "permanent": true },
-    { "source": "/blog/eifs-repair-san-antonio", "destination": "/blog/eifs-repair-austin", "permanent": true }
+    { "source": "/blog/eifs-repair-san-antonio", "destination": "/blog/eifs-repair-austin", "permanent": true },
+    { "source": "/travis-county", "destination": "/service-areas/travis-county-stucco", "permanent": true },
+    { "source": "/williamson-county", "destination": "/service-areas/williamson-county-stucco", "permanent": true },
+    { "source": "/bell-county", "destination": "/service-areas/bell-county-stucco", "permanent": true },
+    { "source": "/hays-county", "destination": "/service-areas/hays-county-stucco", "permanent": true },
+    { "source": "/burnet-county", "destination": "/service-areas/burnet-county-stucco", "permanent": true },
+    { "source": "/llano-county", "destination": "/service-areas/llano-county-stucco", "permanent": true },
+    { "source": "/comal-county", "destination": "/service-areas/comal-county-stucco", "permanent": true },
+    { "source": "/bastrop-county", "destination": "/service-areas/bastrop-county-stucco", "permanent": true },
+    { "source": "/blanco-county", "destination": "/service-areas/blanco-county-stucco", "permanent": true },
+    { "source": "/gillespie-county", "destination": "/service-areas/gillespie-county-stucco", "permanent": true },
+    { "source": "/caldwell-county", "destination": "/service-areas/caldwell-county-stucco", "permanent": true },
+    { "source": "/lee-county", "destination": "/service-areas/lee-county-stucco", "permanent": true },
+    { "source": "/milam-county", "destination": "/service-areas/milam-county-stucco", "permanent": true },
+    { "source": "/brazos-county", "destination": "/service-areas/brazos-county-stucco", "permanent": true },
+    { "source": "/mclennan-county", "destination": "/service-areas/mclennan-county-stucco", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
