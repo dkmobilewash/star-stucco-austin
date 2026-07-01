@@ -179,7 +179,7 @@ export default function BlogPost() {
             </p>
             <Link
               to="/blog"
-              className="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700"
+              className="inline-flex items-center rounded-lg bg-primary-700 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-800"
             >
               <ChevronLeft className="mr-2 h-4 w-4" />
               Back to Blog
@@ -266,7 +266,8 @@ export default function BlogPost() {
             src={post.image}
             alt={post.title}
             className="w-full h-64 sm:h-96 object-cover"
-            loading="lazy"
+            width={1600}
+            height={900}
           />
         </div>
       </div>
@@ -307,7 +308,7 @@ export default function BlogPost() {
             <a
               href="tel:+15127069699"
               aria-label="Call Star Stucco of Austin for a free estimate"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               <Phone className="mr-2 h-4 w-4" />
               Call (512) 706-9699 for a Free Estimate

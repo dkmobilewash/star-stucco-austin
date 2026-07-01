@@ -29,7 +29,7 @@ export default function App() {
   return (
     <>
     <ScrollToTop />
-    <Suspense fallback={null}>
+    <Suspense fallback={<div className="flex min-h-screen items-center justify-center">Loading...</div>}>
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
@@ -50,7 +50,6 @@ export default function App() {
         <Route path="/service-area/georgetown" element={<GeorgetownArea />} />
         <Route path="/service-area/pflugerville" element={<PflugervilleArea />} />
         <Route path="/service-area/westlake" element={<WestlakeArea />} />
-        {/* Redirects from old county URLs to new service-areas paths */}
         <Route path="/travis-county" element={<Navigate to="/service-areas/travis-county-stucco" replace />} />
         <Route path="/williamson-county" element={<Navigate to="/service-areas/williamson-county-stucco" replace />} />
         <Route path="/bell-county" element={<Navigate to="/service-areas/bell-county-stucco" replace />} />

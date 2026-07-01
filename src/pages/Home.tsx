@@ -33,25 +33,25 @@ const services = [
     title: 'Stucco Repair',
     description: 'We restore damaged or deteriorating stucco to its original condition using expert techniques.',
     path: '/austin-stucco-repair',
-    image: 'https://media.istockphoto.com/id/1083608688/photo/hand-with-a-spatula-in-the-process-of-leveling-the-raw-plaster.jpg?s=612x612&w=0&k=20&c=hVFckEylAyO8yaUcAQVUtSWbQDZJ3RbW4c68gARdTr8=',
+    image: '/images/stucco-repair-closeup.webp',
   },
   {
     title: 'EIFS',
     description: 'We install Exterior Insulation and Finish Systems — lightweight, energy-efficient cladding for any building.',
     path: '/eifs-contractor-austin',
-    image: 'https://npicommercial.com/wp-content/uploads/sites/188/2024/07/Blog-Photo-03.jpg',
+    image: '/images/eifs-stucco-hero.webp',
   },
   {
     title: 'Interior Plaster',
     description: 'We transform living spaces with a range of custom plaster finishes and styles.',
     path: '/austin-stucco-finishing',
-    image: 'https://media.istockphoto.com/id/521709428/photo/plaster-master.jpg?s=612x612&w=0&k=20&c=9eXrEU_8JeasICgWdMp856idvv3tQv8XskUOLwNRtQQ=',
+    image: '/images/stucco-installation-process.webp',
   },
   {
     title: 'Thin Stone Veneer',
     description: 'We apply natural stone veneer for a durable, elegant finish on any surface.',
     path: '/austin-stucco-installation',
-    image: 'https://www.naturalstoneveneer.com/wp-content/uploads/2026/02/NSV-BG-6.jpg',
+    image: '/images/stucco-project-completed.webp',
   },
 ]
 
@@ -73,12 +73,15 @@ const testimonials = [
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'HomeAndConstructionBusiness',
+  '@id': 'https://stuccoaustin.com/#localbusiness',
   name: siteConfig.name,
   description: siteConfig.description,
   url: siteConfig.url,
   telephone: siteConfig.phone,
   email: siteConfig.email,
+  image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
+  priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
     streetAddress: siteConfig.address.street,
@@ -92,10 +95,21 @@ const schema = {
     latitude: siteConfig.coordinates.lat,
     longitude: siteConfig.coordinates.lng,
   },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
   areaServed: siteConfig.serviceAreas.map((area) => ({
     '@type': 'City',
     name: area,
   })),
+  sameAs: [
+    siteConfig.socialMedia.facebook,
+    siteConfig.socialMedia.instagram,
+    siteConfig.socialMedia.google,
+  ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
@@ -141,7 +155,7 @@ export default function Home() {
               <a
                 href="tel:+15127069699"
                 aria-label="Call Star Stucco of Austin for a free estimate"
-                className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+                className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
               >
                 <Phone className="mr-2 h-4 w-4" />
                 Call for a Free Estimate
@@ -182,7 +196,7 @@ export default function Home() {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+                className="inline-flex items-center rounded-lg bg-primary-700 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
               >
                 Contact Us Today
                 <ChevronRight className="ml-2 h-4 w-4" />
@@ -258,6 +272,8 @@ export default function Home() {
                     src={service.image}
                     alt={`${service.title} in Austin, TX`}
                     loading="lazy"
+                    width={640}
+                    height={400}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -296,6 +312,68 @@ export default function Home() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Star Stucco of Austin location"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-20 lg:py-28 bg-secondary-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
+              Stucco Services Across Central Texas
+            </h2>
+            <p className="text-secondary-600 text-lg">
+              From Austin to the surrounding Hill Country, we provide expert stucco services to homeowners and businesses throughout Central Texas.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h3 className="font-display text-xl font-bold text-secondary-900 mb-4">Cities We Serve</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { name: 'Austin', path: '/service-area/austin' },
+                  { name: 'Round Rock', path: '/service-area/round-rock' },
+                  { name: 'Cedar Park', path: '/service-area/cedar-park' },
+                  { name: 'Georgetown', path: '/service-area/georgetown' },
+                  { name: 'Pflugerville', path: '/service-area/pflugerville' },
+                  { name: 'Westlake', path: '/service-area/westlake' },
+                ].map((area) => (
+                  <Link
+                    key={area.name}
+                    to={area.path}
+                    className="flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm font-medium text-secondary-700 shadow-sm border border-secondary-100 transition-all hover:shadow-md hover:text-primary-700"
+                  >
+                    <ChevronRight className="h-4 w-4 text-primary-600" />
+                    {area.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-display text-xl font-bold text-secondary-900 mb-4">Counties We Cover</h3>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { name: 'Travis County', path: '/travis-county' },
+                  { name: 'Williamson County', path: '/williamson-county' },
+                  { name: 'Hays County', path: '/hays-county' },
+                  { name: 'Bell County', path: '/bell-county' },
+                  { name: 'Bastrop County', path: '/bastrop-county' },
+                  { name: 'Burnet County', path: '/burnet-county' },
+                  { name: 'Comal County', path: '/comal-county' },
+                  { name: 'Blanco County', path: '/blanco-county' },
+                ].map((area) => (
+                  <Link
+                    key={area.name}
+                    to={area.path}
+                    className="flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm font-medium text-secondary-700 shadow-sm border border-secondary-100 transition-all hover:shadow-md hover:text-primary-700"
+                  >
+                    <ChevronRight className="h-4 w-4 text-primary-600" />
+                    {area.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -351,6 +429,8 @@ export default function Home() {
                     src={post.image}
                     alt={post.title}
                     loading="lazy"
+                    width={800}
+                    height={500}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -391,7 +471,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               Get a Free Estimate
             </Link>

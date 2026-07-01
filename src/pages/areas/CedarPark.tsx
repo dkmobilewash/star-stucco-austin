@@ -41,10 +41,12 @@ export default function CedarParkArea() {
       <section className="relative bg-slate-900 pb-12 pt-24">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1920&fm=webp"
+            src="/images/stucco-project-completed.webp"
             alt="Beautiful stucco exterior in Cedar Park, Texas"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -111,10 +113,12 @@ export default function CedarParkArea() {
             </div>
             <div className="order-1 lg:order-2">
               <img
-                src="https://images.pexels.com/photos/1539581/pexels-photo-1539581.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/cedar-park-stucco-home.webp"
                 alt="Cedar Park Texas residential neighborhood with stucco homes"
                 className="rounded-2xl shadow-lg w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -171,10 +175,12 @@ export default function CedarParkArea() {
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
             <div className="rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
               <img
-                src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/stucco-texture-hero.webp"
                 alt="Residential stucco home in Cedar Park"
                 className="h-48 w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
               <div className="p-8">
                 <div className="flex items-center gap-3">
@@ -195,10 +201,12 @@ export default function CedarParkArea() {
             </div>
             <div className="rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
               <img
-                src="https://images.pexels.com/photos/3935333/pexels-photo-3935333.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/star-stucco-team-working.webp"
                 alt="Commercial stucco building in Cedar Park"
                 className="h-48 w-full object-cover"
                 loading="lazy"
+                width={800}
+                height={600}
               />
               <div className="p-8">
                 <div className="flex items-center gap-3">

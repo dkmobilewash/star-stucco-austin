@@ -32,9 +32,9 @@ const schema = {
 }
 
 const premiumFinishes = [
-  { title: 'Hand-Troweled Santa Barbara', description: 'An old-world finish with subtle organic texture that complements Hill Country limestone. Uniquely crafted by our master artisans for warm, timeless elegance.', image: 'https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp' },
-  { title: 'Venetian Smooth', description: 'A polished, refined finish with multiple burnished layers that produce depth and luminosity. Ideal for contemporary Westlake estates seeking sophisticated modern aesthetics.', image: 'https://images.pexels.com/photos/3935350/pexels-photo-3935350.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp' },
-  { title: 'Custom Mediterranean', description: 'Rich textured stucco inspired by coastal villas, tailored to pair with natural stone accents. Perfect for Barton Creek properties seeking European grandeur.', image: 'https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp' },
+  { title: 'Hand-Troweled Santa Barbara', description: 'An old-world finish with subtle organic texture that complements Hill Country limestone. Uniquely crafted by our master artisans for warm, timeless elegance.', image: '/images/new-development-stucco.webp' },
+  { title: 'Venetian Smooth', description: 'A polished, refined finish with multiple burnished layers that produce depth and luminosity. Ideal for contemporary Westlake estates seeking sophisticated modern aesthetics.', image: '/images/stucco-installation-process.webp' },
+  { title: 'Custom Mediterranean', description: 'Rich textured stucco inspired by coastal villas, tailored to pair with natural stone accents. Perfect for Barton Creek properties seeking European grandeur.', image: '/images/stucco-project-completed.webp' },
 ]
 
 const comparisonRows = [
@@ -60,10 +60,12 @@ export default function WestlakeArea() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/2404046/pexels-photo-2404046.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/luxury-home-westlake-hero.webp"
             alt="Luxury estate home with premium stucco exterior in Westlake Hills"
             className="h-full w-full object-cover opacity-15"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-secondary-950/90 via-secondary-900/80 to-secondary-950/95" />
         </div>
@@ -89,7 +91,7 @@ export default function WestlakeArea() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+                className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
               >
                 Request a Consultation <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
@@ -134,9 +136,11 @@ export default function WestlakeArea() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/2816323/pexels-photo-2816323.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp"
+                src="/images/luxury-stucco-westlake.webp"
                 alt="Luxury home with expertly applied stucco finish in Westlake Hills"
                 loading="lazy"
+                width={800}
+                height={600}
                 className="rounded-2xl shadow-2xl"
               />
             </div>
@@ -161,6 +165,8 @@ export default function WestlakeArea() {
                     src={finish.image}
                     alt={finish.title}
                     loading="lazy"
+                width={800}
+                height={600}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -219,7 +225,7 @@ export default function WestlakeArea() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               Schedule Your Consultation
             </Link>

@@ -98,10 +98,12 @@ export default function StuccoFinishing() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp"
+            src="/images/stucco-texture-hero.webp"
             alt="Beautifully finished stucco wall with warm texture"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/95 to-secondary-900/60" />
         </div>
@@ -122,7 +124,7 @@ export default function StuccoFinishing() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
             >
               Explore Finish Options <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
@@ -196,10 +198,12 @@ export default function StuccoFinishing() {
             </div>
             <div>
               <img
-                src="https://www.ultrakoteproducts.com/wp-content/uploads/2022/07/wm-eifs.png"
+                src="/images/stucco-project-completed.webp"
                 alt="Variety of stucco textures and colors on display"
                 className="rounded-2xl shadow-lg"
                 loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -252,7 +256,7 @@ export default function StuccoFinishing() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               Book a Finish Consultation
             </Link>

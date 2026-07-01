@@ -320,10 +320,12 @@ export default function EifsContractor() {
       <section className="relative overflow-hidden bg-secondary-900">
         <div className="absolute inset-0">
           <img
-            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1i9jAG3XB6C9PbVCOXqpjT4I1aKypL3IcwM7dX8sygD6D5Ma45nL_ifBvJ8JeBpJaiThipCbC96nZI5yQIKVQyf6qEO7eges0BHuono-yKdqaynwrhvpUULfXs0tQhspuaRd5zCGptLg=s1360-w1360-h1020-rw"
+            src="/images/eifs-stucco-hero.webp"
             alt="EIFS contractor working on exterior wall in Austin TX"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
+            width={1600}
+            height={900}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary-900/95 to-secondary-900/60" />
         </div>
@@ -349,7 +351,7 @@ export default function EifsContractor() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/20"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
             >
               Get a Free EIFS Estimate <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
@@ -413,6 +415,8 @@ export default function EifsContractor() {
                 alt="Diagram showing the five layers of an EIFS wall system"
                 className="rounded-2xl shadow-lg w-full"
                 loading="lazy"
+                width={800}
+                height={600}
               />
             </div>
           </div>
@@ -445,10 +449,12 @@ export default function EifsContractor() {
           </div>
           <figure className="mt-12">
             <img
-              src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEoOx-LSVXE0flAWzD9g7q_iyesV-OrkwybImQNyGwZnH2dofmUJ3H3v_Yf8BYXny4PnrZRAnEBHZ0ihAKQ9QzeKscIUQZ2kdfBceTcbgpre4eFlkGSxpeS6WuK4jJOkZ6AUFtfcKInLSvc=s1360-w1360-h1020-rw"
+              src="/images/stucco-project-completed.webp"
               alt="Commercial multifamily building clad in EIFS in Austin, TX"
               className="w-full max-h-[28rem] object-cover rounded-2xl shadow-lg"
               loading="lazy"
+              width={800}
+              height={600}
             />
             <figcaption className="mt-3 text-center text-sm text-secondary-500">
               Commercial and multifamily EIFS installation in the Austin metro.
@@ -541,15 +547,17 @@ export default function EifsContractor() {
             A proven, step-by-step process that fixes the root cause — not just the visible damage.
           </p>
           <img
-            src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGEUl399ZEasljBiFN-u-pz_gxJFgs5mXImvKmG8Czf6ugWXKQKnb0dK1JU6aeTu35hOYqOLrV8bRLF8imSoHehIr4JL6zkumH9-DmoMDIzflwyk9AQjaBKfCk4XAmWPmXLucgFoDjH3ngK=s1360-w1360-h1020-rw"
+            src="/images/stucco-repair-hero.webp"
             alt="EIFS installation in progress on a Austin home with scaffolding"
             className="rounded-2xl shadow-lg w-full mb-12"
             loading="lazy"
+            width={800}
+            height={600}
           />
           <ol className="space-y-6">
             {repairProcess.map((step, i) => (
               <li key={step.title} className="flex gap-5">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-600 text-sm font-bold text-white">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-700 text-sm font-bold text-white">
                   {i + 1}
                 </span>
                 <div>
@@ -721,7 +729,7 @@ export default function EifsContractor() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               Request a Free Estimate <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
