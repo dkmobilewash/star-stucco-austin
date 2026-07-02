@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
-import { CircleCheck as CheckCircle, Shield, Clock, Award, Users, Heart, ChevronRight, Phone, Quote } from 'lucide-react'
+import { CircleCheck as CheckCircle, Shield, Clock, Award, Users, Heart, ChevronRight, Phone, Quote, Star } from 'lucide-react'
 import SEO from '../components/SEO'
 import { siteConfig } from '../lib/siteConfig'
 import { blogPosts } from '../data/blogPosts'
+import { reviews, reviewStats } from '../data/reviews'
 
 const latestPosts = [...blogPosts]
   .sort((a, b) => b.date.localeCompare(a.date))
@@ -50,7 +51,7 @@ const services = [
   {
     title: 'Thin Stone Veneer',
     description: 'We apply natural stone veneer for a durable, elegant finish on any surface.',
-    path: '/austin-stucco-installation',
+    path: '/austin-thin-stone-veneer',
     image: '/images/stucco-project-completed.webp',
   },
 ]
@@ -64,12 +65,7 @@ const whyChooseUs = [
   { icon: Award, title: 'Fully Insured' },
 ]
 
-const testimonials = [
-  { quote: 'Star Stucco has been the easiest contractor I\'ve ever worked with.', author: 'Corey B.' },
-  { quote: 'Excellent repair work — I definitely recommend them to anyone in Austin.', author: 'Melanie H.' },
-  { quote: 'If you need a plastering job done in Austin, use these guys. Plain and simple.', author: 'John F.' },
-  { quote: 'I\'ve used their stucco repair service several times and it always turns out great.', author: 'Andrew W.' },
-]
+const featuredReviews = reviews.filter((r) => r.text.length > 40).slice(0, 6)
 
 const schema = {
   '@context': 'https://schema.org',
@@ -112,8 +108,10 @@ const schema = {
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '187',
+    ratingValue: reviewStats.averageRating.toFixed(1),
+    reviewCount: reviewStats.totalReviews.toString(),
+    bestRating: '5',
+    worstRating: '1',
   },
 }
 
@@ -382,26 +380,46 @@ export default function Home() {
       <section className="py-20 lg:py-28 bg-secondary-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-1 mb-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-6 w-6 fill-amber-400 text-amber-400" />
+              ))}
+            </div>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
-              What Our Clients Say
+              {reviewStats.averageRating.toFixed(1)} Stars from {reviewStats.totalReviews} Google Reviews
             </h2>
             <p className="text-secondary-600 text-lg">
-              Hear from homeowners and businesses across Central Texas.
+              Real reviews from real customers across Central Texas.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((t) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredReviews.map((r) => (
               <div
-                key={t.author}
-                className="rounded-xl bg-white p-8 shadow-sm border border-secondary-100"
+                key={r.author}
+                className="rounded-xl bg-white p-6 shadow-sm border border-secondary-100"
               >
-                <Quote className="h-8 w-8 text-primary-200 mb-4" />
+                <Quote className="h-7 w-7 text-primary-200 mb-3" />
                 <p className="text-secondary-700 leading-relaxed mb-4 italic">
-                  "{t.quote}"
+                  &ldquo;{r.text}&rdquo;
                 </p>
-                <p className="text-sm font-semibold text-secondary-900">— {t.author}</p>
+                <div className="flex items-center justify-between pt-4 border-t border-secondary-100">
+                  <p className="text-sm font-semibold text-secondary-900">{r.author}</p>
+                  <div className="flex gap-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              to="/reviews"
+              className="inline-flex items-center rounded-lg border border-secondary-300 px-6 py-3 text-sm font-semibold text-secondary-700 transition-all hover:border-secondary-400 hover:bg-secondary-50"
+            >
+              Read All Reviews <ChevronRight className="ml-2 h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
