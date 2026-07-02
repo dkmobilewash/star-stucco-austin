@@ -238,6 +238,7 @@ export default function BlogPost() {
         description={post.seoDescription ?? post.excerpt}
         path={`/blog/${post.slug}`}
         schema={schema}
+        ogType="article"
       />
 
       {/* Hero */}
@@ -306,12 +307,12 @@ export default function BlogPost() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+15127069699"
-              aria-label="Call Star Stucco of Austin for a free estimate"
+              href={`tel:${siteConfig.phone}`}
+              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               <Phone className="mr-2 h-4 w-4" />
-              Call (512) 706-9699 for a Free Estimate
+              Call {siteConfig.phone} for a Free Estimate
             </a>
             <Link
               to="/contact"
