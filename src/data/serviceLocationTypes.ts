@@ -37,7 +37,7 @@ export const serviceDefinitions = [
   { slug: 'stucco-repair', name: 'Stucco Repair', path: '/austin-stucco-repair' },
   { slug: 'eifs-contractor', name: 'EIFS Contractor', path: '/eifs-contractor-austin' },
   { slug: 'interior-plaster', name: 'Interior Plaster', path: '/austin-stucco-finishing' },
-  { slug: 'thin-stone-veneer', name: 'Thin Stone Veneer', path: '/austin-stucco-installation' },
+  { slug: 'thin-stone-veneer', name: 'Thin Stone Veneer', path: '/austin-thin-stone-veneer' },
 ] as const
 
 export const countyDefinitions = [

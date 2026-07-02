@@ -13,6 +13,7 @@ const StuccoFinishing = lazy(() => import('./pages/services/StuccoFinishing'))
 const CommercialStucco = lazy(() => import('./pages/services/CommercialStucco'))
 const EifsContractor = lazy(() => import('./pages/services/EifsContractor'))
 const StuccoRemediation = lazy(() => import('./pages/services/StuccoRemediation'))
+const ThinStoneVeneer = lazy(() => import('./pages/services/ThinStoneVeneer'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const ServiceAreas = lazy(() => import('./pages/ServiceAreas'))
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="/austin-commercial-stucco" element={<CommercialStucco />} />
         <Route path="/eifs-contractor-austin" element={<EifsContractor />} />
         <Route path="/austin-stucco-remediation" element={<StuccoRemediation />} />
+        <Route path="/austin-thin-stone-veneer" element={<ThinStoneVeneer />} />
         <Route path="/service-areas" element={<ServiceAreas />} />
         <Route path="/service-areas/:slug" element={<CountyPage />} />
         <Route path="/service-area/austin" element={<AustinArea />} />

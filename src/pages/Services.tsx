@@ -61,6 +61,20 @@ const services = [
     ],
   },
   {
+    title: 'Thin Stone Veneer',
+    path: '/austin-thin-stone-veneer',
+    image:
+      '/images/stucco-project-completed.webp',
+    description:
+      'Add the beauty and permanence of natural stone to your Austin home without the weight or cost of full masonry. We install thin stone veneer on fireplaces, accent walls, exterior facades, outdoor kitchens, and more.',
+    features: [
+      'Fireplace surrounds and accent walls',
+      'Exterior facades and entryways',
+      'Outdoor kitchens and living areas',
+      'Natural and manufactured stone options',
+    ],
+  },
+  {
     title: 'Commercial Stucco',
     path: '/austin-commercial-stucco',
     image:
