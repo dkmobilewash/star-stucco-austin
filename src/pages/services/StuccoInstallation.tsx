@@ -4,6 +4,7 @@ import SEO from '../../components/SEO'
 import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
 import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
+import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
 const faqs: FAQ[] = [
   {
@@ -256,6 +257,8 @@ export default function StuccoInstallation() {
           { label: 'EIFS / Synthetic Stucco', path: '/eifs-contractor-austin', desc: 'Energy-efficient EIFS as an insulated alternative to traditional stucco.' },
         ]}
       />
+
+      <ServiceLocationLinks serviceSlug="residential-stucco" serviceName="Residential Stucco" />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

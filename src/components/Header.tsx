@@ -16,7 +16,7 @@ const navLinks = [
   { label: 'Stucco', path: '/austin-stucco-services', dropdown: stuccoDropdown },
   { label: 'EIFS', path: '/eifs-contractor-austin' },
   { label: 'Interior Plaster', path: '/austin-stucco-finishing' },
-  { label: 'Stone Veneer', path: '/austin-stucco-installation' },
+  { label: 'Service Areas', path: '/service-areas' },
   { label: 'Blog', path: '/blog' },
   { label: 'About', path: '/about' },
   { label: 'Contact', path: '/contact' },
@@ -34,10 +34,11 @@ export default function Header() {
           <Link to="/" className="flex items-center">
             <img
               src="/images/star-stucco-logo.webp"
+              srcSet="/images/star-stucco-logo.webp 1x, /images/star-stucco-logo@2x.webp 2x"
               alt={siteConfig.name}
-              className="h-14 w-auto"
               width={98}
               height={98}
+              className="h-14 w-auto"
             />
           </Link>
 

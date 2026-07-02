@@ -16,6 +16,7 @@ import {
 import { useState } from 'react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
@@ -713,6 +714,8 @@ export default function EifsContractor() {
           </p>
         </div>
       </section>
+
+      <ServiceLocationLinks serviceSlug="eifs-contractor" serviceName="EIFS Contractor" />
 
       {/* Final CTA */}
       <section className="bg-secondary-900 py-20">

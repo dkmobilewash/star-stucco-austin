@@ -4,6 +4,7 @@ import { useState } from 'react'
 import SEO from '../../components/SEO'
 import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
+import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
 const schema = {
   '@context': 'https://schema.org',
@@ -386,6 +387,8 @@ export default function StuccoRepair() {
           { label: 'Stucco Repair Cost Guide', path: '/blog/stucco-repair-cost-austin', desc: 'What stucco repair costs in Austin by repair type — and what drives the price.' },
         ]}
       />
+
+      <ServiceLocationLinks serviceSlug="stucco-repair" serviceName="Stucco Repair" />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">
