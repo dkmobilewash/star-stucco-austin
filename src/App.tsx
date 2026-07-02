@@ -13,6 +13,7 @@ const StuccoFinishing = lazy(() => import('./pages/services/StuccoFinishing'))
 const CommercialStucco = lazy(() => import('./pages/services/CommercialStucco'))
 const EifsContractor = lazy(() => import('./pages/services/EifsContractor'))
 const StuccoRemediation = lazy(() => import('./pages/services/StuccoRemediation'))
+const ThinStoneVeneer = lazy(() => import('./pages/services/ThinStoneVeneer'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const ServiceAreas = lazy(() => import('./pages/ServiceAreas'))
@@ -23,7 +24,12 @@ const CedarParkArea = lazy(() => import('./pages/areas/CedarPark'))
 const GeorgetownArea = lazy(() => import('./pages/areas/Georgetown'))
 const PflugervilleArea = lazy(() => import('./pages/areas/Pflugerville'))
 const WestlakeArea = lazy(() => import('./pages/areas/Westlake'))
-const ServiceLocationPage = lazy(() => import('./pages/ServiceLocationPage'))
+const ResidentialStuccoLocation = lazy(() => import('./pages/service-locations/ResidentialStuccoLocation'))
+const CommercialStuccoLocation = lazy(() => import('./pages/service-locations/CommercialStuccoLocation'))
+const StuccoRepairLocation = lazy(() => import('./pages/service-locations/StuccoRepairLocation'))
+const EifsContractorLocation = lazy(() => import('./pages/service-locations/EifsContractorLocation'))
+const InteriorPlasterLocation = lazy(() => import('./pages/service-locations/InteriorPlasterLocation'))
+const ThinStoneVeneerLocation = lazy(() => import('./pages/service-locations/ThinStoneVeneerLocation'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 export default function App() {
@@ -43,6 +49,7 @@ export default function App() {
         <Route path="/austin-commercial-stucco" element={<CommercialStucco />} />
         <Route path="/eifs-contractor-austin" element={<EifsContractor />} />
         <Route path="/austin-stucco-remediation" element={<StuccoRemediation />} />
+        <Route path="/austin-thin-stone-veneer" element={<ThinStoneVeneer />} />
         <Route path="/service-areas" element={<ServiceAreas />} />
         <Route path="/service-areas/:slug" element={<CountyPage />} />
         <Route path="/service-area/austin" element={<AustinArea />} />
@@ -66,12 +73,12 @@ export default function App() {
         <Route path="/milam-county" element={<Navigate to="/service-areas/milam-county-stucco" replace />} />
         <Route path="/brazos-county" element={<Navigate to="/service-areas/brazos-county-stucco" replace />} />
         <Route path="/mclennan-county" element={<Navigate to="/service-areas/mclennan-county-stucco" replace />} />
-        <Route path="/residential-stucco/:countySlug" element={<ServiceLocationPage />} />
-        <Route path="/commercial-stucco/:countySlug" element={<ServiceLocationPage />} />
-        <Route path="/stucco-repair/:countySlug" element={<ServiceLocationPage />} />
-        <Route path="/eifs-contractor/:countySlug" element={<ServiceLocationPage />} />
-        <Route path="/interior-plaster/:countySlug" element={<ServiceLocationPage />} />
-        <Route path="/thin-stone-veneer/:countySlug" element={<ServiceLocationPage />} />
+        <Route path="/residential-stucco/:countySlug" element={<ResidentialStuccoLocation />} />
+        <Route path="/commercial-stucco/:countySlug" element={<CommercialStuccoLocation />} />
+        <Route path="/stucco-repair/:countySlug" element={<StuccoRepairLocation />} />
+        <Route path="/eifs-contractor/:countySlug" element={<EifsContractorLocation />} />
+        <Route path="/interior-plaster/:countySlug" element={<InteriorPlasterLocation />} />
+        <Route path="/thin-stone-veneer/:countySlug" element={<ThinStoneVeneerLocation />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />
