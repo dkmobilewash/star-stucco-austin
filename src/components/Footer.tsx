@@ -80,8 +80,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/austin-stucco-installation" className="text-sm hover:text-white transition-colors">
+                <Link to="/austin-thin-stone-veneer" className="text-sm hover:text-white transition-colors">
                   Thin Stone Veneer
+                </Link>
+              </li>
+              <li>
+                <Link to="/reviews" className="text-sm hover:text-white transition-colors">
+                  Customer Reviews
                 </Link>
               </li>
               <li>

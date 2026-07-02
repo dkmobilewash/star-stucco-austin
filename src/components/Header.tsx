@@ -17,6 +17,7 @@ const navLinks = [
   { label: 'EIFS', path: '/eifs-contractor-austin' },
   { label: 'Interior Plaster', path: '/austin-stucco-finishing' },
   { label: 'Service Areas', path: '/service-areas' },
+  { label: 'Reviews', path: '/reviews' },
   { label: 'Blog', path: '/blog' },
   { label: 'About', path: '/about' },
   { label: 'Contact', path: '/contact' },
