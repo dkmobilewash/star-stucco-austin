@@ -1,3 +1,6 @@
+import { newBlogPosts1 } from './newBlogPosts1'
+import { newBlogPosts2 } from './newBlogPosts2'
+
 export interface BlogPost {
   slug: string
   title: string
@@ -12,6 +15,8 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  ...newBlogPosts1,
+  ...newBlogPosts2,
   {
     slug: 'best-stucco-finishes-austin-homes',
     title: 'The Best Stucco Finishes for Austin Homes in 2026',
