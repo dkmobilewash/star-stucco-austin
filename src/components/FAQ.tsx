@@ -32,7 +32,9 @@ function FAQItem({ question, answer }: FAQ) {
           className={`h-5 w-5 shrink-0 text-primary-600 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
         />
       </button>
-      {open && <p className="pb-5 text-secondary-600 leading-relaxed">{answer}</p>}
+      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-96' : 'max-h-0'}`}>
+        <p className="pb-5 text-secondary-600 leading-relaxed">{answer}</p>
+      </div>
     </div>
   )
 }

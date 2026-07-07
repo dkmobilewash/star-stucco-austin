@@ -47,6 +47,13 @@ export default function CountyPage() {
 
   const faqSchema = faqPageSchema(data.faqs)
 
+  const distantCountySlugs = new Set([
+    'brazos-county-stucco', 'mclennan-county-stucco', 'milam-county-stucco',
+    'lee-county-stucco', 'caldwell-county-stucco', 'gillespie-county-stucco',
+    'llano-county-stucco', 'guadalupe-county-stucco',
+  ])
+  const isDistant = distantCountySlugs.has(data.slug)
+
   return (
     <>
       <SEO
@@ -54,6 +61,7 @@ export default function CountyPage() {
         description={data.metaDescription}
         path={`/service-areas/${data.slug}`}
         schema={[serviceSchema, faqSchema]}
+        noindex={isDistant}
       />
 
       {/* Hero */}
