@@ -20,7 +20,7 @@
     { "source": "/mclennan-county", "destination": "/service-areas/mclennan-county-stucco", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/200.html" }
   ],
   "headers": [
     {

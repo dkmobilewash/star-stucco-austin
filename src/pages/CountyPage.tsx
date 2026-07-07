@@ -285,10 +285,10 @@ export default function CountyPage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold text-secondary-900 mb-4 text-center">
-            Services We Offer in {data.county}
+            Explore {data.county} by Service Type
           </h2>
           <p className="text-secondary-600 text-center mb-10">
-            Explore our full range of stucco and plaster services available throughout {data.county}.
+            Find detailed information about each stucco and plaster service we provide in {data.county}.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {serviceDefinitions.map((s) => (

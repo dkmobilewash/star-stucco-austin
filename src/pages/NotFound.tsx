@@ -9,6 +9,7 @@ export default function NotFound() {
         title={`Page Not Found | ${siteConfig.name}`}
         description="The page you are looking for could not be found. Return to our homepage to explore our stucco services in Austin, TX."
         path="/404"
+        noindex
       />
 
       <section className="py-32 sm:py-40">
