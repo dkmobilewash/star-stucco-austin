@@ -165,6 +165,11 @@ async function loadDynamicData() {
   return mod
 }
 
+const DISTANT_COUNTIES = new Set([
+  'brazos-county', 'mclennan-county', 'milam-county', 'lee-county',
+  'caldwell-county', 'gillespie-county', 'llano-county', 'guadalupe-county',
+])
+
 function getDynamicRoutes(data) {
   const routes = []
 
@@ -179,10 +184,12 @@ function getDynamicRoutes(data) {
 
   // County pages
   for (const county of data.allCounties) {
+    const countyBase = county.slug.replace('-stucco', '')
     routes.push({
       path: `/service-areas/${county.slug}`,
       title: county.seoTitle,
       description: county.metaDescription,
+      noindex: DISTANT_COUNTIES.has(countyBase),
     })
   }
 
@@ -202,6 +209,7 @@ function getDynamicRoutes(data) {
         path: `/${svc.slug}/${loc.countySlug}`,
         title: loc.seoTitle,
         description: loc.metaDescription,
+        noindex: DISTANT_COUNTIES.has(loc.countySlug),
       })
     }
   }
@@ -214,10 +222,18 @@ function getDynamicRoutes(data) {
 function injectSeoTags(html, route) {
   const url = `${SITE_URL}${route.path}`
 
-  const seoTags = [
+  const tags = [
     `<title>${escapeHtml(route.title)}</title>`,
     `<meta name="description" content="${escapeAttr(route.description)}" />`,
-    `<link rel="canonical" href="${url}" />`,
+  ]
+
+  if (route.noindex) {
+    tags.push(`<meta name="robots" content="noindex, nofollow" />`)
+  } else {
+    tags.push(`<link rel="canonical" href="${url}" />`)
+  }
+
+  tags.push(
     `<meta property="og:title" content="${escapeAttr(route.title)}" />`,
     `<meta property="og:description" content="${escapeAttr(route.description)}" />`,
     `<meta property="og:url" content="${url}" />`,
@@ -226,7 +242,9 @@ function injectSeoTags(html, route) {
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${escapeAttr(route.title)}" />`,
     `<meta name="twitter:description" content="${escapeAttr(route.description)}" />`,
-  ].join('\n    ')
+  )
+
+  const seoTags = tags.join('\n    ')
 
   const viewportTag = '<meta name="viewport"'
   const idx = html.indexOf(viewportTag)
