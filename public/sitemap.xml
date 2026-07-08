@@ -79,6 +79,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://stuccoaustin.com/faqs</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stuccoaustin.com/gallery</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stuccoaustin.com/request-commercial-quote</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://stuccoaustin.com/service-area/austin</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>

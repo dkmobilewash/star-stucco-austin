@@ -30,8 +30,8 @@ const SITE_NAME = 'Star Stucco of Austin'
 const staticRoutes = [
   {
     path: '/',
-    title: 'Austin Stucco Contractor | Repair, Installation & Finishing | Free Estimates',
-    description: 'Top-rated stucco contractor in Austin, TX. Expert stucco repair, installation, finishing & commercial stucco services. Local Austin team. Call for a free estimate today.',
+    title: 'Stucco Contractors in Austin, TX | Star Stucco | Free Estimates',
+    description: 'Austin\'s top-rated stucco contractor. 35+ 5-star reviews, licensed & insured. Repair, installation & finishing. Call for a free same-week estimate.',
   },
   {
     path: '/about',
@@ -50,23 +50,23 @@ const staticRoutes = [
   },
   {
     path: '/austin-stucco-installation',
-    title: 'Stucco Installation Austin, TX | Star Stucco of Austin',
-    description: 'Expert stucco installation in Austin, TX for new construction and re-stucco projects. Travis County code compliant. Serving Westlake, Barton Creek, Mueller, and all Austin neighborhoods. Free estimates.',
+    title: 'Stucco Installation Austin, TX | New Construction | Star Stucco',
+    description: 'Professional stucco installation for new builds & renovations in Austin. 3-coat & synthetic systems. Licensed contractor, free estimates, 5-star rated.',
   },
   {
     path: '/austin-stucco-repair',
-    title: 'Austin Stucco Repair | Crack, Water Damage & Patch Experts | Star Stucco',
-    description: 'Professional stucco repair in Austin, TX. We fix cracks, water damage, holes & texture mismatches. Fast turnaround, free estimates. Call (512) 706-9699.',
+    title: 'Stucco Repair Austin, TX | Star Stucco | Free Estimates',
+    description: 'Expert stucco crack & damage repair in Austin. Texture matching, waterproofing, HOA-approved work. 35+ 5-star reviews. Get your free estimate today.',
   },
   {
     path: '/austin-stucco-finishing',
-    title: 'Stucco Finishing & Textures Austin, TX | Star Stucco of Austin',
-    description: 'Custom stucco finishes and textures in Austin, TX. Smooth, Santa Barbara, dash, sand, and lace finishes with expert color matching. Complementing Hill Country, Spanish, and Modern architecture.',
+    title: 'Stucco Finishing Austin, TX | Textures & Coatings | Star Stucco',
+    description: 'Custom stucco finishes in Austin — smooth, sand, dash & designer textures. Expert color matching & finish coats. Free estimates, licensed & insured.',
   },
   {
     path: '/austin-commercial-stucco',
-    title: 'Commercial Stucco Contractor Austin TX | New Construction & Repair',
-    description: 'Austin\'s trusted commercial stucco contractor. We handle new construction, exterior finishing, repairs & EIFS for commercial properties. Free estimates. Call (512) 706-9699.',
+    title: 'Commercial Stucco Contractor Austin, TX | Star Stucco',
+    description: 'Commercial stucco installation & repair in Austin. Multi-family, retail & office buildings. Licensed, bonded & insured. Free commercial estimates.',
   },
   {
     path: '/eifs-contractor-austin',
@@ -92,6 +92,21 @@ const staticRoutes = [
     path: '/blog',
     title: 'Stucco Tips & News Austin, TX | Star Stucco of Austin Blog',
     description: 'Expert stucco tips, maintenance advice, and industry news for Austin, TX homeowners. Learn how to protect and maintain your stucco exterior in the Central Texas climate.',
+  },
+  {
+    path: '/faqs',
+    title: 'Stucco FAQs | Star Stucco of Austin | Austin, TX',
+    description: 'Frequently asked questions about stucco, EIFS, stone veneer, and interior plaster services in Austin, TX. Get answers from Star Stucco of Austin — trusted stucco contractor since 2013.',
+  },
+  {
+    path: '/gallery',
+    title: 'Stucco Project Gallery | Star Stucco of Austin | Austin, TX',
+    description: 'Browse completed stucco projects by Star Stucco of Austin — residential, commercial, stucco repair, EIFS, and stone veneer work across Central Texas. See our craftsmanship firsthand.',
+  },
+  {
+    path: '/request-commercial-quote',
+    title: 'Commercial Stucco Quote Austin, TX | Star Stucco of Austin',
+    description: 'Request a free commercial stucco quote from Star Stucco of Austin. New construction, EIFS, stucco repair, and finishing for offices, retail, multifamily, and more across Central Texas.',
   },
   {
     path: '/service-areas',
@@ -233,25 +248,48 @@ function injectSeoTags(html, route) {
     tags.push(`<link rel="canonical" href="${url}" />`)
   }
 
+  const ogImage = `${SITE_URL}/images/hero-stucco-austin.webp`
+
   tags.push(
     `<meta property="og:title" content="${escapeAttr(route.title)}" />`,
     `<meta property="og:description" content="${escapeAttr(route.description)}" />`,
     `<meta property="og:url" content="${url}" />`,
     `<meta property="og:type" content="website" />`,
     `<meta property="og:site_name" content="${escapeAttr(SITE_NAME)}" />`,
+    `<meta property="og:image" content="${ogImage}" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${escapeAttr(route.title)}" />`,
     `<meta name="twitter:description" content="${escapeAttr(route.description)}" />`,
+    `<meta name="twitter:image" content="${ogImage}" />`,
   )
+
+  if (route.schema) {
+    const schemaData = Array.isArray(route.schema) ? route.schema : [route.schema]
+    for (const s of schemaData) {
+      tags.push(`<script type="application/ld+json">${JSON.stringify(s)}</script>`)
+    }
+  }
 
   const seoTags = tags.join('\n    ')
 
-  const viewportTag = '<meta name="viewport"'
-  const idx = html.indexOf(viewportTag)
-  if (idx === -1) return html
+  let result = html
+  const titleStart = result.indexOf('<title>')
+  if (titleStart !== -1) {
+    const titleEnd = result.indexOf('</title>', titleStart) + '</title>'.length
+    result = result.slice(0, titleStart) + result.slice(titleEnd)
+  }
+  const descStart = result.indexOf('<meta name="description"')
+  if (descStart !== -1) {
+    const descEnd = result.indexOf('/>', descStart) + 2
+    result = result.slice(0, descStart) + result.slice(descEnd)
+  }
 
-  const lineEnd = html.indexOf('/>', idx) + 2
-  return html.slice(0, lineEnd) + '\n    ' + seoTags + html.slice(lineEnd)
+  const viewportTag = '<meta name="viewport"'
+  const idx = result.indexOf(viewportTag)
+  if (idx === -1) return result
+
+  const lineEnd = result.indexOf('/>', idx) + 2
+  return result.slice(0, lineEnd) + '\n    ' + seoTags + result.slice(lineEnd)
 }
 
 function escapeHtml(s) {
@@ -260,6 +298,33 @@ function escapeHtml(s) {
 
 function escapeAttr(s) {
   return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
+// ── Sitemap generation ──────────────────────────────────────────────
+
+function getPriority(path) {
+  if (path === '/') return '1.0'
+  if (path === '/austin-stucco-services' || path === '/eifs-contractor-austin') return '0.9'
+  if (path.startsWith('/austin-') || path.startsWith('/service-area/')) return '0.8'
+  if (path === '/reviews' || path === '/service-areas') return '0.8'
+  if (['/about', '/contact', '/blog', '/faqs', '/gallery', '/request-commercial-quote'].includes(path)) return '0.7'
+  if (path.startsWith('/service-areas/')) return '0.7'
+  if (path.startsWith('/blog/')) return '0.6'
+  return '0.6'
+}
+
+function generateSitemap(routes) {
+  const today = new Date().toISOString().slice(0, 10)
+  const indexable = routes.filter((r) => !r.noindex)
+
+  const urls = indexable.map((r) => {
+    const loc = `${SITE_URL}${r.path}`
+    const priority = getPriority(r.path)
+    const changefreq = r.path === '/' ? 'daily' : parseFloat(priority) >= 0.8 ? 'weekly' : 'monthly'
+    return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`
+  })
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`
 }
 
 // ── Main ─────────────────────────────────────────────────────────────
@@ -291,6 +356,11 @@ async function main() {
   }
 
   console.log(`  SEO injection complete: ${ok} pages written\n`)
+
+  const sitemap = generateSitemap(allRoutes)
+  writeFileSync(join(DIST, 'sitemap.xml'), sitemap)
+  const indexableCount = allRoutes.filter((r) => !r.noindex).length
+  console.log(`  Sitemap generated: ${indexableCount} indexable URLs written to dist/sitemap.xml\n`)
 }
 
 main().catch((err) => {

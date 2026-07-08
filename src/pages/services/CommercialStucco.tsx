@@ -161,8 +161,8 @@ export default function CommercialStucco() {
   return (
     <>
       <SEO
-        title="Commercial Stucco Contractor Austin TX | New Construction & Repair"
-        description="Austin's trusted commercial stucco contractor. We handle new construction, exterior finishing, repairs & EIFS for commercial properties. Free estimates. Call (512) 706-9699."
+        title="Commercial Stucco Contractor Austin, TX | Star Stucco"
+        description="Commercial stucco installation & repair in Austin. Multi-family, retail & office buildings. Licensed, bonded & insured. Free commercial estimates."
         path="/austin-commercial-stucco"
         schema={[schema, faqSchema]}
       />

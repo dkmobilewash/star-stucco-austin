@@ -196,6 +196,7 @@ export default function BlogPost() {
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
+    dateModified: post.date,
     image: post.image,
     url: `${siteConfig.url}/blog/${post.slug}`,
     author: {
@@ -269,6 +270,7 @@ export default function BlogPost() {
             className="w-full h-64 sm:h-96 object-cover"
             width={1600}
             height={900}
+            fetchPriority="high"
           />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { CircleCheck as CheckCircle, Shield, Clock, Award, Users, Heart, ChevronRight, Phone, Quote, Star } from 'lucide-react'
 import SEO from '../components/SEO'
+import { FAQSection, faqPageSchema } from '../components/FAQ'
 import { siteConfig } from '../lib/siteConfig'
 import { blogPosts } from '../data/blogPosts'
 import { reviews, reviewStats } from '../data/reviews'
@@ -59,7 +60,7 @@ const services = [
 const whyChooseUs = [
   { icon: CheckCircle, title: 'Over 9,000 Projects Completed in Texas' },
   { icon: Clock, title: 'Over 20 Years of Experience' },
-  { icon: Shield, title: 'Warranties With All Work' },
+  { icon: Shield, title: '2-Year Limited Warranty on All Work' },
   { icon: Heart, title: 'Locally and Family-Owned' },
   { icon: Users, title: 'No Subcontractors — We Employ Our Team' },
   { icon: Award, title: 'Fully Insured' },
@@ -67,29 +68,74 @@ const whyChooseUs = [
 
 const featuredReviews = reviews.filter((r) => r.text.length > 40).slice(0, 6)
 
-const schema = {
+const homeFaqs = [
+  {
+    question: 'What services does Star Stucco of Austin offer as a stucco contractor in Austin, TX?',
+    answer: 'Star Stucco of Austin provides a full range of exterior and interior finishing services, including residential and commercial stucco installation, stucco repair, EIFS (Exterior Insulation and Finish Systems), interior plaster, and thin stone veneer. As a stucco contractor in Austin, TX, we’ve completed over 9,000 projects across Central Texas since 2013.',
+  },
+  {
+    question: 'How long has Star Stucco of Austin been serving Austin, TX?',
+    answer: 'We’ve been a trusted stucco contractor in Austin, TX since 2013 — 13 years of experience serving homeowners and businesses throughout Central Texas. Over that time we’ve built our reputation on in-house craftsmanship rather than subcontracted labor.',
+  },
+  {
+    question: 'Are you certified to work with specific stucco and EIFS brands?',
+    answer: 'Yes. Our team consists of certified applicators for Sto Corp, Dryvit, Senergy/BASF, Parex, and Master Wall. As a stucco contractor in Austin, TX, maintaining these certifications ensures every project is installed to manufacturer specifications, protecting your warranty coverage.',
+  },
+  {
+    question: 'Do you handle both residential and commercial stucco projects in Austin?',
+    answer: 'Star Stucco of Austin is fully equipped to handle both residential homes and commercial properties. Whether you need a stucco contractor in Austin, TX for a single-family home or a large commercial building, our in-house crew manages projects of any size.',
+  },
+  {
+    question: 'What is EIFS and how is it different from traditional stucco?',
+    answer: 'EIFS (Exterior Insulation and Finish System) is a multi-layered cladding system that wraps a building in continuous insulation, offering better energy efficiency than traditional stucco. As an EIFS-certified stucco contractor in Austin, TX, we recommend it for property owners looking to lower long-term heating and cooling costs.',
+  },
+  {
+    question: 'What should I do if my stucco is cracking or showing damage?',
+    answer: 'Cracking, bulging, or discoloration are signs that moisture may be reaching the underlying structure, and should be addressed quickly. As an experienced stucco contractor in Austin, TX, we offer color-matched repair work backed by a 2-year limited warranty, restoring the affected area while addressing the root cause.',
+  },
+  {
+    question: 'What areas around Austin do you serve?',
+    answer: 'We serve Austin and the surrounding communities including Round Rock, Cedar Park, Georgetown, Pflugerville, Westlake, Lakeway, Bee Cave, Dripping Springs, and Kyle, along with Travis, Williamson, Hays, Bell, Burnet, Comal, Bastrop, Llano, Blanco, Gillespie, Caldwell, Lee, Milam, Brazos, McLennan, and Guadalupe counties. Wherever you are in Central Texas, you can count on a reliable stucco contractor in Austin, TX to bring a full professional crew to your site.',
+  },
+  {
+    question: 'Do you use subcontractors, or is this an in-house crew?',
+    answer: 'We do not use subcontractors — every technician on your job site is a direct employee of Star Stucco of Austin. This in-house model is central to how we operate as a stucco contractor in Austin, TX, ensuring consistent training, safety standards, and accountability on every project.',
+  },
+  {
+    question: 'Do you offer thin stone veneer and interior plaster services?',
+    answer: 'Yes. In addition to exterior stucco and EIFS, we install thin stone veneer and offer interior plaster finishes to give properties a natural, elegant look inside and out. We’re more than just a stucco contractor in Austin, TX — we’re a full-service finishing company.',
+  },
+  {
+    question: 'How can I get a free estimate from a stucco contractor in Austin, TX?',
+    answer: 'You can call us directly at (512) 706-9699 for a free estimate, or reach out by email at info@starstuccoaustin.com. As a local stucco contractor in Austin, TX, we prioritize clear communication and a fast response so your project can get started quickly.',
+  },
+]
+
+const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'HomeAndConstructionBusiness',
-  '@id': 'https://stuccoaustin.com/#localbusiness',
-  name: siteConfig.name,
-  description: siteConfig.description,
-  url: siteConfig.url,
-  telephone: siteConfig.phone,
+  '@type': 'LocalBusiness',
+  '@id': 'https://stuccoaustin.com',
+  name: 'Star Stucco of Austin',
+  url: 'https://stuccoaustin.com',
+  telephone: '+15127069699',
   email: siteConfig.email,
-  image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
+  foundingDate: '2013',
+  description:
+    'Star Stucco of Austin is a stucco contractor in Austin, TX providing residential and commercial stucco, stucco repair, EIFS, interior plaster, and thin stone veneer services across Central Texas.',
   priceRange: '$$',
+  image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: siteConfig.address.street,
-    addressLocality: siteConfig.address.city,
-    addressRegion: siteConfig.address.state,
-    postalCode: siteConfig.address.zip,
+    streetAddress: '5316 W US Hwy 290 Service Rd',
+    addressLocality: 'Austin',
+    addressRegion: 'TX',
+    postalCode: '78735',
     addressCountry: 'US',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: siteConfig.coordinates.lat,
-    longitude: siteConfig.coordinates.lng,
+    latitude: 30.238662944720037,
+    longitude: -97.83384820366378,
   },
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
@@ -97,10 +143,39 @@ const schema = {
     opens: '00:00',
     closes: '23:59',
   },
-  areaServed: siteConfig.serviceAreas.map((area) => ({
-    '@type': 'City',
-    name: area,
-  })),
+  areaServed: [
+    'Austin, TX', 'Round Rock, TX', 'Cedar Park, TX', 'Georgetown, TX',
+    'Pflugerville, TX', 'Westlake, TX', 'Lakeway, TX', 'Bee Cave, TX',
+    'Dripping Springs, TX', 'Kyle, TX',
+    'Travis County, TX', 'Williamson County, TX', 'Bell County, TX',
+    'Hays County, TX', 'Burnet County, TX', 'Comal County, TX',
+    'Bastrop County, TX', 'Llano County, TX', 'Blanco County, TX',
+    'Gillespie County, TX', 'Caldwell County, TX', 'Lee County, TX',
+    'Milam County, TX', 'Brazos County, TX', 'McLennan County, TX',
+    'Guadalupe County, TX',
+  ],
+  makesOffer: [
+    { '@type': 'Offer', name: 'Residential Stucco' },
+    { '@type': 'Offer', name: 'Commercial Stucco' },
+    { '@type': 'Offer', name: 'Stucco Repair' },
+    { '@type': 'Offer', name: 'EIFS Contractor' },
+    { '@type': 'Offer', name: 'Interior Plaster' },
+    { '@type': 'Offer', name: 'Thin Stone Veneer' },
+  ],
+  brand: [
+    { '@type': 'Brand', name: 'Sto Corp' },
+    { '@type': 'Brand', name: 'Dryvit' },
+    { '@type': 'Brand', name: 'Senergy/BASF' },
+    { '@type': 'Brand', name: 'Parex' },
+    { '@type': 'Brand', name: 'Master Wall' },
+  ],
+  memberOf: [
+    { '@type': 'Organization', name: 'EIMA - Exterior Insulation Manufacturers Association' },
+    { '@type': 'Organization', name: 'TLPCA - Texas Lathing and Plastering Contractors Association' },
+    { '@type': 'Organization', name: 'National One Coat Stucco Association' },
+    { '@type': 'Organization', name: 'Stucco Manufacturers Association' },
+    { '@type': 'Organization', name: 'AWCI - Association of the Wall and Ceiling Industry' },
+  ],
   sameAs: [
     siteConfig.socialMedia.facebook,
     siteConfig.socialMedia.instagram,
@@ -119,10 +194,10 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Austin Stucco Contractor | Repair, Installation & Finishing | Free Estimates"
-        description="Top-rated stucco contractor in Austin, TX. Expert stucco repair, installation, finishing & commercial stucco services. Local Austin team. Call for a free estimate today."
+        title="Stucco Contractors in Austin, TX | Star Stucco | Free Estimates"
+        description="Austin's top-rated stucco contractor. 35+ 5-star reviews, licensed & insured. Repair, installation & finishing. Call for a free same-week estimate."
         path="/"
-        schema={schema}
+        schema={[localBusinessSchema, faqPageSchema(homeFaqs)]}
       />
 
       {/* Hero Section */}
@@ -143,11 +218,14 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-wider text-primary-400 mb-4">
               Proud to Be a Trusted Name in Central Texas Stucco
             </p>
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Austin's Trusted Stucco Contractor
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">
+              Residential and Commercial Stucco Contractor
             </h1>
+            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-400 mb-4">
+              Austin, TX
+            </h2>
             <p className="text-lg sm:text-xl text-secondary-200 mb-8 leading-relaxed">
-              Expert stucco repair, installation &amp; finishing for residential and commercial properties across Austin, TX.
+              Your trusted stucco contractor in Austin, TX — expert stucco repair, installation &amp; finishing for homes and businesses across Central Texas since 2013.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <a
@@ -180,17 +258,18 @@ export default function Home() {
                 Star Stucco of Austin: Your Trusted Stucco Contractors in Central Texas
               </h2>
               <p className="text-secondary-600 leading-relaxed mb-6">
-                Star Stucco of Austin has been serving the Austin area since 2013 as a trusted
-                stucco and plaster contractor throughout Central Texas. We have the expertise
-                to deliver high-quality results that stand the test of time. Our commitment to quality and customer satisfaction has
-                earned us recognition from leading industry associations including EIMA,
-                TLPCA, and the Stucco Manufacturers Association.
+                Star Stucco of Austin has been serving the Austin area as a stucco contractor
+                in Austin, TX since 2013, completing over 9,000 projects across Central Texas.
+                We have the expertise to deliver high-quality results that stand the test of
+                time. Our commitment to quality and customer satisfaction has earned us
+                recognition from leading industry associations including EIMA, TLPCA, and the
+                Stucco Manufacturers Association.
               </p>
               <p className="text-secondary-600 leading-relaxed mb-8">
                 Our team consists of OSHA-trained, CPR-trained, and scaffold-trained
                 professionals. We are certified applicators for Sto Corp, Senergy/BASF,
-                Master Wall, Dryvit, and Parex LaHabra. Contact us today to see why
-                we're the stucco contractor Austin, TX trusts!
+                Master Wall, Dryvit, and Parex LaHabra — and every technician is a direct
+                employee, not a subcontractor. All work is backed by a 2-year limited warranty.
               </p>
               <Link
                 to="/contact"
@@ -475,6 +554,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection
+        faqs={homeFaqs}
+        title="Stucco Contractor in Austin, TX — FAQ"
+        subtitle="Common questions about stucco services in Austin, TX and Central Texas."
+      />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">

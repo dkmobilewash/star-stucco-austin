@@ -85,8 +85,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/request-commercial-quote" className="text-sm hover:text-white transition-colors">
+                  Commercial Quote
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallery" className="text-sm hover:text-white transition-colors">
+                  Project Gallery
+                </Link>
+              </li>
+              <li>
                 <Link to="/reviews" className="text-sm hover:text-white transition-colors">
                   Customer Reviews
+                </Link>
+              </li>
+              <li>
+                <Link to="/faqs" className="text-sm hover:text-white transition-colors">
+                  FAQs
                 </Link>
               </li>
               <li>

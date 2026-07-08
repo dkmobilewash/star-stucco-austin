@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { CircleCheck as CheckCircle, ChevronRight, Phone, TriangleAlert as AlertTriangle, Droplets, Wrench, Search, Shield, ChevronDown } from 'lucide-react'
+import { CircleCheck as CheckCircle, ChevronRight, Phone, TriangleAlert as AlertTriangle, Droplets, Wrench, Search, Shield, ChevronDown, Star, MapPin, FileText } from 'lucide-react'
 import { useState } from 'react'
 import SEO from '../../components/SEO'
 import { RelatedLinks } from '../../components/RelatedLinks'
@@ -41,7 +41,7 @@ const faqSchema = {
       name: 'How much does stucco repair cost in Austin?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Stucco repair costs in Austin typically range from $300–$600 for minor crack patching to $1,500–$5,000+ for larger sections with water damage or structural issues. The final price depends on the size of the damaged area, the type of repair needed, accessibility of the wall, and whether any underlying substrate must be replaced. We provide free on-site estimates so you know exactly what to expect before any work begins.',
+        text: 'Stucco repair in Austin typically ranges from $150–$400 for small cracks and isolated damage, up to $800–$2,000+ for larger sections. Factors include the extent of damage, texture matching complexity, and accessibility. We provide free on-site estimates so you get an accurate number before any work begins.',
       },
     },
     {
@@ -49,23 +49,15 @@ const faqSchema = {
       name: 'How long does stucco repair take?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Most residential stucco repairs in Austin are completed in one to two days. Simple crack filling and texture matching can often be done in a single visit. Larger repairs involving water damage remediation, substrate replacement, or multi-coat stucco rebuilding may take two to three days to allow proper curing time between coats. We always confirm the timeline with you upfront.',
+        text: "Most residential stucco repairs in Austin are completed in one day. Larger repairs or those requiring multiple coats may take 2–3 days, including drying time between coats. We'll give you a clear timeline before we start.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Can stucco be repaired or does it need to be replaced?',
+      name: 'Can you match my existing stucco texture?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'In most cases, stucco can be repaired rather than fully replaced. Isolated cracks, small holes, limited water damage, and texture mismatches are all repairable. Full replacement is only warranted when widespread delamination, extensive moisture intrusion behind the stucco, or complete lath failure has affected large sections of an exterior wall. Our diagnostic inspection will tell you definitively which option is appropriate for your home.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: "What causes stucco to crack in Austin's climate?",
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "Austin's expansive clay soils are the primary culprit. When rain saturates the ground, clay swells and lifts; during drought, it shrinks and drops — creating constant foundation movement that stresses stucco walls. Compounding this is Austin's extreme heat: south- and west-facing walls regularly hit 140°F+ surface temperatures, causing repeated thermal expansion and contraction that widens hairline cracks over time. Improper flashing installation, missing control joints, and aging lath systems are additional contributing factors.",
+        text: 'Yes. Texture matching is one of our specialties. We carry a wide range of textures including sand finish, dash, lace, and smooth coat, and we mix custom colors on-site to blend with your existing stucco as closely as possible.',
       },
     },
     {
@@ -73,7 +65,15 @@ const faqSchema = {
       name: 'Do you offer free stucco repair estimates in Austin?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. We provide free on-site stucco repair estimates throughout Austin and the surrounding area, including Travis County, Williamson County, Hays County, and beyond. Call us at (512) 706-9699 or fill out our online form and we will schedule a visit at your convenience.',
+        text: 'Yes, we offer free on-site estimates for all stucco repair projects in Austin and the surrounding areas including Cedar Park, Round Rock, Pflugerville, and Westlake Hills.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What causes stucco cracks?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "The most common causes are foundation settling, thermal expansion and contraction (especially in Austin's climate), moisture intrusion, and improper original installation. Small hairline cracks are normal; wider cracks or cracks with moisture staining should be addressed promptly to prevent water damage.",
       },
     },
   ],
@@ -125,27 +125,27 @@ const faqs = [
   {
     question: 'How much does stucco repair cost in Austin?',
     answer:
-      'Stucco repair costs in Austin typically range from $300–$600 for minor crack patching to $1,500–$5,000+ for larger sections with water damage or structural issues. The final price depends on the size of the damaged area, the type of repair needed, accessibility of the wall, and whether any underlying substrate must be replaced. We provide free on-site estimates so you know exactly what to expect before any work begins.',
+      'Stucco repair in Austin typically ranges from $150–$400 for small cracks and isolated damage, up to $800–$2,000+ for larger sections. Factors include the extent of damage, texture matching complexity, and accessibility. We provide free on-site estimates so you get an accurate number before any work begins.',
   },
   {
     question: 'How long does stucco repair take?',
     answer:
-      'Most residential stucco repairs in Austin are completed in one to two days. Simple crack filling and texture matching can often be done in a single visit. Larger repairs involving water damage remediation, substrate replacement, or multi-coat stucco rebuilding may take two to three days to allow proper curing time between coats. We always confirm the timeline with you upfront.',
+      "Most residential stucco repairs in Austin are completed in one day. Larger repairs or those requiring multiple coats may take 2–3 days, including drying time between coats. We'll give you a clear timeline before we start.",
   },
   {
-    question: 'Can stucco be repaired or does it need to be replaced?',
+    question: 'Can you match my existing stucco texture?',
     answer:
-      'In most cases, stucco can be repaired rather than fully replaced. Isolated cracks, small holes, limited water damage, and texture mismatches are all repairable. Full replacement is only warranted when widespread delamination, extensive moisture intrusion behind the stucco, or complete lath failure has affected large sections of an exterior wall. Our diagnostic inspection will tell you definitively which option is appropriate for your home.',
-  },
-  {
-    question: "What causes stucco to crack in Austin's climate?",
-    answer:
-      "Austin's expansive clay soils are the primary culprit. When rain saturates the ground, clay swells and lifts; during drought, it shrinks and drops — creating constant foundation movement that stresses stucco walls. Compounding this is Austin's extreme heat: south- and west-facing walls regularly hit 140°F+ surface temperatures, causing repeated thermal expansion and contraction that widens hairline cracks over time. Improper flashing installation, missing control joints, and aging lath systems are additional contributing factors.",
+      'Yes. Texture matching is one of our specialties. We carry a wide range of textures including sand finish, dash, lace, and smooth coat, and we mix custom colors on-site to blend with your existing stucco as closely as possible.',
   },
   {
     question: 'Do you offer free stucco repair estimates in Austin?',
     answer:
-      'Yes. We provide free on-site stucco repair estimates throughout Austin and the surrounding area, including Travis County, Williamson County, Hays County, and beyond. Call us at (512) 706-9699 or fill out our online form and we will schedule a visit at your convenience.',
+      'Yes, we offer free on-site estimates for all stucco repair projects in Austin and the surrounding areas including Cedar Park, Round Rock, Pflugerville, and Westlake Hills.',
+  },
+  {
+    question: 'What causes stucco cracks?',
+    answer:
+      "The most common causes are foundation settling, thermal expansion and contraction (especially in Austin's climate), moisture intrusion, and improper original installation. Small hairline cracks are normal; wider cracks or cracks with moisture staining should be addressed promptly to prevent water damage.",
   },
 ]
 
@@ -163,9 +163,9 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           className={`h-5 w-5 shrink-0 text-primary-600 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
         />
       </button>
-      {open && (
-        <p className="pb-5 text-secondary-600 leading-relaxed">{answer}</p>
-      )}
+      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-96 pb-5' : 'max-h-0'}`}>
+        <p className="text-secondary-600 leading-relaxed">{answer}</p>
+      </div>
     </div>
   )
 }
@@ -174,8 +174,8 @@ export default function StuccoRepair() {
   return (
     <>
       <SEO
-        title="Austin Stucco Repair | Crack, Water Damage & Patch Experts | Star Stucco"
-        description="Professional stucco repair in Austin, TX. We fix cracks, water damage, holes & texture mismatches. Fast turnaround, free estimates. Call (512) 706-9699."
+        title="Stucco Repair Austin, TX | Star Stucco | Free Estimates"
+        description="Expert stucco crack & damage repair in Austin. Texture matching, waterproofing, HOA-approved work. 35+ 5-star reviews. Get your free estimate today."
         path="/austin-stucco-repair"
         schema={[schema, faqSchema]}
       />
@@ -200,7 +200,7 @@ export default function StuccoRepair() {
             <span className="text-primary-400">Stucco Repair</span>
           </p>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-            Stucco Repair in Austin, TX
+            Expert Stucco Repair in Austin, TX — Free Estimates
           </h1>
           <p className="text-lg text-secondary-300 mb-8 max-w-2xl leading-relaxed">
             Cracks, water damage, and structural failures fixed right the first time. Star Stucco's Austin repair team addresses the root cause so your stucco stays solid for years — not just weeks.
@@ -220,6 +220,30 @@ export default function StuccoRepair() {
             >
               Get a Free Estimate <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="bg-white border-b border-secondary-100 py-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+            <div className="flex flex-col items-center gap-1.5">
+              <Star className="h-5 w-5 text-amber-400 fill-amber-400" />
+              <span className="text-sm font-medium text-secondary-700">35+ Five-Star Google Reviews</span>
+            </div>
+            <div className="flex flex-col items-center gap-1.5">
+              <Shield className="h-5 w-5 text-primary-600" />
+              <span className="text-sm font-medium text-secondary-700">Licensed &amp; Insured</span>
+            </div>
+            <div className="flex flex-col items-center gap-1.5">
+              <FileText className="h-5 w-5 text-primary-600" />
+              <span className="text-sm font-medium text-secondary-700">Free Estimates</span>
+            </div>
+            <div className="flex flex-col items-center gap-1.5">
+              <MapPin className="h-5 w-5 text-primary-600" />
+              <span className="text-sm font-medium text-secondary-700">Serving Austin &amp; Surrounding Areas</span>
+            </div>
           </div>
         </div>
       </section>
@@ -262,7 +286,7 @@ export default function StuccoRepair() {
                 Thermal cycling is the second major culprit. Austin summers regularly push past 100°F, and south- and west-facing stucco walls absorb intense heat loads. Over time, the repeated expansion and contraction weakens the stucco bond, creating hairline cracks that widen if left untreated. Water enters these openings and accelerates the damage cycle significantly.
               </p>
               <p className="text-secondary-600 leading-relaxed">
-                Our crack repairs go beyond surface filling. We remove all compromised material, address any structural issues behind the stucco, and rebuild using materials matched to your existing finish. The result is a seamless, invisible repair.
+                Our crack repairs go beyond surface filling. We remove all compromised material, address any structural issues behind the stucco, and rebuild using materials matched to your existing <Link to="/austin-stucco-finishing" className="text-primary-700 underline hover:text-primary-900 transition-colors">stucco finish</Link>. The result is a seamless, invisible repair.
               </p>
             </div>
             <div>
@@ -305,7 +329,7 @@ export default function StuccoRepair() {
             Signs you may have water damage behind your stucco include: dark staining that reappears after painting, bubbling or soft spots when you press on the wall, white crystalline deposits (efflorescence), or a musty smell near exterior walls. None of these should be ignored — the longer moisture stays trapped, the more expensive the eventual repair becomes.
           </p>
           <p className="text-secondary-600 leading-relaxed">
-            Our water damage repair process starts with moisture testing and source identification. We won't patch over wet stucco — all affected material is removed, the substrate is allowed to dry completely, any rot or corrosion is addressed, new lath and building paper are installed, and we rebuild the stucco system from scratch. We also correct the source of intrusion so the problem doesn't return.
+            Our water damage repair process starts with moisture testing and source identification. We won't patch over wet stucco — all affected material is removed, the substrate is allowed to dry completely, any rot or corrosion is addressed, new lath and building paper are installed, and we rebuild the <Link to="/austin-stucco-installation" className="text-primary-700 underline hover:text-primary-900 transition-colors">stucco system</Link> from scratch. We also correct the source of intrusion so the problem doesn't return.
           </p>
         </div>
       </section>
@@ -335,7 +359,7 @@ export default function StuccoRepair() {
             The most cost-effective stucco repair is the one you never need. Annual inspections and minor maintenance — fresh caulking at penetrations and control joints, sealant application to micro-cracks before they open up, and ensuring proper grade and drainage away from the foundation — can add years to a stucco exterior with minimal cost.
           </p>
           <p className="text-secondary-600 leading-relaxed">
-            We offer maintenance programs for Austin homeowners who want to stay ahead of damage. Our technicians inspect your full exterior, document any developing issues, and address them before they require significant repair. This is particularly valuable for homes in high-movement areas like Circle C Ranch, Rollingwood, and other neighborhoods built on heavy clay soils.
+            We offer maintenance programs for Austin homeowners and <Link to="/austin-commercial-stucco" className="text-primary-700 underline hover:text-primary-900 transition-colors">commercial property</Link> owners who want to stay ahead of damage. Our technicians inspect your full exterior, document any developing issues, and address them before they require significant repair. This is particularly valuable for homes in high-movement areas like Circle C Ranch, Rollingwood, and other neighborhoods built on heavy clay soils.
           </p>
         </div>
       </section>
