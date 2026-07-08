@@ -196,6 +196,7 @@ export default function BlogPost() {
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
+    dateModified: post.date,
     image: post.image,
     url: `${siteConfig.url}/blog/${post.slug}`,
     author: {

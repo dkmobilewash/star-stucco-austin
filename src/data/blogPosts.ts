@@ -79,8 +79,8 @@ At Star Stucco of Austin, we offer free inspections for homeowners throughout th
   {
     slug: 'stucco-vs-hardie-board-austin',
     title: 'Stucco vs. Hardie Board: Which is Better for Austin Homes?',
-    seoTitle: 'Stucco vs Hardie Board in Austin TX | Which is Better for Your Home?',
-    seoDescription: 'Comparing stucco vs Hardie board siding for Austin homes. Learn the pros, cons, cost differences, and which is best for Texas heat & humidity.',
+    seoTitle: 'Stucco vs Hardie Board in Austin TX: Which Is Better? (2025)',
+    seoDescription: 'Stucco or Hardie board for your Austin home? Compare cost, durability, maintenance & resale value. Local expert breakdown + free estimate.',
     h1: 'Stucco vs Hardie Board: Which is Right for Your Austin Home?',
     excerpt: 'Comparing two popular exterior options for Austin properties. Learn the pros, cons, and cost differences for the Central Texas climate.',
     date: '2026-03-10',
@@ -96,7 +96,7 @@ Stucco has been a staple of Texas architecture for centuries, and for good reaso
 **Pros of stucco for Austin homes:**
 - Seamless, monolithic appearance with no visible seams or joints
 - Excellent thermal mass — stucco walls absorb heat during the day and release it slowly at night, helping regulate indoor temperatures during Austin's brutal summers
-- Infinite color options mixed directly into the material — the color doesn't peel because it goes all the way through
+- Infinite color options mixed directly into the material — the color doesn't peel because it goes all the way through. See our [stucco finishing](/austin-stucco-finishing) options
 - Can last 50+ years with proper maintenance and professional installation
 - Fire resistant, pest proof, and mold resistant
 - Adds measurable resale value in Austin's premium neighborhoods
@@ -138,7 +138,7 @@ Over a 30-year period, the total cost of ownership between the two options is of
 
 ## Which Should You Choose?
 
-For Austin homes with Mediterranean, Spanish Colonial, Hill Country, or contemporary stucco-friendly architecture, stucco is typically the stronger long-term investment. The combination of longevity, thermal performance, fire resistance, and resale value makes it hard to beat in the right application.
+For Austin homes with Mediterranean, Spanish Colonial, Hill Country, or contemporary stucco-friendly architecture, professional [stucco installation](/austin-stucco-installation) is typically the stronger long-term investment. The combination of longevity, thermal performance, fire resistance, and resale value makes it hard to beat in the right application.
 
 Hardie Board makes more sense for homes in a more traditional American farmhouse or craftsman style, or in situations where the budget requires a lower upfront cost and the homeowner plans to stay in the home for a shorter period.
 
@@ -657,15 +657,29 @@ The cheapest stucco repair is the crack you seal before water finds it. If you'r
   {
     slug: 'cost-to-stucco-a-house-austin',
     title: 'How Much Does It Cost to Stucco a House in Austin, TX?',
-    seoTitle: 'How Much Does It Cost to Stucco a House in Austin? (2026) | Star Stucco',
+    seoTitle: 'Cost to Stucco a House in Austin TX (2025 Pricing Guide)',
     seoDescription:
-      'What it costs to stucco a house in Austin in 2026 — price per square foot, totals by home size, three-coat vs. one-coat vs. EIFS, and what drives the cost.',
+      'How much does stucco cost in Austin? See real 2025 price ranges by sq ft, job type & finish. Get a free local estimate from Star Stucco of Austin.',
     h1: 'How Much Does It Cost to Stucco a House in Austin, TX?',
     excerpt:
       'A clear 2026 breakdown of what it costs to stucco a house in Austin — by square foot and by home size — plus the factors that move the price up or down.',
     date: '2026-06-17',
     image: '/images/stucco-project-completed.webp',
-    content: `Stucco is one of the most popular exteriors in Central Texas — durable, energy-smart, and a natural fit for Hill Country and Spanish-style architecture. If you're planning a new build or re-siding an existing home, the first question is usually cost. Here's a clear 2026 breakdown of what it costs to stucco a house in Austin.
+    content: `Stucco is one of the most popular exteriors in Central Texas — durable, energy-smart, and a natural fit for Hill Country and Spanish-style architecture. If you're planning a new build or re-siding an existing home, the first question is usually cost. Here's a clear 2025 breakdown of what it costs to stucco a house in Austin.
+
+| Service | Typical Price Range |
+|---|---|
+| Small crack / spot repair | $150 – $400 |
+| Single wall repair | $400 – $900 |
+| Full exterior re-stucco (per sq ft) | $8 – $15 / sq ft |
+| New [stucco installation](/austin-stucco-installation) (per sq ft) | $10 – $18 / sq ft |
+| Commercial stucco (per sq ft) | $12 – $20 / sq ft |
+
+*Prices are estimates for Austin, TX. Get a free on-site quote for your specific project.*
+
+## Get a Free Stucco Estimate in Austin
+
+We'll come to your home, assess the project, and give you a detailed quote — no obligation. [Request Free Estimate](/contact).
 
 ## Average Cost to Stucco a House in Austin
 
@@ -697,7 +711,7 @@ These are planning estimates — the only accurate number comes from an on-site 
 ## What Affects the Cost
 
 - **System type** — Three-coat and EIFS cost more than one-coat but offer different performance benefits.
-- **New construction vs. re-stucco** — Re-stucco over a sound surface is cheaper than tearing off old material; full removal and replacement is the most expensive.
+- **New construction vs. re-stucco** — Re-stucco over a sound surface is cheaper than tearing off old material; full removal and replacement is the most expensive. For smaller jobs, see our [stucco repair](/austin-stucco-repair) services.
 - **Number of stories & access** — Two-story walls and hard-to-reach areas add scaffolding and labor.
 - **Finish & texture** — Smooth finishes require more skilled labor than heavier textures; custom colors add cost. See our [stucco finishes guide](/blog/stucco-finishes-guide).
 - **Prep & repairs** — Substrate repair, new weather barrier, flashing, and control joints all factor in.

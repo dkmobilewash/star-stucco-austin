@@ -122,6 +122,7 @@ const localBusinessSchema = {
   foundingDate: '2013',
   description:
     'Star Stucco of Austin is a stucco contractor in Austin, TX providing residential and commercial stucco, stucco repair, EIFS, interior plaster, and thin stone veneer services across Central Texas.',
+  priceRange: '$$',
   image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
   address: {
     '@type': 'PostalAddress',
@@ -193,8 +194,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Stucco Contractor Austin, TX | Star Stucco of Austin"
-        description="Trusted stucco contractor in Austin, TX since 2013. Residential & commercial stucco, stucco repair, EIFS, interior plaster & stone veneer. In-house crew, 9,000+ projects completed. Call for a free estimate."
+        title="Stucco Contractors in Austin, TX | Star Stucco | Free Estimates"
+        description="Austin's top-rated stucco contractor. 35+ 5-star reviews, licensed & insured. Repair, installation & finishing. Call for a free same-week estimate."
         path="/"
         schema={[localBusinessSchema, faqPageSchema(homeFaqs)]}
       />

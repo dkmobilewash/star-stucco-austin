@@ -30,8 +30,8 @@ const SITE_NAME = 'Star Stucco of Austin'
 const staticRoutes = [
   {
     path: '/',
-    title: 'Stucco Contractor Austin, TX | Star Stucco of Austin',
-    description: 'Trusted stucco contractor in Austin, TX since 2013. Residential & commercial stucco, stucco repair, EIFS, interior plaster & stone veneer. In-house crew, 9,000+ projects completed. Call for a free estimate.',
+    title: 'Stucco Contractors in Austin, TX | Star Stucco | Free Estimates',
+    description: 'Austin\'s top-rated stucco contractor. 35+ 5-star reviews, licensed & insured. Repair, installation & finishing. Call for a free same-week estimate.',
   },
   {
     path: '/about',
@@ -50,23 +50,23 @@ const staticRoutes = [
   },
   {
     path: '/austin-stucco-installation',
-    title: 'Stucco Installation Austin, TX | Star Stucco of Austin',
-    description: 'Expert stucco installation in Austin, TX for new construction and re-stucco projects. Travis County code compliant. Serving Westlake, Barton Creek, Mueller, and all Austin neighborhoods. Free estimates.',
+    title: 'Stucco Installation Austin, TX | New Construction | Star Stucco',
+    description: 'Professional stucco installation for new builds & renovations in Austin. 3-coat & synthetic systems. Licensed contractor, free estimates, 5-star rated.',
   },
   {
     path: '/austin-stucco-repair',
-    title: 'Austin Stucco Repair | Crack, Water Damage & Patch Experts | Star Stucco',
-    description: 'Professional stucco repair in Austin, TX. We fix cracks, water damage, holes & texture mismatches. Fast turnaround, free estimates. Call (512) 706-9699.',
+    title: 'Stucco Repair Austin, TX | Star Stucco | Free Estimates',
+    description: 'Expert stucco crack & damage repair in Austin. Texture matching, waterproofing, HOA-approved work. 35+ 5-star reviews. Get your free estimate today.',
   },
   {
     path: '/austin-stucco-finishing',
-    title: 'Stucco Finishing & Textures Austin, TX | Star Stucco of Austin',
-    description: 'Custom stucco finishes and textures in Austin, TX. Smooth, Santa Barbara, dash, sand, and lace finishes with expert color matching. Complementing Hill Country, Spanish, and Modern architecture.',
+    title: 'Stucco Finishing Austin, TX | Textures & Coatings | Star Stucco',
+    description: 'Custom stucco finishes in Austin — smooth, sand, dash & designer textures. Expert color matching & finish coats. Free estimates, licensed & insured.',
   },
   {
     path: '/austin-commercial-stucco',
-    title: 'Commercial Stucco Contractor Austin TX | New Construction & Repair',
-    description: 'Austin\'s trusted commercial stucco contractor. We handle new construction, exterior finishing, repairs & EIFS for commercial properties. Free estimates. Call (512) 706-9699.',
+    title: 'Commercial Stucco Contractor Austin, TX | Star Stucco',
+    description: 'Commercial stucco installation & repair in Austin. Multi-family, retail & office buildings. Licensed, bonded & insured. Free commercial estimates.',
   },
   {
     path: '/eifs-contractor-austin',
@@ -263,14 +263,33 @@ function injectSeoTags(html, route) {
     `<meta name="twitter:image" content="${ogImage}" />`,
   )
 
+  if (route.schema) {
+    const schemaData = Array.isArray(route.schema) ? route.schema : [route.schema]
+    for (const s of schemaData) {
+      tags.push(`<script type="application/ld+json">${JSON.stringify(s)}</script>`)
+    }
+  }
+
   const seoTags = tags.join('\n    ')
 
-  const viewportTag = '<meta name="viewport"'
-  const idx = html.indexOf(viewportTag)
-  if (idx === -1) return html
+  let result = html
+  const titleStart = result.indexOf('<title>')
+  if (titleStart !== -1) {
+    const titleEnd = result.indexOf('</title>', titleStart) + '</title>'.length
+    result = result.slice(0, titleStart) + result.slice(titleEnd)
+  }
+  const descStart = result.indexOf('<meta name="description"')
+  if (descStart !== -1) {
+    const descEnd = result.indexOf('/>', descStart) + 2
+    result = result.slice(0, descStart) + result.slice(descEnd)
+  }
 
-  const lineEnd = html.indexOf('/>', idx) + 2
-  return html.slice(0, lineEnd) + '\n    ' + seoTags + html.slice(lineEnd)
+  const viewportTag = '<meta name="viewport"'
+  const idx = result.indexOf(viewportTag)
+  if (idx === -1) return result
+
+  const lineEnd = result.indexOf('/>', idx) + 2
+  return result.slice(0, lineEnd) + '\n    ' + seoTags + result.slice(lineEnd)
 }
 
 function escapeHtml(s) {
@@ -301,7 +320,7 @@ function generateSitemap(routes) {
   const urls = indexable.map((r) => {
     const loc = `${SITE_URL}${r.path}`
     const priority = getPriority(r.path)
-    const changefreq = r.path === '/' || r.path === '/blog' ? 'weekly' : 'monthly'
+    const changefreq = r.path === '/' ? 'daily' : parseFloat(priority) >= 0.8 ? 'weekly' : 'monthly'
     return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`
   })
 
