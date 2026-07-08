@@ -153,6 +153,14 @@ export default function Gallery() {
         title="Stucco Project Gallery | Star Stucco of Austin | Austin, TX"
         description="Browse completed stucco projects by Star Stucco of Austin — residential, commercial, stucco repair, EIFS, and stone veneer work across Central Texas. See our craftsmanship firsthand."
         path="/gallery"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'Stucco Project Gallery',
+          description: 'Browse completed stucco projects by Star Stucco of Austin across Central Texas.',
+          url: `${siteConfig.url}/gallery`,
+          isPartOf: { '@type': 'WebSite', name: siteConfig.name, url: siteConfig.url },
+        }}
       />
 
       {/* Hero */}
@@ -182,6 +190,7 @@ export default function Gallery() {
               <button
                 key={cat.value}
                 onClick={() => setActiveCategory(cat.value)}
+                aria-pressed={activeCategory === cat.value}
                 className={`rounded-full px-5 py-2.5 text-sm font-medium transition-all ${
                   activeCategory === cat.value
                     ? 'bg-primary-700 text-white shadow-sm'
@@ -279,6 +288,7 @@ export default function Gallery() {
             </Link>
             <a
               href={`tel:${siteConfig.phone}`}
+              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg border border-white/50 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-white hover:bg-primary-800"
             >
               <Phone className="mr-2 h-4 w-4" />

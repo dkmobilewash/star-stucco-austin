@@ -269,6 +269,7 @@ export default function BlogPost() {
             className="w-full h-64 sm:h-96 object-cover"
             width={1600}
             height={900}
+            fetchPriority="high"
           />
         </div>
       </div>

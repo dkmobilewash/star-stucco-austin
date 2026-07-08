@@ -248,15 +248,19 @@ function injectSeoTags(html, route) {
     tags.push(`<link rel="canonical" href="${url}" />`)
   }
 
+  const ogImage = `${SITE_URL}/images/hero-stucco-austin.webp`
+
   tags.push(
     `<meta property="og:title" content="${escapeAttr(route.title)}" />`,
     `<meta property="og:description" content="${escapeAttr(route.description)}" />`,
     `<meta property="og:url" content="${url}" />`,
     `<meta property="og:type" content="website" />`,
     `<meta property="og:site_name" content="${escapeAttr(SITE_NAME)}" />`,
+    `<meta property="og:image" content="${ogImage}" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${escapeAttr(route.title)}" />`,
     `<meta name="twitter:description" content="${escapeAttr(route.description)}" />`,
+    `<meta name="twitter:image" content="${ogImage}" />`,
   )
 
   const seoTags = tags.join('\n    ')
@@ -275,6 +279,33 @@ function escapeHtml(s) {
 
 function escapeAttr(s) {
   return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
+// ── Sitemap generation ──────────────────────────────────────────────
+
+function getPriority(path) {
+  if (path === '/') return '1.0'
+  if (path === '/austin-stucco-services' || path === '/eifs-contractor-austin') return '0.9'
+  if (path.startsWith('/austin-') || path.startsWith('/service-area/')) return '0.8'
+  if (path === '/reviews' || path === '/service-areas') return '0.8'
+  if (['/about', '/contact', '/blog', '/faqs', '/gallery', '/request-commercial-quote'].includes(path)) return '0.7'
+  if (path.startsWith('/service-areas/')) return '0.7'
+  if (path.startsWith('/blog/')) return '0.6'
+  return '0.6'
+}
+
+function generateSitemap(routes) {
+  const today = new Date().toISOString().slice(0, 10)
+  const indexable = routes.filter((r) => !r.noindex)
+
+  const urls = indexable.map((r) => {
+    const loc = `${SITE_URL}${r.path}`
+    const priority = getPriority(r.path)
+    const changefreq = r.path === '/' || r.path === '/blog' ? 'weekly' : 'monthly'
+    return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`
+  })
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`
 }
 
 // ── Main ─────────────────────────────────────────────────────────────
@@ -306,6 +337,11 @@ async function main() {
   }
 
   console.log(`  SEO injection complete: ${ok} pages written\n`)
+
+  const sitemap = generateSitemap(allRoutes)
+  writeFileSync(join(DIST, 'sitemap.xml'), sitemap)
+  const indexableCount = allRoutes.filter((r) => !r.noindex).length
+  console.log(`  Sitemap generated: ${indexableCount} indexable URLs written to dist/sitemap.xml\n`)
 }
 
 main().catch((err) => {

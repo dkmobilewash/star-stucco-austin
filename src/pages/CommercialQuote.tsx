@@ -79,6 +79,14 @@ export default function CommercialQuote() {
         title="Commercial Stucco Quote Austin, TX | Star Stucco of Austin"
         description="Request a free commercial stucco quote from Star Stucco of Austin. New construction, EIFS, stucco repair, and finishing for offices, retail, multifamily, and more across Central Texas."
         path="/request-commercial-quote"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Request a Commercial Stucco Quote',
+          description: 'Request a free commercial stucco quote from Star Stucco of Austin.',
+          url: `${siteConfig.url}/request-commercial-quote`,
+          isPartOf: { '@type': 'WebSite', name: siteConfig.name, url: siteConfig.url },
+        }}
       />
 
       {/* Hero */}
@@ -373,6 +381,7 @@ export default function CommercialQuote() {
                 </p>
                 <a
                   href={`tel:${siteConfig.phone}`}
+                  aria-label={`Call Star Stucco at ${siteConfig.phone}`}
                   className="flex items-center gap-3 group"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100 group-hover:bg-primary-200 transition-colors">
