@@ -408,6 +408,31 @@ export default function Contact() {
                   for urgent needs.
                 </p>
               </div>
+
+              {/* Google Maps */}
+              <div className="rounded-2xl bg-secondary-50 p-6 sm:p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100">
+                    <MapPin className="h-5 w-5 text-primary-700" />
+                  </div>
+                  <h3 className="font-display text-lg font-semibold text-secondary-900">
+                    Find Us
+                  </h3>
+                </div>
+                <div className="overflow-hidden rounded-xl">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.9494052241766!2d-97.83642312443878!3d30.23851927482644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b4bbb1c3d56d1%3A0x6489b539a0e11ca1!2sStar%20Stucco%20of%20Austin!5e0!3m2!1sen!2sus!4v1783551506725!5m2!1sen!2sus"
+                    width="600"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    title="Star Stucco of Austin location on Google Maps"
+                    className="w-full"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
