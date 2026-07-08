@@ -194,7 +194,7 @@ export default function Contact() {
                     We've received your {quoteType} quote request and will get back to you within 2
                     business hours. If you need immediate assistance, call us at{' '}
                     <a
-                      href={`tel:${siteConfig.phone}`}
+                      href={`${siteConfig.phoneHref}`}
                       className="font-semibold text-primary-700 hover:text-primary-800"
                     >
                       {siteConfig.phone}
@@ -331,7 +331,7 @@ export default function Contact() {
                 <ul className="space-y-5">
                   <li>
                     <a
-                      href={`tel:${siteConfig.phone}`}
+                      href={`${siteConfig.phoneHref}`}
                       className="flex items-start gap-4 group"
                     >
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100 group-hover:bg-primary-200 transition-colors">
@@ -400,7 +400,7 @@ export default function Contact() {
                 <p className="mt-4 text-xs text-secondary-500">
                   Emergency stucco repair available 24/7. Call{' '}
                   <a
-                    href={`tel:${siteConfig.phone}`}
+                    href={`${siteConfig.phoneHref}`}
                     className="font-medium text-primary-700 hover:text-primary-800"
                   >
                     {siteConfig.phone}

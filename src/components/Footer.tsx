@@ -150,7 +150,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a href={`tel:${siteConfig.phone}`} aria-label={`Call Star Stucco at ${siteConfig.phone}`} className="flex items-center gap-3 text-sm hover:text-white transition-colors">
+                <a href={`${siteConfig.phoneHref}`} aria-label={`Call Star Stucco at ${siteConfig.phone}`} className="flex items-center gap-3 text-sm hover:text-white transition-colors">
                   <Phone className="h-4 w-4 text-primary-500 shrink-0" />
                   {siteConfig.phone}
                 </a>

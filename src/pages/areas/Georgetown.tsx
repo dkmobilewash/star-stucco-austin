@@ -63,7 +63,7 @@ export default function GeorgetownArea() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white hover:bg-green-700"
             >
@@ -168,7 +168,7 @@ export default function GeorgetownArea() {
           <p className="mt-4 text-lg text-green-100">Get a free, no-obligation estimate from Georgetown's preferred stucco contractor.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-semibold text-green-700 hover:bg-green-50"
             >

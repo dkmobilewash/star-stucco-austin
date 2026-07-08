@@ -60,7 +60,7 @@ export default function PflugervilleArea() {
             From Stone Hill Town Center to the booming SH-130 growth corridor, we provide premium stucco solutions for Pflugerville's thriving family community. Quality craftsmanship that stands up to Texas weather.
           </p>
           <a
-            href={`tel:${siteConfig.phone}`}
+            href={`${siteConfig.phoneHref}`}
             aria-label={`Call Star Stucco at ${siteConfig.phone}`}
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white hover:bg-green-700"
           >
@@ -171,7 +171,7 @@ export default function PflugervilleArea() {
           <p className="mt-4 text-lg text-slate-300">Whether you need new installation or expert repairs, our team is ready to help.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-8 py-4 font-semibold text-white hover:bg-green-700"
             >

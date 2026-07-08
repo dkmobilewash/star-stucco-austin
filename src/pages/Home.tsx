@@ -580,7 +580,7 @@ export default function Home() {
               Get a Free Estimate
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-secondary-400"
             >

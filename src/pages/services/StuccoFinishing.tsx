@@ -130,7 +130,7 @@ export default function StuccoFinishing() {
               Explore Finish Options <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-secondary-400 hover:bg-secondary-800"
             >
@@ -244,7 +244,7 @@ export default function StuccoFinishing() {
         title="Related Services & Resources"
       />
 
-      <ServiceLocationLinks serviceSlug="interior-plaster" serviceName="Interior Plaster" />
+      <ServiceLocationLinks serviceSlug="interior-plaster" serviceName="Stucco Finishing" />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">
@@ -264,7 +264,7 @@ export default function StuccoFinishing() {
               Book a Finish Consultation
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-secondary-400"
             >

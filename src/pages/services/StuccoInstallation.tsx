@@ -106,7 +106,7 @@ export default function StuccoInstallation() {
               Get a Free Estimate <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-secondary-400 hover:bg-secondary-800"
             >
@@ -258,7 +258,7 @@ export default function StuccoInstallation() {
         ]}
       />
 
-      <ServiceLocationLinks serviceSlug="residential-stucco" serviceName="Residential Stucco" />
+      <ServiceLocationLinks serviceSlug="residential-stucco" serviceName="Stucco Installation" />
 
       {/* CTA Section */}
       <section className="bg-secondary-900 py-20">
@@ -278,7 +278,7 @@ export default function StuccoInstallation() {
               Schedule Your Free Estimate
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-secondary-400"
             >
