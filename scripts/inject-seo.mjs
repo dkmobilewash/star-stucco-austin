@@ -30,8 +30,8 @@ const SITE_NAME = 'Star Stucco of Austin'
 const staticRoutes = [
   {
     path: '/',
-    title: 'Austin Stucco Contractor | Repair, Installation & Finishing | Free Estimates',
-    description: 'Top-rated stucco contractor in Austin, TX. Expert stucco repair, installation, finishing & commercial stucco services. Local Austin team. Call for a free estimate today.',
+    title: 'Stucco Contractor Austin, TX | Star Stucco of Austin',
+    description: 'Trusted stucco contractor in Austin, TX since 2013. Residential & commercial stucco, stucco repair, EIFS, interior plaster & stone veneer. In-house crew, 9,000+ projects completed. Call for a free estimate.',
   },
   {
     path: '/about',
