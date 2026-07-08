@@ -111,8 +111,6 @@ const homeFaqs = [
   },
 ]
 
-// TODO: Replace geo coordinates with exact lat/lng from Google Maps (right-click your pin > copy coordinates)
-// TODO: Confirm business hours and add openingHoursSpecification field
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
@@ -133,11 +131,16 @@ const localBusinessSchema = {
     postalCode: '78735',
     addressCountry: 'US',
   },
-  // TODO: Replace with exact coordinates from Google Maps — right-click pin > copy coordinates
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 'TODO_GET_EXACT_COORDINATES',
-    longitude: 'TODO_GET_EXACT_COORDINATES',
+    latitude: 30.238662944720037,
+    longitude: -97.83384820366378,
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
   },
   areaServed: [
     'Austin, TX', 'Round Rock, TX', 'Cedar Park, TX', 'Georgetown, TX',
