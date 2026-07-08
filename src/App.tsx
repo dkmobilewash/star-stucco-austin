@@ -31,6 +31,9 @@ const StuccoRepairLocation = lazy(() => import('./pages/service-locations/Stucco
 const EifsContractorLocation = lazy(() => import('./pages/service-locations/EifsContractorLocation'))
 const InteriorPlasterLocation = lazy(() => import('./pages/service-locations/InteriorPlasterLocation'))
 const ThinStoneVeneerLocation = lazy(() => import('./pages/service-locations/ThinStoneVeneerLocation'))
+const FAQs = lazy(() => import('./pages/FAQs'))
+const Gallery = lazy(() => import('./pages/Gallery'))
+const CommercialQuote = lazy(() => import('./pages/CommercialQuote'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 export default function App() {
@@ -80,6 +83,9 @@ export default function App() {
         <Route path="/eifs-contractor/:countySlug" element={<EifsContractorLocation />} />
         <Route path="/interior-plaster/:countySlug" element={<InteriorPlasterLocation />} />
         <Route path="/thin-stone-veneer/:countySlug" element={<ThinStoneVeneerLocation />} />
+        <Route path="/faqs" element={<FAQs />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/request-commercial-quote" element={<CommercialQuote />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />

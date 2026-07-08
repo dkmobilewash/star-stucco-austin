@@ -94,6 +94,21 @@ const staticRoutes = [
     description: 'Expert stucco tips, maintenance advice, and industry news for Austin, TX homeowners. Learn how to protect and maintain your stucco exterior in the Central Texas climate.',
   },
   {
+    path: '/faqs',
+    title: 'Stucco FAQs | Star Stucco of Austin | Austin, TX',
+    description: 'Frequently asked questions about stucco, EIFS, stone veneer, and interior plaster services in Austin, TX. Get answers from Star Stucco of Austin — trusted stucco contractor since 2013.',
+  },
+  {
+    path: '/gallery',
+    title: 'Stucco Project Gallery | Star Stucco of Austin | Austin, TX',
+    description: 'Browse completed stucco projects by Star Stucco of Austin — residential, commercial, stucco repair, EIFS, and stone veneer work across Central Texas. See our craftsmanship firsthand.',
+  },
+  {
+    path: '/request-commercial-quote',
+    title: 'Commercial Stucco Quote Austin, TX | Star Stucco of Austin',
+    description: 'Request a free commercial stucco quote from Star Stucco of Austin. New construction, EIFS, stucco repair, and finishing for offices, retail, multifamily, and more across Central Texas.',
+  },
+  {
     path: '/service-areas',
     title: 'Stucco Service Areas in Central Texas | Star Stucco of Austin',
     description: 'Star Stucco of Austin serves 16 counties across Central Texas. Find expert stucco repair, installation, and finishing near you. Free estimates available.',
