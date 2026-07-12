@@ -116,7 +116,7 @@ export default function ServiceLocationTemplate({
             </Link>
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-500 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-secondary-300 hover:bg-secondary-800"
             >
               <Phone className="mr-2 h-4 w-4" />
@@ -334,7 +334,7 @@ export default function ServiceLocationTemplate({
             </Link>
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center justify-center rounded-lg border border-white/50 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-white hover:bg-primary-800"
             >
               <Phone className="mr-2 h-4 w-4" />

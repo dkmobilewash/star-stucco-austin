@@ -234,7 +234,7 @@ export default function StuccoRepair() {
           <div className="flex flex-col sm:flex-row gap-4 mb-4">
             <a
               href="tel:+15127069699"
-              aria-label="Call Star Stucco of Austin for a free stucco repair estimate"
+              aria-label="Call (512) 706-9699 — free stucco repair estimate"
               className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
             >
               <Phone className="mr-2 h-4 w-4" />
@@ -452,7 +452,7 @@ export default function StuccoRepair() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+15127069699"
-              aria-label="Call Star Stucco of Austin for a free stucco repair estimate"
+              aria-label="Call (512) 706-9699 — free stucco repair estimate"
               className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg"
             >
               <Phone className="mr-2 h-4 w-4" />

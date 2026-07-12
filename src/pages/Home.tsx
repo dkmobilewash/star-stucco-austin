@@ -230,7 +230,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <a
                 href="tel:+15127069699"
-                aria-label="Call Star Stucco of Austin for a free estimate"
+                aria-label="Call for a Free Estimate — Star Stucco of Austin"
                 className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
               >
                 <Phone className="mr-2 h-4 w-4" />
@@ -341,7 +341,7 @@ export default function Home() {
               <Link
                 key={service.title}
                 to={service.path}
-                aria-label={`Learn more about ${service.title} services`}
+                aria-label={`${service.title} — learn more about our services`}
                 className="group relative overflow-hidden rounded-2xl bg-white shadow-sm border border-secondary-100 transition-all hover:shadow-xl hover:-translate-y-1"
               >
                 <div className="aspect-[16/10] overflow-hidden">
@@ -581,7 +581,7 @@ export default function Home() {
             </Link>
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-secondary-400"
             >
               <Phone className="mr-2 h-4 w-4" />

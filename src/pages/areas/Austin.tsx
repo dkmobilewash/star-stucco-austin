@@ -96,7 +96,7 @@ export default function AustinArea() {
               </Link>
               <a
                 href={`${siteConfig.phoneHref}`}
-                aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+                aria-label={`Call ${siteConfig.phone} — Star Stucco`}
                 className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-secondary-400"
               >
                 <Phone className="mr-2 h-4 w-4" />
@@ -263,7 +263,7 @@ export default function AustinArea() {
             </Link>
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center justify-center rounded-lg border border-primary-400 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-white"
             >
               <Phone className="mr-2 h-4 w-4" />

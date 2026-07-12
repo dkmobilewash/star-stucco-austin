@@ -381,7 +381,7 @@ export default function CommercialQuote() {
                 </p>
                 <a
                   href={`${siteConfig.phoneHref}`}
-                  aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+                  aria-label={`Call ${siteConfig.phone} — Star Stucco`}
                   className="flex items-center gap-3 group"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-100 group-hover:bg-primary-200 transition-colors">
