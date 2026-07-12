@@ -162,14 +162,15 @@ export default function Services() {
                   className={`${index % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}
                 >
                   <Link to={service.path} className="block group">
-                    <div className="overflow-hidden rounded-2xl">
+                    <div className="overflow-hidden rounded-2xl aspect-[8/5]">
                       <img
                         src={service.image}
                         alt={`${service.title} in Austin, TX`}
-                        className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         width={800}
                         height={500}
-                        loading="lazy"
+                        loading={index === 0 ? 'eager' : 'lazy'}
+                        fetchPriority={index === 0 ? 'high' : undefined}
                       />
                     </div>
                   </Link>

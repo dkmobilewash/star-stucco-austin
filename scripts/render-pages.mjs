@@ -190,6 +190,14 @@ function injectSSRContent(template, routePath, renderFn) {
     () => `<div id="root">${bodyHtml}</div>`,
   )
 
+  // Remove the hardcoded homepage hero preload on non-homepage routes
+  if (routePath !== '/') {
+    result = result.replace(
+      /\s*<link rel="preload" as="image" href="\/images\/hero-stucco-austin\.webp"[^>]*\/>/,
+      '',
+    )
+  }
+
   if (headTags.length > 0) {
     // Remove existing title from template
     const titleStart = result.indexOf('<title>')

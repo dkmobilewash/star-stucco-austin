@@ -20,11 +20,13 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
     </noscript>
     <style>
-      body { font-family: 'Inter', sans-serif; margin: 0; line-height: 1.5; color: #1e293b; -webkit-font-smoothing: antialiased; }
+      @font-face { font-family: 'Inter Fallback'; src: local('Arial'); size-adjust: 107%; ascent-override: 90%; descent-override: 22%; line-gap-override: 0%; }
+      @font-face { font-family: 'Playfair Fallback'; src: local('Georgia'); size-adjust: 112%; ascent-override: 88%; descent-override: 22%; line-gap-override: 0%; }
+      body { font-family: 'Inter', 'Inter Fallback', sans-serif; margin: 0; line-height: 1.5; color: #1e293b; -webkit-font-smoothing: antialiased; }
       .bg-secondary-900 { background-color: #0f172a; }
       header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.95); border-bottom: 1px solid #f1f5f9; }
       h1, h2, h3 { line-height: 1.2; }
-      .font-display { font-family: 'Playfair Display', serif; }
+      .font-display { font-family: 'Playfair Display', 'Playfair Fallback', serif; }
     </style>
   </head>
   <body>
