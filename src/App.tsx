@@ -2,7 +2,8 @@ import { lazy, Suspense } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import Layout from './components/Layout'
-import Home from './pages/Home'
+
+const Home = lazy(() => import('./pages/Home'))
 
 const About = lazy(() => import('./pages/About'))
 const Contact = lazy(() => import('./pages/Contact'))

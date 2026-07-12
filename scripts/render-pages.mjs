@@ -8,6 +8,7 @@ import {
   readFileSync,
   writeFileSync,
   mkdirSync,
+  existsSync,
   unlinkSync,
   rmSync,
 } from 'fs'
@@ -177,7 +178,7 @@ function extractHeadTags(ssrHtml) {
 
 // ── HTML injection ──────────────────────────────────────────────────
 
-function injectSSRContent(template, routePath, renderFn) {
+function injectSSRContent(template, routePath, renderFn, manifest) {
   const ssrHtml = renderFn(routePath)
   const { headTags, bodyHtml } = extractHeadTags(ssrHtml)
 
@@ -198,7 +199,12 @@ function injectSSRContent(template, routePath, renderFn) {
     )
   }
 
-  if (headTags.length > 0) {
+  // Filter out hero image preload from SSR tags on homepage (template already has it)
+  const filteredHeadTags = routePath === '/'
+    ? headTags.filter(t => !t.includes('hero-stucco-austin'))
+    : headTags
+
+  if (filteredHeadTags.length > 0) {
     // Remove existing title from template
     const titleStart = result.indexOf('<title>')
     if (titleStart !== -1) {
@@ -213,7 +219,7 @@ function injectSSRContent(template, routePath, renderFn) {
       result = result.slice(0, descStart) + result.slice(descEnd)
     }
 
-    const headStr = headTags.join('\n    ')
+    const headStr = filteredHeadTags.join('\n    ')
 
     // Insert after viewport meta tag (same insertion point as inject-seo.mjs)
     const viewportTag = '<meta name="viewport"'
@@ -224,7 +230,77 @@ function injectSSRContent(template, routePath, renderFn) {
     }
   }
 
+  // Inject route-specific modulepreload hints to eliminate lazy-load waterfalls
+  const preloadTags = getPreloadTags(manifest, routePath, result)
+  if (preloadTags) {
+    const scriptTag = result.indexOf('<script type="module"')
+    if (scriptTag !== -1) {
+      result = result.slice(0, scriptTag) + preloadTags + '\n    ' + result.slice(scriptTag)
+    }
+  }
+
   return result
+}
+
+// ── Route-specific modulepreload injection ─────────────────────────
+
+function loadManifest() {
+  const manifestPath = join(DIST, '.vite', 'manifest.json')
+  if (!existsSync(manifestPath)) return null
+  return JSON.parse(readFileSync(manifestPath, 'utf-8'))
+}
+
+function getChunkPreloads(manifest, chunkSrc) {
+  if (!manifest || !manifest[chunkSrc]) return []
+  const entry = manifest[chunkSrc]
+  const preloads = new Set()
+  preloads.add('/' + entry.file)
+  if (entry.imports) {
+    for (const imp of entry.imports) {
+      const impEntry = manifest[imp] || Object.values(manifest).find(v => v.file === imp.replace(/^_?/, 'assets/'))
+      if (impEntry) {
+        preloads.add('/' + impEntry.file)
+      } else {
+        preloads.add('/' + (imp.startsWith('_') ? 'assets/' + imp.slice(1) : imp))
+      }
+    }
+  }
+  return [...preloads]
+}
+
+const ROUTE_TO_CHUNK = {
+  '/': 'src/pages/Home.tsx',
+  '/about': 'src/pages/About.tsx',
+  '/contact': 'src/pages/Contact.tsx',
+  '/austin-stucco-services': 'src/pages/Services.tsx',
+  '/austin-stucco-installation': 'src/pages/services/StuccoInstallation.tsx',
+  '/austin-stucco-repair': 'src/pages/services/StuccoRepair.tsx',
+  '/austin-stucco-finishing': 'src/pages/services/StuccoFinishing.tsx',
+  '/austin-commercial-stucco': 'src/pages/services/CommercialStucco.tsx',
+  '/eifs-contractor-austin': 'src/pages/services/EifsContractor.tsx',
+  '/austin-stucco-remediation': 'src/pages/services/StuccoRemediation.tsx',
+  '/austin-thin-stone-veneer': 'src/pages/services/ThinStoneVeneer.tsx',
+  '/reviews': 'src/pages/Reviews.tsx',
+  '/blog': 'src/pages/Blog.tsx',
+  '/faqs': 'src/pages/FAQs.tsx',
+  '/gallery': 'src/pages/Gallery.tsx',
+  '/service-areas': 'src/pages/ServiceAreas.tsx',
+}
+
+function getPreloadTags(manifest, routePath, html) {
+  if (!manifest) return ''
+  const chunkSrc = ROUTE_TO_CHUNK[routePath]
+  if (!chunkSrc) return ''
+  const files = getChunkPreloads(manifest, chunkSrc)
+  // Only preload chunks NOT already referenced in the HTML (entry script, existing preloads)
+  const newFiles = files.filter(f => {
+    if (!f.endsWith('.js')) return false
+    return !html.includes(f)
+  })
+  if (newFiles.length === 0) return ''
+  return newFiles
+    .map(f => `<link rel="modulepreload" crossorigin href="${f}">`)
+    .join('\n    ')
 }
 
 // ── Sitemap with git-based lastmod ──────────────────────────────────
@@ -354,13 +430,15 @@ async function main() {
   console.log(`  ${staticRoutes.length} static + ${dynamicRoutes.length} dynamic = ${allRoutes.length} total routes\n`)
 
   const template = readFileSync(join(DIST, 'index.html'), 'utf-8')
+  const manifest = loadManifest()
+  if (manifest) console.log('  Manifest loaded — injecting route-specific modulepreload hints')
 
   let ok = 0
   let fail = 0
 
   for (const route of allRoutes) {
     try {
-      const html = injectSSRContent(template, route.path, render)
+      const html = injectSSRContent(template, route.path, render, manifest)
       const outPath =
         route.path === '/'
           ? join(DIST, 'index.html')

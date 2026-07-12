@@ -3,12 +3,31 @@ import { CircleCheck as CheckCircle, Shield, Clock, Award, Users, Heart, Chevron
 import SEO from '../components/SEO'
 import { FAQSection, faqPageSchema } from '../components/FAQ'
 import { siteConfig } from '../lib/siteConfig'
-import { blogPosts } from '../data/blogPosts'
 import { reviews, reviewStats } from '../data/reviews'
 
-const latestPosts = [...blogPosts]
-  .sort((a, b) => b.date.localeCompare(a.date))
-  .slice(0, 3)
+const latestPosts = [
+  {
+    slug: 'thin-stone-veneer-guide-austin',
+    title: 'Thin Stone Veneer: A Complete Guide for Austin Homeowners',
+    excerpt: 'Thin stone veneer delivers the look of natural stone at a fraction of the weight and cost. Here is what Austin homeowners need to know about types, applications, and pricing.',
+    date: '2026-06-28',
+    image: '/images/stucco-home-roundrock-hero.webp',
+  },
+  {
+    slug: 'how-long-does-stucco-last',
+    title: 'How Long Does Stucco Last? Lifespan & Durability Guide',
+    excerpt: 'Stucco can last 50 years or more — but lifespan depends on the system, installation quality, maintenance, and climate. Here is what determines how long yours will last.',
+    date: '2026-06-26',
+    image: '/images/stucco-texture-hero.webp',
+  },
+  {
+    slug: 'interior-plaster-vs-drywall-austin',
+    title: 'Interior Plaster vs Drywall: Which Is Right for Your Austin Home?',
+    excerpt: 'Plaster and drywall both have a place in Austin homes. Here is an honest comparison of cost, durability, sound, aesthetics, and when each option makes the most sense.',
+    date: '2026-06-25',
+    image: '/images/stucco-texture-hero.webp',
+  },
+]
 
 function formatDate(dateString: string): string {
   return new Date(dateString + 'T00:00:00').toLocaleDateString('en-US', {
