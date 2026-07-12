@@ -135,9 +135,16 @@ function getDynamicRoutes(data) {
 
 // ── Head-tag extraction from SSR output ─────────────────────────────
 // React 19 + react-helmet-async v3: Helmet children are rendered inline
-// in the component output (context object is NOT populated). We extract
-// <title>, <meta>, <link rel="canonical">, and <script type="application/ld+json">
-// from the SSR HTML and move them into <head>.
+// in the component output (context object is NOT populated).
+//
+// During hydrateRoot, React 19 does NOT expect these elements in the DOM
+// inside the hydration root:
+//   - <title>, <meta>, <link rel=canonical> → React 19 hoists to <head>
+//   - <link rel="preload"> → React 19 "float" resource, injected by
+//     renderToString but NOT tracked during hydration
+//
+// Elements that MUST remain in the body (React expects them during hydration):
+//   - <script type="application/ld+json"> → rendered by Helmet, not hoisted
 
 function extractHeadTags(ssrHtml) {
   const headTags = []
@@ -153,12 +160,14 @@ function extractHeadTags(ssrHtml) {
     return ''
   })
 
-  bodyHtml = bodyHtml.replace(/<link\s[^>]*rel="(?:canonical|preload)"[^>]*>/g, (m) => {
+  bodyHtml = bodyHtml.replace(/<link\s[^>]*rel="canonical"[^>]*>/g, (m) => {
     headTags.push(m)
     return ''
   })
 
-  bodyHtml = bodyHtml.replace(/<script\s[^>]*type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/g, (m) => {
+  // React 19 float resources: renderToString injects <link rel="preload">
+  // for high-priority images, but hydrateRoot does NOT expect them in the DOM
+  bodyHtml = bodyHtml.replace(/<link\s[^>]*rel="preload"[^>]*\/?>/g, (m) => {
     headTags.push(m)
     return ''
   })

@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import Layout from './components/Layout'
@@ -38,6 +39,7 @@ export default function AppSSR() {
   return (
     <>
     <ScrollToTop />
+    <Suspense fallback={<div className="flex min-h-screen items-center justify-center">Loading...</div>}>
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
@@ -89,6 +91,7 @@ export default function AppSSR() {
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
+    </Suspense>
     </>
   )
 }
