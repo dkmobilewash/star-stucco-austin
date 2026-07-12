@@ -49,7 +49,7 @@ export default function AustinArea() {
   return (
     <>
       <SEO
-        title="Stucco Contractor Austin, TX | Installation, Repair & Finishing"
+        title="Stucco Contractor Austin, TX | Repair & Installation"
         description="Star Stucco of Austin is the trusted stucco contractor for Austin, TX homeowners. Expert installation, repair, and finishing services across all Austin neighborhoods. Free estimates."
         path="/service-area/austin"
         schema={schema}

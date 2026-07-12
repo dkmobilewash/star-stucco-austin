@@ -194,7 +194,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Stucco Contractors in Austin, TX | Star Stucco | Free Estimates"
+        title="Stucco Contractor Austin, TX | Star Stucco | Free Estimate"
         description="Austin's top-rated stucco contractor. 35+ 5-star reviews, licensed & insured. Repair, installation & finishing. Call for a free same-week estimate."
         path="/"
         schema={[localBusinessSchema, faqPageSchema(homeFaqs)]}

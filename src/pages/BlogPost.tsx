@@ -193,7 +193,7 @@ export default function BlogPost() {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: post.title,
+    headline: post.h1 ?? post.title,
     description: post.excerpt,
     datePublished: post.date,
     dateModified: post.date,

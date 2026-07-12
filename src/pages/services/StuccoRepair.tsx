@@ -76,6 +76,22 @@ const faqSchema = {
         text: "The most common causes are foundation settling, thermal expansion and contraction (especially in Austin's climate), moisture intrusion, and improper original installation. Small hairline cracks are normal; wider cracks or cracks with moisture staining should be addressed promptly to prevent water damage.",
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Will homeowners insurance cover stucco repair?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'It depends on the cause. Most homeowners insurance policies in Texas cover stucco damage caused by sudden, accidental events like hail, falling trees, or vehicle impact. However, damage from normal wear and tear, settling, or deferred maintenance is typically not covered. We recommend filing a claim for storm-related damage and can provide a detailed repair estimate to support your claim.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can a handyman do stucco repair?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A handyman may be able to fill a small crack with caulk, but proper stucco repair requires matching the existing texture, using the right base and finish coats, and addressing the underlying cause of damage. Improper repairs often look mismatched, fail to seal out moisture, and can void manufacturer warranties. A licensed stucco contractor has the training and materials to make repairs that last and blend seamlessly with the surrounding wall.',
+      },
+    },
   ],
 }
 
@@ -146,6 +162,16 @@ const faqs = [
     question: 'What causes stucco cracks?',
     answer:
       "The most common causes are foundation settling, thermal expansion and contraction (especially in Austin's climate), moisture intrusion, and improper original installation. Small hairline cracks are normal; wider cracks or cracks with moisture staining should be addressed promptly to prevent water damage.",
+  },
+  {
+    question: 'Will homeowners insurance cover stucco repair?',
+    answer:
+      'It depends on the cause. Most homeowners insurance policies in Texas cover stucco damage caused by sudden, accidental events like hail, falling trees, or vehicle impact. However, damage from normal wear and tear, settling, or deferred maintenance is typically not covered. We recommend filing a claim for storm-related damage and can provide a detailed repair estimate to support your claim.',
+  },
+  {
+    question: 'Can a handyman do stucco repair?',
+    answer:
+      'A handyman may be able to fill a small crack with caulk, but proper stucco repair requires matching the existing texture, using the right base and finish coats, and addressing the underlying cause of damage. Improper repairs often look mismatched, fail to seal out moisture, and can void manufacturer warranties. A licensed stucco contractor has the training and materials to make repairs that last and blend seamlessly with the surrounding wall.',
   },
 ]
 

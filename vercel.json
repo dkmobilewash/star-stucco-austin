@@ -7,6 +7,12 @@
       "destination": "https://stuccoaustin.com/:path*",
       "permanent": true
     },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "header", "key": "x-forwarded-proto", "value": "http" }],
+      "destination": "https://stuccoaustin.com/:path*",
+      "permanent": true
+    },
     { "source": "/eifs-contractor-san-antonio", "destination": "/eifs-contractor-austin", "permanent": true },
     { "source": "/blog/eifs-repair-san-antonio", "destination": "/blog/eifs-repair-austin", "permanent": true },
     { "source": "/travis-county", "destination": "/service-areas/travis-county-stucco", "permanent": true },

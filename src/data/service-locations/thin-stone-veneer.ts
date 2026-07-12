@@ -782,7 +782,7 @@ export const thinStoneVeneerData: ServiceLocationData[] = [
     countySlug: 'hays-county',
     serviceName: 'Thin Stone Veneer',
     countyName: 'Hays County',
-    seoTitle: 'Thin Stone Veneer Hays County TX | San Marcos & Dripping Springs',
+    seoTitle: 'Thin Stone Veneer Hays County TX | San Marcos & Kyle',
     metaDescription:
       'Professional thin stone veneer in Hays County. Stone accent walls, facades, and outdoor features for San Marcos, Kyle, Dripping Springs, and Wimberley homes. Call (512) 706-9699.',
     heroH1: 'Thin Stone Veneer in Hays County, TX',

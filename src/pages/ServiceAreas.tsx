@@ -28,7 +28,7 @@ export default function ServiceAreas() {
   return (
     <>
       <SEO
-        title="Stucco Service Areas in Central Texas | Star Stucco of Austin"
+        title="Stucco Service Areas | Central Texas | Star Stucco"
         description="Star Stucco of Austin serves 16 counties across Central Texas. Find expert stucco repair, installation, and finishing near you. Free estimates available."
         path="/service-areas"
         schema={schema}

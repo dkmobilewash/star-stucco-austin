@@ -58,7 +58,7 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Star Stucco of Austin | Austin's Trusted Stucco Contractor"
+        title="About Star Stucco | Austin's Trusted Stucco Contractor"
         description="Learn about Star Stucco of Austin, a family-owned stucco contractor with 15+ years serving Travis County. Expert installation, repair, and finishing across the Austin metro area."
         path="/about"
         schema={schema}

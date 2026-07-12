@@ -20,6 +20,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'best-stucco-finishes-austin-homes',
     title: 'The Best Stucco Finishes for Austin Homes in 2026',
+    seoTitle: 'Best Stucco Finishes for Austin Homes (2026) | Star Stucco',
     excerpt: 'Discover which stucco finishes perform best in Austin\'s hot Texas climate, from smooth to textured options that withstand intense sun and occasional storms.',
     date: '2026-04-15',
     image: '/images/stucco-home-roundrock-hero.webp',
@@ -47,6 +48,7 @@ At Star Stucco of Austin, we help homeowners across Travis County select the per
   {
     slug: 'stucco-repair-signs-austin',
     title: '5 Signs Your Austin Home Needs Stucco Repair',
+    seoTitle: '5 Signs Your Austin Home Needs Stucco Repair | Star Stucco',
     excerpt: 'Learn to identify common stucco problems before they become costly. Austin\'s climate can accelerate damage if left unaddressed.',
     date: '2026-03-28',
     image: '/images/stucco-damage-signs.webp',
@@ -149,7 +151,7 @@ If you're leaning toward stucco, [visit our homepage to learn more about Star St
   {
     slug: 'what-is-eifs',
     title: 'What Is EIFS? A Complete Guide for Austin Homeowners',
-    seoTitle: 'What Is EIFS? Everything Austin Homeowners Need to Know | Star Stucco',
+    seoTitle: 'What Is EIFS? Guide for Austin Homeowners | Star Stucco',
     seoDescription:
       'Learn what EIFS (Exterior Insulation and Finish System) is, how it differs from traditional stucco, how long it lasts, and when to repair vs. replace it.',
     h1: 'What Is EIFS? A Complete Guide for Austin Homeowners',
@@ -253,7 +255,7 @@ EIFS is a proven, energy-efficient cladding system that performs beautifully in 
   {
     slug: 'eifs-vs-traditional-stucco',
     title: "EIFS vs. Traditional Stucco: What's the Difference?",
-    seoTitle: 'EIFS vs. Traditional Stucco: Which Is Better for Austin Homes? | Star Stucco',
+    seoTitle: 'EIFS vs. Traditional Stucco for Austin Homes | Star Stucco',
     seoDescription:
       'Compare EIFS (synthetic stucco) vs. traditional stucco for Austin homes. Cost, durability, energy efficiency, and repair — which system is right for you?',
     h1: "EIFS vs. Traditional Stucco: What's the Difference?",
@@ -316,7 +318,7 @@ There is no single "best" answer — the right system depends on your priorities
   {
     slug: 'eifs-repair-austin',
     title: 'EIFS Repair in Austin, TX: What You Need to Know',
-    seoTitle: 'EIFS Repair in Austin, TX: Cost, Process & What to Expect | Star Stucco',
+    seoTitle: 'EIFS Repair Austin TX | Cost & Process | Star Stucco',
     seoDescription:
       'Need EIFS repair in Austin? Learn about repair costs, common EIFS problems in TX, and what a qualified EIFS contractor does during repairs. Free estimates.',
     h1: 'EIFS Repair in Austin, TX: What You Need to Know',
@@ -417,7 +419,7 @@ Most EIFS problems are very fixable when you act early and hire the right team. 
   {
     slug: 'dryvit-repair-austin',
     title: 'Dryvit Repair in Austin, TX: Costs, Process & Common Problems',
-    seoTitle: 'Dryvit Repair Austin TX | Synthetic Stucco (EIFS) Specialists | Star Stucco',
+    seoTitle: 'Dryvit Repair Austin TX | EIFS Specialists | Star Stucco',
     seoDescription:
       'Dryvit repair in Austin, TX. Learn what Dryvit is, common Dryvit problems, repair costs, and why it needs an EIFS specialist. Free estimates from Star Stucco.',
     h1: 'Dryvit Repair in Austin, TX: What Homeowners Need to Know',
@@ -501,7 +503,7 @@ If your synthetic stucco is cracking, staining, or feeling soft, don't wait for 
   {
     slug: 'stucco-repair-cost-austin',
     title: 'How Much Does Stucco Repair Cost in Austin? (2026 Price Guide)',
-    seoTitle: 'Stucco Repair Cost in Austin, TX (2026 Guide) | Star Stucco of Austin',
+    seoTitle: 'Stucco Repair Cost in Austin TX (2026 Guide) | Star Stucco',
     seoDescription:
       'How much does stucco repair cost in Austin? See 2026 price ranges by repair type — cracks, water damage, full replacement — and what drives the cost. Free estimates.',
     h1: 'How Much Does Stucco Repair Cost in Austin, TX?',
@@ -584,7 +586,7 @@ Star Stucco of Austin provides free, no-obligation stucco repair estimates throu
   {
     slug: 'stucco-crack-repair-austin',
     title: 'Stucco Crack Repair in Austin, TX: Causes, Fixes & Cost',
-    seoTitle: 'Stucco Crack Repair in Austin, TX: Causes, Fixes & Cost | Star Stucco',
+    seoTitle: 'Stucco Crack Repair Austin TX | Causes & Cost | Star Stucco',
     seoDescription:
       'Why stucco cracks in Austin, the different crack types, when they are serious, DIY vs. pro, and what crack repair costs. Free estimates from Star Stucco of Austin.',
     h1: 'Stucco Crack Repair in Austin, TX: Why Cracks Happen & How to Fix Them',
@@ -754,7 +756,7 @@ Square-foot ranges are a starting point, but your real cost depends on your home
   {
     slug: 'stucco-finishes-guide',
     title: 'Stucco Finish Types Explained: Smooth, Santa Barbara, Dash & Lace',
-    seoTitle: 'Stucco Finishes Explained: Smooth, Santa Barbara, Dash & Lace | Austin',
+    seoTitle: 'Stucco Finishes Guide: Smooth, Dash & Lace | Austin TX',
     seoDescription:
       'A guide to stucco finish types — smooth, sand/float, Santa Barbara, dash, and lace — with the pros, looks, and which finishes work best for Austin homes.',
     h1: 'Stucco Finish Types Explained: Smooth, Santa Barbara, Dash & Lace',

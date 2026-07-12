@@ -66,7 +66,7 @@ export default function StuccoInstallation() {
   return (
     <>
       <SEO
-        title="Stucco Installation Austin, TX | New Construction | Star Stucco"
+        title="Stucco Installation Austin, TX | New Builds | Star Stucco"
         description="Professional stucco installation for new builds & renovations in Austin. 3-coat & synthetic systems. Licensed contractor, free estimates, 5-star rated."
         path="/austin-stucco-installation"
         schema={[schema, faqPageSchema(faqs)]}
