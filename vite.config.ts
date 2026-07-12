@@ -16,22 +16,24 @@ function asyncCssPlugin(): Plugin {
   }
 }
 
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [react(), tailwindcss(), asyncCssPlugin()],
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom', 'react-helmet-async'],
-          icons: ['lucide-react'],
-          supabase: ['@supabase/supabase-js'],
+    rollupOptions: isSsrBuild
+      ? {}
+      : {
+          output: {
+            manualChunks: {
+              vendor: ['react', 'react-dom', 'react-router-dom', 'react-helmet-async'],
+              icons: ['lucide-react'],
+              supabase: ['@supabase/supabase-js'],
+            },
+          },
         },
-      },
-    },
   },
   server: {
     headers: {
       'Cache-Control': 'public, max-age=31536000, immutable',
     },
   },
-})
+}))

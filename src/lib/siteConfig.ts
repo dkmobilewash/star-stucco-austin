@@ -4,6 +4,7 @@ export const siteConfig = {
   tagline: 'Integrity \u00B7 Commitment \u00B7 Quality',
   description: 'Star Stucco of Austin is a stucco and plaster contractor serving Central Texas. Residential stucco, commercial stucco, EIFS, interior plaster, and stone veneer. Over 9,000 projects completed.',
   phone: '(512) 706-9699',
+  phoneHref: 'tel:+15127069699',
   email: 'info@starstuccoaustin.com',
   address: {
     street: '5316 W US Hwy 290 Service Rd',

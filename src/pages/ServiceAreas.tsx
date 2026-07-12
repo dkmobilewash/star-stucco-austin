@@ -28,7 +28,7 @@ export default function ServiceAreas() {
   return (
     <>
       <SEO
-        title="Stucco Service Areas in Central Texas | Star Stucco of Austin"
+        title="Stucco Service Areas | Central Texas | Star Stucco"
         description="Star Stucco of Austin serves 16 counties across Central Texas. Find expert stucco repair, installation, and finishing near you. Free estimates available."
         path="/service-areas"
         schema={schema}
@@ -63,7 +63,7 @@ export default function ServiceAreas() {
                 Get a Free Estimate <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
               <a
-                href={`tel:${siteConfig.phone}`}
+                href={`${siteConfig.phoneHref}`}
                 aria-label={`Call Star Stucco at ${siteConfig.phone}`}
                 className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-secondary-400"
               >
@@ -189,7 +189,7 @@ export default function ServiceAreas() {
               Get Your Free Estimate
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg border border-primary-400 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-white"
             >

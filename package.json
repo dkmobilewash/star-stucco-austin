@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "postbuild": "node scripts/inject-seo.mjs",
-    "preview": "vite preview",
-    "prerender": "node scripts/prerender.mjs"
+    "postbuild": "node scripts/render-pages.mjs",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.1",
@@ -23,7 +22,6 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.0",
-    "playwright-core": "^1.61.1",
     "sharp": "^0.35.2",
     "tailwindcss": "^4.2.4",
     "typescript": "~5.7.0",

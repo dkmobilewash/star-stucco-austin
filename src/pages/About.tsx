@@ -58,7 +58,7 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Star Stucco of Austin | Austin's Trusted Stucco Contractor"
+        title="About Star Stucco | Austin's Trusted Stucco Contractor"
         description="Learn about Star Stucco of Austin, a family-owned stucco contractor with 15+ years serving Travis County. Expert installation, repair, and finishing across the Austin metro area."
         path="/about"
         schema={schema}
@@ -283,7 +283,7 @@ export default function About() {
               <ChevronRight className="ml-2 h-4 w-4" />
             </Link>
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-secondary-400"
             >

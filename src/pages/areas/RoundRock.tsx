@@ -67,7 +67,7 @@ export default function RoundRockArea() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href={`tel:${siteConfig.phone.replace(/[^0-9+]/g, '')}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco of Austin at ${siteConfig.phone}`}
               className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white hover:bg-green-700 transition-colors"
             >
@@ -227,7 +227,7 @@ export default function RoundRockArea() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href={`tel:${siteConfig.phone.replace(/[^0-9+]/g, '')}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco of Austin at ${siteConfig.phone}`}
               className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-semibold text-green-700 hover:bg-green-50 transition-colors"
             >

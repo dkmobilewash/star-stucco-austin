@@ -97,7 +97,7 @@ export default function Header() {
 
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href={`tel:${siteConfig.phone}`}
+              href={`${siteConfig.phoneHref}`}
               aria-label={`Call Star Stucco at ${siteConfig.phone}`}
               className="flex items-center gap-2 text-sm font-medium text-secondary-700"
             >
@@ -156,7 +156,7 @@ export default function Header() {
             ))}
             <div className="pt-4 border-t border-secondary-100">
               <a
-                href={`tel:${siteConfig.phone}`}
+                href={`${siteConfig.phoneHref}`}
                 aria-label={`Call Star Stucco at ${siteConfig.phone}`}
                 className="flex items-center gap-2 px-4 py-3 text-sm font-medium text-secondary-700"
               >

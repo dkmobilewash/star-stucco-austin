@@ -169,7 +169,7 @@ export default function CommercialQuote() {
                     We've received your commercial quote request and will get back to
                     you within 1–2 business days. For immediate assistance, call{' '}
                     <a
-                      href={`tel:${siteConfig.phone}`}
+                      href={`${siteConfig.phoneHref}`}
                       className="font-semibold text-primary-700 hover:text-primary-800"
                     >
                       {siteConfig.phone}
@@ -380,7 +380,7 @@ export default function CommercialQuote() {
                   Reach us directly to discuss your commercial stucco project.
                 </p>
                 <a
-                  href={`tel:${siteConfig.phone}`}
+                  href={`${siteConfig.phoneHref}`}
                   aria-label={`Call Star Stucco at ${siteConfig.phone}`}
                   className="flex items-center gap-3 group"
                 >

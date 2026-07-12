@@ -311,7 +311,7 @@ export default function EifsContractor() {
   return (
     <>
       <SEO
-        title="EIFS Contractor Austin TX | Synthetic Stucco Installation & Repair | Star Stucco"
+        title="EIFS Contractor Austin TX | Install & Repair | Star Stucco"
         description="Austin's trusted EIFS contractor. Star Stucco installs, repairs & replaces synthetic stucco (EIFS) for homes & businesses. Free estimates."
         path="/eifs-contractor-austin"
         schema={[localBusinessSchema, serviceSchema, faqSchema]}
