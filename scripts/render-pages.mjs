@@ -24,10 +24,6 @@ const DIST = join(ROOT, 'dist')
 const DIST_SERVER = join(ROOT, 'dist-server')
 const SITE_URL = 'https://stuccoaustin.com'
 
-const DISTANT_COUNTIES = new Set([
-  'brazos-county', 'mclennan-county', 'milam-county', 'lee-county',
-  'caldwell-county', 'gillespie-county', 'llano-county', 'guadalupe-county',
-])
 
 // ── Step 1: Build SSR bundle with Vite ──────────────────────────────
 
@@ -109,7 +105,6 @@ function getDynamicRoutes(data) {
     const countyBase = county.slug.replace('-stucco', '')
     routes.push({
       path: `/service-areas/${county.slug}`,
-      noindex: DISTANT_COUNTIES.has(countyBase),
     })
   }
 
@@ -126,7 +121,6 @@ function getDynamicRoutes(data) {
     for (const loc of svc.data) {
       routes.push({
         path: `/${svc.slug}/${loc.countySlug}`,
-        noindex: DISTANT_COUNTIES.has(loc.countySlug),
       })
     }
   }

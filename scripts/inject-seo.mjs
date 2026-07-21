@@ -180,10 +180,6 @@ async function loadDynamicData() {
   return mod
 }
 
-const DISTANT_COUNTIES = new Set([
-  'brazos-county', 'mclennan-county', 'milam-county', 'lee-county',
-  'caldwell-county', 'gillespie-county', 'llano-county', 'guadalupe-county',
-])
 
 function getDynamicRoutes(data) {
   const routes = []
@@ -204,7 +200,6 @@ function getDynamicRoutes(data) {
       path: `/service-areas/${county.slug}`,
       title: county.seoTitle,
       description: county.metaDescription,
-      noindex: DISTANT_COUNTIES.has(countyBase),
     })
   }
 
@@ -224,7 +219,6 @@ function getDynamicRoutes(data) {
         path: `/${svc.slug}/${loc.countySlug}`,
         title: loc.seoTitle,
         description: loc.metaDescription,
-        noindex: DISTANT_COUNTIES.has(loc.countySlug),
       })
     }
   }

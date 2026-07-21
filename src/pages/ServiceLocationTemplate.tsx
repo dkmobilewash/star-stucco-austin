@@ -71,12 +71,6 @@ export default function ServiceLocationTemplate({
   const serviceParentPath = serviceDefinitions.find((s) => s.slug === serviceSlug)?.path ?? '/'
   const countyAreaSlug = countyDefinitions.find((c) => c.slug === countySlug)?.areaSlug ?? ''
 
-  const distantCounties = new Set([
-    'brazos-county', 'mclennan-county', 'milam-county', 'lee-county', 'caldwell-county',
-    'gillespie-county', 'llano-county', 'guadalupe-county',
-  ])
-  const isDistant = distantCounties.has(countySlug ?? '')
-
   return (
     <>
       <SEO
@@ -84,7 +78,6 @@ export default function ServiceLocationTemplate({
         description={data.metaDescription}
         path={`/${serviceSlug}/${countySlug}`}
         schema={[serviceSchema, breadcrumbSchema, faqPageSchema(data.faqs)]}
-        noindex={isDistant}
       />
 
       {/* Hero */}
