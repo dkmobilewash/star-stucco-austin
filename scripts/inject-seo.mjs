@@ -30,8 +30,8 @@ const SITE_NAME = 'Star Stucco of Austin'
 const staticRoutes = [
   {
     path: '/',
-    title: 'Stucco Contractors in Austin, TX | Star Stucco | Free Estimates',
-    description: 'Austin\'s top-rated stucco contractor. 35+ 5-star reviews, licensed & insured. Repair, installation & finishing. Call for a free same-week estimate.',
+    title: 'Austin Stucco Contractor | Repair & Installation | Star Stucco',
+    description: 'Star Stucco installs, repairs, and finishes stucco across Austin, TX. Licensed, insured, 35+ 5-star reviews. Get a free estimate this week.',
   },
   {
     path: '/about',
@@ -50,18 +50,18 @@ const staticRoutes = [
   },
   {
     path: '/austin-stucco-installation',
-    title: 'Stucco Installation Austin, TX | New Construction | Star Stucco',
+    title: 'Stucco Installation Austin, TX | New Builds & Re-Stucco | Star Stucco',
     description: 'Professional stucco installation for new builds & renovations in Austin. 3-coat & synthetic systems. Licensed contractor, free estimates, 5-star rated.',
   },
   {
     path: '/austin-stucco-repair',
-    title: 'Stucco Repair Austin, TX | Star Stucco | Free Estimates',
-    description: 'Expert stucco crack & damage repair in Austin. Texture matching, waterproofing, HOA-approved work. 35+ 5-star reviews. Get your free estimate today.',
+    title: 'Stucco Repair Near Me | Austin, TX Same-Week Service | Star Stucco',
+    description: 'Local stucco crack, water damage & texture repair near you in Austin. HOA-approved work, 35+ 5-star reviews. Free estimates, same-week scheduling.',
   },
   {
     path: '/austin-stucco-finishing',
-    title: 'Stucco Finishing Austin, TX | Textures & Coatings | Star Stucco',
-    description: 'Custom stucco finishes in Austin — smooth, sand, dash & designer textures. Expert color matching & finish coats. Free estimates, licensed & insured.',
+    title: 'Interior Plaster & Stucco Finishing Austin, TX | Star Stucco',
+    description: 'Interior plaster and custom stucco finishes in Austin — smooth, sand, dash & designer textures. Expert color matching & finish coats. Free estimates.',
   },
   {
     path: '/austin-commercial-stucco',
@@ -70,8 +70,8 @@ const staticRoutes = [
   },
   {
     path: '/eifs-contractor-austin',
-    title: 'EIFS Contractor Austin TX | Synthetic Stucco Installation & Repair | Star Stucco',
-    description: 'Austin\'s trusted EIFS contractor. Star Stucco installs, repairs & replaces synthetic stucco (EIFS) for homes & businesses. Free estimates.',
+    title: 'EIFS Contractor Austin TX | Install & Repair | Star Stucco',
+    description: 'Austin\'s trusted EIFS stucco contractor. Star Stucco installs, repairs & replaces synthetic stucco (EIFS) for homes & businesses. Free estimates.',
   },
   {
     path: '/austin-stucco-remediation',
@@ -80,13 +80,13 @@ const staticRoutes = [
   },
   {
     path: '/austin-thin-stone-veneer',
-    title: 'Thin Stone Veneer Austin, TX | Star Stucco of Austin',
-    description: 'Professional thin stone veneer installation in Austin, TX. Fireplace surrounds, accent walls, exterior facades, and outdoor kitchens. Natural and manufactured stone. Free estimates.',
+    title: 'Thin Stone Veneer Austin, TX | Install & Repair | Star Stucco',
+    description: 'Thin stone veneer installation in Austin, TX. Fireplaces, accent walls, facades, and outdoor kitchens. Natural & manufactured stone. Free estimates, 5-star rated.',
   },
   {
     path: '/reviews',
     title: 'Customer Reviews | Star Stucco of Austin | 5-Star Rated',
-    description: 'Read real Google reviews from Star Stucco of Austin customers. 30 five-star reviews from homeowners and businesses across Central Texas. See why we are Austin\'s top-rated stucco contractor.',
+    description: 'Read real Google reviews from Star Stucco of Austin customers. 36 five-star reviews from homeowners and businesses across Central Texas. See why we are Austin\'s top-rated stucco contractor.',
   },
   {
     path: '/blog',

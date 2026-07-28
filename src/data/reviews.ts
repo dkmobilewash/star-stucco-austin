@@ -189,7 +189,7 @@ export const reviews: Review[] = [
 ]
 
 export const reviewStats = {
-  totalReviews: 30,
+  totalReviews: 36,
   averageRating: 5.0,
   platform: 'Google',
 }

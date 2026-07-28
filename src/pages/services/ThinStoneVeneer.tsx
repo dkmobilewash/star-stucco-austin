@@ -98,8 +98,8 @@ export default function ThinStoneVeneer() {
   return (
     <>
       <SEO
-        title="Thin Stone Veneer Austin, TX | Star Stucco of Austin"
-        description="Professional thin stone veneer installation in Austin, TX. Fireplace surrounds, accent walls, exterior facades, and outdoor kitchens. Natural and manufactured stone. Free estimates."
+        title="Thin Stone Veneer Austin, TX | Install & Repair | Star Stucco"
+        description="Thin stone veneer installation in Austin, TX. Fireplaces, accent walls, facades, and outdoor kitchens. Natural & manufactured stone. Free estimates, 5-star rated."
         path="/austin-thin-stone-veneer"
         schema={[schema, faqPageSchema(faqs)]}
       />

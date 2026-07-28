@@ -89,8 +89,8 @@ export default function StuccoFinishing() {
   return (
     <>
       <SEO
-        title="Stucco Finishing Austin, TX | Custom Textures | Star Stucco"
-        description="Custom stucco finishes in Austin — smooth, sand, dash & designer textures. Expert color matching & finish coats. Free estimates, licensed & insured."
+        title="Interior Plaster & Stucco Finishing Austin, TX | Star Stucco"
+        description="Interior plaster and custom stucco finishes in Austin — smooth, sand, dash & designer textures. Expert color matching & finish coats. Free estimates."
         path="/austin-stucco-finishing"
         schema={[schema, faqPageSchema(faqs)]}
       />

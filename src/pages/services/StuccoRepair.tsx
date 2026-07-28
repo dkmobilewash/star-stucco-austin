@@ -200,8 +200,8 @@ export default function StuccoRepair() {
   return (
     <>
       <SEO
-        title="Stucco Repair Austin, TX | Star Stucco | Free Estimates"
-        description="Expert stucco crack & damage repair in Austin. Texture matching, waterproofing, HOA-approved work. 35+ 5-star reviews. Get your free estimate today."
+        title="Stucco Repair Near Me | Austin, TX Same-Week Service | Star Stucco"
+        description="Local stucco crack, water damage & texture repair near you in Austin. HOA-approved work, 35+ 5-star reviews. Free estimates, same-week scheduling."
         path="/austin-stucco-repair"
         schema={[schema, faqSchema]}
       />
