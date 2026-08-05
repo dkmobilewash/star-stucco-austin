@@ -64,7 +64,7 @@ export default function GeorgetownArea() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white hover:bg-green-700"
             >
               <Phone className="h-5 w-5" />
@@ -169,7 +169,7 @@ export default function GeorgetownArea() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-semibold text-green-700 hover:bg-green-50"
             >
               <Phone className="h-5 w-5" />

@@ -3,12 +3,31 @@ import { CircleCheck as CheckCircle, Shield, Clock, Award, Users, Heart, Chevron
 import SEO from '../components/SEO'
 import { FAQSection, faqPageSchema } from '../components/FAQ'
 import { siteConfig } from '../lib/siteConfig'
-import { blogPosts } from '../data/blogPosts'
 import { reviews, reviewStats } from '../data/reviews'
 
-const latestPosts = [...blogPosts]
-  .sort((a, b) => b.date.localeCompare(a.date))
-  .slice(0, 3)
+const latestPosts = [
+  {
+    slug: 'thin-stone-veneer-guide-austin',
+    title: 'Thin Stone Veneer: A Complete Guide for Austin Homeowners',
+    excerpt: 'Thin stone veneer delivers the look of natural stone at a fraction of the weight and cost. Here is what Austin homeowners need to know about types, applications, and pricing.',
+    date: '2026-06-28',
+    image: '/images/stucco-home-roundrock-hero.webp',
+  },
+  {
+    slug: 'how-long-does-stucco-last',
+    title: 'How Long Does Stucco Last? Lifespan & Durability Guide',
+    excerpt: 'Stucco can last 50 years or more — but lifespan depends on the system, installation quality, maintenance, and climate. Here is what determines how long yours will last.',
+    date: '2026-06-26',
+    image: '/images/stucco-texture-hero.webp',
+  },
+  {
+    slug: 'interior-plaster-vs-drywall-austin',
+    title: 'Interior Plaster vs Drywall: Which Is Right for Your Austin Home?',
+    excerpt: 'Plaster and drywall both have a place in Austin homes. Here is an honest comparison of cost, durability, sound, aesthetics, and when each option makes the most sense.',
+    date: '2026-06-25',
+    image: '/images/stucco-texture-hero.webp',
+  },
+]
 
 function formatDate(dateString: string): string {
   return new Date(dateString + 'T00:00:00').toLocaleDateString('en-US', {
@@ -194,8 +213,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Stucco Contractor Austin, TX | Star Stucco | Free Estimate"
-        description="Austin's top-rated stucco contractor. 35+ 5-star reviews, licensed & insured. Repair, installation & finishing. Call for a free same-week estimate."
+        title="Austin Stucco Contractor | Repair & Installation | Star Stucco"
+        description="Star Stucco installs, repairs, and finishes stucco across Austin, TX. Licensed, insured, 35+ 5-star reviews. Get a free estimate this week."
         path="/"
         schema={[localBusinessSchema, faqPageSchema(homeFaqs)]}
       />
@@ -230,7 +249,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <a
                 href="tel:+15127069699"
-                aria-label="Call Star Stucco of Austin for a free estimate"
+                aria-label="Call for a Free Estimate — Star Stucco of Austin"
                 className="inline-flex items-center justify-center rounded-lg bg-primary-700 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-primary-800 hover:shadow-lg hover:shadow-primary-700/20"
               >
                 <Phone className="mr-2 h-4 w-4" />
@@ -341,7 +360,7 @@ export default function Home() {
               <Link
                 key={service.title}
                 to={service.path}
-                aria-label={`Learn more about ${service.title} services`}
+                aria-label={`${service.title} — learn more about our services`}
                 className="group relative overflow-hidden rounded-2xl bg-white shadow-sm border border-secondary-100 transition-all hover:shadow-xl hover:-translate-y-1"
               >
                 <div className="aspect-[16/10] overflow-hidden">
@@ -581,7 +600,7 @@ export default function Home() {
             </Link>
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-secondary-400"
             >
               <Phone className="mr-2 h-4 w-4" />

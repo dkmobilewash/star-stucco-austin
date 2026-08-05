@@ -1,0 +1,192 @@
+You are auditing a local service business website for technical SEO completeness. This site is built with Claude Code (React + Vite + TypeScript) and hosted on Vercel.
+
+Run every check below against this codebase. For each item, report PASS, FAIL, or PARTIAL with a one-line explanation. Do not fix anything — only diagnose.
+
+At the end, output a prioritized list of only the FAIL and PARTIAL items sorted by ranking impact (highest first).
+
+---
+
+### 1. SERVER-SIDE RENDERING (SSR)
+
+Check if the site pre-renders full HTML for every route so crawlers receive real content, not an empty <div id="root"></div>.
+
+- [ ] A build script (e.g. `scripts/render-pages.mjs` or similar) exists that uses `renderToString` or `renderToPipeableStream` to produce static HTML for each route
+- [ ] The build pipeline runs SSR after `vite build` (check `package.json` `build` and `postbuild` scripts)
+- [ ] Every route gets its own `/dist/{route}/index.html` with the full rendered HTML inside the root element
+- [ ] `hydrateRoot` (not `createRoot`) is used in the client entry file so React attaches to the SSR output without replacing it
+- [ ] No hydration mismatch: client entry wraps `<App />` in the same provider tree as the SSR entry (HelmetProvider, BrowserRouter/StaticRouter, StrictMode)
+- [ ] Suspense boundary wraps lazy-loaded routes so SSR can render fallback content instead of throwing
+
+**How to check:** Read `package.json` scripts, the client entry file (e.g. `src/entry-client.tsx`), the SSR entry file (e.g. `src/entry-server.tsx`), and any render/inject scripts in `scripts/`. Then check a built HTML file in `dist/` for a route — does it contain rendered content or just an empty root div?
+
+---
+
+### 2. PER-PAGE SEO TAGS
+
+Every page must have unique, route-specific meta tags injected into the HTML at build time — not just rendered client-side by JavaScript.
+
+- [ ] Every built HTML file has a unique `<title>` tag (not the same default across all pages)
+- [ ] Every built HTML file has a unique `<meta name="description">` tag
+- [ ] Every indexable page has `<link rel="canonical" href="...">` with the full absolute URL
+- [ ] Only intentionally excluded pages (404, admin, etc.) have `<meta name="robots" content="noindex, nofollow">`
+- [ ] No service area or service-location pages are accidentally noindexed — grep the codebase for any hardcoded exclusion sets (look for patterns like `DISTANT`, `EXCLUDED`, `noindex`, `isDistant`)
+- [ ] Open Graph tags exist on every page: `og:title`, `og:description`, `og:url`, `og:type`, `og:image`, `og:site_name`
+- [ ] Twitter card tags exist: `twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`
+- [ ] An SEO component exists that accepts props for title, description, path, schema, and noindex — and is used on every page
+
+**How to check:** Grep for `noindex` across the entire codebase (including build scripts). Read the SEO component. Spot-check 3-5 built HTML files in `dist/` from different route types (homepage, service page, location page, blog post).
+
+---
+
+### 3. STRUCTURED DATA (JSON-LD)
+
+Search engines use structured data to generate rich results. Local service businesses need specific schema types.
+
+- [ ] Homepage has `LocalBusiness` or `HomeAndConstructionBusiness` (or industry-appropriate type) schema with: name, address, phone, url, geo coordinates, opening hours, service area, aggregate rating
+- [ ] Service pages have `Service` schema with service type, provider, and area served
+- [ ] Service-area/location pages have `Service` schema scoped to that specific area
+- [ ] Blog posts have `Article` or `BlogPosting` schema with headline, datePublished, author, image
+- [ ] FAQ sections use `FAQPage` schema with `Question` and `Answer` entities
+- [ ] `BreadcrumbList` schema exists on interior pages
+- [ ] All schema is rendered as `<script type="application/ld+json">` in the built HTML (not just client-side)
+
+**How to check:** Grep for `application/ld+json` in built HTML files. Read the schema objects passed to the SEO component in page files.
+
+---
+
+### 4. SITEMAP & ROBOTS.TXT
+
+- [ ] `sitemap.xml` exists in `dist/` and is generated during the build (not a static file that goes stale)
+- [ ] Sitemap contains every indexable page URL with the full absolute domain
+- [ ] Sitemap URL count matches the total number of rendered pages (minus any intentionally noindexed pages)
+- [ ] `robots.txt` exists and contains `Sitemap: https://{domain}/sitemap.xml`
+- [ ] `robots.txt` has `Allow: /` for major crawlers (Googlebot, Bingbot, etc.)
+- [ ] No important paths are accidentally blocked in `robots.txt`
+
+**How to check:** Count `<loc>` entries in `dist/sitemap.xml`. Compare to the number of HTML files in `dist/`. Read `robots.txt`.
+
+---
+
+### 5. VERCEL CONFIGURATION
+
+- [ ] `vercel.json` exists with an SPA fallback rewrite: `{ "source": "/(.*)", "destination": "/index.html" }` — this ensures deep-linked routes work
+- [ ] WWW-to-non-WWW (or vice versa) 301 redirect is configured
+- [ ] HTTP-to-HTTPS 301 redirect is configured
+- [ ] Old/renamed URLs have 301 redirects to their new paths (no orphaned URLs)
+- [ ] Static assets have immutable cache headers: `Cache-Control: public, max-age=31536000, immutable` for `/assets/` and hashed files (`.js`, `.css`, `.webp`, `.woff2`)
+- [ ] HTML pages have `Cache-Control: public, max-age=0, must-revalidate` (so updates deploy immediately)
+- [ ] Security headers are set: `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Strict-Transport-Security`, `Permissions-Policy`
+
+**How to check:** Read `vercel.json`. Check for `redirects`, `rewrites`, and `headers` sections.
+
+---
+
+### 6. PERFORMANCE (Core Web Vitals)
+
+These directly affect Google's ranking signal.
+
+- [ ] Hero/above-the-fold image has `<link rel="preload" as="image" fetchpriority="high">` in the HTML template
+- [ ] Google Fonts (or any external fonts) load asynchronously using the `media="print" onload="this.media='all'"` pattern with a `<noscript>` fallback
+- [ ] Font fallback `@font-face` declarations with `size-adjust`, `ascent-override`, `descent-override` exist to prevent CLS during font swap
+- [ ] CSS is NOT loaded asynchronously (render-blocking CSS is better for LCP/CLS than FOUC)
+- [ ] Route-level code splitting with `React.lazy()` — every page component is lazy-loaded, not eagerly bundled
+- [ ] `manualChunks` in Vite config splits vendor libraries (react, react-dom, router) and large data files into separate chunks
+- [ ] Route-specific `<link rel="modulepreload">` tags are injected into each page's HTML so the browser fetches the right JS chunks immediately (eliminates lazy-load waterfall)
+- [ ] Homepage does not import large data files (e.g., all blog posts, all location data) — only the data it actually renders
+- [ ] Images use WebP format and have explicit `width` and `height` attributes to prevent CLS
+- [ ] `<link rel="preconnect">` exists for any third-party origins (Google Fonts, analytics, etc.)
+
+**How to check:** Read `index.html` template for preloads, font loading, and inline styles. Read `vite.config.ts` for `manualChunks`. Read `App.tsx` for `lazy()` imports. Check if any build script injects modulepreload tags. Read the homepage component to see what it imports.
+
+---
+
+### 7. ACCESSIBILITY (WCAG — affects SEO indirectly)
+
+Google factors accessibility signals into rankings.
+
+- [ ] `<html lang="en">` (or appropriate language) is set
+- [ ] Every `aria-label` contains the visible text of the element as a substring (WCAG 2.5.3 "Label in Name")
+- [ ] All images have `alt` attributes
+- [ ] Interactive elements (links, buttons) have accessible names
+- [ ] Heading hierarchy is logical (one `<h1>` per page, followed by `<h2>`, `<h3>`, etc.)
+- [ ] Color contrast meets WCAG AA standards (4.5:1 for normal text, 3:1 for large text)
+- [ ] Skip-to-content link or proper landmark regions exist
+
+**How to check:** Grep for `aria-label` patterns and verify they include visible text. Check `<html>` tag for `lang`. Spot-check heading structure in 2-3 page components.
+
+---
+
+### 8. INTERNAL LINKING & CONTENT STRUCTURE
+
+- [ ] Homepage links to all primary service pages
+- [ ] Homepage links to service-area hub page
+- [ ] Service pages link to relevant location sub-pages
+- [ ] Location pages link back to their parent service page and to other nearby locations
+- [ ] Blog posts have internal links to relevant service pages
+- [ ] A consistent nav/footer appears on all pages with links to key service pages and contact
+- [ ] `tel:` links use the correct format: `href="tel:+1XXXXXXXXXX"` (E.164 format, no spaces or dashes)
+- [ ] All internal links use relative paths or correct absolute URLs (no broken links)
+- [ ] Breadcrumb navigation exists on interior pages (both visible and as structured data)
+
+**How to check:** Read the Header/Nav and Footer components. Check the homepage for service and area links. Spot-check a service-location page for cross-links.
+
+---
+
+### 9. LOCAL SEO SPECIFICS
+
+- [ ] NAP (Name, Address, Phone) is consistent across every page where it appears (footer, contact page, schema)
+- [ ] Phone number in schema matches the displayed phone number
+- [ ] Address in schema matches the displayed address
+- [ ] `siteConfig` (or equivalent central config) exists as a single source of truth for business info: name, phone, address, URL, service areas, hours
+- [ ] Service area pages exist for every county/city the business serves
+- [ ] Each service area page has unique content — not just the city name swapped into a template with identical text
+- [ ] Service-location pages exist for each service type in each service area (service x location matrix)
+
+**How to check:** Read the site config file. Compare NAP in the config vs footer component vs contact page vs schema objects.
+
+---
+
+### 10. FAVICON & WEB MANIFEST
+
+- [ ] `favicon.ico` exists
+- [ ] `favicon-32x32.png` and `favicon-16x16.png` exist
+- [ ] `apple-touch-icon.png` (180x180) exists
+- [ ] `site.webmanifest` exists with `name`, `short_name`, `icons` (192x192 and 512x512), `theme_color`, `background_color`
+- [ ] `<meta name="theme-color">` is set in the HTML template
+- [ ] All favicon/manifest references exist in the `<head>` of the HTML template
+
+**How to check:** List files in `public/` directory. Read `index.html` head for icon link tags. Read `site.webmanifest`.
+
+---
+
+### 11. 404 HANDLING
+
+- [ ] A custom 404/NotFound page exists and is rendered by the catch-all route
+- [ ] The 404 page has `<meta name="robots" content="noindex, nofollow">`
+- [ ] The 404 page has a link back to the homepage
+- [ ] The Vercel SPA rewrite ensures the 404 page renders for unknown routes (not a blank page or Vercel's default 404)
+
+**How to check:** Read the NotFound page component. Check the router for a catch-all `*` route. Verify `vercel.json` has the SPA rewrite.
+
+---
+
+## OUTPUT FORMAT
+
+After running all checks, output:
+
+### Diagnostic Results
+
+| # | Check | Status | Notes |
+|---|-------|--------|-------|
+| 1.1 | SSR build script exists | PASS/FAIL/PARTIAL | ... |
+| ... | ... | ... | ... |
+
+### Priority Fix List (FAIL and PARTIAL only)
+
+Sorted by SEO ranking impact, highest first:
+
+1. **[FAIL] Check X.X — description** — Why it matters: ...
+2. **[PARTIAL] Check X.X — description** — Why it matters: ...
+3. ...
+
+Do NOT suggest fixes. Only diagnose. The user will decide what to fix.

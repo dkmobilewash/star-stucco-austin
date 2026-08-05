@@ -150,13 +150,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a href={`${siteConfig.phoneHref}`} aria-label={`Call Star Stucco at ${siteConfig.phone}`} className="flex items-center gap-3 text-sm hover:text-white transition-colors">
+                <a href={`${siteConfig.phoneHref}`} aria-label={`${siteConfig.phone} — call Star Stucco`} className="flex items-center gap-3 text-sm hover:text-white transition-colors">
                   <Phone className="h-4 w-4 text-primary-500 shrink-0" />
                   {siteConfig.phone}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${siteConfig.email}`} aria-label={`Email Star Stucco at ${siteConfig.email}`} className="flex items-center gap-3 text-sm hover:text-white transition-colors">
+                <a href={`mailto:${siteConfig.email}`} aria-label={`${siteConfig.email} — email Star Stucco`} className="flex items-center gap-3 text-sm hover:text-white transition-colors">
                   <Mail className="h-4 w-4 text-primary-500 shrink-0" />
                   {siteConfig.email}
                 </a>
@@ -166,7 +166,7 @@ export default function Footer() {
                   href="https://www.google.com/maps/search/?api=1&query=Star+Stucco+of+Austin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="View Star Stucco of Austin on Google Maps"
+                  aria-label={`${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.state} ${siteConfig.address.zip} — view on Google Maps`}
                   className="flex items-start gap-3 text-sm hover:text-white transition-colors"
                 >
                   <MapPin className="h-4 w-4 text-primary-500 shrink-0 mt-0.5" />

@@ -66,7 +66,7 @@ export default function StuccoInstallation() {
   return (
     <>
       <SEO
-        title="Stucco Installation Austin, TX | New Builds | Star Stucco"
+        title="Stucco Installation Austin, TX | New Builds & Re-Stucco | Star Stucco"
         description="Professional stucco installation for new builds & renovations in Austin. 3-coat & synthetic systems. Licensed contractor, free estimates, 5-star rated."
         path="/austin-stucco-installation"
         schema={[schema, faqPageSchema(faqs)]}
@@ -107,7 +107,7 @@ export default function StuccoInstallation() {
             </Link>
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-secondary-400 hover:bg-secondary-800"
             >
               <Phone className="mr-2 h-4 w-4" />
@@ -279,7 +279,7 @@ export default function StuccoInstallation() {
             </Link>
             <a
               href={`${siteConfig.phoneHref}`}
-              aria-label={`Call Star Stucco at ${siteConfig.phone}`}
+              aria-label={`Call ${siteConfig.phone} — Star Stucco`}
               className="inline-flex items-center justify-center rounded-lg border border-secondary-600 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-secondary-400"
             >
               <Phone className="mr-2 h-4 w-4" />

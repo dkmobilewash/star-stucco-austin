@@ -1,0 +1,72 @@
+I need a full Google Search Console audit for stuccoaustin.com. Analyze everything visible on this page and any data I share from GSC. Here's what I need you to cover:
+
+## Performance Analysis
+
+- Which queries are driving the most impressions and clicks?
+
+- What's the average CTR across our top queries? Which ones have high impressions but low CTR (meaning we're showing up but not getting clicked)?
+
+- What's our average position for our target keywords: "stucco contractor austin", "stucco repair austin", "stucco installation austin", "eifs contractor austin", "commercial stucco austin", "stucco remediation austin", "thin stone veneer austin", "interior plaster austin"?
+
+- Which pages are getting the most traffic? Are they the right pages?
+
+## Click-Through Rate Optimization
+
+- For queries where we rank positions 3-10 with CTR below 3%, suggest specific title tag and meta description rewrites that would improve CTR. Give me the exact text, not vague suggestions.
+
+## Indexing & Coverage
+
+- How many pages are indexed vs submitted in the sitemap (should be 154)?
+
+- Are there any pages showing errors, warnings, or "excluded" status?
+
+- Are any of the old redirected URLs still showing as indexed:
+  - /eifs-contractor-san-antonio
+  - /blog/eifs-repair-san-antonio
+  - /travis-county
+  - /williamson-county
+  - /bell-county
+  - /hays-county
+  - /burnet-county
+  - /llano-county
+  - /comal-county
+  - /bastrop-county
+  - /blanco-county
+  - /gillespie-county
+  - /caldwell-county
+  - /lee-county
+  - /milam-county
+  - /brazos-county
+  - /mclennan-county
+
+- Are the 301 redirects being recognized properly?
+
+- Were the 56 previously-noindexed county pages (Brazos, McLennan, Milam, Lee, Caldwell, Gillespie, Llano, Guadalupe — each with 7 pages: 1 county page + 6 service-location pages) picked up after the noindex removal? Check their indexing status specifically.
+
+## Page Experience & Core Web Vitals
+
+- What are the Core Web Vitals scores (LCP, FID/INP, CLS)?
+
+- Are there any mobile usability issues?
+
+- Is HTTPS serving properly on all pages?
+
+## What's Working
+
+- Identify the top 5 things driving our recent traffic increase so we can double down on them
+
+- Which queries have improved the most in position over the last 28 days?
+
+## What Needs Improvement
+
+- List every specific issue found, ranked by impact on rankings
+
+- For each issue, give me the exact fix — not "improve your content" but the specific change to make
+
+## Action Plan
+
+- Give me a prioritized checklist of changes to make, ordered by expected ranking impact
+
+- Separate into: quick wins (can do today), medium-term (this week), and longer-term (this month)
+
+Be specific and data-driven. No generic SEO advice. Every recommendation should reference actual data from the GSC dashboard.
