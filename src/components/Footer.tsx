@@ -75,6 +75,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/austin-stucco-remediation" className="text-sm hover:text-white transition-colors">
+                  Stucco Remediation
+                </Link>
+              </li>
+              <li>
                 <Link to="/austin-stucco-finishing" className="text-sm hover:text-white transition-colors">
                   Interior Plaster
                 </Link>
@@ -82,6 +87,11 @@ export default function Footer() {
               <li>
                 <Link to="/austin-thin-stone-veneer" className="text-sm hover:text-white transition-colors">
                   Thin Stone Veneer
+                </Link>
+              </li>
+              <li>
+                <Link to="/austin-stucco-services" className="text-sm hover:text-white transition-colors">
+                  All Stucco Services
                 </Link>
               </li>
               <li>
@@ -138,6 +148,25 @@ export default function Footer() {
                 <li key={county.slug}>
                   <Link to={`/service-areas/${county.slug}`} className="text-sm hover:text-white transition-colors">
                     {county.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h3 className="mt-6 mb-3 text-sm font-semibold uppercase tracking-wider text-white">
+              Cities We Serve
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { name: 'Austin', slug: 'austin' },
+                { name: 'Round Rock', slug: 'round-rock' },
+                { name: 'Cedar Park', slug: 'cedar-park' },
+                { name: 'Georgetown', slug: 'georgetown' },
+                { name: 'Pflugerville', slug: 'pflugerville' },
+                { name: 'Westlake', slug: 'westlake' },
+              ].map((city) => (
+                <li key={city.slug}>
+                  <Link to={`/service-area/${city.slug}`} className="text-sm hover:text-white transition-colors">
+                    {city.name}
                   </Link>
                 </li>
               ))}
