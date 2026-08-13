@@ -113,6 +113,51 @@ export default function ServiceAreas() {
         </div>
       </section>
 
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
+              Stucco Services by City
+            </h2>
+            <p className="text-secondary-600 text-lg">
+              We serve homeowners and businesses across the Austin metro area. Click your city below
+              for local stucco services and a free estimate.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: 'Austin', slug: 'austin', desc: 'Stucco installation, repair, and finishing across all Austin neighborhoods.' },
+              { name: 'Round Rock', slug: 'round-rock', desc: 'Serving Brushy Creek, Teravista, and all Williamson County communities.' },
+              { name: 'Cedar Park', slug: 'cedar-park', desc: 'Expert stucco services for Cedar Park homes and commercial properties.' },
+              { name: 'Georgetown', slug: 'georgetown', desc: 'Serving historic downtown, Sun City, and all Georgetown communities.' },
+              { name: 'Pflugerville', slug: 'pflugerville', desc: 'Stucco services for Blackhawk, Falcon Pointe, and surrounding areas.' },
+              { name: 'Westlake', slug: 'westlake', desc: 'Premium stucco services for Westlake Hills luxury homes and estates.' },
+            ].map((city) => (
+              <Link
+                key={city.slug}
+                to={`/service-area/${city.slug}`}
+                className="group rounded-xl bg-secondary-50 p-6 border border-secondary-100 transition-all hover:shadow-lg hover:-translate-y-1"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-100 group-hover:bg-primary-200 transition-colors">
+                    <MapPin className="h-4 w-4 text-primary-700" />
+                  </div>
+                  <h3 className="font-semibold text-secondary-900 group-hover:text-primary-700 transition-colors">
+                    {city.name}
+                  </h3>
+                </div>
+                <p className="text-sm text-secondary-600 leading-relaxed mb-3">
+                  {city.desc}
+                </p>
+                <span className="inline-flex items-center text-sm font-medium text-primary-700">
+                  View Services <ChevronRight className="ml-1 h-4 w-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 lg:py-28 bg-secondary-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
@@ -153,6 +198,7 @@ export default function ServiceAreas() {
               { label: 'Commercial Stucco', path: '/austin-commercial-stucco', desc: 'Large-scale stucco for retail, office, multi-family, and institutional buildings.' },
               { label: 'Interior Plaster', path: '/austin-stucco-finishing', desc: 'Custom plaster finishes, Venetian plaster, and decorative interior wall treatments.' },
               { label: 'Stucco Remediation', path: '/austin-stucco-remediation', desc: 'Full remediation for systemic stucco failures, moisture intrusion, and structural issues.' },
+              { label: 'Thin Stone Veneer', path: '/austin-thin-stone-veneer', desc: 'Natural and manufactured stone veneer for fireplaces, accent walls, facades, and outdoor kitchens.' },
             ].map((l) => (
               <Link
                 key={l.path}

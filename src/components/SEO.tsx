@@ -13,9 +13,42 @@ interface SEOProps {
 
 const DEFAULT_OG_IMAGE = `${siteConfig.url}/images/hero-stucco-austin.webp`
 
+function buildBreadcrumbSchema(path: string, title: string) {
+  if (path === '/') return null
+  const name = title.split(' | ')[0]!.trim()
+  const items: { name: string; item: string }[] = [
+    { name: 'Home', item: siteConfig.url + '/' },
+  ]
+  if (path.startsWith('/blog/')) {
+    items.push({ name: 'Blog', item: siteConfig.url + '/blog' })
+    items.push({ name, item: siteConfig.url + path })
+  } else if (path.startsWith('/service-areas/') || path.startsWith('/service-area/')) {
+    items.push({ name: 'Service Areas', item: siteConfig.url + '/service-areas' })
+    items.push({ name, item: siteConfig.url + path })
+  } else if (/^\/(residential-stucco|commercial-stucco|stucco-repair|eifs-contractor|interior-plaster|thin-stone-veneer)\//.test(path)) {
+    items.push({ name: 'Services', item: siteConfig.url + '/austin-stucco-services' })
+    items.push({ name, item: siteConfig.url + path })
+  } else {
+    items.push({ name, item: siteConfig.url + path })
+  }
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((entry, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: entry.name,
+      item: entry.item,
+    })),
+  }
+}
+
 export default function SEO({ title, description, path, schema, ogType, noindex, ogImage }: SEOProps) {
   const url = `${siteConfig.url}${path}`
-  const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : []
+  const breadcrumb = buildBreadcrumbSchema(path, title)
+  const userSchemas = schema ? (Array.isArray(schema) ? schema : [schema]) : []
+  const hasBreadcrumb = userSchemas.some((s: any) => s?.['@type'] === 'BreadcrumbList')
+  const schemas = breadcrumb && !hasBreadcrumb ? [...userSchemas, breadcrumb] : userSchemas
   const image = ogImage ?? DEFAULT_OG_IMAGE
 
   return (
