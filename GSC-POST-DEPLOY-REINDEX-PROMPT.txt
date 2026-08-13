@@ -1,0 +1,177 @@
+You are helping me complete post-deployment SEO tasks in Google Search Console (GSC) for the website stuccoaustin.com (Star Stucco of Austin). I just deployed a major update that includes new structured data (BreadcrumbList JSON-LD on all pages, FAQPage schema on blog posts), 10 new blog posts, improved internal linking, fixed meta tags, and removed noindex from 56 county pages. Google needs to be told about these changes so it can re-crawl and re-index the site.
+
+Complete every task below in order. Do not skip any step. After each task, confirm what you did before moving to the next one.
+
+========================================
+TASK 1: RESUBMIT THE SITEMAP
+========================================
+
+1. Navigate to Google Search Console: https://search.google.com/search-console
+2. Make sure the property "stuccoaustin.com" (or "https://stuccoaustin.com") is selected in the property dropdown at the top left.
+3. In the left sidebar, click "Sitemaps" (under the "Indexing" section).
+4. In the "Add a new sitemap" field, type: sitemap.xml
+5. Click "Submit".
+6. Confirm the sitemap status shows "Success" or "Submitted". The sitemap contains 164 URLs.
+7. If a previous sitemap.xml entry already exists and shows "Success", that is fine — resubmitting it tells Google to re-fetch it with the updated content.
+
+========================================
+TASK 2: REQUEST INDEXING — HIGH-PRIORITY CHANGED PAGES
+========================================
+
+For each URL below, do the following:
+  a. Click the URL Inspection search bar at the top of the GSC page.
+  b. Paste the full URL into the search bar and press Enter.
+  c. Wait for the inspection result to load.
+  d. Click "REQUEST INDEXING" button.
+  e. Wait for the confirmation message ("Indexing requested" or similar).
+  f. Move to the next URL.
+
+NOTE: Google rate-limits indexing requests. If you get a message saying "Quota exceeded" or "Try again later", stop and note which URLs still need to be submitted. I will come back and submit them later.
+
+HIGH-PRIORITY PAGES (submit these first — they had the most significant changes):
+
+1.  https://stuccoaustin.com/
+2.  https://stuccoaustin.com/service-areas
+3.  https://stuccoaustin.com/austin-stucco-services
+4.  https://stuccoaustin.com/austin-stucco-repair
+5.  https://stuccoaustin.com/austin-stucco-installation
+6.  https://stuccoaustin.com/austin-commercial-stucco
+7.  https://stuccoaustin.com/austin-stucco-remediation
+8.  https://stuccoaustin.com/austin-stucco-finishing
+9.  https://stuccoaustin.com/eifs-contractor-austin
+10. https://stuccoaustin.com/austin-thin-stone-veneer
+11. https://stuccoaustin.com/about
+12. https://stuccoaustin.com/contact
+13. https://stuccoaustin.com/reviews
+14. https://stuccoaustin.com/faqs
+15. https://stuccoaustin.com/blog
+16. https://stuccoaustin.com/gallery
+
+CITY SERVICE-AREA PAGES (these were previously not indexed — now have footer links):
+
+17. https://stuccoaustin.com/service-area/austin
+18. https://stuccoaustin.com/service-area/round-rock
+19. https://stuccoaustin.com/service-area/cedar-park
+20. https://stuccoaustin.com/service-area/georgetown
+21. https://stuccoaustin.com/service-area/pflugerville
+22. https://stuccoaustin.com/service-area/westlake
+
+10 NEW BLOG POSTS (brand new pages, never crawled before):
+
+23. https://stuccoaustin.com/blog/how-long-does-stucco-last-in-texas
+24. https://stuccoaustin.com/blog/stucco-vs-hardie-board-austin
+25. https://stuccoaustin.com/blog/can-you-paint-over-stucco
+26. https://stuccoaustin.com/blog/stucco-crack-repair-diy-vs-professional
+27. https://stuccoaustin.com/blog/best-stucco-colors-for-texas-homes
+28. https://stuccoaustin.com/blog/how-to-clean-stucco-exterior
+29. https://stuccoaustin.com/blog/stucco-water-damage-signs-and-repair
+30. https://stuccoaustin.com/blog/eifs-vs-traditional-stucco
+31. https://stuccoaustin.com/blog/stucco-installation-timeline-what-to-expect
+32. https://stuccoaustin.com/blog/venetian-plaster-vs-regular-plaster
+
+PREVIOUSLY ERRORED PAGES (audit showed redirect errors — now fixed):
+
+33. https://stuccoaustin.com/blog/stucco-repair-cost-austin
+34. https://stuccoaustin.com/request-commercial-quote
+
+========================================
+TASK 3: CHECK THE PAGES INDEXING REPORT
+========================================
+
+1. In the left sidebar, click "Pages" (under the "Indexing" section).
+2. Look at the summary chart and note:
+   - How many pages are "Not indexed" vs "Indexed"
+   - Report these numbers to me
+3. Scroll down to the "Why pages aren't indexed" table.
+4. For each reason listed, note the reason and the page count. I need to know:
+   - "Excluded by 'noindex' tag" — this should be going DOWN since we removed noindex from 56 pages. Report the current count.
+   - "Page with redirect" — report the count and click into it to see which specific URLs are affected.
+   - "Crawled - currently not indexed" — report the count.
+   - "Discovered - currently not indexed" — report the count.
+   - "Duplicate without user-selected canonical" — report the count and click into it to see which URLs.
+   - "Alternate page with proper canonical tag" — report the count.
+   - Any other reason listed — report it with the count.
+5. Report ALL of this information back to me in a clear summary.
+
+========================================
+TASK 4: CHECK STRUCTURED DATA ENHANCEMENTS
+========================================
+
+1. In the left sidebar, look for the "Enhancements" section (sometimes called "Experience" in newer GSC layouts).
+2. Check for these specific enhancement types:
+
+   a. BREADCRUMBS:
+      - Click "Breadcrumbs" if it appears.
+      - Note how many valid items vs errors vs warnings.
+      - If it shows 0 valid items or does not appear at all, that is expected — Google has not re-crawled yet. Note this.
+      - If there are errors, click into them and report which URLs have breadcrumb errors.
+
+   b. FAQ:
+      - Click "FAQ" if it appears (may be listed as "FAQs" or "FAQ page").
+      - Note how many valid items vs errors.
+      - If it does not appear, note this.
+
+   c. LOCAL BUSINESS:
+      - Click "Unparsable structured data" or "Local business" if either appears.
+      - Report any errors.
+
+3. If the "Enhancements" section does not show Breadcrumbs or FAQ at all, that simply means Google hasn't re-crawled enough pages to detect the new structured data yet. This is normal and expected. Report that it is not yet showing.
+
+========================================
+TASK 5: CHECK CORE WEB VITALS
+========================================
+
+1. In the left sidebar, click "Core Web Vitals" (under "Experience").
+2. Check MOBILE report:
+   - Note how many URLs are Good / Needs Improvement / Poor.
+   - If there are "Poor" URLs, click into the issue to see which metric is failing (LCP, CLS, INP) and report it.
+3. Check DESKTOP report:
+   - Same as above — note Good / Needs Improvement / Poor counts.
+4. Report all numbers to me.
+
+========================================
+TASK 6: CHECK FOR MANUAL ACTIONS AND SECURITY ISSUES
+========================================
+
+1. In the left sidebar, click "Manual actions" (under "Security & Manual Actions").
+   - Confirm it says "No issues detected" or report any issues found.
+2. Click "Security issues" in the same section.
+   - Confirm it says "No issues detected" or report any issues found.
+
+========================================
+TASK 7: VALIDATE URL CANONICALIZATION (SPOT CHECK)
+========================================
+
+Using the URL Inspection tool (top search bar), inspect these 5 URLs one at a time. For EACH URL, after the inspection loads, I need you to report:
+  - "URL is on Google" or "URL is not on Google"
+  - "Google-selected canonical" — what URL does Google consider the canonical? It should match exactly (https, no www).
+  - "User-declared canonical" — what canonical tag did Google find?
+  - "Last crawl date" — when did Google last crawl this page?
+  - "Crawl status" — was crawling allowed?
+
+Check these 5 URLs:
+
+1. https://stuccoaustin.com/
+2. https://stuccoaustin.com/austin-stucco-repair
+3. https://stuccoaustin.com/service-areas
+4. https://stuccoaustin.com/service-area/austin
+5. https://stuccoaustin.com/blog/how-long-does-stucco-last-in-texas
+
+For each one, if the Google-selected canonical does NOT match the URL you inspected (for example, if Google selected http:// instead of https://, or www. instead of non-www), flag this as a canonicalization problem and report it clearly.
+
+========================================
+TASK 8: FINAL SUMMARY REPORT
+========================================
+
+After completing all tasks above, provide me a summary report with:
+
+1. SITEMAP STATUS: Was the sitemap successfully submitted/resubmitted?
+2. INDEXING REQUESTS: How many of the 34 URLs were successfully submitted for indexing? List any that failed or hit quota limits.
+3. PAGES REPORT: Total indexed vs not indexed. Top reasons for non-indexing with counts.
+4. STRUCTURED DATA: Are Breadcrumbs and FAQ enhancements showing in GSC? Any errors?
+5. CORE WEB VITALS: Mobile and desktop status — Good/Needs Improvement/Poor counts.
+6. MANUAL ACTIONS: Any issues?
+7. CANONICALIZATION: Did all 5 spot-checked URLs have matching Google-selected and user-declared canonicals? Any http/https or www/non-www mismatches?
+8. ACTION ITEMS: Based on everything you found, list any issues that need my attention, in priority order.
+
+Format this summary clearly with headers and bullet points so I can reference it later.
