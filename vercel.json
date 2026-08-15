@@ -13,6 +13,12 @@
       "destination": "https://stuccoaustin.com/:path*",
       "permanent": true
     },
+    { "source": "/residential-stucco/travis-county", "destination": "/austin-stucco-installation", "permanent": true },
+    { "source": "/commercial-stucco/travis-county", "destination": "/austin-commercial-stucco", "permanent": true },
+    { "source": "/stucco-repair/travis-county", "destination": "/austin-stucco-repair", "permanent": true },
+    { "source": "/eifs-contractor/travis-county", "destination": "/eifs-contractor-austin", "permanent": true },
+    { "source": "/interior-plaster/travis-county", "destination": "/austin-stucco-finishing", "permanent": true },
+    { "source": "/thin-stone-veneer/travis-county", "destination": "/austin-thin-stone-veneer", "permanent": true },
     { "source": "/eifs-contractor-san-antonio", "destination": "/eifs-contractor-austin", "permanent": true },
     { "source": "/blog/eifs-repair-san-antonio", "destination": "/blog/eifs-repair-austin", "permanent": true },
     { "source": "/travis-county", "destination": "/service-areas/travis-county-stucco", "permanent": true },
