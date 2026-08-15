@@ -45,6 +45,7 @@ export default function CountyPage() {
     ],
   }
 
+  const DISTANT_AREAS = new Set(['bell-county-stucco', 'lee-county-stucco', 'milam-county-stucco', 'brazos-county-stucco', 'mclennan-county-stucco'])
   const faqSchema = faqPageSchema(data.faqs)
 
   return (
@@ -54,6 +55,7 @@ export default function CountyPage() {
         description={data.metaDescription}
         path={`/service-areas/${data.slug}`}
         schema={[serviceSchema, faqSchema]}
+        noindex={DISTANT_AREAS.has(data.slug)}
       />
 
       {/* Hero */}

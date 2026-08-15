@@ -76,6 +76,12 @@ export default function AppSSR() {
         <Route path="/milam-county" element={<Navigate to="/service-areas/milam-county-stucco" replace />} />
         <Route path="/brazos-county" element={<Navigate to="/service-areas/brazos-county-stucco" replace />} />
         <Route path="/mclennan-county" element={<Navigate to="/service-areas/mclennan-county-stucco" replace />} />
+        <Route path="/residential-stucco/travis-county" element={<Navigate to="/austin-stucco-installation" replace />} />
+        <Route path="/commercial-stucco/travis-county" element={<Navigate to="/austin-commercial-stucco" replace />} />
+        <Route path="/stucco-repair/travis-county" element={<Navigate to="/austin-stucco-repair" replace />} />
+        <Route path="/eifs-contractor/travis-county" element={<Navigate to="/eifs-contractor-austin" replace />} />
+        <Route path="/interior-plaster/travis-county" element={<Navigate to="/austin-stucco-finishing" replace />} />
+        <Route path="/thin-stone-veneer/travis-county" element={<Navigate to="/austin-thin-stone-veneer" replace />} />
         <Route path="/residential-stucco/:countySlug" element={<ResidentialStuccoLocation />} />
         <Route path="/commercial-stucco/:countySlug" element={<CommercialStuccoLocation />} />
         <Route path="/stucco-repair/:countySlug" element={<StuccoRepairLocation />} />

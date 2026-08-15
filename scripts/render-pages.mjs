@@ -94,6 +94,19 @@ const staticRoutes = [
   { path: '/service-area/westlake' },
 ]
 
+const DISTANT_COUNTIES = new Set([
+  'bell-county', 'lee-county', 'milam-county', 'brazos-county', 'mclennan-county',
+])
+
+const TRAVIS_REDIRECTS = {
+  'residential-stucco': '/austin-stucco-installation',
+  'commercial-stucco': '/austin-commercial-stucco',
+  'stucco-repair': '/austin-stucco-repair',
+  'eifs-contractor': '/eifs-contractor-austin',
+  'interior-plaster': '/austin-stucco-finishing',
+  'thin-stone-veneer': '/austin-thin-stone-veneer',
+}
+
 function getDynamicRoutes(data) {
   const routes = []
 
@@ -105,6 +118,7 @@ function getDynamicRoutes(data) {
     const countyBase = county.slug.replace('-stucco', '')
     routes.push({
       path: `/service-areas/${county.slug}`,
+      noindex: DISTANT_COUNTIES.has(countyBase),
     })
   }
 
@@ -119,8 +133,10 @@ function getDynamicRoutes(data) {
 
   for (const svc of serviceLocationSets) {
     for (const loc of svc.data) {
+      if (loc.countySlug === 'travis-county') continue
       routes.push({
         path: `/${svc.slug}/${loc.countySlug}`,
+        noindex: DISTANT_COUNTIES.has(loc.countySlug),
       })
     }
   }

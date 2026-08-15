@@ -66,7 +66,9 @@ export default function ServiceLocationTemplate({
     ],
   }
 
-  const otherCounties = countyDefinitions.filter((c) => c.slug !== countySlug)
+  const DISTANT = new Set(['bell-county', 'lee-county', 'milam-county', 'brazos-county', 'mclennan-county'])
+  const isDistant = DISTANT.has(countySlug!)
+  const otherCounties = countyDefinitions.filter((c) => c.slug !== countySlug && c.slug !== 'travis-county')
   const otherServices = serviceDefinitions.filter((s) => s.slug !== serviceSlug)
   const serviceParentPath = serviceDefinitions.find((s) => s.slug === serviceSlug)?.path ?? '/'
   const countyAreaSlug = countyDefinitions.find((c) => c.slug === countySlug)?.areaSlug ?? ''
@@ -78,6 +80,7 @@ export default function ServiceLocationTemplate({
         description={data.metaDescription}
         path={`/${serviceSlug}/${countySlug}`}
         schema={[serviceSchema, breadcrumbSchema, faqPageSchema(data.faqs)]}
+        noindex={isDistant}
       />
 
       {/* Hero */}
