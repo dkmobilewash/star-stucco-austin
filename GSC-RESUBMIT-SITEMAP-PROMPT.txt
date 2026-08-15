@@ -1,0 +1,112 @@
+You are helping me resubmit my sitemap and request indexing for key pages in Google Search Console for stuccoaustin.com. The site was just redeployed with major structural changes: 41 low-quality pages were removed from the sitemap, 6 pages now 301 redirect to their canonical versions, and the footer was restructured. Google needs to re-crawl the updated sitemap and re-index the most important pages.
+
+The GSC property for stuccoaustin.com is already set up. Go directly to Google Search Console and complete these tasks.
+
+========================================
+TASK 1: RESUBMIT THE SITEMAP
+========================================
+
+1. Go to https://search.google.com/search-console
+2. Make sure "stuccoaustin.com" is selected as the property.
+3. Click "Sitemaps" in the left sidebar (under Indexing).
+4. In the "Add a new sitemap" field, enter: sitemap.xml
+5. Click Submit.
+6. The sitemap now contains 123 URLs (down from 164). Confirm it shows "Success" or "Submitted."
+7. If a previous sitemap.xml entry exists, that's fine — resubmitting tells Google to re-fetch the updated version.
+
+Sitemap URL: https://stuccoaustin.com/sitemap.xml
+
+========================================
+TASK 2: REQUEST INDEXING — MONEY PAGES
+========================================
+
+These are the highest-priority pages. For each URL:
+  a. Click the URL Inspection bar at the top of GSC.
+  b. Paste the URL and press Enter.
+  c. Wait for the result to load.
+  d. Click "REQUEST INDEXING."
+  e. Wait for confirmation, then move to the next URL.
+
+If you hit a quota limit ("Quota exceeded" / "Try again later"), stop and tell me which URLs still need to be submitted.
+
+Submit these in this exact order:
+
+1.  https://stuccoaustin.com/
+2.  https://stuccoaustin.com/austin-stucco-repair
+3.  https://stuccoaustin.com/austin-stucco-installation
+4.  https://stuccoaustin.com/austin-commercial-stucco
+5.  https://stuccoaustin.com/eifs-contractor-austin
+6.  https://stuccoaustin.com/austin-stucco-finishing
+7.  https://stuccoaustin.com/austin-thin-stone-veneer
+8.  https://stuccoaustin.com/austin-stucco-remediation
+9.  https://stuccoaustin.com/austin-stucco-services
+10. https://stuccoaustin.com/service-areas
+
+========================================
+TASK 3: REQUEST INDEXING — CITY PAGES
+========================================
+
+These city pages now have sitewide footer links and were previously not indexed:
+
+11. https://stuccoaustin.com/service-area/austin
+12. https://stuccoaustin.com/service-area/round-rock
+13. https://stuccoaustin.com/service-area/cedar-park
+14. https://stuccoaustin.com/service-area/georgetown
+15. https://stuccoaustin.com/service-area/pflugerville
+16. https://stuccoaustin.com/service-area/westlake
+
+========================================
+TASK 4: REQUEST INDEXING — SUPPORTING PAGES
+========================================
+
+17. https://stuccoaustin.com/about
+18. https://stuccoaustin.com/contact
+19. https://stuccoaustin.com/reviews
+20. https://stuccoaustin.com/blog
+21. https://stuccoaustin.com/faqs
+22. https://stuccoaustin.com/gallery
+23. https://stuccoaustin.com/request-commercial-quote
+
+========================================
+TASK 5: REQUEST INDEXING — TOP BLOG POSTS
+========================================
+
+24. https://stuccoaustin.com/blog/how-long-does-stucco-last-in-texas
+25. https://stuccoaustin.com/blog/stucco-vs-hardie-board-austin
+26. https://stuccoaustin.com/blog/can-you-paint-over-stucco
+27. https://stuccoaustin.com/blog/stucco-crack-repair-diy-vs-professional
+28. https://stuccoaustin.com/blog/best-stucco-colors-for-texas-homes
+29. https://stuccoaustin.com/blog/stucco-water-damage-signs-and-repair
+30. https://stuccoaustin.com/blog/eifs-vs-traditional-stucco
+31. https://stuccoaustin.com/blog/stucco-installation-timeline-what-to-expect
+32. https://stuccoaustin.com/blog/venetian-plaster-vs-regular-plaster
+33. https://stuccoaustin.com/blog/how-to-clean-stucco-exterior
+34. https://stuccoaustin.com/blog/stucco-repair-cost-austin
+35. https://stuccoaustin.com/blog/does-homeowners-insurance-cover-stucco-issues
+
+========================================
+TASK 6: VERIFY REDIRECTS ARE WORKING
+========================================
+
+Using URL Inspection, check these 3 URLs to confirm Google sees them as 301 redirects (not indexable pages):
+
+36. https://stuccoaustin.com/stucco-repair/travis-county
+    — Should redirect to https://stuccoaustin.com/austin-stucco-repair
+
+37. https://stuccoaustin.com/residential-stucco/travis-county
+    — Should redirect to https://stuccoaustin.com/austin-stucco-installation
+
+38. https://stuccoaustin.com/eifs-contractor/travis-county
+    — Should redirect to https://stuccoaustin.com/eifs-contractor-austin
+
+For each one, report what GSC shows: does it say "Page with redirect" or "URL is not on Google"? If it still shows as indexed, request indexing so Google picks up the new 301 redirect.
+
+========================================
+TASK 7: SUMMARY
+========================================
+
+After completing all tasks, give me a quick summary:
+1. Was the sitemap successfully resubmitted?
+2. How many of the 35 URLs were successfully submitted for indexing?
+3. Were any quota-limited? If so, list which ones still need to be submitted.
+4. What did the 3 redirect checks show?
