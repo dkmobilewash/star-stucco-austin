@@ -1,0 +1,254 @@
+You are an expert local SEO analyst. I need you to do a deep competitive analysis of my website stuccoaustin.com against the competitors that are outranking it in Google organic search results. My Google Business Profile ranks #1 for these terms, but my website is NOT on the first page of organic results. Competitors with simple single-page websites are outranking me. Something is fundamentally wrong and I need to find out what.
+
+IMPORTANT CONTEXT:
+- My website: https://stuccoaustin.com (Star Stucco of Austin)
+- My GBP ranks #1 in the map pack for target keywords
+- My website does NOT appear on page 1 of organic results
+- I have 164 pages on the site including 96 service-location template pages
+- The site is a React SPA with server-side rendering (SSR)
+- I have BreadcrumbList JSON-LD, FAQPage schema, LocalBusiness schema
+- Competitors with far less SEO work and fewer pages are outranking me organically
+
+Complete every section below. Be brutally honest. I need the truth, not reassurance.
+
+========================================
+SECTION 1: GOOGLE SERP ANALYSIS
+========================================
+
+For EACH of the following search queries, go to Google.com (set location to Austin, TX if possible) and document the full first page of organic results (not ads, not map pack — ORGANIC results only):
+
+QUERY 1: "stucco contractors austin"
+QUERY 2: "austin stucco repair"
+QUERY 3: "stucco contractors austin tx"
+QUERY 4: "stucco repair austin tx"
+QUERY 5: "stucco company austin"
+QUERY 6: "stucco installation austin"
+
+For each query, list:
+- Position 1-10: the exact URL ranking, the page title, and the domain
+- Note whether stuccoaustin.com appears anywhere (page 1, page 2, or not at all)
+- Note whether any of the ranking pages are SINGLE-PAGE websites or simple sites
+- Note whether any are directory listings (Yelp, Angi, HomeAdvisor, Thumbtack, Houzz, etc.)
+
+========================================
+SECTION 2: COMPETITOR WEBSITE ANALYSIS
+========================================
+
+From the SERP results above, identify the top 5 ACTUAL COMPETITOR WEBSITES (not directories like Yelp/Angi/HomeAdvisor — real stucco company websites) that are ranking on page 1.
+
+For EACH competitor website, visit their site and document:
+
+A. DOMAIN INFORMATION:
+   - Full URL of the ranking page
+   - Is it the homepage or an inner page that ranks?
+   - Approximate domain age (check the copyright year in footer, or use any available info)
+   - Is it a dedicated stucco domain, or a general contractor site?
+   - Is it WordPress, Wix, Squarespace, custom, or another platform?
+
+B. CONTENT ANALYSIS:
+   - How many total pages does the site have? (Check sitemap, navigation, footer links)
+   - How much content is on the ranking page? (Short = under 500 words, Medium = 500-1500, Long = 1500+)
+   - Does the ranking page have unique, hand-written content or does it look templated?
+   - Does it mention specific Austin neighborhoods, streets, or landmarks?
+   - Does it have customer testimonials or reviews on the page?
+   - Does it have project photos or a gallery?
+   - What is the page's H1 tag?
+   - Does the page have a clear call-to-action?
+
+C. TECHNICAL SEO:
+   - Does the site use HTTPS?
+   - Does it have structured data / schema markup? (Right-click > View Source, search for "schema.org" or "application/ld+json")
+   - Is it a JavaScript-rendered site (React/Vue/Angular) or server-rendered HTML?
+   - How fast does it load? (subjective — fast, medium, slow)
+   - Is it mobile-responsive?
+
+D. BACKLINK SIGNALS (what you can observe):
+   - Does the site link to or from industry associations (EIMA, AWCI, BBB, Chamber of Commerce)?
+   - Does the footer show any certifications, awards, or memberships?
+   - Does Google show sitelinks for this domain in search results?
+   - Are there Google reviews visible / linked from the site?
+
+========================================
+SECTION 3: DEEP DIVE ON STUCCOAUSTIN.COM
+========================================
+
+Now visit https://stuccoaustin.com and do a thorough analysis:
+
+A. CRAWLABILITY & RENDERING:
+   - Visit https://stuccoaustin.com and right-click > View Page Source
+   - Does the page source show full HTML content, or is it mostly empty JavaScript bundles?
+   - Can you see the H1 tag, meta description, and body content in the raw HTML source?
+   - Check https://stuccoaustin.com/sitemap.xml — does it load? How many URLs?
+   - Check https://stuccoaustin.com/robots.txt — does it exist? Any disallow rules?
+   - Visit 3-4 inner pages and view their source too — is the content in the HTML or only rendered by JavaScript?
+
+B. CONTENT QUALITY ASSESSMENT:
+   - Visit 3-4 of the service-location pages (e.g., /residential-stucco/travis-county, /stucco-repair/williamson-county, /eifs-contractor/hays-county)
+   - Compare them side by side: is the content substantially unique between pages, or is it the same template with the county name swapped in?
+   - Could Google consider these "doorway pages" or "thin content"?
+   - How does the content depth on the main service pages (/austin-stucco-repair, /austin-stucco-installation) compare to the competitor pages that ARE ranking?
+   - Is the content written for humans or does it read like it was written for search engines?
+
+C. INTERNAL LINK STRUCTURE:
+   - From the homepage, how many clicks does it take to reach key service pages?
+   - Are the money pages (stucco repair, stucco installation, EIFS) linked from the main navigation?
+   - Do blog posts link back to service pages with relevant anchor text?
+   - Is there excessive internal linking that might look manipulative?
+
+D. KEYWORD TARGETING:
+   - What is the H1 on the homepage? Does it target the main keyword?
+   - What is the title tag on the stucco repair page? Compare it to the competitors' title tags for the same query.
+   - Are there multiple pages competing for the same keyword? (keyword cannibalization)
+   - For example: does /austin-stucco-repair compete with /stucco-repair/travis-county for "stucco repair austin"?
+
+========================================
+SECTION 4: GOOGLE SEARCH CONSOLE CHECKS
+========================================
+
+Navigate to Google Search Console (https://search.google.com/search-console) for stuccoaustin.com and check:
+
+A. PERFORMANCE REPORT:
+   - Go to Performance > Search Results
+   - Set date range to last 3 months
+   - Check the "Queries" tab:
+     * What are the top 20 queries driving impressions?
+     * What is the average position for "stucco contractors austin"?
+     * What is the average position for "austin stucco repair"?
+     * What is the average position for "stucco contractors austin tx"?
+     * What is the CTR (click-through rate) for each of these queries?
+   - Check the "Pages" tab:
+     * Which pages get the most impressions?
+     * Which pages get the most clicks?
+     * Are the RIGHT pages ranking for the RIGHT queries? (e.g., is /austin-stucco-repair the page showing for "stucco repair austin", or is a different page showing?)
+   - Look for KEYWORD CANNIBALIZATION:
+     * Click on a target query like "stucco repair austin"
+     * Then click the "Pages" tab while that query is filtered
+     * If MULTIPLE pages from your site are showing for the same query, that is cannibalization — Google is confused about which page to rank and may rank neither well
+     * Check this for all 6 target queries listed in Section 1
+
+B. INDEXING STATUS:
+   - Go to Pages (under Indexing)
+   - How many pages are indexed vs not indexed?
+   - Of the not-indexed pages, what are the top reasons?
+   - Are any of the 96 service-location template pages being flagged as "Duplicate without user-selected canonical" or "Crawled - currently not indexed"?
+   - If many template pages are "Crawled - currently not indexed", that means Google crawled them and CHOSE not to index them — this is a strong signal Google considers them low-quality or duplicate
+
+C. URL INSPECTION:
+   - Inspect https://stuccoaustin.com/austin-stucco-repair
+   - Is it indexed? What is the Google-selected canonical?
+   - Under "Page fetch" — was the page successfully rendered?
+   - Check the "More info" section — are there any issues with JavaScript rendering?
+   - Repeat for https://stuccoaustin.com/austin-stucco-installation
+
+========================================
+SECTION 5: SITE SPEED & CORE WEB VITALS COMPARISON
+========================================
+
+1. Go to https://pagespeed.web.dev/
+2. Test https://stuccoaustin.com (mobile)
+3. Note the Performance score, LCP, CLS, INP, FCP, TTFB
+4. Test the #1 ranking competitor's website (mobile)
+5. Note their scores
+6. Compare side by side
+
+Also check:
+- Does stuccoaustin.com have field data (real Chrome user data) in PageSpeed? If there is NO field data, that means not enough real users visit the site — which itself is a ranking signal issue.
+- Do competitors have field data?
+
+========================================
+SECTION 6: BACKLINK COMPARISON
+========================================
+
+I need to understand the backlink gap. Using any information you can find:
+
+1. Search Google for: site:stuccoaustin.com
+   - How many pages does Google report having indexed?
+
+2. Search Google for: "stuccoaustin.com" -site:stuccoaustin.com
+   - This shows external pages mentioning the domain
+   - How many results? What kinds of sites link to or mention it?
+
+3. For each top competitor, do the same:
+   - site:competitordomain.com — how many indexed pages?
+   - "competitordomain.com" -site:competitordomain.com — how many external mentions?
+
+4. Check if stuccoaustin.com is listed on:
+   - Yelp (search "Star Stucco Austin")
+   - BBB (bbb.org search)
+   - Angi / HomeAdvisor
+   - Houzz
+   - Thumbtack
+   - Yellow Pages / YP.com
+   - Austin Chamber of Commerce or local business directories
+
+5. Check if competitors are listed on these same directories
+
+========================================
+SECTION 7: POTENTIAL GOOGLE PENALTIES OR FILTERS
+========================================
+
+Investigate whether stuccoaustin.com might be hitting any Google quality filters:
+
+1. THIN CONTENT / DOORWAY PAGES:
+   - With 96 service-location template pages that have very similar content, Google may be applying a thin content or doorway page filter
+   - Search Google for: site:stuccoaustin.com "stucco repair"
+   - How many results come up? If Google is only showing a few out of many, it may be filtering the rest
+   - Do the same for: site:stuccoaustin.com "stucco installation"
+
+2. OVER-OPTIMIZATION:
+   - Does the site feel over-optimized? Too many exact-match keyword phrases in titles, headers, content?
+   - Compare the "naturalness" of stuccoaustin.com's content vs the competitors that rank
+
+3. JAVASCRIPT RENDERING:
+   - Google sometimes has trouble fully rendering JavaScript sites
+   - In Google Search Console, use URL Inspection on the homepage
+   - Click "View Crawled Page" then "Screenshot" — does Google's rendered version match what you see in the browser?
+   - Is any content missing from Google's rendered version?
+
+4. DOMAIN HISTORY:
+   - Search for stuccoaustin.com on web.archive.org (Wayback Machine)
+   - How old is this domain? When did it first appear?
+   - Was this domain previously used for something else?
+   - Competitors with 5-10+ year old domains have a massive inherent advantage
+
+========================================
+SECTION 8: ROOT CAUSE DIAGNOSIS & ACTION PLAN
+========================================
+
+Based on everything you found above, provide:
+
+1. ROOT CAUSE RANKING (most likely to least likely reason stuccoaustin.com is not ranking):
+   List each potential cause with a confidence level (High/Medium/Low) and the evidence that supports it.
+
+   Consider these common causes:
+   - Weak backlink profile / low domain authority vs competitors
+   - Thin content penalty from 96 template pages diluting site quality
+   - Keyword cannibalization (multiple pages competing for same terms)
+   - Domain age disadvantage
+   - JavaScript rendering issues despite SSR
+   - Over-optimization signals
+   - Crawl budget waste on low-value pages
+   - Missing or weak local citations
+   - Content quality gap vs competitors
+
+2. COMPETITOR ADVANTAGE ANALYSIS:
+   For each top competitor, explain specifically WHY they outrank stuccoaustin.com.
+   What do they have that stuccoaustin.com doesn't?
+
+3. PRIORITY ACTION PLAN:
+   List the top 10 actions in order of expected impact, with:
+   - What to do
+   - Why it will help
+   - Difficulty (Easy/Medium/Hard)
+   - Expected timeline to see results
+   - Whether it's a code change, content change, off-site action, or GSC action
+
+4. PAGES TO CONSIDER REMOVING OR CONSOLIDATING:
+   - Should any of the 96 service-location template pages be removed/noindexed to improve site quality signals?
+   - Are there any pages cannibalizing each other that should be consolidated?
+   - Would the site rank BETTER with fewer, higher-quality pages?
+
+5. THE SINGLE MOST IMPORTANT THING:
+   If I could only do ONE thing to get onto page 1 for "stucco contractors austin", what should it be and why?
+
+Format this entire report with clear headers, bullet points, and specific data. Do not be vague. Use exact URLs, exact numbers, and specific comparisons. I need actionable intelligence, not general SEO advice.
