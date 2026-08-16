@@ -140,7 +140,7 @@ const localBusinessSchema = {
   email: siteConfig.email,
   foundingDate: '2013',
   description:
-    'Star Stucco of Austin is a stucco contractor in Austin, TX providing residential and commercial stucco, stucco repair, EIFS, interior plaster, and thin stone veneer services across Central Texas.',
+    'Star Stucco of Austin — stucco contractors in Austin, TX providing residential and commercial stucco, stucco repair, EIFS, interior plaster, and thin stone veneer services across Central Texas.',
   priceRange: '$$',
   image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
   address: {
@@ -213,8 +213,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Austin Stucco Contractor | Repair & Installation | Star Stucco"
-        description="Star Stucco installs, repairs, and finishes stucco across Austin, TX. Licensed, insured, 35+ 5-star reviews. Get a free estimate this week."
+        title="Stucco Contractors Austin TX | Repair & Installation | Star Stucco"
+        description="Star Stucco of Austin — trusted stucco contractors in Austin, TX. Stucco repair, installation & finishing for homes and businesses. Licensed, insured, 9,000+ projects. Free estimates."
         path="/"
         schema={[localBusinessSchema, faqPageSchema(homeFaqs)]}
       />
@@ -224,7 +224,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <img
             src="/images/hero-stucco-austin.webp"
-            alt="Professional stucco exterior on a Central Texas home"
+            alt="Professional stucco exterior on an Austin, TX home"
             className="h-full w-full object-cover opacity-30"
             width={1200}
             height={504}
@@ -237,14 +237,11 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-wider text-primary-400 mb-4">
               Proud to Be a Trusted Name in Central Texas Stucco
             </p>
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">
-              Residential and Commercial Stucco Contractor
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
+              Stucco Contractors in Austin, TX
             </h1>
-            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-400 mb-4">
-              Austin, TX
-            </h2>
             <p className="text-lg sm:text-xl text-secondary-200 mb-8 leading-relaxed">
-              Your trusted stucco contractor in Austin, TX — expert stucco repair, installation &amp; finishing for homes and businesses across Central Texas since 2013.
+              The stucco company Austin homeowners and businesses trust most — expert stucco repair, installation &amp; finishing across Central Texas since 2013.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <a

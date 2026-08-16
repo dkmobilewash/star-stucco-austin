@@ -28,7 +28,7 @@ const schema = {
     containedInPlace: { '@type': 'AdministrativeArea', name: 'Travis County, TX' },
   },
   description:
-    'Professional stucco repair in Austin, TX. We fix cracks, water damage, holes & texture mismatches. Fast turnaround, free estimates.',
+    'Professional stucco repair Austin TX. We fix cracks, water damage, holes & texture mismatches. Trusted stucco contractors in Austin. Fast turnaround, free estimates.',
   serviceType: 'Stucco Repair',
 }
 
@@ -201,7 +201,7 @@ export default function StuccoRepair() {
     <>
       <SEO
         title="Stucco Repair Near Me | Austin, TX Same-Week Service | Star Stucco"
-        description="Local stucco crack, water damage & texture repair near you in Austin. HOA-approved work, 35+ 5-star reviews. Free estimates, same-week scheduling."
+        description="Expert stucco repair Austin TX — crack repair, water damage & texture matching. HOA-approved, 9,000+ projects completed. Free estimates, same-week scheduling."
         path="/austin-stucco-repair"
         schema={[schema, faqSchema]}
       />

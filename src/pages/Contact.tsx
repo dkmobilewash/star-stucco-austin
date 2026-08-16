@@ -133,7 +133,7 @@ export default function Contact() {
               Contact Us
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6">
-              Get Your Free Stucco Estimate
+              Get Your Free Stucco Estimate in Austin, TX
             </h1>
             <p className="text-lg text-secondary-300 leading-relaxed">
               Ready to start your stucco project? Reach out today for a free,

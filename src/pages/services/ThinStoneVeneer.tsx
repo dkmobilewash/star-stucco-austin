@@ -315,7 +315,7 @@ export default function ThinStoneVeneer() {
             <div>
               <img
                 src="/images/stucco-project-completed.webp"
-                alt="Stone veneer installation detail showing natural stone texture"
+                alt="Thin stone veneer installation detail on an Austin, TX property"
                 className="rounded-2xl shadow-lg"
                 loading="lazy"
                 width={800}
