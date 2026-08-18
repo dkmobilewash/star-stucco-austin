@@ -162,7 +162,7 @@ export default function CommercialStucco() {
     <>
       <SEO
         title="Commercial Stucco Contractor Austin, TX | Star Stucco"
-        description="Commercial stucco installation & repair in Austin. Multi-family, retail & office buildings. Licensed, bonded & insured. Free commercial estimates."
+        description="Commercial stucco Austin TX — installation & repair for multi-family, retail & office buildings. Licensed, bonded & insured. Free commercial estimates."
         path="/austin-commercial-stucco"
         schema={[schema, faqSchema]}
       />
@@ -191,8 +191,8 @@ export default function CommercialStucco() {
           </h1>
           <p className="text-lg text-secondary-300 mb-8 max-w-2xl leading-relaxed">
             From multi-family developments at The Domain to retail build-outs on South Congress,
-            Star Stucco delivers large-scale commercial stucco — new construction, repair, EIFS,
-            and exterior finishing — backed by decades of experience and full bonding capabilities.
+            Star Stucco is the trusted name in commercial stucco Austin businesses rely on — new construction, repair, EIFS,
+            and exterior finishing backed by decades of experience and full bonding capabilities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-4">
             <a

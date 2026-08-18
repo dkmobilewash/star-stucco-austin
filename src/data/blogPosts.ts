@@ -23,6 +23,8 @@ export const blogPosts: BlogPost[] = [
     slug: 'best-stucco-finishes-austin-homes',
     title: 'The Best Stucco Finishes for Austin Homes in 2026',
     seoTitle: 'Best Stucco Finishes for Austin Homes (2026) | Star Stucco',
+    seoDescription: 'Which stucco finishes work best in Austin, TX? Compare smooth, Santa Barbara, dash & lace textures for Texas heat and storms. Expert picks from Star Stucco.',
+    h1: 'Best Stucco Finishes for Austin Homes in 2026',
     excerpt: 'Discover which stucco finishes perform best in Austin\'s hot Texas climate, from smooth to textured options that withstand intense sun and occasional storms.',
     date: '2026-04-15',
     image: '/images/stucco-home-roundrock-hero.webp',
@@ -51,6 +53,8 @@ At Star Stucco of Austin, we help homeowners across Travis County select the per
     slug: 'stucco-repair-signs-austin',
     title: '5 Signs Your Austin Home Needs Stucco Repair',
     seoTitle: '5 Signs Your Austin Home Needs Stucco Repair | Star Stucco',
+    seoDescription: '5 warning signs your Austin home needs stucco repair — cracks, staining, bulging, soft spots & efflorescence. Learn when to call a stucco contractor in Austin, TX.',
+    h1: '5 Signs Your Austin Home Needs Stucco Repair',
     excerpt: 'Learn to identify common stucco problems before they become costly. Austin\'s climate can accelerate damage if left unaddressed.',
     date: '2026-03-28',
     image: '/images/stucco-damage-signs.webp',
@@ -83,7 +87,7 @@ At Star Stucco of Austin, we offer free inspections for homeowners throughout th
   {
     slug: 'stucco-vs-hardie-board-austin',
     title: 'Stucco vs. Hardie Board: Which is Better for Austin Homes?',
-    seoTitle: 'Stucco vs Hardie Board in Austin TX: Which Is Better? (2025)',
+    seoTitle: 'Stucco vs Hardie Board in Austin TX: Which Is Better? (2026)',
     seoDescription: 'Stucco or Hardie board for your Austin home? Compare cost, durability, maintenance & resale value. Local expert breakdown + free estimate.',
     h1: 'Stucco vs Hardie Board: Which is Right for Your Austin Home?',
     excerpt: 'Comparing two popular exterior options for Austin properties. Learn the pros, cons, and cost differences for the Central Texas climate.',
@@ -661,15 +665,15 @@ The cheapest stucco repair is the crack you seal before water finds it. If you'r
   {
     slug: 'cost-to-stucco-a-house-austin',
     title: 'How Much Does It Cost to Stucco a House in Austin, TX?',
-    seoTitle: 'Cost to Stucco a House in Austin TX (2025 Pricing Guide)',
+    seoTitle: 'Cost to Stucco a House in Austin TX (2026 Pricing Guide)',
     seoDescription:
-      'How much does stucco cost in Austin? See real 2025 price ranges by sq ft, job type & finish. Get a free local estimate from Star Stucco of Austin.',
+      'How much does stucco cost in Austin? See real 2026 price ranges by sq ft, job type & finish. Get a free local estimate from Star Stucco of Austin.',
     h1: 'How Much Does It Cost to Stucco a House in Austin, TX?',
     excerpt:
       'A clear 2026 breakdown of what it costs to stucco a house in Austin — by square foot and by home size — plus the factors that move the price up or down.',
     date: '2026-06-17',
     image: '/images/stucco-project-completed.webp',
-    content: `Stucco is one of the most popular exteriors in Central Texas — durable, energy-smart, and a natural fit for Hill Country and Spanish-style architecture. If you're planning a new build or re-siding an existing home, the first question is usually cost. Here's a clear 2025 breakdown of what it costs to stucco a house in Austin.
+    content: `Stucco is one of the most popular exteriors in Central Texas — durable, energy-smart, and a natural fit for Hill Country and Spanish-style architecture. If you're planning a new build or re-siding an existing home, the first question is usually cost. Here's a clear 2026 breakdown of what it costs to stucco a house in Austin.
 
 | Service | Typical Price Range |
 |---|---|

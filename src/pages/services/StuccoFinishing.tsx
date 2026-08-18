@@ -100,7 +100,7 @@ export default function StuccoFinishing() {
         <div className="absolute inset-0">
           <img
             src="/images/stucco-texture-hero.webp"
-            alt="Beautifully finished stucco wall with warm texture"
+            alt="Stucco finishing textures on an Austin, TX home exterior"
             className="h-full w-full object-cover opacity-25"
             fetchPriority="high"
             width={1600}
@@ -200,7 +200,7 @@ export default function StuccoFinishing() {
             <div>
               <img
                 src="/images/stucco-project-completed.webp"
-                alt="Variety of stucco textures and colors on display"
+                alt="Stucco finishing textures and colors available in Austin, TX"
                 className="rounded-2xl shadow-lg"
                 loading="lazy"
                 width={800}

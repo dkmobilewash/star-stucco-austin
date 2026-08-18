@@ -413,7 +413,7 @@ export default function EifsContractor() {
             <div>
               <img
                 src="/images/eifs-wall-system-diagram.svg"
-                alt="Diagram showing the five layers of an EIFS wall system"
+                alt="Diagram showing the five layers of an EIFS wall system installed by Austin contractors"
                 className="rounded-2xl shadow-lg w-full"
                 loading="lazy"
                 width={800}
@@ -549,7 +549,7 @@ export default function EifsContractor() {
           </p>
           <img
             src="/images/stucco-repair-hero.webp"
-            alt="EIFS installation in progress on a Austin home with scaffolding"
+            alt="EIFS installation in progress on an Austin, TX home with scaffolding"
             className="rounded-2xl shadow-lg w-full mb-12"
             loading="lazy"
             width={800}

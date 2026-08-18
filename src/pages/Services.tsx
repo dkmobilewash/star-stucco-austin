@@ -139,9 +139,9 @@ export default function Services() {
               Stucco Services in Austin, TX
             </h1>
             <p className="text-lg text-secondary-300 leading-relaxed">
-              From new installations to expert repairs, Star Stucco of Austin
+              As one of Austin's most experienced stucco contractors, Star Stucco of Austin
               delivers premium stucco craftsmanship tailored to Central Texas
-              homes and businesses. Explore our full range of services below.
+              homes and businesses. Explore our full range of stucco services below.
             </p>
           </div>
         </div>

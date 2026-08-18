@@ -59,7 +59,7 @@ export default function About() {
     <>
       <SEO
         title="About Star Stucco | Austin's Trusted Stucco Contractor"
-        description="Learn about Star Stucco of Austin, a family-owned stucco contractor with 15+ years serving Travis County. Expert installation, repair, and finishing across the Austin metro area."
+        description="Star Stucco of Austin — the stucco company Austin trusts. Family-owned stucco contractors with 15+ years serving Travis County. Expert installation, repair, and finishing."
         path="/about"
         schema={schema}
       />
@@ -127,8 +127,8 @@ export default function About() {
                   exterior systems that protect Austin homes for decades.
                 </p>
                 <p>
-                  Today, Star Stucco of Austin serves homeowners and businesses
-                  throughout the greater Austin area, including Round Rock, Cedar
+                  Today, Star Stucco of Austin is the stucco company Austin
+                  homeowners and businesses trust throughout the greater Austin area, including Round Rock, Cedar
                   Park, Georgetown, Pflugerville, Westlake, Lakeway, Bee Cave,
                   Dripping Springs, and Kyle. Our family-owned approach means
                   every client gets the personal attention and quality
