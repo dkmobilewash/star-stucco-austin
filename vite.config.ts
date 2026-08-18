@@ -1,9 +1,23 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import type { Plugin } from 'vite'
+
+function stripCrossOrigin(): Plugin {
+  return {
+    name: 'strip-crossorigin',
+    enforce: 'post',
+    transformIndexHtml(html) {
+      return html
+        .replace(/<link rel="modulepreload" crossorigin href="/g, '<link rel="modulepreload" href="')
+        .replace(/<script type="module" crossorigin src="/g, '<script type="module" src="')
+        .replace(/<link rel="stylesheet" crossorigin href="/g, '<link rel="stylesheet" href="')
+    },
+  }
+}
 
 export default defineConfig(({ isSsrBuild }) => ({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), stripCrossOrigin()],
   build: {
     manifest: !isSsrBuild,
     rollupOptions: isSsrBuild
