@@ -309,7 +309,7 @@ function getPreloadTags(manifest, routePath, html) {
   })
   if (newFiles.length === 0) return ''
   return newFiles
-    .map(f => `<link rel="modulepreload" crossorigin href="${f}">`)
+    .map(f => `<link rel="modulepreload" href="${f}">`)
     .join('\n    ')
 }
 

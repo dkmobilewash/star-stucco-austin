@@ -1,18 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.stuccoaustin.com" }],
-      "destination": "https://stuccoaustin.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [{ "type": "header", "key": "x-forwarded-proto", "value": "http" }],
-      "destination": "https://stuccoaustin.com/:path*",
-      "permanent": true
-    },
     { "source": "/residential-stucco/travis-county", "destination": "/austin-stucco-installation", "permanent": true },
     { "source": "/commercial-stucco/travis-county", "destination": "/austin-commercial-stucco", "permanent": true },
     { "source": "/stucco-repair/travis-county", "destination": "/austin-stucco-repair", "permanent": true },
