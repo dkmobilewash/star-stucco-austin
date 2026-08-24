@@ -1,0 +1,55 @@
+{
+  "fetchedAt": "2026-08-23T23:37:04.972Z",
+  "placeId": "ChIJ0VY9HLtLW4YRoRzhoDm1iWQ",
+  "name": "Star Stucco of Austin",
+  "rating": 4.6,
+  "totalReviews": 28,
+  "googleUrl": "https://maps.google.com/?cid=7244520734719024289",
+  "reviews": [
+    {
+      "author": "Nayeli Alfaro",
+      "authorUrl": "https://www.google.com/maps/contrib/116951421942966581860/reviews",
+      "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWDSKkYsJ23_2l0dhBY3m6I9DnD4DdamSqyNEBV26ZTzNIt-YhF=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "They did such a good job for my friend. Definitely going to them for myself next, and they were so nice and understandable when helping.",
+      "date": "2026-05-18",
+      "relativeTime": "3 months ago"
+    },
+    {
+      "author": "Jax",
+      "authorUrl": "https://www.google.com/maps/contrib/106478245528526654454/reviews",
+      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocIfpEsyVzFB_iWPYw0NVQUw0_qDYGoIOL4gBN-C-WqSQF8uTg=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "There great. FAST,  friendly and they do the best work in town.",
+      "date": "2026-05-28",
+      "relativeTime": "2 months ago"
+    },
+    {
+      "author": "Richard Snavely",
+      "authorUrl": "https://www.google.com/maps/contrib/109672356194852688529/reviews",
+      "profilePhoto": "https://lh3.googleusercontent.com/a-/ALV-UjWi-WHv7DEn5RVrb_MDCK_2_TqAk0wYGiYNR1RNqFM0LenJ3fc3=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 5,
+      "text": "Great place. Really good hospitality",
+      "date": "2026-06-28",
+      "relativeTime": "a month ago"
+    },
+    {
+      "author": "Zoom Anonymous",
+      "authorUrl": "https://www.google.com/maps/contrib/117397703101155839386/reviews",
+      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocKAXJ2a4m3iDKGHx-0McFibxHdMYhl9du-Q7QOmZe0DZKQtsQ=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Great company overall looking forward to referring them to other friends",
+      "date": "2026-06-09",
+      "relativeTime": "2 months ago"
+    },
+    {
+      "author": "Marquis Kiner",
+      "authorUrl": "https://www.google.com/maps/contrib/113523919960651864419/reviews",
+      "profilePhoto": "https://lh3.googleusercontent.com/a/ACg8ocJu1JMMr0UaQzbA59kT3Z8znBGYAdXEUzIxrDlOAGRC4g8_i_s=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "Very impressed with the communication and workmanship. The crew was courteous, kept everything clean, and completed the project faster than expected.",
+      "date": "2026-06-05",
+      "relativeTime": "2 months ago"
+    }
+  ]
+}

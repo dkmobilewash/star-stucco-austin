@@ -9,9 +9,11 @@ const reviewsWithText = reviews.filter((r) => r.text.length > 0)
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
+  '@id': `${siteConfig.url}/#business`,
   name: siteConfig.name,
   image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
   telephone: siteConfig.phone,
+  url: siteConfig.url,
   address: {
     '@type': 'PostalAddress',
     streetAddress: siteConfig.address.street,
@@ -20,6 +22,16 @@ const schema = {
     postalCode: siteConfig.address.zip,
     addressCountry: 'US',
   },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: siteConfig.coordinates.lat,
+    longitude: siteConfig.coordinates.lng,
+  },
+  sameAs: [
+    reviewStats.googleUrl,
+    siteConfig.socialMedia.facebook,
+    siteConfig.socialMedia.instagram,
+  ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: reviewStats.averageRating.toFixed(1),
@@ -38,14 +50,18 @@ const schema = {
     },
     reviewBody: r.text,
     datePublished: r.date,
+    publisher: { '@type': 'Organization', name: 'Google' },
   })),
 }
 
-function StarRating() {
+function StarRating({ rating }: { rating: number }) {
   return (
     <div className="flex gap-0.5">
       {[...Array(5)].map((_, i) => (
-        <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
+        <Star
+          key={i}
+          className={`h-5 w-5 ${i < Math.round(rating) ? 'fill-amber-400 text-amber-400' : 'fill-secondary-200 text-secondary-200'}`}
+        />
       ))}
     </div>
   )
@@ -55,8 +71,8 @@ export default function Reviews() {
   return (
     <>
       <SEO
-        title="Customer Reviews | Star Stucco of Austin | 5-Star Rated"
-        description="Read real Google reviews from Star Stucco of Austin customers. 30 five-star reviews from homeowners and businesses across Central Texas. See why we are Austin's top-rated stucco contractor."
+        title={`Customer Reviews | ${siteConfig.name} | ${reviewStats.averageRating}-Star Rated`}
+        description={`Read real Google reviews from ${siteConfig.name} customers. ${reviewStats.totalReviews} reviews with a ${reviewStats.averageRating}-star rating. See why we are Austin's top-rated stucco contractor.`}
         path="/reviews"
         schema={schema}
       />
@@ -76,7 +92,7 @@ export default function Reviews() {
               say about working with Star Stucco of Austin.
             </p>
             <div className="flex items-center gap-4">
-              <StarRating />
+              <StarRating rating={reviewStats.averageRating} />
               <span className="text-white font-semibold text-lg">
                 {reviewStats.averageRating.toFixed(1)}
               </span>
@@ -84,6 +100,15 @@ export default function Reviews() {
                 ({reviewStats.totalReviews} reviews on Google)
               </span>
             </div>
+            <a
+              href={reviewStats.googleUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-4 text-sm text-primary-300 hover:text-primary-200 transition-colors"
+            >
+              View all reviews on Google
+              <ChevronRight className="h-3.5 w-3.5" />
+            </a>
           </div>
         </div>
       </section>
@@ -106,7 +131,7 @@ export default function Reviews() {
                     {review.author}
                   </p>
                   <div className="flex gap-0.5">
-                    {[...Array(5)].map((_, i) => (
+                    {[...Array(review.rating)].map((_, i) => (
                       <Star
                         key={i}
                         className="h-3.5 w-3.5 fill-amber-400 text-amber-400"
@@ -121,8 +146,16 @@ export default function Reviews() {
           {/* Rating-only summary */}
           <div className="mt-12 text-center">
             <p className="text-secondary-500 text-sm">
-              Plus {reviews.length - reviewsWithText.length} additional 5-star
-              ratings on Google.
+              Showing {reviewsWithText.length} of {reviewStats.totalReviews}{' '}
+              Google reviews.{' '}
+              <a
+                href={reviewStats.googleUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 hover:text-primary-700 underline"
+              >
+                See all on Google
+              </a>
             </p>
           </div>
         </div>
@@ -136,7 +169,7 @@ export default function Reviews() {
           </h2>
           <p className="text-primary-100 text-lg mb-8">
             Get a free estimate on your stucco project and see why Austin
-            homeowners rate us 5 stars.
+            homeowners rate us {reviewStats.averageRating} stars.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -1,17 +1,26 @@
+import googleData from './googleReviews.json'
+
 export interface Review {
   author: string
   rating: number
   text: string
   date: string
+  authorUrl?: string
+  profilePhoto?: string
 }
 
-export const reviews: Review[] = [
-  {
-    author: 'Marquis Kiner',
-    rating: 5,
-    text: 'Very impressed with the communication and workmanship. The crew was courteous, kept everything clean, and completed the project faster than expected.',
-    date: '2025-01-15',
-  },
+const googleReviewAuthors = new Set(googleData.reviews.map((r) => r.author))
+
+const googleReviews: Review[] = googleData.reviews.map((r) => ({
+  author: r.author,
+  rating: r.rating,
+  text: r.text,
+  date: r.date,
+  authorUrl: r.authorUrl,
+  profilePhoto: r.profilePhoto,
+}))
+
+const additionalReviews: Review[] = [
   {
     author: 'Bella Marie',
     rating: 5,
@@ -49,12 +58,6 @@ export const reviews: Review[] = [
     date: '2025-04-10',
   },
   {
-    author: 'Nayeli Alfaro',
-    rating: 5,
-    text: 'They did such a good job for my friend. Definitely going to them for myself next, and they were so nice and understanding when helping.',
-    date: '2025-03-15',
-  },
-  {
     author: 'Daniel Moreno',
     rating: 5,
     text: 'Amazing service, best in Austin for sure.',
@@ -73,22 +76,10 @@ export const reviews: Review[] = [
     date: '2024-07-20',
   },
   {
-    author: 'Zoom Anonymous',
-    rating: 5,
-    text: 'Great company overall, looking forward to referring them to other friends.',
-    date: '2024-10-05',
-  },
-  {
     author: "Hannah's Empire",
     rating: 5,
     text: 'Really great company, definitely will be patronizing them in the future.',
     date: '2024-12-01',
-  },
-  {
-    author: 'Jax',
-    rating: 5,
-    text: 'They are great. Fast, friendly, and they do the best work in town.',
-    date: '2025-02-20',
   },
   {
     author: 'Aeli',
@@ -101,12 +92,6 @@ export const reviews: Review[] = [
     rating: 5,
     text: 'Set up a quote for today, followed up promptly, and everything was handled professionally.',
     date: '2025-02-10',
-  },
-  {
-    author: 'Richard Snavely',
-    rating: 5,
-    text: 'Great place. Really good hospitality.',
-    date: '2024-03-10',
   },
   {
     author: 'Richard Petes',
@@ -188,8 +173,15 @@ export const reviews: Review[] = [
   },
 ]
 
+export const reviews: Review[] = [
+  ...googleReviews,
+  ...additionalReviews.filter((r) => !googleReviewAuthors.has(r.author)),
+]
+
 export const reviewStats = {
-  totalReviews: 36,
-  averageRating: 5.0,
-  platform: 'Google',
+  totalReviews: googleData.totalReviews,
+  averageRating: googleData.rating,
+  platform: 'Google' as const,
+  googleUrl: googleData.googleUrl,
+  placeId: googleData.placeId,
 }
