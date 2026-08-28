@@ -17,7 +17,7 @@ export const siteConfig = {
     lat: 30.2672,
     lng: -97.7431,
   },
-  url: 'https://stuccoaustin.com',
+  url: 'https://www.stuccoaustin.com',
   serviceAreas: [
     'Austin',
     'Round Rock',

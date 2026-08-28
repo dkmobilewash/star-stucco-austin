@@ -11,7 +11,7 @@ const schema = {
   '@type': 'LocalBusiness',
   '@id': `${siteConfig.url}/#business`,
   name: siteConfig.name,
-  image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
+  image: 'https://www.stuccoaustin.com/images/hero-stucco-austin.webp',
   telephone: siteConfig.phone,
   url: siteConfig.url,
   address: {
