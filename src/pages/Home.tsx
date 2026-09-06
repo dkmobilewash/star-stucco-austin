@@ -133,16 +133,16 @@ const homeFaqs = [
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://stuccoaustin.com',
+  '@id': 'https://www.stuccoaustin.com',
   name: 'Star Stucco of Austin',
-  url: 'https://stuccoaustin.com',
+  url: 'https://www.stuccoaustin.com',
   telephone: '+15127069699',
   email: siteConfig.email,
   foundingDate: '2013',
   description:
     'Star Stucco of Austin — stucco contractors in Austin, TX providing residential and commercial stucco, stucco repair, EIFS, interior plaster, and thin stone veneer services across Central Texas.',
   priceRange: '$$',
-  image: 'https://stuccoaustin.com/images/hero-stucco-austin.webp',
+  image: 'https://www.stuccoaustin.com/images/hero-stucco-austin.webp',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '5316 W US Hwy 290 Service Rd',
@@ -213,8 +213,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Stucco Contractors Austin TX | Repair & Installation | Star Stucco"
-        description="Star Stucco of Austin — trusted stucco contractors in Austin, TX. Stucco repair, installation & finishing for homes and businesses. Licensed, insured, 9,000+ projects. Free estimates."
+        title="Stucco Repair & Installation Austin, TX | Star Stucco"
+        description="Need stucco repair or installation in Austin? Star Stucco has completed 9,000+ projects. Licensed, insured, free estimates. Call today."
         path="/"
         schema={[localBusinessSchema, faqPageSchema(homeFaqs)]}
       />

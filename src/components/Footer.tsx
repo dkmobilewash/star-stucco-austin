@@ -8,7 +8,7 @@ export default function Footer() {
       <meta itemProp="name" content="Star Stucco of Austin" />
       <meta itemProp="telephone" content="(512) 706-9699" />
       <meta itemProp="email" content="info@starstuccoaustin.com" />
-      <meta itemProp="url" content="https://stuccoaustin.com" />
+      <meta itemProp="url" content="https://www.stuccoaustin.com" />
       <meta itemProp="priceRange" content="$$" />
       <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
         <meta itemProp="streetAddress" content="5316 W US Hwy 290 Service Rd" />

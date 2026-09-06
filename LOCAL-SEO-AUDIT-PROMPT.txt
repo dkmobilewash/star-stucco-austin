@@ -1,0 +1,143 @@
+I need a comprehensive local SEO audit for stuccoaustin.com focused specifically on improving local search rankings and local authority. Use the Google Search Console data visible on this page plus crawl the live website. This is NOT a general SEO audit — focus only on factors that directly impact local pack rankings, local organic results, and Google Business Profile visibility.
+
+Business details for reference:
+- Business: Star Stucco of Austin
+- Address: 5316 W US Hwy 290 Service Rd, Austin, TX 78735
+- Phone: (512) 706-9699
+- Google Place ID: ChIJ0VY9HLtLW4YRoRzhoDm1iWQ
+- Google Maps: https://maps.google.com/?cid=7244520734719024289
+- Service area: Austin metro + 16 surrounding counties in Central Texas
+
+---
+
+## 1. LOCAL KEYWORD PERFORMANCE
+
+- Pull all queries containing local modifiers ("austin", "texas", "tx", "near me", county names, city names). What positions are we ranking for each?
+
+- For our primary local keywords, report exact position, impressions, clicks, and CTR:
+  - "stucco contractor austin"
+  - "stucco repair austin"
+  - "stucco installation austin"
+  - "eifs contractor austin"
+  - "commercial stucco austin"
+  - "stucco remediation austin"
+  - "thin stone veneer austin"
+  - "interior plaster austin"
+  - "stucco contractor near me" (when searched from Austin)
+  - "stucco repair near me"
+
+- Which local queries have we GAINED or LOST position on in the last 28 days? Compare to the previous 28-day period.
+
+- Are we ranking for any local queries we don't have dedicated landing pages for? (Missed opportunities)
+
+- Are there local queries where we rank 4-10 that could be pushed to top 3 with on-page improvements? For each one, give the specific title tag and meta description rewrite.
+
+## 2. LOCAL SCHEMA & STRUCTURED DATA
+
+Visit these pages on the live site and validate the structured data using view-source or the rendered JSON-LD:
+
+- Homepage (/) — Does it have LocalBusiness schema with correct NAP, geo coordinates, service area, and opening hours?
+- Reviews page (/reviews) — Does it have AggregateRating matching the Google Business Profile (should be 4.6 rating, 28 reviews)? Does each Review have publisher: Google? Is the sameAs pointing to the Google Maps CID URL?
+- Service pages (/austin-stucco-installation, /austin-commercial-stucco, /austin-stucco-repair, /eifs-contractor-austin, /austin-stucco-finishing, /austin-thin-stone-veneer) — Do they have Service schema with areaServed and provider linking back to the LocalBusiness entity?
+- County pages (/service-areas/travis-county-stucco, etc.) — Do they have proper LocalBusiness or Service schema with geo-specific areaServed?
+
+Flag any schema that is missing, incomplete, or inconsistent with Google Business Profile data.
+
+## 3. NAP CONSISTENCY (ON-SITE)
+
+Check every page on the site for Name, Address, Phone consistency:
+- Is the exact business name "Star Stucco of Austin" used consistently (not variations like "Star Stucco", "Star Stucco Co", "Star Stucco Company")?
+- Is the full address (5316 W US Hwy 290 Service Rd, Austin, TX 78735) displayed consistently in the footer and contact page?
+- Is the phone number (512) 706-9699 formatted consistently everywhere?
+- Are there any pages where NAP info is missing from the footer or structured data?
+
+## 4. LOCAL LANDING PAGE OPTIMIZATION
+
+For each service-area page and county page, check:
+- Does the H1 include the city/county name AND the service type?
+- Does the title tag follow the pattern "[Service] in [Location] | Star Stucco of Austin"?
+- Is there unique, location-specific content (not just the city name swapped into a template)?
+- Does the page mention nearby landmarks, neighborhoods, or local references that signal geo-relevance?
+- Does the page have internal links to related service pages and the contact page?
+- Does the page have a clear CTA with the phone number?
+- Is there a breadcrumb trail with BreadcrumbList schema?
+
+Specifically audit these high-priority pages:
+- /austin-stucco-installation
+- /austin-stucco-repair
+- /austin-commercial-stucco
+- /eifs-contractor-austin
+- /service-area/austin
+- /service-area/round-rock
+- /service-area/cedar-park
+- /service-area/georgetown
+
+## 5. INTERNAL LINKING FOR LOCAL AUTHORITY
+
+- Do service pages link to their corresponding service-area pages (e.g., /austin-stucco-repair links to /service-area/austin, /service-area/round-rock, etc.)?
+- Do service-area pages link back to the main service pages?
+- Do county pages link to the city-level pages within that county?
+- Is the homepage linking to all 6 main service pages AND the top service-area pages?
+- Are blog posts linking to relevant service and location pages?
+- Is there an HTML sitemap or service area hub page that links to all location pages?
+
+Map out any orphan pages (pages with no internal links pointing to them).
+
+## 6. GOOGLE BUSINESS PROFILE ALIGNMENT
+
+Compare what's on the website to what Google shows for the business:
+- Does the website's business name exactly match the GBP name?
+- Does the website's address exactly match the GBP address?
+- Does the website's phone number match the GBP phone?
+- Does the website list the same service categories as the GBP?
+- Does the website's hours match the GBP hours?
+- Is the website URL in the GBP pointing to stuccoaustin.com (not www.stuccoaustin.com or a different URL)?
+- Are the reviews on /reviews matching the actual Google reviews (rating: 4.6, count: 28)?
+
+## 7. LOCAL CONTENT SIGNALS
+
+- Does the site have content that demonstrates local expertise (mentioning Austin-specific building codes, Texas climate considerations, local project examples)?
+- Are there blog posts targeting local informational queries ("cost of stucco repair in Austin", "best stucco for Texas heat", etc.)?
+- Are there case studies or project galleries with location-specific details?
+- Does the About page mention years serving Austin, local community involvement, or local credentials?
+
+## 8. MOBILE & PAGE SPEED (LOCAL IMPACT)
+
+- What are the Core Web Vitals from GSC? Local searches are heavily mobile — any mobile issues directly hurt local rankings.
+- Are the service-area pages loading fast on mobile?
+- Is the phone number click-to-call on mobile?
+- Is the address linked to Google Maps on mobile?
+
+## 9. REVIEW SIGNALS (ON-SITE)
+
+- Is the reviews page being indexed? Check GSC indexing status for /reviews.
+- Is the AggregateRating schema being picked up by Google (check if rich snippets appear in search results)?
+- Does the site link to the Google Business Profile so users can leave new reviews?
+- Is there a review CTA on service pages encouraging customers to leave Google reviews?
+
+## 10. INDEXING STATUS FOR LOCAL PAGES
+
+Check GSC indexing status for ALL service-area and county pages. Report:
+- How many of the ~135 service-area/county pages are indexed?
+- Which ones are NOT indexed and why (crawled not indexed, discovered not indexed, excluded by noindex, etc.)?
+- Are any returning soft 404s or redirect errors?
+
+---
+
+## DELIVERABLE
+
+Put together a report with:
+
+1. **Local Authority Score Card** — Rate each of the 10 areas above as Strong / Needs Work / Critical, with a 1-sentence summary for each.
+
+2. **Top 10 Fixes Ranked by Local Ranking Impact** — Specific, actionable changes ordered by how much they'll move the needle on local rankings. For each fix, include:
+   - What to change (exact page, exact element)
+   - The current state
+   - The recommended change (exact text/code if applicable)
+   - Expected impact (high/medium/low)
+
+3. **Quick Wins** — Things that can be fixed in under an hour
+4. **This Week** — Changes that need a few hours of work
+5. **This Month** — Larger content or structural improvements
+
+Be specific and data-driven. Reference actual GSC numbers. No generic advice like "create quality content" — every recommendation must be a concrete action tied to a specific page or element on stuccoaustin.com.

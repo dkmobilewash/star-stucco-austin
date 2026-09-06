@@ -22,7 +22,7 @@ import { tmpdir } from 'os'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const DIST = join(ROOT, 'dist')
-const SITE_URL = 'https://stuccoaustin.com'
+const SITE_URL = 'https://www.stuccoaustin.com'
 const SITE_NAME = 'Star Stucco of Austin'
 
 // ── Static routes with hardcoded SEO data ────────────────────────────
@@ -30,8 +30,8 @@ const SITE_NAME = 'Star Stucco of Austin'
 const staticRoutes = [
   {
     path: '/',
-    title: 'Austin Stucco Contractor | Repair & Installation | Star Stucco',
-    description: 'Star Stucco installs, repairs, and finishes stucco across Austin, TX. Licensed, insured, 35+ 5-star reviews. Get a free estimate this week.',
+    title: 'Stucco Repair & Installation Austin, TX | Star Stucco',
+    description: 'Need stucco repair or installation in Austin? Star Stucco has completed 9,000+ projects. Licensed, insured, free estimates. Call today.',
   },
   {
     path: '/about',

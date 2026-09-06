@@ -22,7 +22,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const DIST = join(ROOT, 'dist')
 const DIST_SERVER = join(ROOT, 'dist-server')
-const SITE_URL = 'https://stuccoaustin.com'
+const SITE_URL = 'https://www.stuccoaustin.com'
 
 
 // ── Step 1: Build SSR bundle with Vite ──────────────────────────────
