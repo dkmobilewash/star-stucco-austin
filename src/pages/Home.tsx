@@ -241,7 +241,7 @@ export default function Home() {
               Stucco Contractors in Austin, TX
             </h1>
             <p className="text-lg sm:text-xl text-secondary-200 mb-8 leading-relaxed">
-              The stucco company Austin homeowners and businesses trust most — expert stucco repair, installation &amp; finishing across Central Texas since 2013.
+              The stucco company Austin homeowners and businesses trust most — expert <Link to="/austin-stucco-repair" className="text-white underline underline-offset-2 decoration-primary-400/60 hover:decoration-white transition-colors">stucco repair</Link>, installation &amp; finishing across Central Texas since 2013.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <a
@@ -276,10 +276,10 @@ export default function Home() {
               <p className="text-secondary-600 leading-relaxed mb-6">
                 Star Stucco of Austin has been serving the Austin area as a stucco contractor
                 in Austin, TX since 2013, completing over 9,000 projects across Central Texas.
-                We have the expertise to deliver high-quality results that stand the test of
-                time. Our commitment to quality and customer satisfaction has earned us
-                recognition from leading industry associations including EIMA, TLPCA, and the
-                Stucco Manufacturers Association.
+                From <Link to="/austin-stucco-repair" className="text-primary-700 underline hover:text-primary-800 transition-colors">stucco repair</Link> to new installation and finishing, we have the expertise to deliver
+                high-quality results that stand the test of time. Our commitment to quality and
+                customer satisfaction has earned us recognition from leading industry associations
+                including EIMA, TLPCA, and the Stucco Manufacturers Association.
               </p>
               <p className="text-secondary-600 leading-relaxed mb-8">
                 Our team consists of OSHA-trained, CPR-trained, and scaffold-trained
