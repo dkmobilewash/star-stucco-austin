@@ -539,7 +539,7 @@ Austin receives an average of 34 inches of rain per year, and much of it comes i
 
 ## 3. Repair Difficulty
 
-Stucco repairs are not as simple as filling a hole and painting over it. Matching the texture, color, and profile of an existing stucco wall requires skill and experience. Poorly done repairs stand out visually and can compromise the wall's weather resistance.
+[Stucco repairs](/austin-stucco-repair) are not as simple as filling a hole and painting over it. Matching the texture, color, and profile of an existing stucco wall requires skill and experience. Poorly done repairs stand out visually and can compromise the wall's weather resistance.
 
 **Why it matters in Austin:**
 With strong UV exposure and temperature cycling, stucco color fades and weathers over time. A fresh repair patch will look noticeably different from the surrounding wall unless the contractor carefully matches the finish and allows for natural weathering.
@@ -664,7 +664,7 @@ Not all stucco problems mean the system has failed. But certain signs indicate t
 - **Bulging or delamination** — the stucco is separating from the lath or wall
 - **Interior moisture** — water stains or mold on interior walls adjacent to stucco exterior
 
-If you notice these signs, a professional inspection can determine whether repair is sufficient or full [stucco remediation](/austin-stucco-remediation) is needed.
+If you notice these signs, a professional inspection can determine whether [repair](/austin-stucco-repair) is sufficient or full [stucco remediation](/austin-stucco-remediation) is needed.
 
 ## How to Maximize Your Stucco's Lifespan
 
@@ -901,7 +901,7 @@ If your Austin home has stucco damage and you are unsure whether it is an insura
       'Learn the visible warning signs of failing stucco — from hairline cracks to bulging walls — so you can catch problems before they become expensive.',
     date: '2026-08-10',
     image: '/images/stucco-damage-signs.webp',
-    content: `Stucco failure does not happen overnight. It develops gradually, and the early warning signs are visible if you know what to look for. Catching these signs early is the difference between a manageable repair and a full-scale remediation project. Here are the visual indicators that your stucco is failing, what each sign means, and when to call a professional.
+    content: `Stucco failure does not happen overnight. It develops gradually, and the early warning signs are visible if you know what to look for. Catching these signs early is the difference between a manageable [repair](/austin-stucco-repair) and a full-scale remediation project. Here are the visual indicators that your stucco is failing, what each sign means, and when to call a professional.
 
 ## 1. Cracks
 

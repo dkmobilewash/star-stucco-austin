@@ -52,7 +52,7 @@ If you are unsure whether your stucco is in good enough condition to paint over,
 
 ## Get Expert Advice
 
-At Star Stucco of Austin, we repair and refinish stucco across Central Texas. If your stucco needs repairs before painting — or if you want to explore [stucco finishing options](/austin-stucco-finishing) beyond paint — [contact us](/contact) for a free assessment or call (512) 706-9699.`,
+At Star Stucco of Austin, we repair and refinish stucco across Central Texas. If your stucco needs [repairs](/austin-stucco-repair) before painting — or if you want to explore [stucco finishing options](/austin-stucco-finishing) beyond paint — [contact us](/contact) for a free assessment or call (512) 706-9699.`,
     faqs: [
       {
         question: 'Can you paint over already-painted stucco?',
