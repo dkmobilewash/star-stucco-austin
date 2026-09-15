@@ -53,6 +53,8 @@ export default function GeorgetownArea() {
           <nav className="mb-8 flex items-center gap-2 text-sm text-slate-300">
             <Link to="/" className="hover:text-white">Home</Link>
             <ChevronRight className="h-4 w-4" />
+            <Link to="/service-areas" className="hover:text-white">Service Areas</Link>
+            <ChevronRight className="h-4 w-4" />
             <span className="text-green-400">Georgetown</span>
           </nav>
           <h1 className="font-display text-4xl font-bold text-white md:text-5xl lg:text-6xl">

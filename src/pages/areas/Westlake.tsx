@@ -73,6 +73,8 @@ export default function WestlakeArea() {
           <div className="flex items-center gap-2 text-sm text-secondary-400 mb-8">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="h-3 w-3" />
+            <Link to="/service-areas" className="hover:text-white transition-colors">Service Areas</Link>
+            <ChevronRight className="h-3 w-3" />
             <span className="text-primary-400">Westlake Hills</span>
           </div>
           <div className="max-w-3xl">
