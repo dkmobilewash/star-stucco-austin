@@ -49,7 +49,29 @@ Austin's climate presents unique challenges for stucco. With average summer temp
 
 ## Get Expert Advice
 
+## Lace Finish
+
+The lace finish — sometimes called skip trowel — creates an elegant, Old World texture that is popular throughout Austin's Hill Country estates and Mediterranean-style homes. The installer applies the finish coat with a trowel in overlapping arcs, leaving a pattern of raised and recessed areas. The result is a surface with depth and character that catches light beautifully, especially on large exterior walls where a flat finish might look plain. Lace finishes hide minor surface imperfections well and age gracefully, developing a natural patina over time that many homeowners find appealing.
+
+## Choosing the Right Finish for Your Neighborhood
+
+The architectural character of your neighborhood matters when selecting a stucco finish. Smooth finishes complement the clean lines of modern builds in Mueller, East Austin, and The Domain. Santa Barbara and lace finishes suit the Spanish Colonial and Mediterranean homes common in Tarrytown, Westlake Hills, and Barton Creek. Dash finishes work well in Round Rock, Cedar Park, and Georgetown where durability against hail and wind is a priority. Your stucco contractor can bring finish samples to your home so you can see how each texture looks against your roofline, trim, and landscaping before committing.
+
 At Star Stucco of Austin, we help homeowners across Travis County select the perfect finish for their home's style and location. Learn more about our [stucco finishing services](/austin-stucco-finishing), dive deeper in our [stucco finishes guide](/blog/stucco-finishes-guide), or — as your local [Austin stucco contractor](/) — [request a free consultation](/contact) and see samples of each finish type in person.`,
+    faqs: [
+      {
+        question: 'What is the most popular stucco finish in Austin?',
+        answer: 'The Santa Barbara finish is the most popular stucco finish in Austin. Its slightly textured surface complements the Spanish Colonial and Mediterranean architectural styles common in neighborhoods like Tarrytown, Travis Heights, and Westlake Hills, and it hides minor imperfections while holding up well against Austin\'s intense heat and UV exposure.',
+      },
+      {
+        question: 'Which stucco finish is most durable in Texas heat?',
+        answer: 'The dash finish is the most durable option for the Texas climate. Its heavily textured surface resists cracking from thermal expansion better than smoother finishes, hides minor repairs effectively, and stands up well to hail and storms. It is especially popular in Round Rock, Cedar Park, and Georgetown.',
+      },
+      {
+        question: 'Can you change your stucco finish without removing the old stucco?',
+        answer: 'In many cases, yes. A new finish coat can be applied over existing stucco as long as the underlying scratch and brown coats are structurally sound. Your contractor will inspect the existing surface, repair any damage, and then apply the new finish. This is more cost-effective than a full tear-off and reinstallation.',
+      },
+    ],
   },
   {
     slug: 'stucco-repair-signs-austin',
@@ -85,6 +107,20 @@ If chunks of stucco are falling off your home, you have an urgent repair need. A
 ## Act Early, Save Money
 
 At Star Stucco of Austin, we offer free inspections for homeowners throughout the Austin metro area. Catching damage early can save thousands in repair costs. Explore our [stucco repair services](/austin-stucco-repair), read our [stucco crack repair guide](/blog/stucco-crack-repair-austin), or — as your trusted [Austin stucco contractor](/) — [request a free inspection](/contact) today.`,
+    faqs: [
+      {
+        question: 'How do I know if a stucco crack is serious?',
+        answer: 'Hairline cracks less than 1/16 inch wide are usually cosmetic and caused by normal curing or minor settling. Cracks wider than 1/8 inch, cracks that run diagonally from window or door corners, or cracks accompanied by bulging, staining, or soft spots indicate structural or moisture issues that need professional assessment. When in doubt, get a free inspection from a licensed stucco contractor.',
+      },
+      {
+        question: 'What causes stucco damage in Austin?',
+        answer: 'The most common causes in Austin are the expansive clay soils that shift foundations and stress stucco around openings, intense UV exposure that degrades stucco bonds on west-facing walls, thermal cycling from extreme heat to cool nights, and moisture intrusion from outdated flashing or failed caulk joints. Older homes in East Austin, Zilker, and South Congress are especially prone to moisture-related damage.',
+      },
+      {
+        question: 'How much does stucco repair cost in Austin?',
+        answer: 'Small crack repairs and patches typically cost a few hundred dollars. Larger repairs involving water damage, substrate replacement, or full wall resurfacing can range from several hundred to several thousand dollars depending on the extent of damage. Getting a free inspection early is the best way to avoid costly repairs later, since small issues caught early are far less expensive to fix.',
+      },
+    ],
   },
   {
     slug: 'stucco-vs-hardie-board-austin',
@@ -155,6 +191,20 @@ Hardie Board makes more sense for homes in a more traditional American farmhouse
 The most important variable in either case is installation quality. A poorly installed stucco job or a poorly installed Hardie Board job will both fail prematurely. Whichever material you choose, vet your contractor carefully — check references, look at completed projects, and make sure they have experience with the specific material and the specific challenges of Austin's climate and soils.
 
 If you're leaning toward stucco, [visit our homepage to learn more about Star Stucco of Austin](/) or go directly to our [Austin stucco repair page](/austin-stucco-repair) to understand what to expect from ongoing maintenance. We offer free estimates throughout Travis County and the surrounding metro area.`,
+    faqs: [
+      {
+        question: 'Is stucco or Hardie Board cheaper in Austin?',
+        answer: 'Hardie Board typically has a lower upfront installation cost. For a 2,000 sq ft Austin home, Hardie Board generally runs $10,000 to $18,000 installed, while three-coat stucco runs $15,000 to $25,000. However, Hardie Board requires repainting every 10 to 15 years at $3,000 to $6,000 per cycle, so the total cost of ownership over 30 years is often comparable.',
+      },
+      {
+        question: 'Which lasts longer, stucco or Hardie Board?',
+        answer: 'Properly installed and maintained stucco lasts 50 or more years, while Hardie Board typically lasts 30 to 50 years. Stucco\'s longevity advantage is most significant in Austin\'s climate, where intense UV exposure accelerates paint degradation on Hardie Board\'s south- and west-facing surfaces.',
+      },
+      {
+        question: 'Does stucco or Hardie Board add more resale value in Austin?',
+        answer: 'In Austin\'s premium neighborhoods like Westlake Hills, Barton Creek, Lakeway, and Tarrytown, stucco homes generally command higher resale prices. Stucco\'s seamless appearance, thermal performance, and association with Spanish Colonial and Mediterranean architecture make it the preferred exterior in these markets. Hardie Board performs well in newer developments like Mueller and Round Rock subdivisions.',
+      },
+    ],
   },
   {
     slug: 'what-is-eifs',
@@ -322,6 +372,20 @@ Yes. Converting from one system to the other is possible, but it requires full r
 ## Closing
 
 There is no single "best" answer — the right system depends on your priorities, your budget, and your building. What matters most is correct installation and the right contractor for whichever system you choose. If you would like an expert assessment of your home, Star Stucco of Austin can help. As your local [EIFS contractor](/eifs-contractor-austin) and full-service [Austin stucco contractor](/), we offer free consultations and system assessments throughout the Austin area. Reach out for a [free estimate](/contact) and we will help you choose with confidence.`,
+    faqs: [
+      {
+        question: 'Is EIFS better than traditional stucco?',
+        answer: 'Neither is universally better — each has distinct advantages. EIFS provides significantly better energy efficiency due to its continuous foam insulation layer, and its flexibility handles foundation movement better than rigid cement stucco. Traditional stucco offers superior impact resistance, longer raw lifespan (50 or more years vs. 30 to 50 for EIFS), and easier repairability since more contractors can work with cement than with the specialized EIFS system.',
+      },
+      {
+        question: 'How can I tell if my house has EIFS or traditional stucco?',
+        answer: 'Tap the wall — EIFS sounds and feels hollow or soft because of the foam insulation layer underneath, while traditional stucco feels hard and solid like concrete. You can also remove an exterior outlet cover or look at a cut edge near a window; if you see foam board, you have EIFS. A professional inspection confirms it quickly and is recommended before any repair work.',
+      },
+      {
+        question: 'Can you convert EIFS to traditional stucco?',
+        answer: 'Yes, but it requires full removal of the existing EIFS down to the substrate and a complete reinstallation of a traditional stucco system. This is most commonly done when an older barrier-style EIFS has suffered significant moisture damage. The conversion involves stripping the wall, inspecting the substrate for damage, and then installing the new system from scratch.',
+      },
+    ],
   },
   {
     slug: 'eifs-repair-austin',

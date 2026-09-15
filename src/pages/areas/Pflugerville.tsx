@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, MapPin, Hammer, PaintBucket, Wrench, Layers, Building2 } from 'lucide-react'
+import { Phone, MapPin, Hammer, PaintBucket, Wrench, Layers, Building2, ChevronRight } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
 
@@ -50,9 +50,13 @@ export default function PflugervilleArea() {
           />
         </div>
         <div className="relative mx-auto max-w-7xl px-4">
-          <div className="mb-6 inline-block rounded-full bg-green-600/90 px-4 py-1.5 text-sm font-medium text-white">
-            Serving Pflugerville Since 2011
-          </div>
+          <nav className="mb-6 flex items-center gap-2 text-sm text-slate-300">
+            <Link to="/" className="hover:text-white">Home</Link>
+            <ChevronRight className="h-4 w-4" />
+            <Link to="/service-areas" className="hover:text-white">Service Areas</Link>
+            <ChevronRight className="h-4 w-4" />
+            <span className="text-green-400">Pflugerville</span>
+          </nav>
           <h1 className="font-display text-4xl font-bold text-white md:text-5xl lg:text-6xl">
             Pflugerville Stucco Installation & Repair
           </h1>
