@@ -53,7 +53,7 @@ export default function RoundRockArea() {
           <nav className="mb-6 flex items-center gap-2 text-sm text-slate-300">
             <Link to="/" className="hover:text-white">Home</Link>
             <ChevronRight className="h-4 w-4" />
-            <Link to="/service-area" className="hover:text-white">Service Areas</Link>
+            <Link to="/service-areas" className="hover:text-white">Service Areas</Link>
             <ChevronRight className="h-4 w-4" />
             <span className="text-green-400">Round Rock</span>
           </nav>
@@ -145,7 +145,7 @@ export default function RoundRockArea() {
                 New construction and full stucco application for Round Rock homes. Three-coat system
                 engineered for Central Texas conditions.
               </p>
-              <Link to="/services/installation" className="mt-4 inline-flex items-center gap-1 text-green-600 font-medium hover:text-green-700">
+              <Link to="/austin-stucco-installation" className="mt-4 inline-flex items-center gap-1 text-green-600 font-medium hover:text-green-700">
                 Learn more <ChevronRight className="h-4 w-4" />
               </Link>
             </div>
@@ -158,7 +158,7 @@ export default function RoundRockArea() {
                 Crack repair, patch work, and water damage restoration. We fix stucco problems caused by
                 shifting clay soils common in Round Rock.
               </p>
-              <Link to="/services/repair" className="mt-4 inline-flex items-center gap-1 text-green-600 font-medium hover:text-green-700">
+              <Link to="/austin-stucco-repair" className="mt-4 inline-flex items-center gap-1 text-green-600 font-medium hover:text-green-700">
                 Learn more <ChevronRight className="h-4 w-4" />
               </Link>
             </div>
@@ -171,7 +171,7 @@ export default function RoundRockArea() {
                 Smooth, sand, dash, and lace finishes. Color matching and custom textures to complement
                 Round Rock's diverse architectural styles.
               </p>
-              <Link to="/services/finishing" className="mt-4 inline-flex items-center gap-1 text-green-600 font-medium hover:text-green-700">
+              <Link to="/austin-stucco-finishing" className="mt-4 inline-flex items-center gap-1 text-green-600 font-medium hover:text-green-700">
                 Learn more <ChevronRight className="h-4 w-4" />
               </Link>
             </div>

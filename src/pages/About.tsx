@@ -46,7 +46,7 @@ const schema = {
     '@type': 'LocalBusiness',
     name: siteConfig.name,
     description: siteConfig.description,
-    foundingDate: '2011',
+    foundingDate: '2013',
     areaServed: {
       '@type': 'City',
       name: 'Austin, TX',
@@ -59,7 +59,7 @@ export default function About() {
     <>
       <SEO
         title="About Star Stucco | Austin's Trusted Stucco Contractor"
-        description="Star Stucco of Austin — the stucco company Austin trusts. Family-owned stucco contractors with 15+ years serving Travis County. Expert installation, repair, and finishing."
+        description="Star Stucco of Austin — the stucco company Austin trusts. Family-owned stucco contractors with 13+ years serving Travis County. Expert installation, repair, and finishing."
         path="/about"
         schema={schema}
       />
@@ -83,10 +83,10 @@ export default function About() {
               About Our Company
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6">
-              Austin's Trusted Stucco Experts Since 2011
+              Austin's Trusted Stucco Experts Since 2013
             </h1>
             <p className="text-lg text-secondary-300 leading-relaxed">
-              For over 15 years, Star Stucco of Austin has been transforming homes
+              For over 13 years, Star Stucco of Austin has been transforming homes
               and businesses across Travis County with expert stucco craftsmanship
               built to withstand the Texas climate.
             </p>
@@ -112,7 +112,7 @@ export default function About() {
                   stucco contractors.
                 </p>
                 <p>
-                  Over 15 years and more than 2,500 projects later, we've left
+                  Over 9,000 projects later, we've left
                   our mark across every corner of Austin -- from the historic
                   bungalows of Hyde Park and Tarrytown to the modern builds in
                   Mueller and The Domain. We've watched this city grow and

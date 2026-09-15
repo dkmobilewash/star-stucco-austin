@@ -53,7 +53,7 @@ export default function CedarParkArea() {
           <nav className="mb-6 flex items-center gap-2 text-sm text-slate-300">
             <Link to="/" className="hover:text-white">Home</Link>
             <ChevronRight className="h-4 w-4" />
-            <Link to="/service-area" className="hover:text-white">Service Areas</Link>
+            <Link to="/service-areas" className="hover:text-white">Service Areas</Link>
             <ChevronRight className="h-4 w-4" />
             <span className="text-green-400">Cedar Park</span>
           </nav>
