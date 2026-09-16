@@ -6,6 +6,31 @@ import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: siteConfig.name,
+  url: siteConfig.url,
+  telephone: siteConfig.phone,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Austin',
+    addressRegion: 'TX',
+    addressCountry: 'US',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Austin' },
+    { '@type': 'City', name: 'Round Rock' },
+    { '@type': 'City', name: 'Cedar Park' },
+    { '@type': 'City', name: 'Georgetown' },
+    { '@type': 'City', name: 'Pflugerville' },
+    { '@type': 'City', name: 'Westlake' },
+  ],
+  description:
+    'Professional stucco repair contractor serving Austin and Central Texas. Specializing in crack repair, water damage restoration, and texture matching.',
+  priceRange: '$$',
+}
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -13,14 +38,6 @@ const schema = {
   provider: {
     '@type': 'LocalBusiness',
     name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.state,
-      postalCode: siteConfig.address.zip,
-    },
   },
   areaServed: {
     '@type': 'City',
@@ -203,7 +220,7 @@ export default function StuccoRepair() {
         title="Stucco Repair Near Me | Austin, TX Same-Week Service | Star Stucco"
         description="Expert stucco repair Austin TX — crack repair, water damage & texture matching. HOA-approved, 9,000+ projects completed. Free estimates, same-week scheduling."
         path="/austin-stucco-repair"
-        schema={[schema, faqSchema]}
+        schema={[localBusinessSchema, schema, faqSchema]}
       />
 
       {/* Hero Section */}
