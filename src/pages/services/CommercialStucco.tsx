@@ -6,6 +6,31 @@ import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
 import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: siteConfig.name,
+  url: siteConfig.url,
+  telephone: siteConfig.phone,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Austin',
+    addressRegion: 'TX',
+    addressCountry: 'US',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Austin' },
+    { '@type': 'City', name: 'Round Rock' },
+    { '@type': 'City', name: 'Cedar Park' },
+    { '@type': 'City', name: 'Georgetown' },
+    { '@type': 'City', name: 'Pflugerville' },
+    { '@type': 'City', name: 'Westlake' },
+  ],
+  description:
+    "Austin's trusted commercial stucco contractor. New construction, exterior finishing, repairs, and EIFS for commercial properties throughout Central Texas.",
+  priceRange: '$$',
+}
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -13,14 +38,6 @@ const schema = {
   provider: {
     '@type': 'LocalBusiness',
     name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.state,
-      postalCode: siteConfig.address.zip,
-    },
   },
   areaServed: {
     '@type': 'City',
@@ -164,7 +181,7 @@ export default function CommercialStucco() {
         title="Commercial Stucco Contractor Austin, TX | Star Stucco"
         description="Commercial stucco Austin TX — installation & repair for multi-family, retail & office buildings. Licensed, bonded & insured. Free commercial estimates."
         path="/austin-commercial-stucco"
-        schema={[schema, faqSchema]}
+        schema={[localBusinessSchema, schema, faqSchema]}
       />
 
       {/* Hero Section */}

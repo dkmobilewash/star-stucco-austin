@@ -29,6 +29,31 @@ const faqs: FAQ[] = [
   },
 ]
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: siteConfig.name,
+  url: siteConfig.url,
+  telephone: siteConfig.phone,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Austin',
+    addressRegion: 'TX',
+    addressCountry: 'US',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Austin' },
+    { '@type': 'City', name: 'Round Rock' },
+    { '@type': 'City', name: 'Cedar Park' },
+    { '@type': 'City', name: 'Georgetown' },
+    { '@type': 'City', name: 'Pflugerville' },
+    { '@type': 'City', name: 'Westlake' },
+  ],
+  description:
+    'Professional stucco installation contractor serving Austin and Central Texas. New construction stucco and re-stucco projects for residential and commercial properties.',
+  priceRange: '$$',
+}
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -36,14 +61,6 @@ const schema = {
   provider: {
     '@type': 'LocalBusiness',
     name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.state,
-      postalCode: siteConfig.address.zip,
-    },
   },
   areaServed: {
     '@type': 'City',
@@ -69,7 +86,7 @@ export default function StuccoInstallation() {
         title="Stucco Installation Austin, TX | New Builds & Re-Stucco | Star Stucco"
         description="Professional stucco installation Austin TX — new builds, renovations & re-stucco. 3-coat & synthetic systems. Licensed stucco contractors, free estimates."
         path="/austin-stucco-installation"
-        schema={[schema, faqPageSchema(faqs)]}
+        schema={[localBusinessSchema, schema, faqPageSchema(faqs)]}
       />
 
       {/* Hero Section */}

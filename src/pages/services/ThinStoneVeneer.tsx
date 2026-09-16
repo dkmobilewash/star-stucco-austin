@@ -34,6 +34,31 @@ const faqs: FAQ[] = [
   },
 ]
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: siteConfig.name,
+  url: siteConfig.url,
+  telephone: siteConfig.phone,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Austin',
+    addressRegion: 'TX',
+    addressCountry: 'US',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Austin' },
+    { '@type': 'City', name: 'Round Rock' },
+    { '@type': 'City', name: 'Cedar Park' },
+    { '@type': 'City', name: 'Georgetown' },
+    { '@type': 'City', name: 'Pflugerville' },
+    { '@type': 'City', name: 'Westlake' },
+  ],
+  description:
+    'Professional thin stone veneer installation contractor serving Austin and Central Texas. Fireplace surrounds, accent walls, exterior facades, and outdoor kitchens.',
+  priceRange: '$$',
+}
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -41,14 +66,6 @@ const schema = {
   provider: {
     '@type': 'LocalBusiness',
     name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.state,
-      postalCode: siteConfig.address.zip,
-    },
   },
   areaServed: {
     '@type': 'City',
@@ -101,7 +118,7 @@ export default function ThinStoneVeneer() {
         title="Thin Stone Veneer Austin, TX | Install & Repair | Star Stucco"
         description="Thin stone veneer installation in Austin, TX. Fireplaces, accent walls, facades, and outdoor kitchens. Natural & manufactured stone. Free estimates, 5-star rated."
         path="/austin-thin-stone-veneer"
-        schema={[schema, faqPageSchema(faqs)]}
+        schema={[localBusinessSchema, schema, faqPageSchema(faqs)]}
       />
 
       {/* Hero Section */}

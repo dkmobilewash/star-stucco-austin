@@ -29,6 +29,31 @@ const faqs: FAQ[] = [
   },
 ]
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: siteConfig.name,
+  url: siteConfig.url,
+  telephone: siteConfig.phone,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Austin',
+    addressRegion: 'TX',
+    addressCountry: 'US',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Austin' },
+    { '@type': 'City', name: 'Round Rock' },
+    { '@type': 'City', name: 'Cedar Park' },
+    { '@type': 'City', name: 'Georgetown' },
+    { '@type': 'City', name: 'Pflugerville' },
+    { '@type': 'City', name: 'Westlake' },
+  ],
+  description:
+    'Custom stucco finishing contractor serving Austin and Central Texas. Smooth, Santa Barbara, dash, sand, and lace finishes with expert color matching.',
+  priceRange: '$$',
+}
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -36,14 +61,6 @@ const schema = {
   provider: {
     '@type': 'LocalBusiness',
     name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.state,
-      postalCode: siteConfig.address.zip,
-    },
   },
   areaServed: {
     '@type': 'City',
@@ -92,7 +109,7 @@ export default function StuccoFinishing() {
         title="Interior Plaster & Stucco Finishing Austin, TX | Star Stucco"
         description="Interior plaster and custom stucco finishes in Austin — smooth, sand, dash & designer textures. Expert color matching & finish coats. Free estimates."
         path="/austin-stucco-finishing"
-        schema={[schema, faqPageSchema(faqs)]}
+        schema={[localBusinessSchema, schema, faqPageSchema(faqs)]}
       />
 
       {/* Hero Section */}
