@@ -346,7 +346,7 @@ function getRouteLastmod(routePath) {
   if (routePath === '/') return getGitLastmod('src/pages/Home.tsx')
 
   if (routePath.startsWith('/blog/')) {
-    return newestOf('src/data/blogPosts.ts', 'src/data/newBlogPosts1.ts', 'src/data/newBlogPosts2.ts', 'src/data/newBlogPosts3.ts', 'src/data/newBlogPosts4.ts')
+    return newestOf('src/data/blogPosts.ts', 'src/data/newBlogPosts1.ts', 'src/data/newBlogPosts2.ts', 'src/data/newBlogPosts3.ts', 'src/data/newBlogPosts4.ts', 'src/data/newBlogPosts5.ts')
   }
 
   if (routePath.startsWith('/service-areas/')) {
