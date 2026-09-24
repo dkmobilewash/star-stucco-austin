@@ -2,23 +2,13 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, MapPin, Star, Shield, Clock } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Stucco Services in Austin, TX',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Austin',
-      addressRegion: 'TX',
-      postalCode: '78701',
-      addressCountry: 'US',
-    },
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Austin',

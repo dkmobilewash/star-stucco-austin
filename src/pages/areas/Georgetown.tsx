@@ -2,17 +2,14 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, MapPin } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 export default function GeorgetownArea() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Stucco Services in Georgetown, TX',
-    provider: {
-      '@type': 'LocalBusiness',
-      name: 'Star Stucco of Austin',
-      telephone: siteConfig.phone,
-    },
+    provider: businessRef,
     areaServed: {
       '@type': 'City',
       name: 'Georgetown',

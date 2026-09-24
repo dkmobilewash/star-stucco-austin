@@ -133,7 +133,7 @@ const homeFaqs = [
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://www.stuccoaustin.com',
+  '@id': 'https://www.stuccoaustin.com/#business',
   name: 'Star Stucco of Austin',
   url: 'https://www.stuccoaustin.com',
   telephone: '+15127069699',
@@ -153,8 +153,8 @@ const localBusinessSchema = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 30.238662944720037,
-    longitude: -97.83384820366378,
+    latitude: siteConfig.coordinates.lat,
+    longitude: siteConfig.coordinates.lng,
   },
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',

@@ -2,17 +2,14 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, MapPin, Star, ClipboardCheck, Compass, HardHat, Shield, Building2, Hop as HomeIcon } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 export default function CedarParkArea() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Stucco Contractor in Cedar Park, TX',
-    provider: {
-      '@type': 'LocalBusiness',
-      name: 'Star Stucco of Austin',
-      telephone: siteConfig.phone,
-    },
+    provider: businessRef,
     areaServed: {
       '@type': 'City',
       name: 'Cedar Park',

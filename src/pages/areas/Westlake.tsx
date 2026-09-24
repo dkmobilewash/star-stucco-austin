@@ -2,22 +2,13 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, MapPin, Check, X } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Premium Stucco Services in Westlake Hills, TX',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Westlake Hills',
-      addressRegion: 'TX',
-      addressCountry: 'US',
-    },
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Westlake Hills',

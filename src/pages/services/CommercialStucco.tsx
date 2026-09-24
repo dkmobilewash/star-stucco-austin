@@ -3,42 +3,14 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, ChevronDown, Phone, Building2, HardHat, Clock, FileCheck, Shield, Wrench } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { RelatedLinks } from '../../components/RelatedLinks'
-import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
-
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: siteConfig.name,
-  url: siteConfig.url,
-  telephone: siteConfig.phone,
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Austin',
-    addressRegion: 'TX',
-    addressCountry: 'US',
-  },
-  areaServed: [
-    { '@type': 'City', name: 'Austin' },
-    { '@type': 'City', name: 'Round Rock' },
-    { '@type': 'City', name: 'Cedar Park' },
-    { '@type': 'City', name: 'Georgetown' },
-    { '@type': 'City', name: 'Pflugerville' },
-    { '@type': 'City', name: 'Westlake' },
-  ],
-  description:
-    "Austin's trusted commercial stucco contractor. New construction, exterior finishing, repairs, and EIFS for commercial properties throughout Central Texas.",
-  priceRange: '$$',
-}
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Commercial Stucco Contractor Austin, TX',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Austin',
@@ -181,7 +153,7 @@ export default function CommercialStucco() {
         title="Commercial Stucco Contractor Austin, TX | Star Stucco"
         description="Commercial stucco Austin TX — installation & repair for multi-family, retail & office buildings. Licensed, bonded & insured. Free commercial estimates."
         path="/austin-commercial-stucco"
-        schema={[localBusinessSchema, schema, faqSchema]}
+        schema={[schema, faqSchema]}
       />
 
       {/* Hero Section */}

@@ -16,41 +16,14 @@ import {
 import { useState } from 'react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
-
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: siteConfig.name,
-  url: siteConfig.url,
-  telephone: siteConfig.phone,
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Austin',
-    addressRegion: 'TX',
-    addressCountry: 'US',
-  },
-  areaServed: [
-    { '@type': 'City', name: 'Austin' },
-    { '@type': 'City', name: 'Round Rock' },
-    { '@type': 'City', name: 'Cedar Park' },
-    { '@type': 'City', name: 'Georgetown' },
-    { '@type': 'City', name: 'Pflugerville' },
-    { '@type': 'City', name: 'Westlake' },
-  ],
-  description:
-    'Licensed EIFS contractor serving Austin and Central Texas. Specializing in EIFS installation, repair, replacement, and synthetic stucco systems.',
-  priceRange: '$$',
-}
 
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'EIFS Installation and Repair',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Austin',
@@ -314,7 +287,7 @@ export default function EifsContractor() {
         title="EIFS Contractor Austin TX | Install & Repair | Star Stucco"
         description="Austin's trusted EIFS stucco contractor. Star Stucco installs, repairs & replaces synthetic stucco (EIFS) for homes & businesses. Free estimates."
         path="/eifs-contractor-austin"
-        schema={[localBusinessSchema, serviceSchema, faqSchema]}
+        schema={[serviceSchema, faqSchema]}
       />
 
       {/* Hero Section */}

@@ -2,17 +2,14 @@ import { Link } from 'react-router-dom'
 import { Phone, MapPin, Hammer, PaintBucket, Wrench, Layers, Building2, ChevronRight } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 export default function PflugervilleArea() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Stucco Contractor in Pflugerville, TX',
-    provider: {
-      '@type': 'LocalBusiness',
-      name: 'Star Stucco of Austin',
-      telephone: siteConfig.phone,
-    },
+    provider: businessRef,
     areaServed: {
       '@type': 'City',
       name: 'Pflugerville',

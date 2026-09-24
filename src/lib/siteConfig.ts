@@ -14,8 +14,8 @@ export const siteConfig = {
     county: 'Travis County',
   },
   coordinates: {
-    lat: 30.2672,
-    lng: -97.7431,
+    lat: 30.238662944720037,
+    lng: -97.83384820366378,
   },
   url: 'https://www.stuccoaustin.com',
   serviceAreas: [
