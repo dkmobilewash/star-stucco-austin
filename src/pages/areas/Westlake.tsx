@@ -2,31 +2,22 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, MapPin, Check, X } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Premium Stucco Services in Westlake Hills, TX',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Westlake Hills',
-      addressRegion: 'TX',
-      addressCountry: 'US',
-    },
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Westlake Hills',
     containedInPlace: { '@type': 'AdministrativeArea', name: 'Travis County, TX' },
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 30.2960,
-    longitude: -97.8088,
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 30.2960,
+      longitude: -97.8088,
+    },
   },
   description: 'Premium stucco installation and finishing for Westlake Hills luxury homes. Specializing in high-end finishes, custom color matching, and estate-quality craftsmanship.',
 }
@@ -53,6 +44,7 @@ export default function WestlakeArea() {
         title="Stucco Services Westlake Hills, TX | Star Stucco of Austin"
         description="Premium stucco installation and finishing for Westlake Hills luxury homes. Expert craftsmanship for high-end estates, custom color matching, and architectural finishes that protect your investment."
         path="/service-area/westlake"
+        ogImage="https://www.stuccoaustin.com/images/luxury-home-westlake-hero.webp"
         schema={schema}
       />
 

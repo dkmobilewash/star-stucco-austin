@@ -12,6 +12,7 @@ export interface BlogPost {
   h1?: string
   excerpt: string
   date: string
+  dateModified?: string
   image: string
   content: string
   faqs?: { question: string; answer: string }[]

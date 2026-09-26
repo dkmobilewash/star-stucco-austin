@@ -2,17 +2,14 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, MapPin } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 export default function GeorgetownArea() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Stucco Services in Georgetown, TX',
-    provider: {
-      '@type': 'LocalBusiness',
-      name: 'Star Stucco of Austin',
-      telephone: siteConfig.phone,
-    },
+    provider: businessRef,
     areaServed: {
       '@type': 'City',
       name: 'Georgetown',
@@ -20,11 +17,11 @@ export default function GeorgetownArea() {
         '@type': 'AdministrativeArea',
         name: 'Williamson County',
       },
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 30.6333,
-      longitude: -97.6781,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 30.6333,
+        longitude: -97.6781,
+      },
     },
   }
 
@@ -34,6 +31,7 @@ export default function GeorgetownArea() {
         title="Stucco Services Georgetown, TX | Star Stucco of Austin"
         description="Professional stucco installation, repair, and refinishing in Georgetown, TX. Serving historic downtown, Sun City, and all Williamson County communities."
         path="/service-area/georgetown"
+        ogImage="https://www.stuccoaustin.com/images/stucco-texture-hero.webp"
         schema={schema}
       />
 

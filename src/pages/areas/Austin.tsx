@@ -2,32 +2,22 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, MapPin, Star, Shield, Clock } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Stucco Services in Austin, TX',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-    telephone: siteConfig.phone,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Austin',
-      addressRegion: 'TX',
-      postalCode: '78701',
-      addressCountry: 'US',
-    },
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Austin',
     containedInPlace: { '@type': 'AdministrativeArea', name: 'Travis County, TX' },
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 30.2672,
-    longitude: -97.7431,
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 30.2672,
+      longitude: -97.7431,
+    },
   },
   description: 'Expert stucco installation, repair, and finishing services in Austin, TX. Serving all Austin neighborhoods including South Congress, East Austin, Mueller, and Westlake Hills.',
 }
@@ -52,6 +42,7 @@ export default function AustinArea() {
         title="Stucco Contractor Austin, TX | Repair & Installation"
         description="Star Stucco of Austin is the trusted stucco contractor for Austin, TX homeowners. Expert installation, repair, and finishing services across all Austin neighborhoods. Free estimates."
         path="/service-area/austin"
+        ogImage="https://www.stuccoaustin.com/images/stucco-home-roundrock-hero.webp"
         schema={schema}
       />
 

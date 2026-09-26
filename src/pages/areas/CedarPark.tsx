@@ -2,17 +2,14 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone, MapPin, Star, ClipboardCheck, Compass, HardHat, Shield, Building2, Hop as HomeIcon } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 export default function CedarParkArea() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Stucco Contractor in Cedar Park, TX',
-    provider: {
-      '@type': 'LocalBusiness',
-      name: 'Star Stucco of Austin',
-      telephone: siteConfig.phone,
-    },
+    provider: businessRef,
     areaServed: {
       '@type': 'City',
       name: 'Cedar Park',
@@ -20,11 +17,11 @@ export default function CedarParkArea() {
         '@type': 'AdministrativeArea',
         name: 'Williamson County',
       },
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 30.5052,
-      longitude: -97.8203,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 30.5052,
+        longitude: -97.8203,
+      },
     },
   }
 
@@ -34,6 +31,7 @@ export default function CedarParkArea() {
         title="Stucco Contractor Cedar Park, TX | Star Stucco of Austin"
         description="Expert stucco contractor serving Cedar Park, TX. Installation, repair, and custom finishes for homes and businesses in Williamson County."
         path="/service-area/cedar-park"
+        ogImage="https://www.stuccoaustin.com/images/stucco-texture-hero.webp"
         schema={schema}
       />
 

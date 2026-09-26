@@ -3,42 +3,14 @@ import { CircleCheck as CheckCircle, ChevronRight, Phone, TriangleAlert as Alert
 import { useState } from 'react'
 import SEO from '../../components/SEO'
 import { RelatedLinks } from '../../components/RelatedLinks'
-import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
-
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: siteConfig.name,
-  url: siteConfig.url,
-  telephone: siteConfig.phone,
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Austin',
-    addressRegion: 'TX',
-    addressCountry: 'US',
-  },
-  areaServed: [
-    { '@type': 'City', name: 'Austin' },
-    { '@type': 'City', name: 'Round Rock' },
-    { '@type': 'City', name: 'Cedar Park' },
-    { '@type': 'City', name: 'Georgetown' },
-    { '@type': 'City', name: 'Pflugerville' },
-    { '@type': 'City', name: 'Westlake' },
-  ],
-  description:
-    'Professional stucco repair contractor serving Austin and Central Texas. Specializing in crack repair, water damage restoration, and texture matching.',
-  priceRange: '$$',
-}
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Stucco Repair Austin, TX',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Austin',
@@ -220,7 +192,8 @@ export default function StuccoRepair() {
         title="Stucco Repair Near Me | Austin, TX Same-Week Service | Star Stucco"
         description="Expert stucco repair Austin TX — crack repair, water damage & texture matching. HOA-approved, 9,000+ projects completed. Free estimates, same-week scheduling."
         path="/austin-stucco-repair"
-        schema={[localBusinessSchema, schema, faqSchema]}
+        ogImage="https://www.stuccoaustin.com/images/stucco-repair-hero.webp"
+        schema={[schema, faqSchema]}
       />
 
       {/* Hero Section */}

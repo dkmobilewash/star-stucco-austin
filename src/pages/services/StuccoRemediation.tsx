@@ -13,40 +13,13 @@ import {
 import SEO from '../../components/SEO'
 import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
 import { siteConfig } from '../../lib/siteConfig'
-
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: siteConfig.name,
-  url: siteConfig.url,
-  telephone: siteConfig.phone,
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Austin',
-    addressRegion: 'TX',
-    addressCountry: 'US',
-  },
-  areaServed: [
-    { '@type': 'City', name: 'Austin' },
-    { '@type': 'City', name: 'Round Rock' },
-    { '@type': 'City', name: 'Cedar Park' },
-    { '@type': 'City', name: 'Georgetown' },
-    { '@type': 'City', name: 'Pflugerville' },
-    { '@type': 'City', name: 'Westlake' },
-  ],
-  description:
-    'Professional stucco remediation contractor serving Austin and Central Texas. Diagnosing and fixing moisture intrusion, water damage, and failed stucco systems.',
-  priceRange: '$$',
-}
+import { businessRef } from '../../lib/schemas'
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Stucco Remediation Austin, TX',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Austin',
@@ -155,7 +128,8 @@ export default function StuccoRemediation() {
         title="Stucco Remediation Austin TX | Moisture & Water Damage Repair | Star Stucco"
         description="Expert stucco remediation in Austin, TX. We find and fix moisture intrusion and water damage down to the substrate — not just the surface. Free estimates."
         path="/austin-stucco-remediation"
-        schema={[localBusinessSchema, schema, faqPageSchema(faqs)]}
+        ogImage="https://www.stuccoaustin.com/images/stucco-repair-hero.webp"
+        schema={[schema, faqPageSchema(faqs)]}
       />
 
       {/* Hero */}

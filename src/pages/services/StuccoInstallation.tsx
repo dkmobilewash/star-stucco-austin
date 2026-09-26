@@ -4,6 +4,7 @@ import SEO from '../../components/SEO'
 import { FAQSection, faqPageSchema, type FAQ } from '../../components/FAQ'
 import { RelatedLinks } from '../../components/RelatedLinks'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
 const faqs: FAQ[] = [
@@ -29,39 +30,11 @@ const faqs: FAQ[] = [
   },
 ]
 
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: siteConfig.name,
-  url: siteConfig.url,
-  telephone: siteConfig.phone,
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Austin',
-    addressRegion: 'TX',
-    addressCountry: 'US',
-  },
-  areaServed: [
-    { '@type': 'City', name: 'Austin' },
-    { '@type': 'City', name: 'Round Rock' },
-    { '@type': 'City', name: 'Cedar Park' },
-    { '@type': 'City', name: 'Georgetown' },
-    { '@type': 'City', name: 'Pflugerville' },
-    { '@type': 'City', name: 'Westlake' },
-  ],
-  description:
-    'Professional stucco installation contractor serving Austin and Central Texas. New construction stucco and re-stucco projects for residential and commercial properties.',
-  priceRange: '$$',
-}
-
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Stucco Installation Austin, TX',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Austin',
@@ -86,7 +59,8 @@ export default function StuccoInstallation() {
         title="Stucco Installation Austin, TX | New Builds & Re-Stucco | Star Stucco"
         description="Professional stucco installation Austin TX — new builds, renovations & re-stucco. 3-coat & synthetic systems. Licensed stucco contractors, free estimates."
         path="/austin-stucco-installation"
-        schema={[localBusinessSchema, schema, faqPageSchema(faqs)]}
+        ogImage="https://www.stuccoaustin.com/images/stucco-installation-hero.webp"
+        schema={[schema, faqPageSchema(faqs)]}
       />
 
       {/* Hero Section */}

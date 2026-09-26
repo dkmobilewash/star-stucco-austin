@@ -2,17 +2,14 @@ import { Link } from 'react-router-dom'
 import { Phone, MapPin, Hammer, PaintBucket, Wrench, Layers, Building2, ChevronRight } from 'lucide-react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
+import { businessRef } from '../../lib/schemas'
 
 export default function PflugervilleArea() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Stucco Contractor in Pflugerville, TX',
-    provider: {
-      '@type': 'LocalBusiness',
-      name: 'Star Stucco of Austin',
-      telephone: siteConfig.phone,
-    },
+    provider: businessRef,
     areaServed: {
       '@type': 'City',
       name: 'Pflugerville',
@@ -20,11 +17,11 @@ export default function PflugervilleArea() {
         '@type': 'AdministrativeArea',
         name: 'Travis County',
       },
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 30.4394,
-      longitude: -97.6200,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 30.4394,
+        longitude: -97.6200,
+      },
     },
   }
 
@@ -34,6 +31,7 @@ export default function PflugervilleArea() {
         title="Stucco Contractor Pflugerville, TX | Star Stucco of Austin"
         description="Expert stucco installation, repair, and EIFS systems in Pflugerville, TX. Serving Blackhawk, Falcon Pointe, Villages of Hidden Lake, and all Travis County communities."
         path="/service-area/pflugerville"
+        ogImage="https://www.stuccoaustin.com/images/stucco-project-completed.webp"
         schema={schema}
       />
 
