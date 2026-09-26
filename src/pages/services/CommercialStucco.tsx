@@ -153,6 +153,7 @@ export default function CommercialStucco() {
         title="Commercial Stucco Contractor Austin, TX | Star Stucco"
         description="Commercial stucco Austin TX — installation & repair for multi-family, retail & office buildings. Licensed, bonded & insured. Free commercial estimates."
         path="/austin-commercial-stucco"
+        ogImage="https://www.stuccoaustin.com/images/commercial-building-hero.webp"
         schema={[schema, faqSchema]}
       />
 

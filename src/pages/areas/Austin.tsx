@@ -42,6 +42,7 @@ export default function AustinArea() {
         title="Stucco Contractor Austin, TX | Repair & Installation"
         description="Star Stucco of Austin is the trusted stucco contractor for Austin, TX homeowners. Expert installation, repair, and finishing services across all Austin neighborhoods. Free estimates."
         path="/service-area/austin"
+        ogImage="https://www.stuccoaustin.com/images/stucco-home-roundrock-hero.webp"
         schema={schema}
       />
 

@@ -3,8 +3,18 @@ import { ChevronRight, Phone, CheckCircle, Shield, Clock, Award } from 'lucide-r
 import SEO from '../components/SEO'
 import { FAQSection, faqPageSchema } from '../components/FAQ'
 import { siteConfig } from '../lib/siteConfig'
+import { businessRef } from '../lib/schemas'
 import { serviceDefinitions, countyDefinitions } from '../data/serviceLocationTypes'
 import type { ServiceLocationData } from '../data/serviceLocationTypes'
+
+const serviceOgImages: Record<string, string> = {
+  'residential-stucco': 'https://www.stuccoaustin.com/images/stucco-installation-hero.webp',
+  'commercial-stucco': 'https://www.stuccoaustin.com/images/commercial-building-hero.webp',
+  'stucco-repair': 'https://www.stuccoaustin.com/images/stucco-repair-hero.webp',
+  'eifs-contractor': 'https://www.stuccoaustin.com/images/eifs-stucco-hero.webp',
+  'interior-plaster': 'https://www.stuccoaustin.com/images/stucco-texture-hero.webp',
+  'thin-stone-veneer': 'https://www.stuccoaustin.com/images/stucco-project-completed.webp',
+}
 
 export default function ServiceLocationTemplate({
   serviceSlug,
@@ -25,20 +35,7 @@ export default function ServiceLocationTemplate({
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: data.serviceName,
-    provider: {
-      '@type': 'LocalBusiness',
-      name: siteConfig.name,
-      telephone: siteConfig.phone,
-      email: siteConfig.email,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: siteConfig.address.street,
-        addressLocality: siteConfig.address.city,
-        addressRegion: siteConfig.address.state,
-        postalCode: siteConfig.address.zip,
-        addressCountry: 'US',
-      },
-    },
+    provider: businessRef,
     areaServed: {
       '@type': 'AdministrativeArea',
       name: `${data.countyName}, Texas`,
@@ -79,6 +76,7 @@ export default function ServiceLocationTemplate({
         title={data.seoTitle}
         description={data.metaDescription}
         path={`/${serviceSlug}/${countySlug}`}
+        ogImage={serviceOgImages[serviceSlug]}
         schema={[serviceSchema, breadcrumbSchema, faqPageSchema(data.faqs)]}
         noindex={isDistant}
       />

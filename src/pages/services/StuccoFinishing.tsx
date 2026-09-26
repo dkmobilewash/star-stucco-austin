@@ -82,6 +82,7 @@ export default function StuccoFinishing() {
         title="Interior Plaster & Stucco Finishing Austin, TX | Star Stucco"
         description="Interior plaster and custom stucco finishes in Austin — smooth, sand, dash & designer textures. Expert color matching & finish coats. Free estimates."
         path="/austin-stucco-finishing"
+        ogImage="https://www.stuccoaustin.com/images/stucco-texture-hero.webp"
         schema={[schema, faqPageSchema(faqs)]}
       />
 

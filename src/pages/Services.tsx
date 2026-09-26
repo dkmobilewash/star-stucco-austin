@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Phone } from 'lucide-react'
 import SEO from '../components/SEO'
 import { siteConfig } from '../lib/siteConfig'
+import { businessRef } from '../lib/schemas'
 
 const services = [
   {
@@ -94,11 +95,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Stucco Services',
-  provider: {
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-    telephone: siteConfig.phone,
-  },
+  provider: businessRef,
   areaServed: {
     '@type': 'City',
     name: 'Austin, TX',

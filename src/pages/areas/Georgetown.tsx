@@ -31,6 +31,7 @@ export default function GeorgetownArea() {
         title="Stucco Services Georgetown, TX | Star Stucco of Austin"
         description="Professional stucco installation, repair, and refinishing in Georgetown, TX. Serving historic downtown, Sun City, and all Williamson County communities."
         path="/service-area/georgetown"
+        ogImage="https://www.stuccoaustin.com/images/stucco-texture-hero.webp"
         schema={schema}
       />
 

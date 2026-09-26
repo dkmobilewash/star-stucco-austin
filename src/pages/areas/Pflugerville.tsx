@@ -31,6 +31,7 @@ export default function PflugervilleArea() {
         title="Stucco Contractor Pflugerville, TX | Star Stucco of Austin"
         description="Expert stucco installation, repair, and EIFS systems in Pflugerville, TX. Serving Blackhawk, Falcon Pointe, Villages of Hidden Lake, and all Travis County communities."
         path="/service-area/pflugerville"
+        ogImage="https://www.stuccoaustin.com/images/stucco-project-completed.webp"
         schema={schema}
       />
 

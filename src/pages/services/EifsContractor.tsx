@@ -287,6 +287,7 @@ export default function EifsContractor() {
         title="EIFS Contractor Austin TX | Install & Repair | Star Stucco"
         description="Austin's trusted EIFS stucco contractor. Star Stucco installs, repairs & replaces synthetic stucco (EIFS) for homes & businesses. Free estimates."
         path="/eifs-contractor-austin"
+        ogImage="https://www.stuccoaustin.com/images/eifs-stucco-hero.webp"
         schema={[serviceSchema, faqSchema]}
       />
 

@@ -91,6 +91,7 @@ export default function ThinStoneVeneer() {
         title="Thin Stone Veneer Austin, TX | Install & Repair | Star Stucco"
         description="Thin stone veneer installation in Austin, TX. Fireplaces, accent walls, facades, and outdoor kitchens. Natural & manufactured stone. Free estimates, 5-star rated."
         path="/austin-thin-stone-veneer"
+        ogImage="https://www.stuccoaustin.com/images/stucco-project-completed.webp"
         schema={[schema, faqPageSchema(faqs)]}
       />
 

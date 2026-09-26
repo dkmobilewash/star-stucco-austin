@@ -3,6 +3,7 @@ import { ChevronRight, Phone, MapPin, Star, Shield, Clock, CheckCircle, Wrench, 
 import SEO from '../components/SEO'
 import { FAQSection, faqPageSchema } from '../components/FAQ'
 import { siteConfig } from '../lib/siteConfig'
+import { businessRef } from '../lib/schemas'
 import { allCounties } from '../data/countyPages'
 import { serviceDefinitions } from '../data/serviceLocationTypes'
 
@@ -16,20 +17,7 @@ export default function CountyPage() {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: `Stucco Services in ${data.county}, TX`,
-    provider: {
-      '@type': 'LocalBusiness',
-      name: siteConfig.name,
-      telephone: siteConfig.phone,
-      url: siteConfig.url,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: siteConfig.address.street,
-        addressLocality: siteConfig.address.city,
-        addressRegion: siteConfig.address.state,
-        postalCode: siteConfig.address.zip,
-        addressCountry: 'US',
-      },
-    },
+    provider: businessRef,
     areaServed: {
       '@type': 'AdministrativeArea',
       name: `${data.county}, TX`,

@@ -59,6 +59,7 @@ export default function StuccoInstallation() {
         title="Stucco Installation Austin, TX | New Builds & Re-Stucco | Star Stucco"
         description="Professional stucco installation Austin TX — new builds, renovations & re-stucco. 3-coat & synthetic systems. Licensed stucco contractors, free estimates."
         path="/austin-stucco-installation"
+        ogImage="https://www.stuccoaustin.com/images/stucco-installation-hero.webp"
         schema={[schema, faqPageSchema(faqs)]}
       />
 

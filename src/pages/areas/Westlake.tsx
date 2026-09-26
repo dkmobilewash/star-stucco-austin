@@ -44,6 +44,7 @@ export default function WestlakeArea() {
         title="Stucco Services Westlake Hills, TX | Star Stucco of Austin"
         description="Premium stucco installation and finishing for Westlake Hills luxury homes. Expert craftsmanship for high-end estates, custom color matching, and architectural finishes that protect your investment."
         path="/service-area/westlake"
+        ogImage="https://www.stuccoaustin.com/images/luxury-home-westlake-hero.webp"
         schema={schema}
       />
 

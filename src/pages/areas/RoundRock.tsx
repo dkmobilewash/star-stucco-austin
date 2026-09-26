@@ -31,6 +31,7 @@ export default function RoundRockArea() {
         title="Stucco Services Round Rock, TX | Star Stucco of Austin"
         description="Professional stucco installation, repair, and finishing in Round Rock, TX. Serving Brushy Creek, Teravista, and all Williamson County communities."
         path="/service-area/round-rock"
+        ogImage="https://www.stuccoaustin.com/images/stucco-home-roundrock-hero.webp"
         schema={schema}
       />
 

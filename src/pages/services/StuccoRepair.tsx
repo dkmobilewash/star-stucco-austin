@@ -192,6 +192,7 @@ export default function StuccoRepair() {
         title="Stucco Repair Near Me | Austin, TX Same-Week Service | Star Stucco"
         description="Expert stucco repair Austin TX — crack repair, water damage & texture matching. HOA-approved, 9,000+ projects completed. Free estimates, same-week scheduling."
         path="/austin-stucco-repair"
+        ogImage="https://www.stuccoaustin.com/images/stucco-repair-hero.webp"
         schema={[schema, faqSchema]}
       />
 

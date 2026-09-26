@@ -181,6 +181,18 @@ const localBusinessSchema = {
     { '@type': 'Offer', name: 'Interior Plaster' },
     { '@type': 'Offer', name: 'Thin Stone Veneer' },
   ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Stucco Services',
+    itemListElement: [
+      { '@type': 'OfferCatalog', name: 'Residential Stucco', url: 'https://www.stuccoaustin.com/austin-stucco-installation' },
+      { '@type': 'OfferCatalog', name: 'Commercial Stucco', url: 'https://www.stuccoaustin.com/austin-commercial-stucco' },
+      { '@type': 'OfferCatalog', name: 'Stucco Repair', url: 'https://www.stuccoaustin.com/austin-stucco-repair' },
+      { '@type': 'OfferCatalog', name: 'EIFS', url: 'https://www.stuccoaustin.com/eifs-contractor-austin' },
+      { '@type': 'OfferCatalog', name: 'Interior Plaster', url: 'https://www.stuccoaustin.com/austin-stucco-finishing' },
+      { '@type': 'OfferCatalog', name: 'Thin Stone Veneer', url: 'https://www.stuccoaustin.com/austin-thin-stone-veneer' },
+    ],
+  },
   brand: [
     { '@type': 'Brand', name: 'Sto Corp' },
     { '@type': 'Brand', name: 'Dryvit' },
