@@ -17,11 +17,11 @@ export default function GeorgetownArea() {
         '@type': 'AdministrativeArea',
         name: 'Williamson County',
       },
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 30.6333,
-      longitude: -97.6781,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 30.6333,
+        longitude: -97.6781,
+      },
     },
   }
 

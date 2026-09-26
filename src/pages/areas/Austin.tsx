@@ -13,11 +13,11 @@ const schema = {
     '@type': 'City',
     name: 'Austin',
     containedInPlace: { '@type': 'AdministrativeArea', name: 'Travis County, TX' },
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 30.2672,
-    longitude: -97.7431,
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 30.2672,
+      longitude: -97.7431,
+    },
   },
   description: 'Expert stucco installation, repair, and finishing services in Austin, TX. Serving all Austin neighborhoods including South Congress, East Austin, Mueller, and Westlake Hills.',
 }

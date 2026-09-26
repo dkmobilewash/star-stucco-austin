@@ -17,11 +17,11 @@ export default function CedarParkArea() {
         '@type': 'AdministrativeArea',
         name: 'Williamson County',
       },
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 30.5052,
-      longitude: -97.8203,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 30.5052,
+        longitude: -97.8203,
+      },
     },
   }
 

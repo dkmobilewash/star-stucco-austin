@@ -13,11 +13,11 @@ const schema = {
     '@type': 'City',
     name: 'Westlake Hills',
     containedInPlace: { '@type': 'AdministrativeArea', name: 'Travis County, TX' },
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 30.2960,
-    longitude: -97.8088,
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 30.2960,
+      longitude: -97.8088,
+    },
   },
   description: 'Premium stucco installation and finishing for Westlake Hills luxury homes. Specializing in high-end finishes, custom color matching, and estate-quality craftsmanship.',
 }

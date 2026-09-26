@@ -17,11 +17,11 @@ export default function RoundRockArea() {
         '@type': 'AdministrativeArea',
         name: 'Williamson County',
       },
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 30.5083,
-      longitude: -97.6789,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 30.5083,
+        longitude: -97.6789,
+      },
     },
   }
 

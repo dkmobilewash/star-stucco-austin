@@ -17,11 +17,11 @@ export default function PflugervilleArea() {
         '@type': 'AdministrativeArea',
         name: 'Travis County',
       },
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 30.4394,
-      longitude: -97.6200,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 30.4394,
+        longitude: -97.6200,
+      },
     },
   }
 
