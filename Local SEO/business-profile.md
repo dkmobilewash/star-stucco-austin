@@ -19,7 +19,9 @@ strings everywhere — do not reformat.
 | Primary Category | Stucco Contractor |
 | Secondary Categories | Plastering Contractor, EIFS Contractor, Stone Veneer Installer |
 | Hours | 24/7 |
+| Year Founded | 2013 |
 | Google Place ID | ChIJ0VY9HLtLW4YRoRzhoDm1iWQ |
+| Certifications | Sto Corp, Senergy/BASF, Master Wall, Dryvit, Parex LaHabra certified applicator; EIMA, TLPCA, Stucco Manufacturers Association member |
 
 ---
 

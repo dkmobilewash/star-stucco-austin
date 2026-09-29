@@ -162,7 +162,7 @@ advertising is optional.
 | Hours | Open 24 hours |
 | Short Description | Star Stucco of Austin is Central Texas's trusted stucco contractor. Residential & commercial stucco, EIFS, plaster, and stone veneer. 9,000+ projects. |
 | Service Area | Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, Westlake, Lakeway, Bee Cave, Dripping Springs, Kyle |
-| Year Established | [YEAR_FOUNDED] |
+| Year Established | 2013 |
 
 #### Checklist
 - [ ] Search Yelp for existing listing first
@@ -220,6 +220,31 @@ including Uber, Samsung, and various GPS apps. High downstream impact.
 #### Checklist
 - [ ] Create/claim listing at foursquare.com/business
 - [ ] Verify all fields match exactly
+- [ ] Record status in citation tracker
+
+---
+
+### 7b. Neustar Localeze
+
+**Submission URL:** https://www.neustar.biz/resources/product-literature/localeze
+
+**Submission notes:** Neustar Localeze is a major data aggregator. Submission
+is often bundled through aggregator services (Moz Local, BrightLocal, Yext)
+rather than a direct self-serve form. If using an aggregator tool, ensure the
+NAP submitted matches exactly. Localeze feeds data downstream to many smaller
+directories.
+
+| Field | Value |
+|---|---|
+| Business Name | Star Stucco of Austin |
+| Address | 5316 W US Hwy 290 Service Rd, Austin, TX 78735 |
+| Phone | (512) 706-9699 |
+| Website | https://www.stuccoaustin.com |
+| Primary Category | Stucco Contractor |
+
+#### Checklist
+- [ ] Submit via aggregator service (Moz Local, BrightLocal, or Yext)
+- [ ] Verify NAP matches exactly
 - [ ] Record status in citation tracker
 
 ---
