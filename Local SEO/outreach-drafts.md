@@ -3,7 +3,7 @@
 These are drafts to review, edit, and send yourself. Never send as-is —
 personalize the bracketed placeholders first.
 
-Replace `[OWNER_NAME]` with the actual owner's name throughout.
+Owner name: Diego Carrillo
 
 ---
 
@@ -29,7 +29,7 @@ customers looking for quality construction teams.
 Happy to chat if useful — let me know what you think.
 
 Best,
-[OWNER_NAME]
+Diego Carrillo
 Owner, Star Stucco of Austin
 (512) 706-9699
 
@@ -60,7 +60,7 @@ Let me know if that's of interest, or if there's a topic you'd rather see
 covered instead.
 
 Best,
-[OWNER_NAME]
+Diego Carrillo
 Owner, Star Stucco of Austin
 
 ---
@@ -85,7 +85,7 @@ Either way, thanks for putting together a solid resource for the Austin
 construction community.
 
 Best,
-[OWNER_NAME]
+Diego Carrillo
 Owner, Star Stucco of Austin
 https://www.stuccoaustin.com
 
@@ -100,7 +100,7 @@ complementary trade in Austin.
 
 Hi [CONTACT_NAME],
 
-I'm [OWNER_NAME] with Star Stucco of Austin — we handle stucco, plaster,
+I'm Diego Carrillo with Star Stucco of Austin — we handle stucco, plaster,
 EIFS, and stone veneer for residential and commercial projects across Central
 Texas.
 
@@ -115,7 +115,7 @@ No pressure either way — just figured it's worth asking since we serve the
 same Austin homeowners.
 
 Best,
-[OWNER_NAME]
+Diego Carrillo
 Owner, Star Stucco of Austin
 (512) 706-9699
 https://www.stuccoaustin.com
@@ -144,7 +144,7 @@ Happy to provide a testimonial about your products if that's useful for your
 marketing too.
 
 Best,
-[OWNER_NAME]
+Diego Carrillo
 Owner, Star Stucco of Austin
 (512) 706-9699
 
@@ -160,7 +160,7 @@ Just following up on my note below in case it got buried — no worries if now
 isn't the right time.
 
 Best,
-[OWNER_NAME]
+Diego Carrillo
 
 > [PASTE ORIGINAL EMAIL BELOW]
 
