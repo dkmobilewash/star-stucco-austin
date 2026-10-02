@@ -242,8 +242,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Stucco Repair & Installation Austin, TX | Star Stucco"
-        description="Need stucco repair or installation in Austin? Star Stucco has completed 9,000+ projects. Licensed, insured, free estimates. Call today."
+        title="Stucco Contractor Austin TX | Repair & Installation | Star Stucco"
+        description="Looking for stucco contractors near me in Austin? Star Stucco is the stucco company near me Austin homeowners trust — 9,000+ projects, licensed, insured, free estimates."
         path="/"
         schema={[localBusinessSchema, faqPageSchema(homeFaqs)]}
       />
@@ -305,7 +305,8 @@ export default function Home() {
               <p className="text-secondary-600 leading-relaxed mb-6">
                 Star Stucco of Austin has been serving the Austin area as a stucco contractor
                 in Austin, TX since 2013, completing over 9,000 projects across Central Texas.
-                From <Link to="/austin-stucco-repair" className="text-primary-700 underline hover:text-primary-800 transition-colors">stucco repair</Link> to new installation and finishing, we have the expertise to deliver
+                When homeowners search for the best stucco contractors near me, they find us —
+                from <Link to="/austin-stucco-repair" className="text-primary-700 underline hover:text-primary-800 transition-colors">stucco repair</Link> to new installation and finishing, we have the expertise to deliver
                 high-quality results that stand the test of time. Our commitment to quality and
                 customer satisfaction has earned us recognition from leading industry associations
                 including EIMA, TLPCA, and the Stucco Manufacturers Association.

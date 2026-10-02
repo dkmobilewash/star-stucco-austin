@@ -190,7 +190,7 @@ export default function StuccoRepair() {
     <>
       <SEO
         title="Stucco Repair Near Me | Austin, TX Same-Week Service | Star Stucco"
-        description="Expert stucco repair Austin TX — crack repair, water damage & texture matching. HOA-approved, 9,000+ projects completed. Free estimates, same-week scheduling."
+        description="Searching for stucco repair companies near me in Austin? Star Stucco — the best stucco repair contractors near me — fixes cracks, water damage & texture mismatches. Free estimates."
         path="/austin-stucco-repair"
         ogImage="https://www.stuccoaustin.com/images/stucco-repair-hero.webp"
         schema={[schema, faqSchema]}
@@ -219,7 +219,7 @@ export default function StuccoRepair() {
             Expert Stucco Repair in Austin, TX — Free Estimates
           </h1>
           <p className="text-lg text-secondary-300 mb-8 max-w-2xl leading-relaxed">
-            Cracks, water damage, and structural failures fixed right the first time. Star Stucco's Austin repair team addresses the root cause so your stucco stays solid for years — not just weeks.
+            Cracks, water damage, and structural failures fixed right the first time. As the stucco experts near me Austin homeowners call first, our repair team addresses the root cause so your stucco stays solid for years — not just weeks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-4">
             <a

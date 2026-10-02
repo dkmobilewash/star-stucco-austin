@@ -56,8 +56,8 @@ export default function StuccoInstallation() {
   return (
     <>
       <SEO
-        title="Stucco Installation Austin, TX | New Builds & Re-Stucco | Star Stucco"
-        description="Professional stucco installation Austin TX — new builds, renovations & re-stucco. 3-coat & synthetic systems. Licensed stucco contractors, free estimates."
+        title="Stucco Installation Austin TX | How Much Does It Cost to Stucco a House? | Star Stucco"
+        description="How much does it cost to stucco a house in Austin? $8–$15 per sq ft installed. Professional stucco installation — new builds, re-stucco & 3-coat systems. Free estimates."
         path="/austin-stucco-installation"
         ogImage="https://www.stuccoaustin.com/images/stucco-installation-hero.webp"
         schema={[schema, faqPageSchema(faqs)]}
@@ -117,9 +117,10 @@ export default function StuccoInstallation() {
                 New Construction & Re-Stucco Services for Austin Homes
               </h2>
               <p className="text-secondary-600 leading-relaxed mb-6">
-                Austin's building boom stretches from the master-planned communities of Mueller
-                to luxury custom builds in Barton Creek Estates. Whether you are breaking ground
-                on a new home or replacing aging siding with durable stucco, Star Stucco provides
+                Wondering how much to stucco a house in Austin? Stucco cost per square foot
+                typically runs $8 to $15 installed, depending on the system and finish.
+                Whether you are breaking ground on a new home in Mueller or replacing aging
+                siding with durable stucco on an existing property, Star Stucco provides
                 full-service installation that meets every Travis County building code requirement.
               </p>
               <p className="text-secondary-600 leading-relaxed mb-6">
