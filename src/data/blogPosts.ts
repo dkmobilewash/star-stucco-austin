@@ -3,6 +3,7 @@ import { newBlogPosts2 } from './newBlogPosts2'
 import { newBlogPosts3 } from './newBlogPosts3'
 import { newBlogPosts4 } from './newBlogPosts4'
 import { newBlogPosts5 } from './newBlogPosts5'
+import { newBlogPosts6 } from './newBlogPosts6'
 
 export interface BlogPost {
   slug: string
@@ -24,6 +25,7 @@ export const blogPosts: BlogPost[] = [
   ...newBlogPosts4,
   ...newBlogPosts3,
   ...newBlogPosts5,
+  ...newBlogPosts6,
   {
     slug: 'best-stucco-finishes-austin-homes',
     title: 'The Best Stucco Finishes for Austin Homes in 2026',
