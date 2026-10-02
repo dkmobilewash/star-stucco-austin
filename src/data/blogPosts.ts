@@ -3,6 +3,7 @@ import { newBlogPosts2 } from './newBlogPosts2'
 import { newBlogPosts3 } from './newBlogPosts3'
 import { newBlogPosts4 } from './newBlogPosts4'
 import { newBlogPosts5 } from './newBlogPosts5'
+import { newBlogPosts6 } from './newBlogPosts6'
 
 export interface BlogPost {
   slug: string
@@ -24,6 +25,7 @@ export const blogPosts: BlogPost[] = [
   ...newBlogPosts4,
   ...newBlogPosts3,
   ...newBlogPosts5,
+  ...newBlogPosts6,
   {
     slug: 'best-stucco-finishes-austin-homes',
     title: 'The Best Stucco Finishes for Austin Homes in 2026',
@@ -578,9 +580,9 @@ If your synthetic stucco is cracking, staining, or feeling soft, don't wait for 
   {
     slug: 'stucco-repair-cost-austin',
     title: 'How Much Does Stucco Repair Cost in Austin? (2026 Price Guide)',
-    seoTitle: 'Stucco Repair Cost in Austin TX (2026 Guide) | Star Stucco',
+    seoTitle: 'Stucco Repair Cost Per Square Foot Austin TX (2026) | Star Stucco',
     seoDescription:
-      'How much does stucco repair cost in Austin? See 2026 price ranges by repair type — cracks, water damage, full replacement — and what drives the cost. Free estimates.',
+      'How much for stucco repair in Austin? See average cost of stucco repair by type — stucco patch cost, stucco wall repair cost, per sq ft pricing & more. Free estimates.',
     h1: 'How Much Does Stucco Repair Cost in Austin, TX?',
     excerpt:
       'A clear 2026 breakdown of stucco repair costs in Austin by repair type, what drives the price, and how to get an accurate quote — from crack repair to full replacement.',
@@ -734,9 +736,9 @@ The cheapest stucco repair is the crack you seal before water finds it. If you'r
   {
     slug: 'cost-to-stucco-a-house-austin',
     title: 'How Much Does It Cost to Stucco a House in Austin, TX?',
-    seoTitle: 'Cost to Stucco a House in Austin TX (2026 Pricing Guide)',
+    seoTitle: 'Stucco Cost Per Sq Ft Austin TX (2026 Pricing Guide) | Star Stucco',
     seoDescription:
-      'How much does stucco cost in Austin? See real 2026 price ranges by sq ft, job type & finish. Get a free local estimate from Star Stucco of Austin.',
+      'How much is stucco per square foot in Austin? Stucco price per sq ft runs $8–$18. See stucco material cost per square foot, installation cost per sq ft & total pricing.',
     h1: 'How Much Does It Cost to Stucco a House in Austin, TX?',
     excerpt:
       'A clear 2026 breakdown of what it costs to stucco a house in Austin — by square foot and by home size — plus the factors that move the price up or down.',
