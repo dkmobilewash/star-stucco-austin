@@ -296,7 +296,7 @@ export default function StuccoRepair() {
                 Austin Stucco Crack Repair
               </h2>
               <p className="text-secondary-600 leading-relaxed mb-5">
-                Austin sits on some of the most expansive clay soils in Texas. When heavy rains saturate the ground, clay swells and lifts; during long dry spells, it shrinks dramatically. This constant soil movement puts tremendous stress on foundations and exterior walls, driving cracks through stucco surfaces. Homes in East Austin, Circle C Ranch, and neighborhoods along the Balcones Fault zone are especially prone to this type of damage.
+                Austin sits on some of the most expansive clay soils in Texas. When heavy rains saturate the ground, clay swells and lifts; during long dry spells, it shrinks dramatically. This constant soil movement puts tremendous stress on foundations and exterior walls, driving cracks through stucco surfaces. Homes in East Austin, Circle C Ranch, and neighborhoods along the Balcones Fault zone are especially prone to this type of <Link to="/blog/stucco-foundation-repair-austin" className="text-primary-700 underline hover:text-primary-900 transition-colors">foundation-related stucco damage</Link>.
               </p>
               <p className="text-secondary-600 leading-relaxed mb-5">
                 Thermal cycling is the second major culprit. Austin summers regularly push past 100°F, and south- and west-facing stucco walls absorb intense heat loads. Over time, the repeated expansion and contraction weakens the stucco bond, creating hairline cracks that widen if left untreated. Water enters these openings and accelerates the damage cycle significantly.
@@ -422,9 +422,9 @@ export default function StuccoRepair() {
       {/* Related Links */}
       <RelatedLinks
         links={[
-          { label: 'Stucco Remediation', path: '/austin-stucco-remediation', desc: 'When moisture has gotten behind the stucco, remediation fixes the root cause — not just the surface.' },
-          { label: 'Stucco Crack Repair Guide', path: '/blog/stucco-crack-repair-austin', desc: 'Why stucco cracks in Austin, which cracks are serious, and how they are properly repaired.' },
           { label: 'Stucco Repair Cost Guide', path: '/blog/stucco-repair-cost-austin', desc: 'What stucco repair costs in Austin by repair type — and what drives the price.' },
+          { label: 'Foundation Crack Repair', path: '/blog/stucco-foundation-repair-austin', desc: 'How foundation movement causes stucco cracks in Austin and what the repair process involves.' },
+          { label: 'Stucco Inspection Cost', path: '/blog/stucco-inspection-cost-austin', desc: 'What a stucco inspection covers, when you need one, and what it costs in Austin.' },
         ]}
       />
 
