@@ -632,6 +632,8 @@ When damage is too widespread to patch, full or large-area replacement runs roug
 
 Small cosmetic crack filling is within reach of a handy homeowner, but most stucco repair benefits from a professional — especially anything involving moisture, color matching, or EIFS. A poor DIY patch that traps water or doesn't match the texture often costs more to fix than it would have to do right the first time.
 
+If the cracks are caused by foundation movement, the foundation must be stabilized before the stucco is repaired — see our guide to [stucco foundation repair in Austin](/blog/stucco-foundation-repair-austin). Not sure whether you need repair or just a fresh coat of paint? Our [stucco painting cost guide](/blog/stucco-painting-cost-austin) covers when repainting makes sense vs. when the stucco itself needs work. And if you want a professional assessment before committing to any work, here is what a [stucco inspection costs](/blog/stucco-inspection-cost-austin).
+
 ## How to Get an Accurate Stucco Repair Quote
 
 The best estimate comes from an on-site inspection where a contractor can probe for moisture and assess the real condition behind the finish. When you compare quotes, make sure each one includes a moisture assessment, texture and color matching, and a written warranty.
@@ -792,9 +794,10 @@ These are planning estimates — the only accurate number comes from an on-site 
 - **System type** — Three-coat and EIFS cost more than one-coat but offer different performance benefits.
 - **New construction vs. re-stucco** — Re-stucco over a sound surface is cheaper than tearing off old material; full removal and replacement is the most expensive. For smaller jobs, see our [stucco repair](/austin-stucco-repair) services.
 - **Number of stories & access** — Two-story walls and hard-to-reach areas add scaffolding and labor.
-- **Finish & texture** — Smooth finishes require more skilled labor than heavier textures; custom colors add cost. See our [stucco finishes guide](/blog/stucco-finishes-guide).
+- **Finish & texture** — Smooth finishes require more skilled labor than heavier textures; custom colors add cost. See our [stucco finishes guide](/blog/stucco-finishes-guide). If you're considering repainting existing stucco instead of a full re-stucco, check our [stucco painting cost guide](/blog/stucco-painting-cost-austin).
 - **Prep & repairs** — Substrate repair, new weather barrier, flashing, and control joints all factor in.
 - **Architectural detail** — Arches, trim, and decorative elements increase labor.
+- **Partial projects** — Not stuccoing the entire house? A single [stucco wall costs](/blog/stucco-wall-cost-austin) significantly less, and a [stucco fence](/blog/stucco-fence-cost-austin) is another popular standalone project in Austin.
 
 ## Is Stucco Worth It in Austin?
 

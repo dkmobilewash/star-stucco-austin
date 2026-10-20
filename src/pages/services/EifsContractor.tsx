@@ -17,6 +17,7 @@ import { useState } from 'react'
 import SEO from '../../components/SEO'
 import { siteConfig } from '../../lib/siteConfig'
 import { businessRef } from '../../lib/schemas'
+import { RelatedLinks } from '../../components/RelatedLinks'
 import { ServiceLocationLinks } from '../../components/ServiceLocationLinks'
 
 const serviceSchema = {
@@ -688,6 +689,14 @@ export default function EifsContractor() {
           </p>
         </div>
       </section>
+
+      <RelatedLinks
+        links={[
+          { label: 'What Is EIFS?', path: '/blog/what-is-eifs', desc: 'A complete guide to EIFS — layers, history, maintenance, and how to tell if your home has it.' },
+          { label: 'EIFS vs Traditional Stucco', path: '/blog/eifs-vs-traditional-stucco', desc: 'Side-by-side comparison of cost, durability, energy efficiency, and repairability.' },
+          { label: 'Stucco Inspection Cost', path: '/blog/stucco-inspection-cost-austin', desc: 'What a stucco or EIFS inspection covers, when you need one, and what it costs.' },
+        ]}
+      />
 
       <ServiceLocationLinks serviceSlug="eifs-contractor" serviceName="EIFS Contractor" />
 

@@ -245,7 +245,7 @@ export default function StuccoInstallation() {
       <RelatedLinks
         links={[
           { label: 'Cost to Stucco a House', path: '/blog/cost-to-stucco-a-house-austin', desc: 'What it costs to stucco a house in Austin by system type and home size.' },
-          { label: 'Stucco Finishes Guide', path: '/blog/stucco-finishes-guide', desc: 'Smooth, Santa Barbara, dash, and lace finishes explained — and which suits your home.' },
+          { label: 'Stucco Painting Cost', path: '/blog/stucco-painting-cost-austin', desc: 'How much it costs to paint a stucco house in Austin — and when to repaint vs re-stucco.' },
           { label: 'EIFS / Synthetic Stucco', path: '/eifs-contractor-austin', desc: 'Energy-efficient EIFS as an insulated alternative to traditional stucco.' },
         ]}
       />
