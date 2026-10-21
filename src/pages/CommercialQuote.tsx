@@ -70,6 +70,16 @@ export default function CommercialQuote() {
       return
     }
 
+    if (typeof window.gtag === 'function') {
+      window.gtag('set', 'user_data', {
+        email: formData.email,
+        ...(formData.phone ? { phone_number: formData.phone } : {}),
+      })
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-XXXXXXXXXX/CONVERSION_LABEL',
+      })
+    }
+
     setSubmitted(true)
   }
 

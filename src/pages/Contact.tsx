@@ -121,6 +121,16 @@ export default function Contact() {
       console.error('[Zapier Webhook Error]', e)
     }
 
+    if (typeof window.gtag === 'function') {
+      window.gtag('set', 'user_data', {
+        email: formData.email,
+        ...(formData.phone ? { phone_number: formData.phone } : {}),
+      })
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-XXXXXXXXXX/CONVERSION_LABEL',
+      })
+    }
+
     setSubmitted(true)
   }
 
